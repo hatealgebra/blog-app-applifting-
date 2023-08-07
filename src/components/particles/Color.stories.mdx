@@ -1,0 +1,46 @@
+import { Meta, ColorPalette, ColorItem } from "@storybook/addon-docs";
+
+import theme from "./Theme";
+
+<Meta title="Colors" />
+
+# Colors
+
+<ColorPalette>
+  <ColorItem
+    title="theme.color.primary"
+    subtitle="Blue"
+    colors={[theme.color.primary]}
+  />
+  <ColorItem
+    title="theme.color.secondary"
+    subtitle="Grey"
+    colors={[theme.color.secondary]}
+  />
+  <ColorItem
+    title="theme.color.success"
+    subtitle="Success"
+    colors={[theme.color.success]}
+  />
+  <ColorItem
+    title="theme.color.danger"
+    subtitle="Danger"
+    colors={[theme.color.danger]}
+  />
+  <ColorItem
+    title="theme.color.warning"
+    subtitle="Warning"
+    colors={[theme.color.warning]}
+  />
+  <ColorItem
+    title="theme.color.info"
+    subtitle="Info"
+    colors={[theme.color.info]}
+  />
+  <ColorItem
+    title="theme.color.border"
+    subtitle="Border"
+    colors={[theme.color.border]}
+  />
+
+</ColorPalette>

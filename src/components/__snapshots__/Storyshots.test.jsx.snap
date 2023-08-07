@@ -1,0 +1,3981 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms/Avatar All Sizes 1`] = `
+<div
+  style="display: flex; gap: 5px; align-items: flex-end;"
+>
+  <img
+    alt="Generic user avatar"
+    class="sc-kDvujY bWcqhu avatar"
+    src="[object Object]"
+  />
+  <img
+    alt="Generic user avatar"
+    class="sc-kDvujY dqfeUi avatar"
+    src="[object Object]"
+  />
+  <img
+    alt="Generic user avatar"
+    class="sc-kDvujY bMVDdu avatar"
+    src="[object Object]"
+  />
+</div>
+`;
+
+exports[`Storyshots Atoms/Avatar Different Images 1`] = `
+<div
+  style="display: flex; gap: 5px; align-items: flex-end;"
+>
+  <img
+    alt="Generic user avatar"
+    class="sc-kDvujY bWcqhu avatar"
+    src="[object Object]"
+  />
+  <img
+    alt="fallback user avatar"
+    class="sc-kDvujY bWcqhu avatar"
+    src="[object Object]"
+  />
+</div>
+`;
+
+exports[`Storyshots Atoms/Button Block Button 1`] = `
+<div
+  style="margin: 1em; display: flex; gap: 20px;"
+>
+  <div
+    style="max-width: 200px; width: 100%;"
+  >
+    <button
+      class="sc-dkrFOg SrceD"
+      type="button"
+    >
+      Block Button
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Button Large Outline Buttons 1`] = `
+<div
+  style="margin: 1em; display: flex; gap: 20px;"
+>
+  <button
+    class="sc-dkrFOg kcVxcs"
+    type="button"
+  >
+    Primary
+  </button>
+  <button
+    class="sc-dkrFOg kcVxcs"
+    type="button"
+  >
+    Secondary
+  </button>
+</div>
+`;
+
+exports[`Storyshots Atoms/Button Large Standard Buttons 1`] = `
+<div
+  style="margin: 1em; display: flex; gap: 20px;"
+>
+  <button
+    class="sc-dkrFOg hhiDuR"
+    type="button"
+  >
+    Primary
+  </button>
+  <button
+    class="sc-dkrFOg hhiDuR"
+    type="button"
+  >
+    Secondary
+  </button>
+</div>
+`;
+
+exports[`Storyshots Atoms/Button Menu Button Example 1`] = `
+<div
+  style="margin: 1em; display: flex; gap: 20px;"
+>
+  <button
+    class="sc-gswNZR etuPxW"
+  >
+    <svg
+      fill="none"
+      height="20px"
+      stroke="currentColor"
+      stroke-width="0"
+      viewBox="0 0 24 24"
+      width="20px"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M2 6C2 5.44772 2.44772 5 3 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6Z"
+        fill="currentColor"
+      />
+      <path
+        d="M2 12.0322C2 11.4799 2.44772 11.0322 3 11.0322H21C21.5523 11.0322 22 11.4799 22 12.0322C22 12.5845 21.5523 13.0322 21 13.0322H3C2.44772 13.0322 2 12.5845 2 12.0322Z"
+        fill="currentColor"
+      />
+      <path
+        d="M3 17.0645C2.44772 17.0645 2 17.5122 2 18.0645C2 18.6167 2.44772 19.0645 3 19.0645H21C21.5523 19.0645 22 18.6167 22 18.0645C22 17.5122 21.5523 17.0645 21 17.0645H3Z"
+        fill="currentColor"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Atoms/Button Outline Buttons 1`] = `
+<div
+  style="margin: 1em; display: flex; gap: 20px;"
+>
+  <button
+    class="sc-dkrFOg cMxAll"
+    type="button"
+  >
+    Primary
+  </button>
+  <button
+    class="sc-dkrFOg cMxAll"
+    type="button"
+  >
+    Secondary
+  </button>
+</div>
+`;
+
+exports[`Storyshots Atoms/Button Small Outline Buttons 1`] = `
+<div
+  style="margin: 1em; display: flex; gap: 20px;"
+>
+  <button
+    class="sc-dkrFOg hERgEo"
+    type="button"
+  >
+    Primary
+  </button>
+  <button
+    class="sc-dkrFOg hERgEo"
+    type="button"
+  >
+    Secondary
+  </button>
+</div>
+`;
+
+exports[`Storyshots Atoms/Button Small Standard Buttons 1`] = `
+<div
+  style="margin: 1em; display: flex; gap: 20px;"
+>
+  <button
+    class="sc-dkrFOg eRxRCN"
+    type="button"
+  >
+    Primary
+  </button>
+  <button
+    class="sc-dkrFOg eRxRCN"
+    type="button"
+  >
+    Secondary
+  </button>
+</div>
+`;
+
+exports[`Storyshots Atoms/Button Sort Button All Variants 1`] = `
+<div
+  style="margin: 1em; display: flex; gap: 20px;"
+>
+  <button
+    class="sc-bcXHqe ffhSDA"
+  >
+    <span>
+      Article Title
+    </span>
+    <svg
+      fill="currentColor"
+      height="1em"
+      stroke="currentColor"
+      stroke-width="0"
+      viewBox="0 0 320 512"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+      />
+    </svg>
+  </button>
+  <button
+    class="sc-bcXHqe AZiye"
+  >
+    <span>
+      Article Title Active
+    </span>
+    <svg
+      fill="currentColor"
+      height="1em"
+      stroke="currentColor"
+      stroke-width="0"
+      viewBox="0 0 320 512"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Atoms/Button Standard Buttons 1`] = `
+<div
+  style="margin: 1em; display: flex; gap: 20px;"
+>
+  <button
+    class="sc-dkrFOg eidQVA"
+    type="button"
+  >
+    Primary
+  </button>
+  <button
+    class="sc-dkrFOg eidQVA"
+    type="button"
+  >
+    Secondary
+  </button>
+</div>
+`;
+
+exports[`Storyshots Atoms/Checkbox Checkbox Example 1`] = `
+<div
+  class="sc-ftTHYK bpCbn"
+>
+  <input
+    class="sc-iBYQkv jkxsjj"
+    type="checkbox"
+  />
+</div>
+`;
+
+exports[`Storyshots Atoms/Checkbox Checkbox With Label 1`] = `
+<div
+  class="sc-ftTHYK bpCbn"
+>
+  <input
+    class="sc-iBYQkv jkxsjj"
+    type="checkbox"
+  />
+  <span>
+    Checkbox with label
+  </span>
+</div>
+`;
+
+exports[`Storyshots Atoms/Error text Error Text Example 1`] = `
+<span
+  class="sc-ipEyDJ CPuoT"
+>
+  This is error text sample
+</span>
+`;
+
+exports[`Storyshots Atoms/Input Input All Size 1`] = `
+<div
+  style="display: flex; flex-direction: column; gap: 30px;"
+>
+  <div
+    style="display: flex; flex-direction: column; gap: 30px;"
+  >
+    <input
+      class="sc-hLBbgP fFQznY"
+      placeholder="This is normal input"
+    />
+    <input
+      class="sc-hLBbgP fEJXbD"
+      placeholder="This is big input"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/Input Input Example 1`] = `
+<div
+  style="display: flex; flex-direction: column; gap: 30px;"
+>
+  <input
+    class="sc-hLBbgP fFQznY"
+  />
+</div>
+`;
+
+exports[`Storyshots Atoms/Input Input Text Variants 1`] = `
+<div
+  style="display: flex; flex-direction: column; gap: 30px;"
+>
+  <input
+    class="sc-hLBbgP fFQznY"
+    placeholder="Plain text input"
+    type="text"
+  />
+  <input
+    class="sc-hLBbgP fFQznY"
+    placeholder="Plain password input"
+    type="password"
+  />
+  <input
+    class="sc-hLBbgP fFQznY"
+    placeholder="Plain email input"
+    type="email"
+  />
+  <textarea
+    class="sc-eDvSVe kbEInC"
+    placeholder="Join the discussion"
+    rows="1"
+  />
+</div>
+`;
+
+exports[`Storyshots Atoms/Link All Variants 1`] = `
+<div
+  style="display: flex; flex-direction: column; gap: 10px;"
+>
+  <a
+    class="sc-eDWCr RmwYw"
+    href="/#"
+  >
+    Classic link
+  </a>
+  <a
+    class="sc-eDWCr RmwYw"
+    href="/#"
+    variant="text"
+  >
+    Text link
+  </a>
+  <a
+    class="sc-ksBlkl fxuheE login-link"
+    href="/login"
+  >
+    <span>
+      Login
+    </span>
+    <svg
+      fill="none"
+      height="1em"
+      stroke="currentColor"
+      stroke-width="0"
+      style="transform: rotate(180deg);"
+      viewBox="0 0 24 24"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M10 19l-7-7m0 0l7-7m-7 7h18"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+      />
+    </svg>
+  </a>
+</div>
+`;
+
+exports[`Storyshots Atoms/Loading icons Loading Icons 1`] = `
+<div
+  style="display: flex; gap: 30px;"
+>
+  <svg
+    aria-busy="true"
+    aria-label="progress-bar-loading"
+    class=""
+    data-testid="progress-bar-svg"
+    height="80"
+    preserveAspectRatio="xMidYMid"
+    role="status"
+    viewBox="0 0 100 100"
+    width="80"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <defs>
+      <clippath
+        height="100"
+        id="lds-progress-cpid-5009611b8a418"
+        ng-attr-id="{{config.cpid}}"
+        width="100"
+        x="0"
+        y="0"
+      >
+        <rect
+          height="100"
+          width="66.6667"
+          x="0"
+          y="0"
+        >
+          <animate
+            attributeName="width"
+            begin="0s"
+            calcMode="linear"
+            dur="1"
+            keyTimes="0;0.5;1"
+            repeatCount="indefinite"
+            values="0;100;100"
+          />
+          <animate
+            attributeName="x"
+            begin="0s"
+            calcMode="linear"
+            dur="1"
+            keyTimes="0;0.5;1"
+            repeatCount="indefinite"
+            values="0;0;100"
+          />
+        </rect>
+      </clippath>
+    </defs>
+    <path
+      d="M82,63H18c-7.2,0-13-5.8-13-13v0c0-7.2,5.8-13,13-13h64c7.2,0,13,5.8,13,13v0C95,57.2,89.2,63,82,63z"
+      fill="none"
+      ng-attr-stroke="{{config.c1}}"
+      stroke="#DFDFDF"
+      stroke-width="2.7928"
+    />
+    <path
+      clip-path="url(#lds-progress-cpid-5009611b8a418)"
+      d="M81.3,58.7H18.7c-4.8,0-8.7-3.9-8.7-8.7v0c0-4.8,3.9-8.7,8.7-8.7h62.7c4.8,0,8.7,3.9,8.7,8.7v0C90,54.8,86.1,58.7,81.3,58.7z"
+      fill="#007BFF"
+      ng-attr-clip-path="url(#{{config.cpid}})"
+      ng-attr-fill="{{config.c2}}"
+    />
+  </svg>
+  <div
+    aria-busy="true"
+    aria-label="three-dots-loading"
+    data-testid="three-dots-loading"
+    role="status"
+    style="display: flex;"
+  >
+    <svg
+      data-testid="three-dots-svg"
+      fill="#007BFF"
+      height="80"
+      viewBox="0 0 120 30"
+      width="80"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx="15"
+        cy="15"
+        r="15"
+      >
+        <animate
+          attributeName="r"
+          begin="0s"
+          calcMode="linear"
+          dur="0.8s"
+          from="15"
+          repeatCount="indefinite"
+          to="15"
+          values="15;9;15"
+        />
+        <animate
+          attributeName="fill-opacity"
+          begin="0s"
+          calcMode="linear"
+          dur="0.8s"
+          from="1"
+          repeatCount="indefinite"
+          to="1"
+          values="1;.5;1"
+        />
+      </circle>
+      <circle
+        attributeName="fill-opacity"
+        cx="60"
+        cy="15"
+        from="1"
+        r="9"
+        to="0.3"
+      >
+        <animate
+          attributeName="r"
+          begin="0s"
+          calcMode="linear"
+          dur="0.8s"
+          from="9"
+          repeatCount="indefinite"
+          to="9"
+          values="9;15;9"
+        />
+        <animate
+          attributeName="fill-opacity"
+          begin="0s"
+          calcMode="linear"
+          dur="0.8s"
+          from="0.5"
+          repeatCount="indefinite"
+          to="0.5"
+          values=".5;1;.5"
+        />
+      </circle>
+      <circle
+        cx="105"
+        cy="15"
+        r="15"
+      >
+        <animate
+          attributeName="r"
+          begin="0s"
+          calcMode="linear"
+          dur="0.8s"
+          from="15"
+          repeatCount="indefinite"
+          to="15"
+          values="15;9;15"
+        />
+        <animate
+          attributeName="fill-opacity"
+          begin="0s"
+          calcMode="linear"
+          dur="0.8s"
+          from="1"
+          repeatCount="indefinite"
+          to="1"
+          values="1;.5;1"
+        />
+      </circle>
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Atoms/MarkdownEditor Mark Down Editor Example 1`] = `
+<div
+  id="simplemde-editor-1-wrapper"
+>
+  <textarea
+    id="simplemde-editor-1"
+    placeholder="Supports markdown. Yay!"
+    style="display: none;"
+  />
+  <div
+    class="EasyMDEContainer"
+    role="application"
+  >
+    <div
+      class="editor-toolbar"
+      role="toolbar"
+    >
+      <button
+        aria-label="Bold"
+        class="bold"
+        tabindex="-1"
+        title="Bold (Ctrl-B)"
+        type="button"
+      >
+        <i
+          class="fa fa-bold"
+        />
+      </button>
+      <button
+        aria-label="Italic"
+        class="italic"
+        tabindex="-1"
+        title="Italic (Ctrl-I)"
+        type="button"
+      >
+        <i
+          class="fa fa-italic"
+        />
+      </button>
+      <button
+        aria-label="Heading"
+        class="heading"
+        tabindex="-1"
+        title="Heading (Ctrl-H)"
+        type="button"
+      >
+        <i
+          class="fa fa-header fa-heading"
+        />
+      </button>
+      <i
+        class="separator"
+      >
+        |
+      </i>
+      <button
+        aria-label="Quote"
+        class="quote"
+        tabindex="-1"
+        title="Quote (Ctrl-')"
+        type="button"
+      >
+        <i
+          class="fa fa-quote-left"
+        />
+      </button>
+      <button
+        aria-label="Generic List"
+        class="unordered-list"
+        tabindex="-1"
+        title="Generic List (Ctrl-L)"
+        type="button"
+      >
+        <i
+          class="fa fa-list-ul"
+        />
+      </button>
+      <button
+        aria-label="Numbered List"
+        class="ordered-list"
+        tabindex="-1"
+        title="Numbered List (Ctrl-Alt-L)"
+        type="button"
+      >
+        <i
+          class="fa fa-list-ol"
+        />
+      </button>
+      <i
+        class="separator"
+      >
+        |
+      </i>
+      <button
+        aria-label="Create Link"
+        class="link"
+        tabindex="-1"
+        title="Create Link (Ctrl-K)"
+        type="button"
+      >
+        <i
+          class="fa fa-link"
+        />
+      </button>
+      <button
+        aria-label="Insert Image"
+        class="image"
+        tabindex="-1"
+        title="Insert Image (Ctrl-Alt-I)"
+        type="button"
+      >
+        <i
+          class="fa fa-image"
+        />
+      </button>
+      <i
+        class="separator"
+      >
+        |
+      </i>
+      <button
+        aria-label="Toggle Preview"
+        class="preview no-disable"
+        tabindex="-1"
+        title="Toggle Preview (Ctrl-P)"
+        type="button"
+      >
+        <i
+          class="fa fa-eye"
+        />
+      </button>
+      <button
+        aria-label="Toggle Side by Side"
+        class="side-by-side no-disable no-mobile"
+        tabindex="-1"
+        title="Toggle Side by Side (F9)"
+        type="button"
+      >
+        <i
+          class="fa fa-columns"
+        />
+      </button>
+      <button
+        aria-label="Toggle Fullscreen"
+        class="fullscreen no-disable no-mobile"
+        tabindex="-1"
+        title="Toggle Fullscreen (F11)"
+        type="button"
+      >
+        <i
+          class="fa fa-arrows-alt"
+        />
+      </button>
+      <i
+        class="separator"
+      >
+        |
+      </i>
+      <button
+        aria-label="Markdown Guide"
+        class="guide no-disable"
+        tabindex="-1"
+        title="Markdown Guide"
+        type="button"
+      >
+        <i
+          class="fa fa-question-circle"
+        />
+      </button>
+    </div>
+    <div
+      class="CodeMirror cm-s-easymde CodeMirror-wrap CodeMirror-empty"
+      translate="no"
+    >
+      <div
+        style="overflow: hidden; position: relative; width: 3px; height: 0px;"
+      >
+        <textarea
+          autocapitalize="off"
+          autocorrect="off"
+          spellcheck="false"
+          style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; min-height: 1em; outline: none;"
+          tabindex="0"
+        />
+      </div>
+      <div
+        class="CodeMirror-vscrollbar"
+        cm-not-content="true"
+        tabindex="-1"
+      >
+        <div
+          style="min-width: 1px;"
+        />
+      </div>
+      <div
+        class="CodeMirror-hscrollbar"
+        cm-not-content="true"
+        tabindex="-1"
+      >
+        <div
+          style="height: 100%; min-height: 1px;"
+        />
+      </div>
+      <div
+        class="CodeMirror-scrollbar-filler"
+        cm-not-content="true"
+      />
+      <div
+        class="CodeMirror-gutter-filler"
+        cm-not-content="true"
+      />
+      <div
+        class="CodeMirror-scroll"
+        style="min-height: 300px;"
+        tabindex="-1"
+      >
+        <div
+          class="CodeMirror-sizer"
+          style="margin-left: 0px;"
+        >
+          <div
+            style="position: relative;"
+          >
+            <div
+              class="CodeMirror-lines"
+              role="presentation"
+            >
+              <div
+                role="presentation"
+                style="position: relative; outline: none;"
+              >
+                <pre
+                  class="CodeMirror-placeholder CodeMirror-line-like"
+                  style="height: 0px; overflow: visible; direction: ltr;"
+                >
+                  Supports markdown. Yay!
+                </pre>
+                <div
+                  class="CodeMirror-measure"
+                >
+                  <pre
+                    class="CodeMirror-line-like"
+                  >
+                    <span>
+                      xxxxxxxxxx
+                    </span>
+                  </pre>
+                </div>
+                <div
+                  class="CodeMirror-measure"
+                />
+                <div
+                  style="position: relative; z-index: 1;"
+                />
+                <div
+                  class="CodeMirror-cursors"
+                />
+                <div
+                  class="CodeMirror-code"
+                  role="presentation"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style="position: absolute; height: 50px; width: 1px;"
+        />
+        <div
+          class="CodeMirror-gutters"
+          style="display: none;"
+        />
+      </div>
+    </div>
+    <div
+      class="editor-preview-side editor-preview"
+    />
+    <div
+      class="editor-statusbar"
+    >
+      <span
+        class="autosave"
+      />
+      <span
+        class="lines"
+      >
+        1
+      </span>
+      <span
+        class="words"
+      >
+        0
+      </span>
+      <span
+        class="cursor"
+      >
+        1:1
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules/Admin Heading Admin Heading Example 1`] = `
+<div
+  class="sc-dIfARi ckvMSP"
+>
+  <h1>
+    Page Title
+  </h1>
+  <a
+    class="sc-dkrFOg sc-csuSiG eidQVA gBuZIb"
+    colortheme="primary"
+    href="/#"
+  >
+    Create new article
+  </a>
+</div>
+`;
+
+exports[`Storyshots Molecules/Article Preview Article Preview Long Title 1`] = `
+<article
+  class="sc-hHTYSt bYFLUW article-preview"
+>
+  <img
+    alt="Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum preview image"
+    class="sc-dmctIk gOhnMR article-preview__img"
+    src="data:image/png;base64,"
+  />
+  <h3
+    class="article-preview__title"
+  >
+    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lo...
+  </h3>
+  <div
+    class="sc-kgTSHT jblhdC article-preview__row-one"
+  >
+    <span>
+      Random Author
+    </span>
+    <svg
+      fill="currentColor"
+      height="1em"
+      stroke="currentColor"
+      stroke-width="0"
+      viewBox="0 0 8 16"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"
+        fill-rule="evenodd"
+      />
+    </svg>
+    <span>
+      07/00/21
+    </span>
+  </div>
+  <p
+    class="article-preview__text"
+  >
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro beatae quod qui id dolorum nam, sapiente rem debitis ad illo doloribus ab! Dolorem aliquam facilis labore fugit rem, dolores quasi.
+  </p>
+  <div
+    class="sc-kgTSHT jblhdC article-preview__row-two"
+  >
+    <a
+      class="sc-eDWCr RmwYw"
+      href="/articles/undefined"
+    >
+      Read whole article
+    </a>
+    <span>
+      1 comments
+    </span>
+  </div>
+</article>
+`;
+
+exports[`Storyshots Molecules/Article Preview Article Preview Mobile 1`] = `
+<article
+  class="sc-hHTYSt bYFLUW article-preview"
+>
+  <img
+    alt="Article heading preview image"
+    class="sc-dmctIk gOhnMR article-preview__img"
+    src="data:image/png;base64,"
+  />
+  <h3
+    class="article-preview__title"
+  >
+    Article heading
+  </h3>
+  <div
+    class="sc-kgTSHT jblhdC article-preview__row-one"
+  >
+    <span>
+      Random Author
+    </span>
+    <svg
+      fill="currentColor"
+      height="1em"
+      stroke="currentColor"
+      stroke-width="0"
+      viewBox="0 0 8 16"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"
+        fill-rule="evenodd"
+      />
+    </svg>
+    <span>
+      07/00/21
+    </span>
+  </div>
+  <p
+    class="article-preview__text"
+  >
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro beatae quod qui id dolorum nam, sapiente rem debitis ad illo doloribus ab! Dolorem aliquam facilis labore fugit rem, dolores quasi.
+  </p>
+  <div
+    class="sc-kgTSHT jblhdC article-preview__row-two"
+  >
+    <a
+      class="sc-eDWCr RmwYw"
+      href="/articles/undefined"
+    >
+      Read whole article
+    </a>
+    <span>
+      1 comments
+    </span>
+  </div>
+</article>
+`;
+
+exports[`Storyshots Molecules/Article Preview Article Preview Small Example 1`] = `
+<a
+  class="sc-fLcnxK jQEWha"
+  href="/articles/undefined"
+>
+  <h5>
+    Hello world
+  </h5>
+  <p>
+    Hello there
+  </p>
+</a>
+`;
+
+exports[`Storyshots Molecules/Comment Comment Example 1`] = `
+<div
+  class="sc-cwSeag hymJvK comment"
+>
+  <img
+    alt="fallback user avatar"
+    class="sc-kDvujY bWcqhu avatar"
+    src="[object Object]"
+  />
+  <h5
+    class="comment__author"
+  >
+    Linda Lynn
+  </h5>
+  <span
+    class="comment__time-diff label"
+  >
+    3 years ago
+  </span>
+  <p
+    class="comment__text"
+  >
+     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus quibusdam qui autem libero consequuntur tenetur eveniet recusandae aliquam obcaecati. Consequatur perferendis id, dolorem quae unde recusandae ad deleniti obcaecati similique? 
+  </p>
+  <div
+    class="sc-iveFHk TOAlm comment__voting-counter"
+  >
+    <span
+      data-testid="reactionCounter"
+    >
+      0
+    </span>
+    <button
+      aria-label="vote-up"
+    >
+      <svg
+        fill="currentColor"
+        height="100%"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 24 24"
+        width="100%"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M12 10.828l-4.95 4.95-1.414-1.414L12 8l6.364 6.364-1.414 1.414z"
+          />
+        </g>
+      </svg>
+    </button>
+    <button
+      aria-label="vote-down"
+    >
+      <svg
+        fill="currentColor"
+        height="100%"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 24 24"
+        width="100%"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"
+          />
+        </g>
+      </svg>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules/Create comment Create Comment Disabled 1`] = `
+<form
+  class="sc-lllmON fHSFzn"
+>
+  <img
+    alt="fallback user avatar"
+    class="sc-kDvujY bWcqhu avatar"
+    src="[object Object]"
+  />
+  <textarea
+    class="sc-eDvSVe kbEInC"
+    disabled=""
+    name="comment"
+    placeholder="Join the discussion"
+    rows="1"
+  />
+  <span
+    class="sc-ipEyDJ CPuoT"
+  />
+</form>
+`;
+
+exports[`Storyshots Molecules/Create comment Create Commment Authorized 1`] = `
+<form
+  class="sc-lllmON fHSFzn"
+>
+  <img
+    alt="fallback user avatar"
+    class="sc-kDvujY bWcqhu avatar"
+    src="[object Object]"
+  />
+  <textarea
+    class="sc-eDvSVe kbEInC"
+    name="comment"
+    placeholder="Join the discussion"
+    rows="1"
+  />
+  <span
+    class="sc-ipEyDJ CPuoT"
+  />
+</form>
+`;
+
+exports[`Storyshots Molecules/Edit article Article Row Buttons Example 1`] = `
+<tr
+  class="sc-jrcTuL ikvuNf edit-article"
+>
+  <th
+    class="edit-article__checkbox"
+  >
+    <div
+      class="sc-ftTHYK bpCbn"
+    >
+      <input
+        class="sc-iBYQkv jkxsjj"
+        type="checkbox"
+      />
+    </div>
+  </th>
+  <th
+    class="edit-article__title"
+  >
+    <button
+      class="sc-bcXHqe ffhSDA"
+    >
+      <span>
+        Article title
+      </span>
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 320 512"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+        />
+      </svg>
+    </button>
+  </th>
+  <th
+    class="edit-article__perex"
+  >
+    <button
+      class="sc-bcXHqe ffhSDA"
+    >
+      <span>
+        Perex
+      </span>
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 320 512"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+        />
+      </svg>
+    </button>
+  </th>
+  <th
+    class="edit-article__author"
+  >
+    <button
+      class="sc-bcXHqe ffhSDA"
+    >
+      <span>
+        Author
+      </span>
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 320 512"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+        />
+      </svg>
+    </button>
+  </th>
+  <th
+    class="edit-article__nr-comments"
+  >
+    <button
+      class="sc-bcXHqe ffhSDA"
+    >
+      <span>
+        # comments
+      </span>
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 320 512"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+        />
+      </svg>
+    </button>
+  </th>
+  <th
+    class="edit-article__actions-container"
+  >
+    Actions
+  </th>
+</tr>
+`;
+
+exports[`Storyshots Molecules/Edit article Article Row Example 1`] = `
+<tr
+  class="sc-jrcTuL ikvuNf edit-article"
+  data-testid="edit-article-row"
+>
+  <td
+    class="edit-article__checkbox"
+  >
+    <div
+      class="sc-ftTHYK bpCbn"
+    >
+      <input
+        class="sc-iBYQkv jkxsjj"
+        type="checkbox"
+      />
+    </div>
+  </td>
+  <td
+    class="edit-article__title"
+  >
+    Wet vs. Dry Cat Food: Which is Better?
+  </td>
+  <td
+    class="edit-article__perex"
+  >
+    A cat's whiskers — or vibrissae — are a well-honed sensory tool that helps a cat see in the dark and steer clear of hungry predators. Whiskers are highly ...
+  </td>
+  <td
+    class="edit-article__author"
+  >
+    author
+  </td>
+  <td
+    class="edit-article__nr-comments"
+  />
+  <td
+    class="edit-article__actions-container"
+  >
+    <div
+      class="edit-article__actions"
+    >
+      <button
+        class="sc-pyfCe jQaHbN edit-article__button-edit"
+      >
+        <svg
+          fill="none"
+          height="1.2em"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="1.2em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"
+          />
+        </svg>
+      </button>
+      <button
+        class="sc-pyfCe jQaHbN edit-article__button-delete"
+      >
+        <svg
+          fill="currentColor"
+          height="1.2em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1.2em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g>
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M17 6h5v2h-2v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8H2V6h5V3a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v3zm1 2H6v12h12V8zM9 4v2h6V4H9z"
+            />
+          </g>
+        </svg>
+      </button>
+    </div>
+  </td>
+</tr>
+`;
+
+exports[`Storyshots Molecules/Input with label Input With Label Types 1`] = `
+<div
+  style="display: flex; flex-direction: column; gap: 20px;"
+>
+  <div
+    class="sc-jSUZER dqJJqp"
+  >
+    <label
+      for="Username"
+    >
+      Username
+    </label>
+    <input
+      class="sc-hLBbgP fFQznY"
+      id="Username"
+      placeholder="Enter your name"
+      value="hello"
+    />
+  </div>
+  <div
+    class="sc-jSUZER dqJJqp"
+  >
+    <label
+      for="Email"
+    >
+      Email
+    </label>
+    <input
+      class="sc-hLBbgP fFQznY"
+      id="Email"
+      placeholder="me@example.com"
+      value=""
+    />
+  </div>
+  <div
+    class="sc-jSUZER dqJJqp"
+  >
+    <label
+      for="Password"
+    >
+      Password
+    </label>
+    <input
+      class="sc-hLBbgP fFQznY"
+      id="Password"
+      placeholder="Enter your password"
+      value=""
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules/Login Status Login Status Example 1`] = `
+<div
+  class="sc-ezOQGI fwkXwj"
+>
+  <button
+    aria-label="avatar-button"
+    class="sc-iJnaPW giGZKb"
+  >
+    <img
+      alt="fallback user avatar"
+      class="sc-kDvujY dqfeUi avatar"
+      src="[object Object]"
+    />
+  </button>
+  <ul
+    aria-label="admin-menu"
+    class="sc-gikAfH fcoWdy"
+  >
+    <a
+      class="sc-eDWCr RmwYw"
+      href="/admin/my-articles"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M12 14v8H4a8 8 0 0 1 8-8zm0-1c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6zm9 4h1v5h-8v-5h1v-1a3 3 0 0 1 6 0v1zm-2 0v-1a1 1 0 0 0-2 0v1h2z"
+          />
+        </g>
+      </svg>
+      <span>
+        My Articles
+      </span>
+    </a>
+    <a
+      aria-current="page"
+      class="sc-eDWCr RmwYw"
+      href="/"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g>
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M5 2h14a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm4 9V8l-5 4 5 4v-3h6v-2H9z"
+          />
+        </g>
+      </svg>
+      <span>
+        Log Out
+      </span>
+    </a>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Molecules/Mobile Menu Mobile Menu Example 1`] = `
+<div
+  class="sc-bYMpWt hKcbEk mobile-menu"
+  data-testid="mobileMenu"
+>
+  <div
+    class="mobile-menu__help-div"
+  >
+    <button
+      class="sc-ilhmMj jwrvIN"
+    >
+      <svg
+        fill="currentColor"
+        height="20px"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 24 24"
+        width="20px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M3,3 L21,21 M3,21 L21,3"
+          fill="none"
+          stroke="#000"
+          stroke-width="2"
+        />
+      </svg>
+    </button>
+    <nav
+      class="sc-kMjNwy jynmrM"
+    >
+      <a
+        class="sc-eDWCr sc-bqWxrE RmwYw cxjsvH"
+      >
+        Recent articles
+      </a>
+      <a
+        class="sc-eDWCr sc-bqWxrE RmwYw cxjsvH"
+      >
+        About
+      </a>
+    </nav>
+    <a
+      class="sc-ksBlkl fxuheE login-link"
+      href="/login"
+    >
+      <span>
+        Login
+      </span>
+      <svg
+        fill="none"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        style="transform: rotate(180deg);"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M10 19l-7-7m0 0l7-7m-7 7h18"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+        />
+      </svg>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules/No Image Available No Image Available Example 1`] = `
+<div
+  style="height: 200px; width: 150px;"
+>
+  <div
+    class="sc-bBABsx kwVmtp"
+  >
+    <svg
+      color="white"
+      fill="currentColor"
+      height="50%"
+      stroke="currentColor"
+      stroke-width="0"
+      style="color: white;"
+      viewBox="0 0 16 16"
+      width="50%"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clip-rule="evenodd"
+        d="M14.002 2h-12a1 1 0 00-1 1v10a1 1 0 001 1h12a1 1 0 001-1V3a1 1 0 00-1-1zm-12-1a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V3a2 2 0 00-2-2h-12z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M10.648 7.646a.5.5 0 01.577-.093L15.002 9.5V14h-14v-2l2.646-2.354a.5.5 0 01.63-.062l2.66 1.773 3.71-3.71z"
+      />
+      <path
+        clip-rule="evenodd"
+        d="M4.502 7a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+        fill-rule="evenodd"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Molecules/Upload image Upload Image Example 1`] = `
+<div
+  class="sc-hhOBVt bILagF"
+>
+  <label
+    class="upload-image__label"
+  >
+    Featured Image
+  </label>
+  <button
+    class="sc-dkrFOg eidQVA"
+    type="button"
+  >
+    Upload an Image
+  </button>
+  <input
+    accept="image/*"
+    data-testid="image-uploader"
+    style="display: none;"
+    type="file"
+  />
+</div>
+`;
+
+exports[`Storyshots Organisms/Article Feed Article Feed Empty 1`] = `
+<div
+  class="sc-cjibBx kQpBEM article-feed"
+>
+  <h1
+    class="article-feed__heading"
+  >
+    Recent articles
+  </h1>
+  <div
+    class="article-feed__articles"
+  >
+    <div
+      class="sc-gYbzsP jKxowL"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Organisms/Article Feed Article Feed Full 1`] = `
+<div
+  class="sc-cjibBx kQpBEM article-feed"
+>
+  <h1
+    class="article-feed__heading"
+  >
+    Recent articles
+  </h1>
+  <div
+    class="article-feed__articles"
+  >
+    <div
+      class="sc-cCjUiG RwuMG"
+    >
+      <h3>
+        No Articles to show
+      </h3>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Organisms/Article Feed Article Feed Loading 1`] = `
+<div
+  class="sc-cjibBx kQpBEM article-feed"
+>
+  <h1
+    class="article-feed__heading"
+  >
+    Recent articles
+  </h1>
+  <div
+    class="article-feed__articles"
+  >
+    <div
+      class="sc-cCjUiG RwuMG"
+    >
+      <div
+        aria-busy="true"
+        aria-label="three-dots-loading"
+        data-testid="three-dots-loading"
+        role="status"
+        style="display: flex;"
+      >
+        <svg
+          data-testid="three-dots-svg"
+          fill="#007BFF"
+          height="80"
+          viewBox="0 0 120 30"
+          width="80"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="15"
+            cy="15"
+            r="15"
+          >
+            <animate
+              attributeName="r"
+              begin="0s"
+              calcMode="linear"
+              dur="0.8s"
+              from="15"
+              repeatCount="indefinite"
+              to="15"
+              values="15;9;15"
+            />
+            <animate
+              attributeName="fill-opacity"
+              begin="0s"
+              calcMode="linear"
+              dur="0.8s"
+              from="1"
+              repeatCount="indefinite"
+              to="1"
+              values="1;.5;1"
+            />
+          </circle>
+          <circle
+            attributeName="fill-opacity"
+            cx="60"
+            cy="15"
+            from="1"
+            r="9"
+            to="0.3"
+          >
+            <animate
+              attributeName="r"
+              begin="0s"
+              calcMode="linear"
+              dur="0.8s"
+              from="9"
+              repeatCount="indefinite"
+              to="9"
+              values="9;15;9"
+            />
+            <animate
+              attributeName="fill-opacity"
+              begin="0s"
+              calcMode="linear"
+              dur="0.8s"
+              from="0.5"
+              repeatCount="indefinite"
+              to="0.5"
+              values=".5;1;.5"
+            />
+          </circle>
+          <circle
+            cx="105"
+            cy="15"
+            r="15"
+          >
+            <animate
+              attributeName="r"
+              begin="0s"
+              calcMode="linear"
+              dur="0.8s"
+              from="15"
+              repeatCount="indefinite"
+              to="15"
+              values="15;9;15"
+            />
+            <animate
+              attributeName="fill-opacity"
+              begin="0s"
+              calcMode="linear"
+              dur="0.8s"
+              from="1"
+              repeatCount="indefinite"
+              to="1"
+              values="1;.5;1"
+            />
+          </circle>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Organisms/Discussion Discussion Example 1`] = `
+<div
+  class="sc-cabOPr discussion"
+>
+  <form
+    class="sc-lllmON fHSFzn"
+  >
+    <img
+      alt="fallback user avatar"
+      class="sc-kDvujY bWcqhu avatar"
+      src="[object Object]"
+    />
+    <textarea
+      class="sc-eDvSVe kbEInC"
+      name="comment"
+      placeholder="Join the discussion"
+      rows="1"
+    />
+    <span
+      class="sc-ipEyDJ CPuoT"
+    />
+  </form>
+  <div
+    class="sc-jcMfQk eEbqzO"
+  >
+    <div
+      class="sc-cwSeag hymJvK comment"
+    >
+      <img
+        alt="fallback user avatar"
+        class="sc-kDvujY bWcqhu avatar"
+        src="[object Object]"
+      />
+      <h5
+        class="comment__author"
+      >
+        Lily Hawkins
+      </h5>
+      <span
+        class="comment__time-diff label"
+      >
+        1 year ago
+      </span>
+      <p
+        class="comment__text"
+      >
+        You see, wire telegraph is a kind of a very, very long cat. You pull his tail in New York and his head is meowing in Los Angeles. Do you understand this? And radio operates exactly the same way: you send signals here, they receive them there. The only difference is that there is no cat.
+      </p>
+      <div
+        class="sc-iveFHk TOAlm comment__voting-counter"
+      >
+        <span
+          data-testid="reactionCounter"
+        >
+          +
+          4
+        </span>
+        <button
+          aria-label="vote-up"
+        >
+          <svg
+            fill="currentColor"
+            height="100%"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            width="100%"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 10.828l-4.95 4.95-1.414-1.414L12 8l6.364 6.364-1.414 1.414z"
+              />
+            </g>
+          </svg>
+        </button>
+        <button
+          aria-label="vote-down"
+        >
+          <svg
+            fill="currentColor"
+            height="100%"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            width="100%"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"
+              />
+            </g>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div
+      class="sc-cwSeag hymJvK comment"
+    >
+      <img
+        alt="fallback user avatar"
+        class="sc-kDvujY bWcqhu avatar"
+        src="[object Object]"
+      />
+      <h5
+        class="comment__author"
+      >
+        Priscilla Simmmons
+      </h5>
+      <span
+        class="comment__time-diff label"
+      >
+        1 year ago
+      </span>
+      <p
+        class="comment__text"
+      >
+        In its flawless grace and superior self-sufficiency I have seen a symbol of the perfect beauty and bland impersonality of the universe itself, objectively considered, and in its air of silent mystery there resides for me all the wonder and fascination of the unknown
+      </p>
+      <div
+        class="sc-iveFHk TOAlm comment__voting-counter"
+      >
+        <span
+          data-testid="reactionCounter"
+        >
+          +
+          6
+        </span>
+        <button
+          aria-label="vote-up"
+        >
+          <svg
+            fill="currentColor"
+            height="100%"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            width="100%"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 10.828l-4.95 4.95-1.414-1.414L12 8l6.364 6.364-1.414 1.414z"
+              />
+            </g>
+          </svg>
+        </button>
+        <button
+          aria-label="vote-down"
+        >
+          <svg
+            fill="currentColor"
+            height="100%"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            width="100%"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"
+              />
+            </g>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div
+      class="sc-cwSeag hymJvK comment"
+    >
+      <img
+        alt="fallback user avatar"
+        class="sc-kDvujY bWcqhu avatar"
+        src="[object Object]"
+      />
+      <h5
+        class="comment__author"
+      >
+        Pat Miles
+      </h5>
+      <span
+        class="comment__time-diff label"
+      >
+        1 year ago
+      </span>
+      <p
+        class="comment__text"
+      >
+        I regard cats as one of the great joys in the world. I see them as a gift of highest order
+      </p>
+      <div
+        class="sc-iveFHk TOAlm comment__voting-counter"
+      >
+        <span
+          data-testid="reactionCounter"
+        >
+          +
+          9
+        </span>
+        <button
+          aria-label="vote-up"
+        >
+          <svg
+            fill="currentColor"
+            height="100%"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            width="100%"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 10.828l-4.95 4.95-1.414-1.414L12 8l6.364 6.364-1.414 1.414z"
+              />
+            </g>
+          </svg>
+        </button>
+        <button
+          aria-label="vote-down"
+        >
+          <svg
+            fill="currentColor"
+            height="100%"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            width="100%"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"
+              />
+            </g>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Organisms/Forms Create New Article Form Example 1`] = `null`;
+
+exports[`Storyshots Organisms/Forms Login Form Example 1`] = `
+<form
+  class="sc-gKPRtg jfweml"
+>
+  <h3>
+    Log In
+  </h3>
+  <div
+    class="sc-jSUZER dqJJqp"
+  >
+    <label
+      for="Email"
+    >
+      Email
+    </label>
+    <input
+      class="sc-hLBbgP fFQznY"
+      id="Email"
+      placeholder="me@example.com"
+      type="email"
+      value=""
+    />
+  </div>
+  <div
+    class="sc-jSUZER dqJJqp"
+  >
+    <label
+      for="Password"
+    >
+      Password
+    </label>
+    <input
+      class="sc-hLBbgP fFQznY"
+      id="Password"
+      placeholder="Enter the password"
+      type="password"
+      value=""
+    />
+  </div>
+  <span
+    class="error"
+  />
+  <button
+    class="sc-dkrFOg eidQVA"
+    type="submit"
+  >
+    Log In
+  </button>
+</form>
+`;
+
+exports[`Storyshots Organisms/My Articles My Articles Table Example 1`] = `
+<div
+  class="sc-cUEOzv hTsJtK"
+>
+  <div
+    class="sc-dIfARi ckvMSP"
+  >
+    <h1>
+      My Articles
+    </h1>
+    <a
+      class="sc-dkrFOg sc-csuSiG eidQVA gBuZIb"
+      colortheme="primary"
+      href="/admin/create-article"
+    >
+      Create new article
+    </a>
+  </div>
+  <form
+    class="sc-eeMvmM iUIxVX"
+  >
+    <table
+      class="sc-iAEawV jWvvoG"
+    >
+      <tr
+        class="sc-jrcTuL ikvuNf edit-article"
+      >
+        <th
+          class="edit-article__checkbox"
+        >
+          <div
+            class="sc-ftTHYK bpCbn"
+          >
+            <input
+              class="sc-iBYQkv jkxsjj"
+              type="checkbox"
+            />
+          </div>
+        </th>
+        <th
+          class="edit-article__title"
+        >
+          <button
+            class="sc-bcXHqe ffhSDA"
+          >
+            <span>
+              Article title
+            </span>
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 320 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+              />
+            </svg>
+          </button>
+        </th>
+        <th
+          class="edit-article__perex"
+        >
+          <button
+            class="sc-bcXHqe ffhSDA"
+          >
+            <span>
+              Perex
+            </span>
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 320 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+              />
+            </svg>
+          </button>
+        </th>
+        <th
+          class="edit-article__author"
+        >
+          <button
+            class="sc-bcXHqe ffhSDA"
+          >
+            <span>
+              Author
+            </span>
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 320 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+              />
+            </svg>
+          </button>
+        </th>
+        <th
+          class="edit-article__nr-comments"
+        >
+          <button
+            class="sc-bcXHqe ffhSDA"
+          >
+            <span>
+              # comments
+            </span>
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 320 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+              />
+            </svg>
+          </button>
+        </th>
+        <th
+          class="edit-article__actions-container"
+        >
+          Actions
+        </th>
+      </tr>
+      <div
+        class="sc-cCjUiG sc-iTFTee RwuMG ehOSMC"
+      >
+        <div
+          aria-busy="true"
+          aria-label="three-dots-loading"
+          data-testid="three-dots-loading"
+          role="status"
+          style="display: flex;"
+        >
+          <svg
+            data-testid="three-dots-svg"
+            fill="#007BFF"
+            height="80"
+            viewBox="0 0 120 30"
+            width="80"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="15"
+              cy="15"
+              r="15"
+            >
+              <animate
+                attributeName="r"
+                begin="0s"
+                calcMode="linear"
+                dur="0.8s"
+                from="15"
+                repeatCount="indefinite"
+                to="15"
+                values="15;9;15"
+              />
+              <animate
+                attributeName="fill-opacity"
+                begin="0s"
+                calcMode="linear"
+                dur="0.8s"
+                from="1"
+                repeatCount="indefinite"
+                to="1"
+                values="1;.5;1"
+              />
+            </circle>
+            <circle
+              attributeName="fill-opacity"
+              cx="60"
+              cy="15"
+              from="1"
+              r="9"
+              to="0.3"
+            >
+              <animate
+                attributeName="r"
+                begin="0s"
+                calcMode="linear"
+                dur="0.8s"
+                from="9"
+                repeatCount="indefinite"
+                to="9"
+                values="9;15;9"
+              />
+              <animate
+                attributeName="fill-opacity"
+                begin="0s"
+                calcMode="linear"
+                dur="0.8s"
+                from="0.5"
+                repeatCount="indefinite"
+                to="0.5"
+                values=".5;1;.5"
+              />
+            </circle>
+            <circle
+              cx="105"
+              cy="15"
+              r="15"
+            >
+              <animate
+                attributeName="r"
+                begin="0s"
+                calcMode="linear"
+                dur="0.8s"
+                from="15"
+                repeatCount="indefinite"
+                to="15"
+                values="15;9;15"
+              />
+              <animate
+                attributeName="fill-opacity"
+                begin="0s"
+                calcMode="linear"
+                dur="0.8s"
+                from="1"
+                repeatCount="indefinite"
+                to="1"
+                values="1;.5;1"
+              />
+            </circle>
+          </svg>
+        </div>
+      </div>
+    </table>
+  </form>
+</div>
+`;
+
+exports[`Storyshots Organisms/Related Articles section Related Articles Section 1`] = `
+<div
+  class="sc-cOxWqc hYKRqd related-articles"
+>
+  <h3>
+    Related Articles
+  </h3>
+  <div
+    class="related-articles__articles"
+  >
+    <a
+      class="sc-fLcnxK jQEWha"
+      href="/articles/641421a4-1044-4649-bd56-8320516edda0"
+    >
+      <h5>
+        Wet vs. Dry Cat Food: Which is Better?
+      </h5>
+      <p>
+        A cat's whiskers — or vibrissae — are a well-honed sensory tool that helps a cat see in the dark and steer clear of hungry predators. Whiskers are highly ...
+      </p>
+    </a>
+    <a
+      class="sc-fLcnxK jQEWha"
+      href="/articles/9d3e5b4f-5c18-44cc-bba7-c0bcd7e75d1b"
+    >
+      <h5>
+        How Much Wet Food Should I Feed My Cat?
+      </h5>
+      <p>
+        If you aren’t sure how much wet food you should feed your cat, Purina’s expert nutritionists can help. Plus, they offer guidance on food safety and provide ser...
+      </p>
+    </a>
+    <a
+      class="sc-fLcnxK jQEWha"
+      href="/articles/28c6141f-30a1-4d16-9274-2cf0b81e204a"
+    >
+      <h5>
+        Do Cats Drink Water? Cat Hydration & Dehydration Prevention
+      </h5>
+      <p>
+        Do cats drink water? Yes, like humans and many other animals, cats need water to survive. Many cats don’t drink as much as they should, though. Find out w...
+      </p>
+    </a>
+    <a
+      class="sc-fLcnxK jQEWha"
+      href="/articles/207283b6-c545-4702-b217-9b6b2e1aeb51"
+    >
+      <h5>
+        What Is the Difference Between Natural and Organic Cat Food?
+      </h5>
+      <p>
+        If you prefer your own diet to be natural or organic, you’re probably considering feeding your cat a natural or organic cat food, too. What’s the difference betw...
+      </p>
+    </a>
+    <a
+      class="sc-fLcnxK jQEWha"
+      href="/articles/e52a7ac3-0b87-4399-9ae9-b913ea5daa35"
+    >
+      <h5>
+        Why Do Cats Have Whiskers?
+      </h5>
+      <p>
+        A cat's whiskers — or vibrissae — are a well-honed sensory tool that helps a cat see in the dark and steer clear of hungry predators. Whiskers are highly sensitive tactile hairs that grow in patterns on a cat's muzzle, a...
+      </p>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Organisms/Top NavBar Desktop Nav Bar 1`] = `
+<header
+  class="sc-AHaJN eqtcyd TopNavbar"
+>
+  <div
+    class="TopNavbar__container"
+  >
+    <div
+      class="TopNavbar__sub-container"
+    >
+      <img
+        alt="cat logo"
+        height="40px"
+        src="[object Object]"
+      />
+       
+      <nav
+        class="sc-khsqcC dyVfPE"
+      >
+        <a
+          aria-current="page"
+          class="sc-eDWCr jqstjY"
+          href="/"
+          variant="classic"
+        >
+          Recent Articles
+        </a>
+        <a
+          class="sc-eDWCr jqstjY"
+          href="/about"
+          variant="classic"
+        >
+          About
+        </a>
+      </nav>
+    </div>
+    <div
+      class="TopNavbar__sub-container"
+    >
+      <a
+        class="sc-ksBlkl fxuheE login-link"
+        href="/login"
+      >
+        <span>
+          Login
+        </span>
+        <svg
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          style="transform: rotate(180deg);"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10 19l-7-7m0 0l7-7m-7 7h18"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          />
+        </svg>
+      </a>
+    </div>
+  </div>
+</header>
+`;
+
+exports[`Storyshots Organisms/Top NavBar Mobile Nav Bar 1`] = `
+<header
+  class="sc-AHaJN hQjJqd TopNavbar"
+>
+  <div
+    class="TopNavbar__container"
+  >
+    <img
+      alt="cat logo"
+      height="40px"
+      src="[object Object]"
+    />
+    <button
+      class="sc-gswNZR etuPxW"
+    >
+      <svg
+        fill="none"
+        height="20px"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 24 24"
+        width="20px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M2 6C2 5.44772 2.44772 5 3 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6Z"
+          fill="currentColor"
+        />
+        <path
+          d="M2 12.0322C2 11.4799 2.44772 11.0322 3 11.0322H21C21.5523 11.0322 22 11.4799 22 12.0322C22 12.5845 21.5523 13.0322 21 13.0322H3C2.44772 13.0322 2 12.5845 2 12.0322Z"
+          fill="currentColor"
+        />
+        <path
+          d="M3 17.0645C2.44772 17.0645 2 17.5122 2 18.0645C2 18.6167 2.44772 19.0645 3 19.0645H21C21.5523 19.0645 22 18.6167 22 18.0645C22 17.5122 21.5523 17.0645 21 17.0645H3Z"
+          fill="currentColor"
+        />
+      </svg>
+    </button>
+    <div
+      class="sc-bYMpWt keHlGM mobile-menu"
+      data-testid="mobileMenu"
+    >
+      <div
+        class="mobile-menu__help-div"
+      >
+        <button
+          class="sc-ilhmMj jwrvIN"
+        >
+          <svg
+            fill="currentColor"
+            height="20px"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            width="20px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3,3 L21,21 M3,21 L21,3"
+              fill="none"
+              stroke="#000"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+        <nav
+          class="sc-kMjNwy jynmrM"
+        >
+          <a
+            class="sc-eDWCr sc-bqWxrE RmwYw cxjsvH"
+          >
+            Recent articles
+          </a>
+          <a
+            class="sc-eDWCr sc-bqWxrE RmwYw cxjsvH"
+          >
+            About
+          </a>
+        </nav>
+        <a
+          class="sc-ksBlkl fxuheE login-link"
+          href="/login"
+        >
+          <span>
+            Login
+          </span>
+          <svg
+            fill="none"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            style="transform: rotate(180deg);"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 19l-7-7m0 0l7-7m-7 7h18"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+`;
+
+exports[`Storyshots Organisms/Top NavBar Tablet Nav Bar 1`] = `
+<header
+  class="sc-AHaJN eqtcyd TopNavbar"
+>
+  <div
+    class="TopNavbar__container"
+  >
+    <img
+      alt="cat logo"
+      height="40px"
+      src="[object Object]"
+    />
+    <div
+      class="TopNavbar__sub-container"
+    >
+      <nav
+        class="sc-khsqcC dyVfPE"
+      >
+        <a
+          aria-current="page"
+          class="sc-eDWCr jqstjY"
+          href="/"
+          variant="classic"
+        >
+          Recent Articles
+        </a>
+        <a
+          class="sc-eDWCr jqstjY"
+          href="/about"
+          variant="classic"
+        >
+          About
+        </a>
+      </nav>
+      <a
+        class="sc-ksBlkl fxuheE login-link"
+        href="/login"
+      >
+        <span>
+          Login
+        </span>
+        <svg
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          style="transform: rotate(180deg);"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10 19l-7-7m0 0l7-7m-7 7h18"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          />
+        </svg>
+      </a>
+    </div>
+  </div>
+</header>
+`;
+
+exports[`Storyshots Pages/Admin pages Create New Article 1`] = `
+<div
+  class="sc-lbVpMG jDhGcb"
+>
+  <header
+    class="sc-AHaJN eqtcyd TopNavbar"
+  >
+    <div
+      class="TopNavbar__container"
+    >
+      <div
+        class="TopNavbar__sub-container"
+      >
+        <img
+          alt="cat logo"
+          height="40px"
+          src="[object Object]"
+        />
+         
+        <nav
+          class="sc-khsqcC dyVfPE"
+        >
+          <a
+            aria-current="page"
+            class="sc-eDWCr jqstjY"
+            href="/"
+            variant="classic"
+          >
+            Recent Articles
+          </a>
+          <a
+            class="sc-eDWCr jqstjY"
+            href="/about"
+            variant="classic"
+          >
+            About
+          </a>
+        </nav>
+      </div>
+      <div
+        class="TopNavbar__sub-container"
+      >
+        <a
+          class="sc-ksBlkl fxuheE login-link"
+          href="/login"
+        >
+          <span>
+            Login
+          </span>
+          <svg
+            fill="none"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            style="transform: rotate(180deg);"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 19l-7-7m0 0l7-7m-7 7h18"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+  <div
+    class="sc-jfTVlA dCZcY"
+  >
+    <form
+      class="sc-jOiSOi cbRjMX"
+    >
+      <div
+        class="sc-dIfARi ckvMSP"
+      >
+        <h1>
+          Create new article
+        </h1>
+        <button
+          class="sc-dkrFOg eidQVA"
+          type="submit"
+        >
+          Publish article
+        </button>
+      </div>
+      <div>
+        <div
+          class="sc-jSUZER dqJJqp"
+        >
+          <label
+            for="Article title"
+          >
+            Article title
+          </label>
+          <input
+            class="sc-hLBbgP fFQznY"
+            id="Article title"
+            placeholder="My new article"
+            value=""
+          />
+        </div>
+        <span
+          class="sc-ipEyDJ CPuoT"
+        />
+      </div>
+      <div>
+        <div
+          class="sc-hhOBVt bILagF"
+        >
+          <label
+            class="upload-image__label"
+          >
+            Featured Image
+          </label>
+          <button
+            class="sc-dkrFOg eidQVA"
+            type="button"
+          >
+            Upload an Image
+          </button>
+          <input
+            accept="image/*"
+            data-testid="image-uploader"
+            style="display: none;"
+            type="file"
+          />
+        </div>
+        <span
+          class="sc-ipEyDJ CPuoT"
+        />
+      </div>
+      <div>
+        <div
+          id="simplemde-editor-3-wrapper"
+        >
+          <textarea
+            id="simplemde-editor-3"
+            placeholder="Supports markdown. Yay!"
+            style="display: none;"
+          />
+          <div
+            class="EasyMDEContainer"
+            role="application"
+          >
+            <div
+              class="editor-toolbar"
+              role="toolbar"
+            >
+              <button
+                aria-label="Bold"
+                class="bold"
+                tabindex="-1"
+                title="Bold (Ctrl-B)"
+                type="button"
+              >
+                <i
+                  class="fa fa-bold"
+                />
+              </button>
+              <button
+                aria-label="Italic"
+                class="italic"
+                tabindex="-1"
+                title="Italic (Ctrl-I)"
+                type="button"
+              >
+                <i
+                  class="fa fa-italic"
+                />
+              </button>
+              <button
+                aria-label="Heading"
+                class="heading"
+                tabindex="-1"
+                title="Heading (Ctrl-H)"
+                type="button"
+              >
+                <i
+                  class="fa fa-header fa-heading"
+                />
+              </button>
+              <i
+                class="separator"
+              >
+                |
+              </i>
+              <button
+                aria-label="Quote"
+                class="quote"
+                tabindex="-1"
+                title="Quote (Ctrl-')"
+                type="button"
+              >
+                <i
+                  class="fa fa-quote-left"
+                />
+              </button>
+              <button
+                aria-label="Generic List"
+                class="unordered-list"
+                tabindex="-1"
+                title="Generic List (Ctrl-L)"
+                type="button"
+              >
+                <i
+                  class="fa fa-list-ul"
+                />
+              </button>
+              <button
+                aria-label="Numbered List"
+                class="ordered-list"
+                tabindex="-1"
+                title="Numbered List (Ctrl-Alt-L)"
+                type="button"
+              >
+                <i
+                  class="fa fa-list-ol"
+                />
+              </button>
+              <i
+                class="separator"
+              >
+                |
+              </i>
+              <button
+                aria-label="Create Link"
+                class="link"
+                tabindex="-1"
+                title="Create Link (Ctrl-K)"
+                type="button"
+              >
+                <i
+                  class="fa fa-link"
+                />
+              </button>
+              <button
+                aria-label="Insert Image"
+                class="image"
+                tabindex="-1"
+                title="Insert Image (Ctrl-Alt-I)"
+                type="button"
+              >
+                <i
+                  class="fa fa-image"
+                />
+              </button>
+              <i
+                class="separator"
+              >
+                |
+              </i>
+              <button
+                aria-label="Toggle Preview"
+                class="preview no-disable"
+                tabindex="-1"
+                title="Toggle Preview (Ctrl-P)"
+                type="button"
+              >
+                <i
+                  class="fa fa-eye"
+                />
+              </button>
+              <button
+                aria-label="Toggle Side by Side"
+                class="side-by-side no-disable no-mobile"
+                tabindex="-1"
+                title="Toggle Side by Side (F9)"
+                type="button"
+              >
+                <i
+                  class="fa fa-columns"
+                />
+              </button>
+              <button
+                aria-label="Toggle Fullscreen"
+                class="fullscreen no-disable no-mobile"
+                tabindex="-1"
+                title="Toggle Fullscreen (F11)"
+                type="button"
+              >
+                <i
+                  class="fa fa-arrows-alt"
+                />
+              </button>
+              <i
+                class="separator"
+              >
+                |
+              </i>
+              <button
+                aria-label="Markdown Guide"
+                class="guide no-disable"
+                tabindex="-1"
+                title="Markdown Guide"
+                type="button"
+              >
+                <i
+                  class="fa fa-question-circle"
+                />
+              </button>
+            </div>
+            <div
+              class="CodeMirror cm-s-easymde CodeMirror-wrap CodeMirror-empty"
+              translate="no"
+            >
+              <div
+                style="overflow: hidden; position: relative; width: 3px; height: 0px;"
+              >
+                <textarea
+                  autocapitalize="off"
+                  autocorrect="off"
+                  spellcheck="false"
+                  style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; min-height: 1em; outline: none;"
+                  tabindex="0"
+                />
+              </div>
+              <div
+                class="CodeMirror-vscrollbar"
+                cm-not-content="true"
+                tabindex="-1"
+              >
+                <div
+                  style="min-width: 1px;"
+                />
+              </div>
+              <div
+                class="CodeMirror-hscrollbar"
+                cm-not-content="true"
+                tabindex="-1"
+              >
+                <div
+                  style="height: 100%; min-height: 1px;"
+                />
+              </div>
+              <div
+                class="CodeMirror-scrollbar-filler"
+                cm-not-content="true"
+              />
+              <div
+                class="CodeMirror-gutter-filler"
+                cm-not-content="true"
+              />
+              <div
+                class="CodeMirror-scroll"
+                style="min-height: 300px;"
+                tabindex="-1"
+              >
+                <div
+                  class="CodeMirror-sizer"
+                  style="margin-left: 0px;"
+                >
+                  <div
+                    style="position: relative;"
+                  >
+                    <div
+                      class="CodeMirror-lines"
+                      role="presentation"
+                    >
+                      <div
+                        role="presentation"
+                        style="position: relative; outline: none;"
+                      >
+                        <pre
+                          class="CodeMirror-placeholder CodeMirror-line-like"
+                          style="height: 0px; overflow: visible; direction: ltr;"
+                        >
+                          Supports markdown. Yay!
+                        </pre>
+                        <div
+                          class="CodeMirror-measure"
+                        >
+                          <pre
+                            class="CodeMirror-line-like"
+                          >
+                            <span>
+                              xxxxxxxxxx
+                            </span>
+                          </pre>
+                        </div>
+                        <div
+                          class="CodeMirror-measure"
+                        />
+                        <div
+                          style="position: relative; z-index: 1;"
+                        />
+                        <div
+                          class="CodeMirror-cursors"
+                        />
+                        <div
+                          class="CodeMirror-code"
+                          role="presentation"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="position: absolute; height: 50px; width: 1px;"
+                />
+                <div
+                  class="CodeMirror-gutters"
+                  style="display: none;"
+                />
+              </div>
+            </div>
+            <div
+              class="editor-preview-side editor-preview"
+            />
+            <div
+              class="editor-statusbar"
+            >
+              <span
+                class="autosave"
+              />
+              <span
+                class="lines"
+              >
+                1
+              </span>
+              <span
+                class="words"
+              >
+                0
+              </span>
+              <span
+                class="cursor"
+              >
+                1:1
+              </span>
+            </div>
+          </div>
+        </div>
+        <span
+          class="sc-ipEyDJ CPuoT"
+        />
+      </div>
+    </form>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Pages/Admin pages Edit Article 1`] = `
+<div
+  class="sc-lbVpMG jDhGcb"
+>
+  <header
+    class="sc-AHaJN eqtcyd TopNavbar"
+  >
+    <div
+      class="TopNavbar__container"
+    >
+      <div
+        class="TopNavbar__sub-container"
+      >
+        <img
+          alt="cat logo"
+          height="40px"
+          src="[object Object]"
+        />
+         
+        <nav
+          class="sc-khsqcC dyVfPE"
+        >
+          <a
+            aria-current="page"
+            class="sc-eDWCr jqstjY"
+            href="/"
+            variant="classic"
+          >
+            Recent Articles
+          </a>
+          <a
+            class="sc-eDWCr jqstjY"
+            href="/about"
+            variant="classic"
+          >
+            About
+          </a>
+        </nav>
+      </div>
+      <div
+        class="TopNavbar__sub-container"
+      >
+        <a
+          class="sc-ksBlkl fxuheE login-link"
+          href="/login"
+        >
+          <span>
+            Login
+          </span>
+          <svg
+            fill="none"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            style="transform: rotate(180deg);"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 19l-7-7m0 0l7-7m-7 7h18"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+  <div
+    class="sc-jfTVlA dCZcY"
+  >
+    <form
+      class="sc-jOiSOi cbRjMX"
+    >
+      <div
+        class="sc-dIfARi ckvMSP"
+      >
+        <h1>
+          Create new article
+        </h1>
+        <button
+          class="sc-dkrFOg eidQVA"
+          type="submit"
+        >
+          Publish article
+        </button>
+      </div>
+      <div>
+        <div
+          class="sc-jSUZER dqJJqp"
+        >
+          <label
+            for="Article title"
+          >
+            Article title
+          </label>
+          <input
+            class="sc-hLBbgP fFQznY"
+            id="Article title"
+            placeholder="My new article"
+            value=""
+          />
+        </div>
+        <span
+          class="sc-ipEyDJ CPuoT"
+        />
+      </div>
+      <div>
+        <div
+          class="sc-hhOBVt bILagF"
+        >
+          <label
+            class="upload-image__label"
+          >
+            Featured Image
+          </label>
+          <button
+            class="sc-dkrFOg eidQVA"
+            type="button"
+          >
+            Upload an Image
+          </button>
+          <input
+            accept="image/*"
+            data-testid="image-uploader"
+            style="display: none;"
+            type="file"
+          />
+        </div>
+        <span
+          class="sc-ipEyDJ CPuoT"
+        />
+      </div>
+      <div>
+        <div
+          id="simplemde-editor-4-wrapper"
+        >
+          <textarea
+            id="simplemde-editor-4"
+            placeholder="Supports markdown. Yay!"
+            style="display: none;"
+          />
+          <div
+            class="EasyMDEContainer"
+            role="application"
+          >
+            <div
+              class="editor-toolbar"
+              role="toolbar"
+            >
+              <button
+                aria-label="Bold"
+                class="bold"
+                tabindex="-1"
+                title="Bold (Ctrl-B)"
+                type="button"
+              >
+                <i
+                  class="fa fa-bold"
+                />
+              </button>
+              <button
+                aria-label="Italic"
+                class="italic"
+                tabindex="-1"
+                title="Italic (Ctrl-I)"
+                type="button"
+              >
+                <i
+                  class="fa fa-italic"
+                />
+              </button>
+              <button
+                aria-label="Heading"
+                class="heading"
+                tabindex="-1"
+                title="Heading (Ctrl-H)"
+                type="button"
+              >
+                <i
+                  class="fa fa-header fa-heading"
+                />
+              </button>
+              <i
+                class="separator"
+              >
+                |
+              </i>
+              <button
+                aria-label="Quote"
+                class="quote"
+                tabindex="-1"
+                title="Quote (Ctrl-')"
+                type="button"
+              >
+                <i
+                  class="fa fa-quote-left"
+                />
+              </button>
+              <button
+                aria-label="Generic List"
+                class="unordered-list"
+                tabindex="-1"
+                title="Generic List (Ctrl-L)"
+                type="button"
+              >
+                <i
+                  class="fa fa-list-ul"
+                />
+              </button>
+              <button
+                aria-label="Numbered List"
+                class="ordered-list"
+                tabindex="-1"
+                title="Numbered List (Ctrl-Alt-L)"
+                type="button"
+              >
+                <i
+                  class="fa fa-list-ol"
+                />
+              </button>
+              <i
+                class="separator"
+              >
+                |
+              </i>
+              <button
+                aria-label="Create Link"
+                class="link"
+                tabindex="-1"
+                title="Create Link (Ctrl-K)"
+                type="button"
+              >
+                <i
+                  class="fa fa-link"
+                />
+              </button>
+              <button
+                aria-label="Insert Image"
+                class="image"
+                tabindex="-1"
+                title="Insert Image (Ctrl-Alt-I)"
+                type="button"
+              >
+                <i
+                  class="fa fa-image"
+                />
+              </button>
+              <i
+                class="separator"
+              >
+                |
+              </i>
+              <button
+                aria-label="Toggle Preview"
+                class="preview no-disable"
+                tabindex="-1"
+                title="Toggle Preview (Ctrl-P)"
+                type="button"
+              >
+                <i
+                  class="fa fa-eye"
+                />
+              </button>
+              <button
+                aria-label="Toggle Side by Side"
+                class="side-by-side no-disable no-mobile"
+                tabindex="-1"
+                title="Toggle Side by Side (F9)"
+                type="button"
+              >
+                <i
+                  class="fa fa-columns"
+                />
+              </button>
+              <button
+                aria-label="Toggle Fullscreen"
+                class="fullscreen no-disable no-mobile"
+                tabindex="-1"
+                title="Toggle Fullscreen (F11)"
+                type="button"
+              >
+                <i
+                  class="fa fa-arrows-alt"
+                />
+              </button>
+              <i
+                class="separator"
+              >
+                |
+              </i>
+              <button
+                aria-label="Markdown Guide"
+                class="guide no-disable"
+                tabindex="-1"
+                title="Markdown Guide"
+                type="button"
+              >
+                <i
+                  class="fa fa-question-circle"
+                />
+              </button>
+            </div>
+            <div
+              class="CodeMirror cm-s-easymde CodeMirror-wrap CodeMirror-empty"
+              translate="no"
+            >
+              <div
+                style="overflow: hidden; position: relative; width: 3px; height: 0px;"
+              >
+                <textarea
+                  autocapitalize="off"
+                  autocorrect="off"
+                  spellcheck="false"
+                  style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; min-height: 1em; outline: none;"
+                  tabindex="0"
+                />
+              </div>
+              <div
+                class="CodeMirror-vscrollbar"
+                cm-not-content="true"
+                tabindex="-1"
+              >
+                <div
+                  style="min-width: 1px;"
+                />
+              </div>
+              <div
+                class="CodeMirror-hscrollbar"
+                cm-not-content="true"
+                tabindex="-1"
+              >
+                <div
+                  style="height: 100%; min-height: 1px;"
+                />
+              </div>
+              <div
+                class="CodeMirror-scrollbar-filler"
+                cm-not-content="true"
+              />
+              <div
+                class="CodeMirror-gutter-filler"
+                cm-not-content="true"
+              />
+              <div
+                class="CodeMirror-scroll"
+                style="min-height: 300px;"
+                tabindex="-1"
+              >
+                <div
+                  class="CodeMirror-sizer"
+                  style="margin-left: 0px;"
+                >
+                  <div
+                    style="position: relative;"
+                  >
+                    <div
+                      class="CodeMirror-lines"
+                      role="presentation"
+                    >
+                      <div
+                        role="presentation"
+                        style="position: relative; outline: none;"
+                      >
+                        <pre
+                          class="CodeMirror-placeholder CodeMirror-line-like"
+                          style="height: 0px; overflow: visible; direction: ltr;"
+                        >
+                          Supports markdown. Yay!
+                        </pre>
+                        <div
+                          class="CodeMirror-measure"
+                        >
+                          <pre
+                            class="CodeMirror-line-like"
+                          >
+                            <span>
+                              xxxxxxxxxx
+                            </span>
+                          </pre>
+                        </div>
+                        <div
+                          class="CodeMirror-measure"
+                        />
+                        <div
+                          style="position: relative; z-index: 1;"
+                        />
+                        <div
+                          class="CodeMirror-cursors"
+                        />
+                        <div
+                          class="CodeMirror-code"
+                          role="presentation"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  style="position: absolute; height: 50px; width: 1px;"
+                />
+                <div
+                  class="CodeMirror-gutters"
+                  style="display: none;"
+                />
+              </div>
+            </div>
+            <div
+              class="editor-preview-side editor-preview"
+            />
+            <div
+              class="editor-statusbar"
+            >
+              <span
+                class="autosave"
+              />
+              <span
+                class="lines"
+              >
+                1
+              </span>
+              <span
+                class="words"
+              >
+                0
+              </span>
+              <span
+                class="cursor"
+              >
+                1:1
+              </span>
+            </div>
+          </div>
+        </div>
+        <span
+          class="sc-ipEyDJ CPuoT"
+        />
+      </div>
+    </form>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Pages/Admin pages My Articles 1`] = `
+<div
+  class="sc-lbVpMG jDhGcb"
+>
+  <header
+    class="sc-AHaJN eqtcyd TopNavbar"
+  >
+    <div
+      class="TopNavbar__container"
+    >
+      <div
+        class="TopNavbar__sub-container"
+      >
+        <img
+          alt="cat logo"
+          height="40px"
+          src="[object Object]"
+        />
+         
+        <nav
+          class="sc-khsqcC dyVfPE"
+        >
+          <a
+            aria-current="page"
+            class="sc-eDWCr jqstjY"
+            href="/"
+            variant="classic"
+          >
+            Recent Articles
+          </a>
+          <a
+            class="sc-eDWCr jqstjY"
+            href="/about"
+            variant="classic"
+          >
+            About
+          </a>
+        </nav>
+      </div>
+      <div
+        class="TopNavbar__sub-container"
+      >
+        <a
+          class="sc-ksBlkl fxuheE login-link"
+          href="/login"
+        >
+          <span>
+            Login
+          </span>
+          <svg
+            fill="none"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            style="transform: rotate(180deg);"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 19l-7-7m0 0l7-7m-7 7h18"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+  <div
+    class="sc-jfTVlA dCZcY"
+  >
+    <div
+      class="sc-cUEOzv hTsJtK"
+    >
+      <div
+        class="sc-dIfARi ckvMSP"
+      >
+        <h1>
+          My Articles
+        </h1>
+        <a
+          class="sc-dkrFOg sc-csuSiG eidQVA gBuZIb"
+          colortheme="primary"
+          href="/admin/create-article"
+        >
+          Create new article
+        </a>
+      </div>
+      <form
+        class="sc-eeMvmM iUIxVX"
+      >
+        <table
+          class="sc-iAEawV jWvvoG"
+        >
+          <tr
+            class="sc-jrcTuL ikvuNf edit-article"
+          >
+            <th
+              class="edit-article__checkbox"
+            >
+              <div
+                class="sc-ftTHYK bpCbn"
+              >
+                <input
+                  class="sc-iBYQkv jkxsjj"
+                  type="checkbox"
+                />
+              </div>
+            </th>
+            <th
+              class="edit-article__title"
+            >
+              <button
+                class="sc-bcXHqe ffhSDA"
+              >
+                <span>
+                  Article title
+                </span>
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 320 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+                  />
+                </svg>
+              </button>
+            </th>
+            <th
+              class="edit-article__perex"
+            >
+              <button
+                class="sc-bcXHqe ffhSDA"
+              >
+                <span>
+                  Perex
+                </span>
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 320 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+                  />
+                </svg>
+              </button>
+            </th>
+            <th
+              class="edit-article__author"
+            >
+              <button
+                class="sc-bcXHqe ffhSDA"
+              >
+                <span>
+                  Author
+                </span>
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 320 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+                  />
+                </svg>
+              </button>
+            </th>
+            <th
+              class="edit-article__nr-comments"
+            >
+              <button
+                class="sc-bcXHqe ffhSDA"
+              >
+                <span>
+                  # comments
+                </span>
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 320 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+                  />
+                </svg>
+              </button>
+            </th>
+            <th
+              class="edit-article__actions-container"
+            >
+              Actions
+            </th>
+          </tr>
+          <div
+            class="sc-cCjUiG sc-iTFTee RwuMG ehOSMC"
+          >
+            <div
+              aria-busy="true"
+              aria-label="three-dots-loading"
+              data-testid="three-dots-loading"
+              role="status"
+              style="display: flex;"
+            >
+              <svg
+                data-testid="three-dots-svg"
+                fill="#007BFF"
+                height="80"
+                viewBox="0 0 120 30"
+                width="80"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="15"
+                  cy="15"
+                  r="15"
+                >
+                  <animate
+                    attributeName="r"
+                    begin="0s"
+                    calcMode="linear"
+                    dur="0.8s"
+                    from="15"
+                    repeatCount="indefinite"
+                    to="15"
+                    values="15;9;15"
+                  />
+                  <animate
+                    attributeName="fill-opacity"
+                    begin="0s"
+                    calcMode="linear"
+                    dur="0.8s"
+                    from="1"
+                    repeatCount="indefinite"
+                    to="1"
+                    values="1;.5;1"
+                  />
+                </circle>
+                <circle
+                  attributeName="fill-opacity"
+                  cx="60"
+                  cy="15"
+                  from="1"
+                  r="9"
+                  to="0.3"
+                >
+                  <animate
+                    attributeName="r"
+                    begin="0s"
+                    calcMode="linear"
+                    dur="0.8s"
+                    from="9"
+                    repeatCount="indefinite"
+                    to="9"
+                    values="9;15;9"
+                  />
+                  <animate
+                    attributeName="fill-opacity"
+                    begin="0s"
+                    calcMode="linear"
+                    dur="0.8s"
+                    from="0.5"
+                    repeatCount="indefinite"
+                    to="0.5"
+                    values=".5;1;.5"
+                  />
+                </circle>
+                <circle
+                  cx="105"
+                  cy="15"
+                  r="15"
+                >
+                  <animate
+                    attributeName="r"
+                    begin="0s"
+                    calcMode="linear"
+                    dur="0.8s"
+                    from="15"
+                    repeatCount="indefinite"
+                    to="15"
+                    values="15;9;15"
+                  />
+                  <animate
+                    attributeName="fill-opacity"
+                    begin="0s"
+                    calcMode="linear"
+                    dur="0.8s"
+                    from="1"
+                    repeatCount="indefinite"
+                    to="1"
+                    values="1;.5;1"
+                  />
+                </circle>
+              </svg>
+            </div>
+          </div>
+        </table>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Pages/Form Pages Login Form Page 1`] = `
+<div
+  class="sc-lbVpMG jDhGcb"
+>
+  <header
+    class="sc-AHaJN eqtcyd TopNavbar"
+  >
+    <div
+      class="TopNavbar__container"
+    >
+      <div
+        class="TopNavbar__sub-container"
+      >
+        <img
+          alt="cat logo"
+          height="40px"
+          src="[object Object]"
+        />
+         
+        <nav
+          class="sc-khsqcC dyVfPE"
+        >
+          <a
+            aria-current="page"
+            class="sc-eDWCr jqstjY"
+            href="/"
+            variant="classic"
+          >
+            Recent Articles
+          </a>
+          <a
+            class="sc-eDWCr jqstjY"
+            href="/about"
+            variant="classic"
+          >
+            About
+          </a>
+        </nav>
+      </div>
+      <div
+        class="TopNavbar__sub-container"
+      >
+        <a
+          class="sc-ksBlkl fxuheE login-link"
+          href="/login"
+        >
+          <span>
+            Login
+          </span>
+          <svg
+            fill="none"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            style="transform: rotate(180deg);"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 19l-7-7m0 0l7-7m-7 7h18"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+  <div
+    class="sc-jfTVlA dCZcY"
+  >
+    <div
+      class="sc-hTBuwn gXQudK"
+    >
+      <form
+        class="sc-gKPRtg jfweml"
+      >
+        <h3>
+          Log In
+        </h3>
+        <div
+          class="sc-jSUZER dqJJqp"
+        >
+          <label
+            for="Email"
+          >
+            Email
+          </label>
+          <input
+            class="sc-hLBbgP fFQznY"
+            id="Email"
+            placeholder="me@example.com"
+            type="email"
+            value=""
+          />
+        </div>
+        <div
+          class="sc-jSUZER dqJJqp"
+        >
+          <label
+            for="Password"
+          >
+            Password
+          </label>
+          <input
+            class="sc-hLBbgP fFQznY"
+            id="Password"
+            placeholder="Enter the password"
+            type="password"
+            value=""
+          />
+        </div>
+        <span
+          class="error"
+        />
+        <button
+          class="sc-dkrFOg eidQVA"
+          type="submit"
+        >
+          Log In
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;
