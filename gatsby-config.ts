@@ -1,7 +1,7 @@
-import type { GatsbyConfig } from "gatsby";
-import { API_KEY, BASE_API_URL } from "./src/services/services.config";
+import type { GatsbyConfig } from 'gatsby';
+import { API_KEY, BASE_API_URL } from './src/services/services.config';
 
-import { components } from "./src/types/declarations";
+import { components } from './src/types/declarations';
 
 const config: GatsbyConfig = {
   flags: {
@@ -16,28 +16,28 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
-    "gatsby-plugin-styled-components",
-    "gatsby-plugin-sitemap",
-    "gatsby-transformer-remark",
+    'gatsby-plugin-styled-components',
+    'gatsby-plugin-sitemap',
+    'gatsby-transformer-remark',
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
 
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "images",
+        name: 'images',
         path: `${__dirname}/src/images/`,
       },
-      __key: "images",
+      __key: 'images',
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "pages",
+        name: 'pages',
         path: `${__dirname}/src/pages/`,
       },
-      __key: "pages",
+      __key: 'pages',
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -54,24 +54,25 @@ const config: GatsbyConfig = {
         rehypePlugins: [],
       },
     },
-    // {
-    //   resolve: "gatsby-source-custom-api",
-    //   options: {
-    //     url: `${BASE_API_URL}/articles`,
-    //     headers: { "X-API-KEY": API_KEY },
-    //     rootKey: "articles",
-    //     schemas: {
-    //       items: `items: [article]`,
-    //       article: `
-    //       articleId: String
-    //       perex: String
-    //       title: String
-    //       imageId: String
-    //       createdAt: String
-    //       lastUpdatedAt: String`,
-    //     },
-    //   },
-    // },
+    {
+      resolve: 'gatsby-source-apiserver',
+      options: {
+        url: `${BASE_API_URL}/articles`,
+        method: 'get',
+        headers: { 'X-API-KEY': API_KEY },
+        name: 'articles',
+        schemaType: {
+          items: `items: [article]`,
+          article: `
+          articleId: String
+          perex: String
+          title: String
+          imageId: String
+          createdAt: String
+          lastUpdatedAt: String`,
+        },
+      },
+    },
   ],
 };
 
