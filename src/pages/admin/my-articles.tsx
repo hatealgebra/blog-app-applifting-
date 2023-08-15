@@ -1,6 +1,6 @@
-import React from "react";
-import MyArticlesTable from "../../components/organisms/myArticlesTable/MyArticlesTable";
-import PageTemplate from "../../components/templates/Page.template";
+import React from 'react';
+import MyArticlesTable from '../../components/organisms/myArticlesTable/MyArticlesTable';
+import PageTemplate from '../../components/templates/Page.template';
 
 const MyArticlesPage = () => {
   return (

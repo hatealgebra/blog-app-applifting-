@@ -1,14 +1,14 @@
-import axios from "axios";
+import axios from 'axios';
 
 import {
   API_KEY,
   appLiftingAxiosProtected,
   BASE_API_URL,
-} from "./services.config";
+} from './services.config';
 
 export const listArticles = async () => {
   try {
-    const response = await appLiftingAxiosProtected.get("/articles");
+    const response = await appLiftingAxiosProtected.get('/articles');
     return response;
   } catch (e) {
     throw e;
@@ -31,9 +31,9 @@ export const createArticle = async (
   };
 
   try {
-    const response = await appLiftingAxiosProtected.post("/articles", data, {
+    const response = await appLiftingAxiosProtected.post('/articles', data, {
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
         Authorization: access_token,
       },
     });
@@ -48,6 +48,7 @@ export const getArticle = async (articleId: string) => {
   try {
     return await appLiftingAxiosProtected.get(`/articles/${articleId}`);
   } catch (e) {
+    console.log(e);
     throw e;
   }
 };

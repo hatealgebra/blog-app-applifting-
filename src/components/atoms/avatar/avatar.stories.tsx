@@ -1,8 +1,8 @@
-import React from "react";
-import Avatar from "./Avatar";
+import React from 'react';
+import Avatar from './Avatar';
 
-import userAvatarPhoto from "../../../images/avatar-mock.jpg";
-import { ComponentMeta } from "@storybook/react";
+import userAvatarPhoto from '../../../images/avatar-mock.jpg';
+import { ComponentMeta } from '@storybook/react';
 
 export const DifferentImages = () => {
   return (
@@ -24,12 +24,12 @@ export const AllSizes = () => {
 };
 
 export default {
-  title: "Atoms/Avatar",
+  title: 'Atoms/Avatar',
   component: Avatar,
   decorators: [
     (Story) =>
       (
-        <div style={{ display: "flex", gap: "5px", alignItems: "flex-end" }}>
+        <div style={{ display: 'flex', gap: '5px', alignItems: 'flex-end' }}>
           <Story />
         </div>
       ) as ComponentMeta<typeof Avatar>,

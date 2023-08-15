@@ -1,13 +1,23 @@
-import React from "react";
-import StyledButton from "./button.styled";
+import React from 'react';
+import StyledButton from './button.styled';
+
+export interface ButtonProps {
+  colortheme?: 'primary' | 'secondary';
+  variant?: 'standard' | 'outline' | 'block';
+  onClick?: (e?: React.MouseEvent<HTMLElement> | MouseEvent) => void;
+  children: any;
+  size?: 'sm' | 'md' | 'lg';
+  isBlock?: boolean;
+  type?: 'submit' | 'button';
+}
 
 const Button = ({
-  variant = "standard",
-  size = "md",
-  colortheme = "primary",
+  variant = 'standard',
+  size = 'md',
+  colortheme = 'primary',
   children,
   isBlock,
-  type = "button",
+  type = 'button',
   onClick,
 }: ButtonProps) => {
   return (
@@ -23,15 +33,5 @@ const Button = ({
     </StyledButton>
   );
 };
-
-export interface ButtonProps {
-  colortheme?: "primary" | "secondary";
-  variant?: "standard" | "outline" | "block";
-  onClick?: (e?: React.MouseEvent<HTMLElement> | MouseEvent) => void;
-  children: any;
-  size?: "sm" | "md" | "lg";
-  isBlock?: boolean;
-  type?: "submit" | "button";
-}
 
 export default Button;

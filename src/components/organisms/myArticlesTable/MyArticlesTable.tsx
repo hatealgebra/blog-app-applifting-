@@ -1,32 +1,32 @@
-import React from "react";
+import React from 'react';
 
-import { useAppDispatch, useAppSelector } from "../../../store/hooks";
+import { useAppDispatch, useAppSelector } from '../../../store/hooks';
 // import { selectMyArticlesItems } from "../../../store/admin/myArticles.slice";
-import { getArticlesFeedThunk } from "../../../store/thunks/articles.thunk";
-import { ADMIN_LINKS } from "../../../utils/contants";
-import AdminHeading from "../../molecules/adminHeading/AdminHeading";
-import EditArticleRow from "../../molecules/editArticleRow/EditArticleRow";
-import EditArticleRowButtons from "../../molecules/editArticleRow/EditArticleRowButtons";
+import { getArticlesFeedThunk } from '../../../store/thunks/articles.thunk';
+import { ADMIN_LINKS } from '../../../utils/contants';
+import AdminHeading from '../../molecules/adminHeading/AdminHeading';
+import EditArticleRow from '../../molecules/editArticleRow/EditArticleRow';
+import EditArticleRowButtons from '../../molecules/editArticleRow/EditArticleRowButtons';
 import {
   MyArticlesForm,
   MyArticlesTableContainer,
   StyledArticlesTable,
   StyledFallbackContentContainer,
-} from "./myArticlesTable.styled";
+} from './myArticlesTable.styled';
 import {
   selectMyArticlesItems,
   selectMyArticlesOriginalItems,
   selectMyArticlesStatus,
   setArticleToEdit,
-} from "../../../store/slices/admin.slices";
-import { components } from "../../../types/declarations";
+} from '../../../store/slices/admin.slices';
+import { components } from '../../../types/declarations';
 
-import { deleteArticleThunk } from "../../../store/thunks/admin.thunks";
+import { deleteArticleThunk } from '../../../store/thunks/admin.thunks';
 
-import noArticles from "../../../images/no-articles.png";
-import Loading from "../../atoms/loadingIcon/Loading";
-import { navigate } from "gatsby";
-import { selectAuthToken } from "../../../store/slices/auth.slices";
+import noArticles from '../../../images/no-articles.png';
+import Loading from '../../atoms/loadingIcon/Loading';
+import { navigate } from 'gatsby';
+import { selectAuthToken } from '../../../store/slices/auth.slices';
 
 // TODO: Finish the my Articles
 // TODO: Multiple delete action?
@@ -40,7 +40,7 @@ const MyArticlesTable = () => {
 
   const deleteArticle = (articleId: string) =>
     dispatch(deleteArticleThunk({ articleId, originalArray, access_token }));
-  const editArticle = (article: components["schemas"]["Article"]) => {
+  const editArticle = (article: components['schemas']['Article']) => {
     dispatch(setArticleToEdit(article));
     navigate(ADMIN_LINKS.EDIT_ARTICLE);
   };
@@ -71,13 +71,13 @@ const MyArticlesTable = () => {
             switchAllBoxes={switchAllBoxes}
             dispatch={dispatch}
           />
-          {status === "loading" ? (
+          {status === 'loading' ? (
             <StyledFallbackContentContainer>
               <Loading />
             </StyledFallbackContentContainer>
           ) : articles !== undefined && articles.length > 0 ? (
             articles.map(
-              (article: components["schemas"]["ArticleDetail"], i) => {
+              (article: components['schemas']['ArticleDetail'], i) => {
                 const { articleId, title, perex, comments } = article;
                 return (
                   <EditArticleRow

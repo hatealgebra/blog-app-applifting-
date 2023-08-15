@@ -2,16 +2,18 @@ import {
   API_KEY,
   appLiftingAxios,
   appLiftingAxiosProtected,
-} from "./services.config";
+} from './services.config';
+
+// TODO: Add images for mobile, desktop and large desktop
 
 export const uploadImage = async (
   imageFile: FormData,
   access_token: string
 ) => {
   try {
-    const response = await appLiftingAxiosProtected.post("/images", imageFile, {
+    const response = await appLiftingAxiosProtected.post('/images', imageFile, {
       headers: {
-        "Content-Type": "multipart/form-data",
+        'Content-Type': 'multipart/form-data',
         Authorization: access_token,
       },
     });
@@ -24,7 +26,7 @@ export const uploadImage = async (
 export const showImage = async (imageId: string) => {
   try {
     const response = await appLiftingAxios.get(`/images/${imageId}`, {
-      responseType: "arraybuffer",
+      responseType: 'arraybuffer',
     });
     return response;
   } catch (e) {

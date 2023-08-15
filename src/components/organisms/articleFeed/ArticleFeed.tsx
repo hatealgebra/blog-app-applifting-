@@ -1,24 +1,24 @@
-import React from "react";
-import { components } from "../../../types/declarations";
-import Loading from "../../atoms/loadingIcon/Loading";
-import ArticlePreview from "../../molecules/articlePreview/ArticlePreview";
+import React from 'react';
+import { components } from '../../../types/declarations';
+import Loading from '../../atoms/loadingIcon/Loading';
+import ArticlePreview from '../../molecules/articlePreview/ArticlePreview';
 import {
   ArticlesContainer,
   CenterContainer,
   StyledArticleFeed,
-} from "./articleFeed.styled";
+} from './articleFeed.styled';
 
 const ArticleFeed = ({
   isLoading,
   items,
-}: components["schemas"]["ArticleList"] & {
-  isLoading: "loading" | "idle";
+}: components['schemas']['ArticleList'] & {
+  isLoading: 'loading' | 'idle';
 }) => {
   return (
     <StyledArticleFeed className="article-feed">
       <h1 className="article-feed__heading">Recent articles</h1>
       <div className="article-feed__articles">
-        {isLoading === "loading" ? (
+        {isLoading === 'loading' ? (
           <CenterContainer>
             <Loading />
           </CenterContainer>
@@ -37,9 +37,9 @@ const ArticleFeed = ({
                 imageId,
                 imageBase64,
                 comments,
-              }: components["schemas"]["Article"] &
-                components["schemas"]["ArticleDetail"] & {
-                  imageBase64: "string";
+              }: components['schemas']['Article'] &
+                components['schemas']['ArticleDetail'] & {
+                  imageBase64: 'string';
                 }) => (
                 <ArticlePreview
                   key={articleId}

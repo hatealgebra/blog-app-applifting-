@@ -1,34 +1,34 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
-import { components } from "../../types/declarations";
-import type { RootState } from "..";
-import { getArticlesFeedThunk } from "../thunks/articles.thunk";
+import { components } from '../../types/declarations';
+import type { RootState } from '..';
+import { getArticlesFeedThunk } from '../thunks/articles.thunk';
 
 const initialState = {
-  status: "idle",
+  status: 'idle',
   data: { items: undefined },
   error: false,
 } as {
-  status: "idle" | "loading";
+  status: 'idle' | 'loading';
   error: boolean;
-  data: components["schemas"]["ArticleList"];
+  data: components['schemas']['ArticleList'];
 };
 
 export const articleFeedSlice = createSlice({
-  name: "articleFeed",
+  name: 'articleFeed',
   initialState,
   reducers: {},
   extraReducers: (builder) => {
     builder.addCase(getArticlesFeedThunk.pending, (state) => {
-      state.status = "loading";
+      state.status = 'loading';
     });
     builder.addCase(getArticlesFeedThunk.fulfilled, (state, { payload }) => {
-      state.status = "idle";
+      state.status = 'idle';
       state.data = payload;
     });
     builder.addCase(getArticlesFeedThunk.rejected, (state, { payload }) => {
       state.error = true;
-      state.status = "idle";
+      state.status = 'idle';
       state.data = initialState.data;
     });
   },
@@ -42,7 +42,7 @@ export const selectArticleFeedError = (state: RootState) =>
   state.reducer.articleFeed.error;
 
 export enum articleFeedActions {
-  GET_ARTICLES = "articleFeed/getArticlesFeedThunk",
+  GET_ARTICLES = 'articleFeed/getArticlesFeedThunk',
 }
 
 export default articleFeedSlice.reducer;

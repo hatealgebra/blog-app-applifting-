@@ -1,20 +1,20 @@
-import React from "react";
-import ReadArticle from "../organisms/readArticle/ReadArticle";
-import PageTemplate from "./Page.template";
+import React from 'react';
+import ReadArticle from '../organisms/readArticle/ReadArticle';
+import PageTemplate from './Page.template';
 
-import RelatedArticles from "../organisms/relatedArticles/RelatedArticles";
-import Discussion from "../organisms/discussion/Discussion";
-import { StyledArticlePageContainer } from "./templates.styled";
-import { listArticles } from "../../services/articlesOperations";
-import { components } from "../../types/declarations";
-import { graphql, useStaticQuery } from "gatsby";
+import RelatedArticles from '../organisms/relatedArticles/RelatedArticles';
+import Discussion from '../organisms/discussion/Discussion';
+import { StyledArticlePageContainer } from './templates.styled';
+import { listArticles } from '../../services/articlesOperations';
+import { components } from '../../types/declarations';
+import { graphql, useStaticQuery } from 'gatsby';
 
 const ArticlePage = ({
   pageContext,
 }: {
   pageContext: {
-    article: components["schemas"]["Article"] &
-      components["schemas"]["ArticleDetail"] & { imageBase64: string };
+    article: components['schemas']['Article'] &
+      components['schemas']['ArticleDetail'] & { imageBase64: string };
   };
 }) => {
   const [relatedArticles, setRelatedArticles] = React.useState(null);
@@ -39,7 +39,7 @@ const ArticlePage = ({
   const { articleId, createdAt, title, imageBase64, content, comments } =
     pageContext.article;
   const commentsArray =
-    typeof comments === "string" ? JSON.parse(comments) : [];
+    typeof comments === 'string' ? JSON.parse(comments) : [];
 
   const getArticles = () => {};
 
@@ -47,7 +47,7 @@ const ArticlePage = ({
     const showRelatedArticles = () => {
       const { nodes } = articles.allPosts;
       const articlesFiltered = nodes.filter(
-        (article: components["schemas"]["Article"]) =>
+        (article: components['schemas']['Article']) =>
           article.articleId !== articleId
       );
 
@@ -63,7 +63,7 @@ const ArticlePage = ({
         <ReadArticle
           title={title}
           imageSrc={`data:image/png;base64,${imageBase64}`}
-          author={"Pavel Vondra"}
+          author={'Pavel Vondra'}
           createdAt={createdAt}
           content={content}
           comments={comments}
