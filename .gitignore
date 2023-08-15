@@ -4,3 +4,8 @@ public
 src/gatsby-types.d.ts
 .env
 package-lock.json
+readme.md
+.DS_Store
+migration-storybook.log
+storybook-static/
+imagesForUpload
