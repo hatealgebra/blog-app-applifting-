@@ -8,9 +8,7 @@ exports.sourceNodes = async ({
   actions: { createNode },
   createContentDigest,
   createNodeId,
-  getNodes,
 }) => {
-  console.log('Files yo:');
   try {
     const result = await listArticles();
     const { items: articles } = result.data;
@@ -71,7 +69,6 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
       }
     }
   `);
-
   // Create a page with recent articles feed
   createPage({
     path: `/`,
