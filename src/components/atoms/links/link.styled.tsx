@@ -1,20 +1,20 @@
-import React from "react";
+import React from 'react';
 
-import { Link as GatsbyLink } from "gatsby";
-import styled from "styled-components";
-import StyledButton from "../button/button.styled";
+import { Link as GatsbyLink } from 'gatsby';
+import styled from 'styled-components';
+import StyledButton from '../button/button.styled';
 
 export const ButtonLink = styled(StyledButton).attrs<{
-  colortheme: "primary" | "secondary";
+  colortheme: 'primary' | 'secondary';
   to: string;
 }>(() => ({
   as: GatsbyLink,
-}))<{ colortheme: "primary" | "secondary"; to: string }>`
+}))<{ colortheme: 'primary' | 'secondary'; to: string }>`
   text-decoration: none;
 `;
 
-const StyledLink = styled(GatsbyLink)<{ variant?: "classic" | "text" }>`
-  color: ${({ variant }) => (variant === "classic" ? "black" : "auto")};
+const StyledLink = styled(GatsbyLink)<{ variant?: 'classic' | 'text' }>`
+  color: ${({ variant }) => (variant === 'classic' ? 'black' : 'auto')};
   text-decoration: none;
   font-weight: 400;
   &:hover {
