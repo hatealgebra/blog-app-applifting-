@@ -7,13 +7,12 @@ import {
   CenterContainer,
   StyledArticleFeed,
 } from './articleFeed.styled';
+import useAllArticles from '../../../hooks/useAllArticles';
 
-const ArticleFeed = ({
-  isLoading,
-  items,
-}: components['schemas']['ArticleList'] & {
-  isLoading: 'loading' | 'idle';
-}) => {
+const ArticleFeed = () => {
+  const items = useAllArticles();
+  const isLoading = 'idle';
+
   return (
     <StyledArticleFeed className="article-feed">
       <h1 className="article-feed__heading">Recent articles</h1>

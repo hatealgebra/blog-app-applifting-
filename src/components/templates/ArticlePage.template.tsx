@@ -5,7 +5,6 @@ import PageTemplate from './Page.template';
 import RelatedArticles from '../organisms/relatedArticles/RelatedArticles';
 import Discussion from '../organisms/discussion/Discussion';
 import { StyledArticlePageContainer } from './templates.styled';
-import { listArticles } from '../../services/articlesOperations';
 import { components } from '../../types/declarations';
 import { graphql, useStaticQuery } from 'gatsby';
 
