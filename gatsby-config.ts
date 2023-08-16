@@ -1,7 +1,9 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 import type { GatsbyConfig } from 'gatsby';
 import { API_KEY, BASE_API_URL } from './src/services/services.config';
-
-import { components } from './src/types/declarations';
 
 const config: GatsbyConfig = {
   flags: {

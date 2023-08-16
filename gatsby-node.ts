@@ -2,6 +2,10 @@ import path from 'path';
 import { getArticle, listArticles } from './src/services/articlesOperations';
 import { showImage } from './src/services/imagesServices';
 
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 const POST_NODE_TYPE = `Posts`;
 
 exports.sourceNodes = async ({
@@ -69,10 +73,11 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
       }
     }
   `);
+
   // Create a page with recent articles feed
   createPage({
-    path: `/`,
     component: path.resolve('./src/pages/index.tsx'),
+    path: `/`,
     context: { articles },
   });
 
@@ -80,11 +85,11 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
   articles.data.allPosts.nodes.forEach((article) => {
     const url = `/articles/${article.articleId}`;
     createPage({
+      context: { url, article },
       path: url,
       component: path.resolve(
         './src/components/templates/ArticlePage.template.tsx'
       ),
-      context: { url, article },
     });
   });
 };

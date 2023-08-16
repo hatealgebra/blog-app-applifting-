@@ -3,6 +3,7 @@ node_modules/
 public
 src/gatsby-types.d.ts
 .env
+.env.development
 package-lock.json
 readme.md
 .DS_Store
