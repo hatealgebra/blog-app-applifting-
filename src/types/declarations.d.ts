@@ -1,24 +1,24 @@
 export interface paths {
-  "/login": {
+  '/login': {
     post: {
       responses: {
         /** Access token detail */
         201: {
           content: {
-            "application/json": components["schemas"]["AccessToken"];
+            'application/json': components['schemas']['AccessToken'];
           };
         };
         /** Invalid login credentials */
         400: {
           content: {
-            "application/json": unknown;
+            'application/json': unknown;
           };
         };
-        401: components["responses"]["ApiKeyInvalidError"];
+        401: components['responses']['ApiKeyInvalidError'];
       };
       requestBody: {
         content: {
-          "application/json": {
+          'application/json': {
             username?: string;
             /** Format: password */
             password: string;
@@ -27,149 +27,149 @@ export interface paths {
       };
     };
   };
-  "/articles": {
-    get: operations["listArticles"];
-    post: operations["createArticle"];
+  '/articles': {
+    get: operations['listArticles'];
+    post: operations['createArticle'];
   };
-  "/articles/{articleId}": {
-    get: operations["getArticle"];
-    delete: operations["deleteArticle"];
-    patch: operations["updateArticle"];
+  '/articles/{articleId}': {
+    get: operations['getArticle'];
+    delete: operations['deleteArticle'];
+    patch: operations['updateArticle'];
   };
-  "/comments": {
+  '/comments': {
     post: {
       responses: {
         /** Detail of the created comment */
         201: {
           content: {
-            "application/json": components["schemas"]["Comment"];
+            'application/json': components['schemas']['Comment'];
           };
         };
-        401: components["responses"]["ApiKeyInvalidError"];
+        401: components['responses']['ApiKeyInvalidError'];
       };
       requestBody: {
         content: {
-          "application/json": components["schemas"]["Comment"];
+          'application/json': components['schemas']['Comment'];
         };
       };
     };
   };
-  "/comments/{commentId}/vote/up": {
+  '/comments/{commentId}/vote/up': {
     post: {
       parameters: {
         path: {
           /** Id of an comment */
-          commentId: components["parameters"]["commentId"];
+          commentId: components['parameters']['commentId'];
         };
       };
       responses: {
         /** Updated comment detail */
         201: {
           content: {
-            "application/json": components["schemas"]["Comment"];
+            'application/json': components['schemas']['Comment'];
           };
         };
-        401: components["responses"]["ApiKeyInvalidError"];
+        401: components['responses']['ApiKeyInvalidError'];
       };
     };
   };
-  "/comments/{commentId}/vote/down": {
+  '/comments/{commentId}/vote/down': {
     post: {
       parameters: {
         path: {
           /** Id of an comment */
-          commentId: components["parameters"]["commentId"];
+          commentId: components['parameters']['commentId'];
         };
       };
       responses: {
         /** Updated comment detail */
         201: {
           content: {
-            "application/json": components["schemas"]["Comment"];
+            'application/json': components['schemas']['Comment'];
           };
         };
-        401: components["responses"]["ApiKeyInvalidError"];
+        401: components['responses']['ApiKeyInvalidError'];
       };
     };
   };
-  "/images": {
+  '/images': {
     post: {
       responses: {
         /** Image uploaded successfully */
         201: {
           content: {
-            "application/json": components["schemas"]["ImageInfo"][];
+            'application/json': components['schemas']['ImageInfo'][];
           };
         };
-        401: components["responses"]["ApiKeyInvalidError"];
+        401: components['responses']['ApiKeyInvalidError'];
       };
       requestBody: {
         content: {
-          "multipart/form-data": {
+          'multipart/form-data': {
             image?: string[];
           };
         };
       };
     };
   };
-  "/images/{imageId}": {
+  '/images/{imageId}': {
     get: {
       parameters: {
         path: {
           /** Id of the image to retrieve */
-          imageId: components["parameters"]["imageId"];
+          imageId: components['parameters']['imageId'];
         };
       };
       responses: {
         /** Image file */
         200: unknown;
-        401: components["responses"]["ApiKeyInvalidError"];
+        401: components['responses']['ApiKeyInvalidError'];
       };
     };
     delete: {
       parameters: {
         path: {
           /** Id of the image to retrieve */
-          imageId: components["parameters"]["imageId"];
+          imageId: components['parameters']['imageId'];
         };
       };
       responses: {
         /** Image no longer exists */
         204: never;
-        401: components["responses"]["ApiKeyInvalidError"];
+        401: components['responses']['ApiKeyInvalidError'];
       };
     };
   };
-  "/tenants": {
+  '/tenants': {
     post: {
       responses: {
         /** Detail of the created tenant */
         201: {
           content: {
-            "application/json": components["schemas"]["Tenant"];
+            'application/json': components['schemas']['Tenant'];
           };
         };
       };
       requestBody: {
         content: {
-          "application/json": components["schemas"]["Tenant"];
+          'application/json': components['schemas']['Tenant'];
         };
       };
     };
   };
-  "/tenants/{tenantId}": {
+  '/tenants/{tenantId}': {
     get: {
       parameters: {
         path: {
           /** Id of the tenant to retrieve */
-          tenantId: components["parameters"]["tenantId"];
+          tenantId: components['parameters']['tenantId'];
         };
       };
       responses: {
         /** Tenant detail */
         200: {
           content: {
-            "application/json": components["schemas"]["Tenant"];
+            'application/json': components['schemas']['Tenant'];
           };
         };
       };
@@ -188,8 +188,8 @@ export interface components {
       total?: number;
     };
     ArticleList: {
-      pagination?: components["schemas"]["Pagination"];
-      items?: components["schemas"]["Article"][];
+      pagination?: components['schemas']['Pagination'];
+      items?: components['schemas']['Article'][];
     };
     Article: {
       /** Format: uuid */
@@ -205,14 +205,14 @@ export interface components {
       /** Format: date-time */
       lastUpdatedAt?: string;
     };
-    ArticleDetail: components["schemas"]["Article"] & {
+    ArticleDetail: components['schemas']['Article'] & {
       /**
        * Format: markdown
        * @example # Lorem Ipsum
        * **Lorem Ipsum** is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
        */
       content?: string;
-      comments?: components["schemas"]["Comment"][];
+      comments?: components['schemas']['Comment'][];
     };
     Comment: {
       /** Format: uuid */
@@ -280,13 +280,13 @@ export interface components {
     /** API key is missing or invalid */
     ApiKeyInvalidError: {
       content: {
-        "application/json": unknown;
+        'application/json': unknown;
       };
     };
     /** Access token is missing or invalid */
     UnauthorizedError: {
       content: {
-        "application/json": unknown;
+        'application/json': unknown;
       };
     };
   };
@@ -311,19 +311,19 @@ export interface operations {
     parameters: {
       query: {
         /** Number of items to skip during pagination */
-        offset?: components["parameters"]["offset"];
+        offset?: components['parameters']['offset'];
         /** Number of items to return per page. All items are returned if `limit` is omitted. */
-        limit?: components["parameters"]["limit"];
+        limit?: components['parameters']['limit'];
       };
     };
     responses: {
       /** Article list */
       200: {
         content: {
-          "application/json": components["schemas"]["Article"][];
+          'application/json': components['schemas']['Article'][];
         };
       };
-      401: components["responses"]["ApiKeyInvalidError"];
+      401: components['responses']['ApiKeyInvalidError'];
     };
   };
   createArticle: {
@@ -331,15 +331,15 @@ export interface operations {
       /** Detail of the created article */
       200: {
         content: {
-          "application/json": components["schemas"]["ArticleDetail"];
+          'application/json': components['schemas']['ArticleDetail'];
         };
       };
-      401: components["responses"]["ApiKeyInvalidError"];
-      403: components["responses"]["UnauthorizedError"];
+      401: components['responses']['ApiKeyInvalidError'];
+      403: components['responses']['UnauthorizedError'];
     };
     requestBody: {
       content: {
-        "application/json": components["schemas"]["ArticleDetail"];
+        'application/json': components['schemas']['ArticleDetail'];
       };
     };
   };
@@ -347,53 +347,53 @@ export interface operations {
     parameters: {
       path: {
         /** Id of an article */
-        articleId: components["parameters"]["articleId"];
+        articleId: components['parameters']['articleId'];
       };
     };
     responses: {
       /** Article detail */
       200: {
         content: {
-          "application/json": components["schemas"]["ArticleDetail"];
+          'application/json': components['schemas']['ArticleDetail'];
         };
       };
-      401: components["responses"]["ApiKeyInvalidError"];
+      401: components['responses']['ApiKeyInvalidError'];
     };
   };
   deleteArticle: {
     parameters: {
       path: {
         /** Id of an article */
-        articleId: components["parameters"]["articleId"];
+        articleId: components['parameters']['articleId'];
       };
     };
     responses: {
       /** Article no longer exists */
       204: never;
-      401: components["responses"]["ApiKeyInvalidError"];
-      403: components["responses"]["UnauthorizedError"];
+      401: components['responses']['ApiKeyInvalidError'];
+      403: components['responses']['UnauthorizedError'];
     };
   };
   updateArticle: {
     parameters: {
       path: {
         /** Id of an article */
-        articleId: components["parameters"]["articleId"];
+        articleId: components['parameters']['articleId'];
       };
     };
     responses: {
       /** Updated article detail */
       200: {
         content: {
-          "application/json": components["schemas"]["ArticleDetail"];
+          'application/json': components['schemas']['ArticleDetail'];
         };
       };
-      401: components["responses"]["ApiKeyInvalidError"];
-      403: components["responses"]["UnauthorizedError"];
+      401: components['responses']['ApiKeyInvalidError'];
+      403: components['responses']['UnauthorizedError'];
     };
     requestBody: {
       content: {
-        "application/json": components["schemas"]["ArticleDetail"];
+        'application/json': components['schemas']['ArticleDetail'];
       };
     };
   };

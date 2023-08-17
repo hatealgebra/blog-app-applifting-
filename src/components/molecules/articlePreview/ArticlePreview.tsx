@@ -10,9 +10,7 @@ import StyledLink from '../../atoms/links/link.styled';
 import { components } from '../../../types/declarations';
 
 import { getDate } from '../../../utils/date.utils';
-import { showImage } from '../../../services/imagesServices';
 
-import { Buffer } from 'buffer';
 import {
   createArticleLink,
   cutTextWithElipsis,
