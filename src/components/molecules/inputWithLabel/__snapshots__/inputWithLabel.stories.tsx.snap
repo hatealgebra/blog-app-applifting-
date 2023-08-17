@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Molecules/Input with label InputWithLabelTypes smoke-test 1`] = `
+<div style="display: flex; flex-direction: column; gap: 20px;">
+  <div class="sc-jSwlEQ eeEroX">
+    <label for="Username">
+      Username
+    </label>
+    <input placeholder="Enter your name"
+           id="Username"
+           class="sc-hLclGa iSKFPv"
+           value="hello"
+    >
+  </div>
+  <div class="sc-jSwlEQ eeEroX">
+    <label for="Email">
+      Email
+    </label>
+    <input placeholder="me@example.com"
+           id="Email"
+           class="sc-hLclGa iSKFPv"
+           value
+    >
+  </div>
+  <div class="sc-jSwlEQ eeEroX">
+    <label for="Password">
+      Password
+    </label>
+    <input placeholder="Enter your password"
+           id="Password"
+           class="sc-hLclGa iSKFPv"
+           value
+    >
+  </div>
+</div>
+`;

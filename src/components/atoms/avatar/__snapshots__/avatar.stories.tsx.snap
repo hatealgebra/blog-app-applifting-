@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Atoms/Avatar AllSizes smoke-test 1`] = `
+<div style="display: flex; gap: 5px; align-items: flex-end;">
+  <img class="sc-kDnyCx dyuMnk avatar"
+       src="static/media/src/images/avatar-mock.jpg"
+       alt="Generic user avatar"
+  >
+  <img class="sc-kDnyCx enRCkM avatar"
+       src="static/media/src/images/avatar-mock.jpg"
+       alt="Generic user avatar"
+  >
+  <img class="sc-kDnyCx dmEavk avatar"
+       src="static/media/src/images/avatar-mock.jpg"
+       alt="Generic user avatar"
+  >
+</div>
+`;
+
+exports[`Atoms/Avatar DifferentImages smoke-test 1`] = `
+<div style="display: flex; gap: 5px; align-items: flex-end;">
+  <img class="sc-kDnyCx dyuMnk avatar"
+       src="static/media/src/images/avatar-mock.jpg"
+       alt="Generic user avatar"
+  >
+  <img class="sc-kDnyCx dyuMnk avatar"
+       src="static/media/src/images/avatar-fallback.png"
+       alt="fallback user avatar"
+  >
+</div>
+`;

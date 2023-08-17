@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Organisms/Forms LoginFormExample smoke-test 1`] = `
+<form class="sc-gKHVLF cGSTxV">
+  <h3>
+    Log In
+  </h3>
+  <div class="sc-jSwlEQ eeEroX">
+    <label for="Email">
+      Email
+    </label>
+    <input placeholder="me@example.com"
+           type="email"
+           id="Email"
+           class="sc-hLclGa iSKFPv"
+           value
+    >
+  </div>
+  <div class="sc-jSwlEQ eeEroX">
+    <label for="Password">
+      Password
+    </label>
+    <input placeholder="Enter the password"
+           type="password"
+           id="Password"
+           class="sc-hLclGa iSKFPv"
+           value
+    >
+  </div>
+  <span class="error">
+  </span>
+  <button variant="standard"
+          colortheme="primary"
+          type="submit"
+          class="sc-dkjKgF iJlhGR"
+  >
+    Log In
+  </button>
+</form>
+`;

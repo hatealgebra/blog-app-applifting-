@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Atoms/Checkbox CheckboxExample smoke-test 1`] = `
+<div class="sc-ftLKQv iibJaj">
+  <input type="checkbox"
+         class="sc-iBAaJG ciwLrW"
+  >
+</div>
+<div class="sc-ftLKQv iibJaj">
+  <input type="checkbox"
+         class="sc-iBAaJG ciwLrW"
+         checked
+  >
+</div>
+<div class="sc-ftLKQv jAoYjG">
+  <input disabled
+         type="checkbox"
+         class="sc-iBAaJG ciwLrW"
+  >
+</div>
+<div class="sc-ftLKQv jAoYjG">
+  <input disabled
+         type="checkbox"
+         class="sc-iBAaJG ciwLrW"
+         checked
+  >
+</div>
+`;
+
+exports[`Atoms/Checkbox CheckboxWithLabel smoke-test 1`] = `
+<div class="sc-ftLKQv iibJaj">
+  <input type="checkbox"
+         class="sc-iBAaJG ciwLrW"
+  >
+  <span>
+    Checkbox with label
+  </span>
+</div>
+<div class="sc-ftLKQv jAoYjG">
+  <input disabled
+         type="checkbox"
+         class="sc-iBAaJG ciwLrW"
+  >
+  <span>
+    Checkbox with label
+  </span>
+</div>
+`;

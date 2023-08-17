@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Atoms/Input InputAllSize smoke-test 1`] = `
+<div style="display: flex; flex-direction: column; gap: 30px;">
+  <div style="display: flex; flex-direction: column; gap: 30px;">
+    <input placeholder="This is normal input"
+           class="sc-hLclGa iSKFPv"
+    >
+    <input placeholder="This is big input"
+           class="sc-hLclGa iSKIDA"
+    >
+  </div>
+</div>
+`;
+
+exports[`Atoms/Input InputExample smoke-test 1`] = `
+<div style="display: flex; flex-direction: column; gap: 30px;">
+  <input class="sc-hLclGa iSKFPv">
+</div>
+`;
+
+exports[`Atoms/Input InputTextVariants smoke-test 1`] = `
+<div style="display: flex; flex-direction: column; gap: 30px;">
+  <input type="text"
+         placeholder="Plain text input"
+         class="sc-hLclGa iSKFPv"
+  >
+  <input type="password"
+         placeholder="Plain password input"
+         class="sc-hLclGa iSKFPv"
+  >
+  <input type="email"
+         placeholder="Plain email input"
+         class="sc-hLclGa iSKFPv"
+  >
+  <textarea rows="1"
+            placeholder="Join the discussion"
+            class="sc-eDnVMP fmxlqA"
+  >
+  </textarea>
+</div>
+`;

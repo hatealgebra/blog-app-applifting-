@@ -1,0 +1,197 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Organisms/Top NavBar DesktopNavBar smoke-test 1`] = `
+<header variant="desktop"
+        class="sc-bZCZoC fUgnBR TopNavbar"
+>
+  <div class="TopNavbar__container">
+    <div class="TopNavbar__sub-container">
+      <img src="static/media/src/images/cat-logo.svg"
+           alt="cat logo"
+           height="40px"
+      >
+      <nav class="sc-iUeHef cEYyuW">
+        <a variant="classic"
+           class="sc-eLSjS kjOsEi"
+           href="/"
+        >
+          Recent Articles
+        </a>
+        <a variant="classic"
+           class="sc-eLSjS kjOsEi"
+           href="/about"
+        >
+          About
+        </a>
+      </nav>
+    </div>
+    <div class="TopNavbar__sub-container">
+      <a class="sc-ksJisA jEBuxO login-link"
+         href="/login"
+      >
+        <span>
+          Login
+        </span>
+        <svg stroke="currentColor"
+             fill="none"
+             stroke-width="0"
+             viewbox="0 0 24 24"
+             height="1em"
+             width="1em"
+             xmlns="http://www.w3.org/2000/svg"
+             style="transform: rotate(180deg);"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10 19l-7-7m0 0l7-7m-7 7h18"
+          >
+          </path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</header>
+`;
+
+exports[`Organisms/Top NavBar MobileNavBar smoke-test 1`] = `
+<header variant="mobile"
+        class="sc-bZCZoC jGaWbt TopNavbar"
+>
+  <div class="TopNavbar__container">
+    <img src="static/media/src/images/cat-logo.svg"
+         alt="cat logo"
+         height="40px"
+    >
+    <button class="sc-grXZZQ byWNeG">
+      <svg stroke="currentColor"
+           fill="none"
+           stroke-width="0"
+           viewbox="0 0 24 24"
+           height="20px"
+           width="20px"
+           xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M2 6C2 5.44772 2.44772 5 3 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6Z"
+              fill="currentColor"
+        >
+        </path>
+        <path d="M2 12.0322C2 11.4799 2.44772 11.0322 3 11.0322H21C21.5523 11.0322 22 11.4799 22 12.0322C22 12.5845 21.5523 13.0322 21 13.0322H3C2.44772 13.0322 2 12.5845 2 12.0322Z"
+              fill="currentColor"
+        >
+        </path>
+        <path d="M3 17.0645C2.44772 17.0645 2 17.5122 2 18.0645C2 18.6167 2.44772 19.0645 3 19.0645H21C21.5523 19.0645 22 18.6167 22 18.0645C22 17.5122 21.5523 17.0645 21 17.0645H3Z"
+              fill="currentColor"
+        >
+        </path>
+      </svg>
+    </button>
+    <div class="sc-cwKisF bBCeDb mobile-menu"
+         data-testid="mobileMenu"
+    >
+      <div class="mobile-menu__help-div">
+        <button class="sc-iJfdHH fSmIGi">
+          <svg stroke="currentColor"
+               fill="currentColor"
+               stroke-width="0"
+               viewbox="0 0 24 24"
+               width="20px"
+               height="20px"
+               xmlns="http://www.w3.org/2000/svg"
+          >
+            <path fill="none"
+                  stroke="#000"
+                  stroke-width="2"
+                  d="M3,3 L21,21 M3,21 L21,3"
+            >
+            </path>
+          </svg>
+        </button>
+        <nav class="sc-lltjXc hQtBUA">
+          <a class="sc-eLSjS sc-bqOBKd cwmAMq bvjZlb">
+            Recent articles
+          </a>
+          <a class="sc-eLSjS sc-bqOBKd cwmAMq bvjZlb">
+            About
+          </a>
+        </nav>
+        <a class="sc-ksJisA jEBuxO login-link"
+           href="/login"
+        >
+          <span>
+            Login
+          </span>
+          <svg stroke="currentColor"
+               fill="none"
+               stroke-width="0"
+               viewbox="0 0 24 24"
+               height="1em"
+               width="1em"
+               xmlns="http://www.w3.org/2000/svg"
+               style="transform: rotate(180deg);"
+          >
+            <path stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 19l-7-7m0 0l7-7m-7 7h18"
+            >
+            </path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+`;
+
+exports[`Organisms/Top NavBar TabletNavBar smoke-test 1`] = `
+<header variant="tablet"
+        class="sc-bZCZoC fUgnBR TopNavbar"
+>
+  <div class="TopNavbar__container">
+    <img src="static/media/src/images/cat-logo.svg"
+         alt="cat logo"
+         height="40px"
+    >
+    <div class="TopNavbar__sub-container">
+      <nav class="sc-iUeHef cEYyuW">
+        <a variant="classic"
+           class="sc-eLSjS kjOsEi"
+           href="/"
+        >
+          Recent Articles
+        </a>
+        <a variant="classic"
+           class="sc-eLSjS kjOsEi"
+           href="/about"
+        >
+          About
+        </a>
+      </nav>
+      <a class="sc-ksJisA jEBuxO login-link"
+         href="/login"
+      >
+        <span>
+          Login
+        </span>
+        <svg stroke="currentColor"
+             fill="none"
+             stroke-width="0"
+             viewbox="0 0 24 24"
+             height="1em"
+             width="1em"
+             xmlns="http://www.w3.org/2000/svg"
+             style="transform: rotate(180deg);"
+        >
+          <path stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10 19l-7-7m0 0l7-7m-7 7h18"
+          >
+          </path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</header>
+`;

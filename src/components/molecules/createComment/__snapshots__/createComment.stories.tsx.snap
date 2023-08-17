@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Molecules/Create comment CreateCommentDisabled smoke-test 1`] = `
+<form class="sc-kgvdhe jBqxex">
+  <img class="sc-kDnyCx dyuMnk avatar"
+       src="static/media/src/images/avatar-fallback.png"
+       alt="fallback user avatar"
+  >
+  <textarea disabled
+            placeholder="Join the discussion"
+            rows="1"
+            name="comment"
+            class="sc-eDnVMP fmxlqA"
+  >
+  </textarea>
+  <span class="sc-ipMvLY fOtdNV">
+  </span>
+</form>
+`;
+
+exports[`Molecules/Create comment CreateCommmentAuthorized smoke-test 1`] = `
+<form class="sc-kgvdhe jBqxex">
+  <img class="sc-kDnyCx dyuMnk avatar"
+       src="static/media/src/images/avatar-fallback.png"
+       alt="fallback user avatar"
+  >
+  <textarea placeholder="Join the discussion"
+            rows="1"
+            name="comment"
+            class="sc-eDnVMP fmxlqA"
+  >
+  </textarea>
+  <span class="sc-ipMvLY fOtdNV">
+  </span>
+</form>
+`;

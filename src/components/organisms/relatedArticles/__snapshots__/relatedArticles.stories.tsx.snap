@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Organisms/Related Articles section RelatedArticlesSection smoke-test 1`] = `
+<div class="sc-jdkVqZ fBMMlm related-articles">
+  <h3>
+    Related Articles
+  </h3>
+  <div class="related-articles__articles">
+    <a class="sc-idyqAC iVyZKQ"
+       href="/articles/641421a4-1044-4649-bd56-8320516edda0"
+    >
+      <h5>
+        Wet vs. Dry Cat Food: Which is Better?
+      </h5>
+      <p>
+        A cat's whiskers — or vibrissae — are a well-honed sensory tool that helps a cat see in the dark and steer clear of hungry predators. Whiskers are highly ...
+      </p>
+    </a>
+    <a class="sc-idyqAC iVyZKQ"
+       href="/articles/9d3e5b4f-5c18-44cc-bba7-c0bcd7e75d1b"
+    >
+      <h5>
+        How Much Wet Food Should I Feed My Cat?
+      </h5>
+      <p>
+        If you aren’t sure how much wet food you should feed your cat, Purina’s expert nutritionists can help. Plus, they offer guidance on food safety and provide ser...
+      </p>
+    </a>
+    <a class="sc-idyqAC iVyZKQ"
+       href="/articles/28c6141f-30a1-4d16-9274-2cf0b81e204a"
+    >
+      <h5>
+        Do Cats Drink Water? Cat Hydration &amp; Dehydration Prevention
+      </h5>
+      <p>
+        Do cats drink water? Yes, like humans and many other animals, cats need water to survive. Many cats don’t drink as much as they should, though. Find out w...
+      </p>
+    </a>
+    <a class="sc-idyqAC iVyZKQ"
+       href="/articles/207283b6-c545-4702-b217-9b6b2e1aeb51"
+    >
+      <h5>
+        What Is the Difference Between Natural and Organic Cat Food?
+      </h5>
+      <p>
+        If you prefer your own diet to be natural or organic, you’re probably considering feeding your cat a natural or organic cat food, too. What’s the difference betw...
+      </p>
+    </a>
+    <a class="sc-idyqAC iVyZKQ"
+       href="/articles/e52a7ac3-0b87-4399-9ae9-b913ea5daa35"
+    >
+      <h5>
+        Why Do Cats Have Whiskers?
+      </h5>
+      <p>
+        A cat's whiskers — or vibrissae — are a well-honed sensory tool that helps a cat see in the dark and steer clear of hungry predators. Whiskers are highly sensitive tactile hairs that grow in patterns on a cat's muzzle, a...
+      </p>
+    </a>
+  </div>
+</div>
+`;

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Molecules/Article Preview ArticlePreviewSmallExample smoke-test 1`] = `
+<a class="sc-idyqAC iVyZKQ"
+   href="/articles/undefined"
+>
+  <h5>
+    Hello world
+  </h5>
+  <p>
+    Hello there
+  </p>
+</a>
+`;

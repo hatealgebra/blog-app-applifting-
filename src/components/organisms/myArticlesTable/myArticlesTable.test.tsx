@@ -1,27 +1,27 @@
-import React from "react";
+import React from 'react';
 
-import { setupTestWithStore } from "../../../utils/testing.utils";
-import MyArticlesTable from "./MyArticlesTable";
-import userEvent from "@testing-library/user-event";
-import { screen, waitFor } from "@testing-library/react";
-import { server } from "../../../__mocks__/server";
+import { setupTestWithStore } from '../../../utils/testing.utils';
+import MyArticlesTable from './MyArticlesTable';
+import userEvent from '@testing-library/user-event';
+import { screen, waitFor } from '@testing-library/react';
+import { server } from '../../../__mocks__/server';
 
 // FIXME: fix Tests that will shows the fetched articles
 
-describe("My articles checbox testing", () => {
+describe('My articles checbox testing', () => {
   let checkboxes: HTMLElement[];
   beforeEach(async () => {
     const { getAllByRole } = setupTestWithStore(<MyArticlesTable />);
-    checkboxes = getAllByRole("checkbox");
+    checkboxes = getAllByRole('checkbox');
     userEvent.click(checkboxes[0]);
   });
-  test("check all", async () => {
+  test('check all', async () => {
     await waitFor(() => {
       checkboxes.map((checkbox) => expect(checkbox).toBeChecked);
     });
     screen.debug();
   });
-  test("uncheck all", async () => {
+  test('uncheck all', async () => {
     userEvent.click(checkboxes[0]);
     await waitFor(() => {
       checkboxes.map((checkbox) => expect(checkbox).not.toBeChecked);

@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Molecules/Upload image UploadImageExample smoke-test 1`] = `
+<div class="sc-ezGUZh fpAwaX">
+  <label class="upload-image__label">
+    Featured Image
+  </label>
+  <button variant="standard"
+          colortheme="primary"
+          type="button"
+          class="sc-dkjKgF iJlhGR"
+  >
+    Upload an Image
+  </button>
+  <input data-testid="image-uploader"
+         type="file"
+         accept="image/*"
+         style="display: none;"
+  >
+</div>
+`;
+
+exports[`Molecules/Upload image UploadImageWithFile smoke-test 1`] = `
+<div class="sc-ezGUZh fpAwaX">
+  <label class="upload-image__label">
+    Featured Image
+  </label>
+  <img class="upload-image__preview"
+       src="blob:http://127.0.0.1:6006/c8b9e969-b3eb-4a77-99d3-783eb690809f"
+       alt="hello.png"
+  >
+  <div class="upload-image__button-row">
+    <button variant="outline"
+            colortheme="primary"
+            type="button"
+            class="sc-dkjKgF hhKsHh"
+    >
+      Upload New
+    </button>
+    <button variant="outline"
+            colortheme="primary"
+            type="button"
+            class="sc-dkjKgF hhKsHh"
+    >
+      Delete
+    </button>
+  </div>
+  <input data-testid="image-uploader"
+         type="file"
+         accept="image/*"
+         style="display: none;"
+  >
+</div>
+`;

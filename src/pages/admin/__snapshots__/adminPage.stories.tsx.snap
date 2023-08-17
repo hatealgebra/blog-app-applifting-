@@ -1,0 +1,979 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pages/Admin pages CreateNewArticle smoke-test 1`] = `
+<div class="sc-jOHGOj jWBhew">
+  <header variant="desktop"
+          class="sc-bZCZoC fUgnBR TopNavbar"
+  >
+    <div class="TopNavbar__container">
+      <div class="TopNavbar__sub-container">
+        <img src="static/media/src/images/cat-logo.svg"
+             alt="cat logo"
+             height="40px"
+        >
+        <nav class="sc-iUeHef cEYyuW">
+          <a variant="classic"
+             class="sc-eLSjS kjOsEi"
+             href="/"
+          >
+            Recent Articles
+          </a>
+          <a variant="classic"
+             class="sc-eLSjS kjOsEi"
+             href="/about"
+          >
+            About
+          </a>
+        </nav>
+      </div>
+      <div class="TopNavbar__sub-container">
+        <a class="sc-ksJisA jEBuxO login-link"
+           href="/login"
+        >
+          <span>
+            Login
+          </span>
+          <svg stroke="currentColor"
+               fill="none"
+               stroke-width="0"
+               viewbox="0 0 24 24"
+               height="1em"
+               width="1em"
+               xmlns="http://www.w3.org/2000/svg"
+               style="transform: rotate(180deg);"
+          >
+            <path stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 19l-7-7m0 0l7-7m-7 7h18"
+            >
+            </path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+  <div class="sc-eflkNB iumgkV">
+    <form class="sc-gXCJSa kpUsKL">
+      <div class="sc-hBpgZr blYtEN">
+        <h1>
+          Create new article
+        </h1>
+        <button variant="standard"
+                colortheme="primary"
+                type="submit"
+                class="sc-dkjKgF iJlhGR"
+        >
+          Publish article
+        </button>
+      </div>
+      <div>
+        <div class="sc-jSwlEQ eeEroX">
+          <label for="Article title">
+            Article title
+          </label>
+          <input placeholder="My new article"
+                 id="Article title"
+                 class="sc-hLclGa iSKFPv"
+                 value
+          >
+        </div>
+        <span class="sc-ipMvLY fOtdNV">
+        </span>
+      </div>
+      <div>
+        <div class="sc-ezGUZh fpAwaX">
+          <label class="upload-image__label">
+            Featured Image
+          </label>
+          <button variant="standard"
+                  colortheme="primary"
+                  type="button"
+                  class="sc-dkjKgF iJlhGR"
+          >
+            Upload an Image
+          </button>
+          <input data-testid="image-uploader"
+                 type="file"
+                 accept="image/*"
+                 style="display: none;"
+          >
+        </div>
+        <span class="sc-ipMvLY fOtdNV">
+        </span>
+      </div>
+      <div>
+        <div id="simplemde-editor-1-wrapper">
+          <textarea id="simplemde-editor-1"
+                    placeholder="Supports markdown. Yay!"
+                    style="display: none;"
+          >
+          </textarea>
+          <div class="EasyMDEContainer"
+               role="application"
+          >
+            <div class="editor-toolbar"
+                 role="toolbar"
+            >
+              <button class="bold"
+                      type="button"
+                      title="Bold (Cmd-B)"
+                      aria-label="Bold"
+                      tabindex="-1"
+              >
+                <i class="fa fa-bold">
+                </i>
+              </button>
+              <button class="italic"
+                      type="button"
+                      title="Italic (Cmd-I)"
+                      aria-label="Italic"
+                      tabindex="-1"
+              >
+                <i class="fa fa-italic">
+                </i>
+              </button>
+              <button class="heading"
+                      type="button"
+                      title="Heading (Cmd-H)"
+                      aria-label="Heading"
+                      tabindex="-1"
+              >
+                <i class="fa fa-header fa-heading">
+                </i>
+              </button>
+              <i class="separator">
+                |
+              </i>
+              <button class="quote"
+                      type="button"
+                      title="Quote (Cmd-')"
+                      aria-label="Quote"
+                      tabindex="-1"
+              >
+                <i class="fa fa-quote-left">
+                </i>
+              </button>
+              <button class="unordered-list"
+                      type="button"
+                      title="Generic List (Cmd-L)"
+                      aria-label="Generic List"
+                      tabindex="-1"
+              >
+                <i class="fa fa-list-ul">
+                </i>
+              </button>
+              <button class="ordered-list"
+                      type="button"
+                      title="Numbered List (Cmd-⌥-L)"
+                      aria-label="Numbered List"
+                      tabindex="-1"
+              >
+                <i class="fa fa-list-ol">
+                </i>
+              </button>
+              <i class="separator">
+                |
+              </i>
+              <button class="link"
+                      type="button"
+                      title="Create Link (Cmd-K)"
+                      aria-label="Create Link"
+                      tabindex="-1"
+              >
+                <i class="fa fa-link">
+                </i>
+              </button>
+              <button class="image"
+                      type="button"
+                      title="Insert Image (Cmd-⌥-I)"
+                      aria-label="Insert Image"
+                      tabindex="-1"
+              >
+                <i class="fa fa-image">
+                </i>
+              </button>
+              <i class="separator">
+                |
+              </i>
+              <button class="preview no-disable"
+                      type="button"
+                      title="Toggle Preview (Cmd-P)"
+                      aria-label="Toggle Preview"
+                      tabindex="-1"
+              >
+                <i class="fa fa-eye">
+                </i>
+              </button>
+              <button class="side-by-side no-disable no-mobile"
+                      type="button"
+                      title="Toggle Side by Side (F9)"
+                      aria-label="Toggle Side by Side"
+                      tabindex="-1"
+              >
+                <i class="fa fa-columns">
+                </i>
+              </button>
+              <button class="fullscreen no-disable no-mobile"
+                      type="button"
+                      title="Toggle Fullscreen (F11)"
+                      aria-label="Toggle Fullscreen"
+                      tabindex="-1"
+              >
+                <i class="fa fa-arrows-alt">
+                </i>
+              </button>
+              <i class="separator">
+                |
+              </i>
+              <button class="guide no-disable"
+                      type="button"
+                      title="Markdown Guide"
+                      aria-label="Markdown Guide"
+                      tabindex="-1"
+              >
+                <i class="fa fa-question-circle">
+                </i>
+              </button>
+            </div>
+            <div class="CodeMirror cm-s-easymde CodeMirror-wrap CodeMirror-empty"
+                 translate="no"
+                 style="clip-path: inset(0px);"
+            >
+              <div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 15px; left: 15px;">
+                <textarea autocorrect="off"
+                          autocapitalize="off"
+                          spellcheck="true"
+                          tabindex="0"
+                          style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; min-height: 1em; outline: none;"
+                >
+                </textarea>
+              </div>
+              <div class="CodeMirror-vscrollbar"
+                   tabindex="-1"
+                   cm-not-content="true"
+                   style="width: 18px; visibility: hidden;"
+              >
+                <div style="min-width: 1px; height: 0px;">
+                </div>
+              </div>
+              <div class="CodeMirror-hscrollbar"
+                   tabindex="-1"
+                   cm-not-content="true"
+                   style="height: 18px;"
+              >
+                <div style="height: 100%; min-height: 1px; width: 0px;">
+                </div>
+              </div>
+              <div class="CodeMirror-scrollbar-filler"
+                   cm-not-content="true"
+              >
+              </div>
+              <div class="CodeMirror-gutter-filler"
+                   cm-not-content="true"
+              >
+              </div>
+              <div class="CodeMirror-scroll"
+                   tabindex="-1"
+                   style="min-height: 300px;"
+              >
+                <div class="CodeMirror-sizer"
+                     style="margin-left: 0px; margin-bottom: 0px; border-right-width: 50px; min-height: 28px; padding-right: 0px; padding-bottom: 0px;"
+                >
+                  <div style="position: relative; top: 0px;">
+                    <div class="CodeMirror-lines"
+                         role="presentation"
+                    >
+                      <div role="presentation"
+                           style="position: relative; outline: none;"
+                      >
+                        <pre class="CodeMirror-placeholder CodeMirror-line-like"
+                             style="height: 0px; overflow: visible; direction: ltr;"
+                        >
+                          Supports markdown. Yay!
+                        </pre>
+                        <div class="CodeMirror-measure">
+                          <pre class="CodeMirror-line-like">
+                            <span>
+                              xxxxxxxxxx
+                            </span>
+                          </pre>
+                        </div>
+                        <div class="CodeMirror-measure">
+                        </div>
+                        <div style="position: relative; z-index: 1;">
+                        </div>
+                        <div class="CodeMirror-cursors">
+                          <div class="CodeMirror-cursor"
+                               style="left: 4px; top: 0px; height: 19.5px;"
+                          >
+                            &nbsp;
+                          </div>
+                        </div>
+                        <div class="CodeMirror-code"
+                             role="presentation"
+                        >
+                          <pre class=" CodeMirror-line "
+                               role="presentation"
+                          >
+                            <span role="presentation"
+                                  style="padding-right: 0.1px;"
+                            >
+                              <span cm-text>
+                                ​
+                              </span>
+                            </span>
+                          </pre>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div style="position: absolute; height: 50px; width: 1px; border-bottom: 0px solid transparent; top: 28px;">
+                </div>
+                <div class="CodeMirror-gutters"
+                     style="display: none; height: 78px;"
+                >
+                </div>
+              </div>
+            </div>
+            <div class="editor-preview-side editor-preview">
+            </div>
+            <div class="editor-statusbar">
+              <span class="autosave">
+              </span>
+              <span class="lines">
+                1
+              </span>
+              <span class="words">
+                0
+              </span>
+              <span class="cursor">
+                1:1
+              </span>
+            </div>
+          </div>
+        </div>
+        <span class="sc-ipMvLY fOtdNV">
+        </span>
+      </div>
+    </form>
+  </div>
+</div>
+`;
+
+exports[`Pages/Admin pages EditArticle smoke-test 1`] = `
+<div class="sc-jOHGOj jWBhew">
+  <header variant="desktop"
+          class="sc-bZCZoC fUgnBR TopNavbar"
+  >
+    <div class="TopNavbar__container">
+      <div class="TopNavbar__sub-container">
+        <img src="static/media/src/images/cat-logo.svg"
+             alt="cat logo"
+             height="40px"
+        >
+        <nav class="sc-iUeHef cEYyuW">
+          <a variant="classic"
+             class="sc-eLSjS kjOsEi"
+             href="/"
+          >
+            Recent Articles
+          </a>
+          <a variant="classic"
+             class="sc-eLSjS kjOsEi"
+             href="/about"
+          >
+            About
+          </a>
+        </nav>
+      </div>
+      <div class="TopNavbar__sub-container">
+        <a class="sc-ksJisA jEBuxO login-link"
+           href="/login"
+        >
+          <span>
+            Login
+          </span>
+          <svg stroke="currentColor"
+               fill="none"
+               stroke-width="0"
+               viewbox="0 0 24 24"
+               height="1em"
+               width="1em"
+               xmlns="http://www.w3.org/2000/svg"
+               style="transform: rotate(180deg);"
+          >
+            <path stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 19l-7-7m0 0l7-7m-7 7h18"
+            >
+            </path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+  <div class="sc-eflkNB iumgkV">
+    <form class="sc-gXCJSa kpUsKL">
+      <div class="sc-hBpgZr blYtEN">
+        <h1>
+          Create new article
+        </h1>
+        <button variant="standard"
+                colortheme="primary"
+                type="submit"
+                class="sc-dkjKgF iJlhGR"
+        >
+          Publish article
+        </button>
+      </div>
+      <div>
+        <div class="sc-jSwlEQ eeEroX">
+          <label for="Article title">
+            Article title
+          </label>
+          <input placeholder="My new article"
+                 id="Article title"
+                 class="sc-hLclGa iSKFPv"
+                 value
+          >
+        </div>
+        <span class="sc-ipMvLY fOtdNV">
+        </span>
+      </div>
+      <div>
+        <div class="sc-ezGUZh fpAwaX">
+          <label class="upload-image__label">
+            Featured Image
+          </label>
+          <button variant="standard"
+                  colortheme="primary"
+                  type="button"
+                  class="sc-dkjKgF iJlhGR"
+          >
+            Upload an Image
+          </button>
+          <input data-testid="image-uploader"
+                 type="file"
+                 accept="image/*"
+                 style="display: none;"
+          >
+        </div>
+        <span class="sc-ipMvLY fOtdNV">
+        </span>
+      </div>
+      <div>
+        <div id="simplemde-editor-2-wrapper">
+          <textarea id="simplemde-editor-2"
+                    placeholder="Supports markdown. Yay!"
+                    style="display: none;"
+          >
+          </textarea>
+          <div class="EasyMDEContainer"
+               role="application"
+          >
+            <div class="editor-toolbar"
+                 role="toolbar"
+            >
+              <button class="bold"
+                      type="button"
+                      title="Bold (Cmd-B)"
+                      aria-label="Bold"
+                      tabindex="-1"
+              >
+                <i class="fa fa-bold">
+                </i>
+              </button>
+              <button class="italic"
+                      type="button"
+                      title="Italic (Cmd-I)"
+                      aria-label="Italic"
+                      tabindex="-1"
+              >
+                <i class="fa fa-italic">
+                </i>
+              </button>
+              <button class="heading"
+                      type="button"
+                      title="Heading (Cmd-H)"
+                      aria-label="Heading"
+                      tabindex="-1"
+              >
+                <i class="fa fa-header fa-heading">
+                </i>
+              </button>
+              <i class="separator">
+                |
+              </i>
+              <button class="quote"
+                      type="button"
+                      title="Quote (Cmd-')"
+                      aria-label="Quote"
+                      tabindex="-1"
+              >
+                <i class="fa fa-quote-left">
+                </i>
+              </button>
+              <button class="unordered-list"
+                      type="button"
+                      title="Generic List (Cmd-L)"
+                      aria-label="Generic List"
+                      tabindex="-1"
+              >
+                <i class="fa fa-list-ul">
+                </i>
+              </button>
+              <button class="ordered-list"
+                      type="button"
+                      title="Numbered List (Cmd-⌥-L)"
+                      aria-label="Numbered List"
+                      tabindex="-1"
+              >
+                <i class="fa fa-list-ol">
+                </i>
+              </button>
+              <i class="separator">
+                |
+              </i>
+              <button class="link"
+                      type="button"
+                      title="Create Link (Cmd-K)"
+                      aria-label="Create Link"
+                      tabindex="-1"
+              >
+                <i class="fa fa-link">
+                </i>
+              </button>
+              <button class="image"
+                      type="button"
+                      title="Insert Image (Cmd-⌥-I)"
+                      aria-label="Insert Image"
+                      tabindex="-1"
+              >
+                <i class="fa fa-image">
+                </i>
+              </button>
+              <i class="separator">
+                |
+              </i>
+              <button class="preview no-disable"
+                      type="button"
+                      title="Toggle Preview (Cmd-P)"
+                      aria-label="Toggle Preview"
+                      tabindex="-1"
+              >
+                <i class="fa fa-eye">
+                </i>
+              </button>
+              <button class="side-by-side no-disable no-mobile"
+                      type="button"
+                      title="Toggle Side by Side (F9)"
+                      aria-label="Toggle Side by Side"
+                      tabindex="-1"
+              >
+                <i class="fa fa-columns">
+                </i>
+              </button>
+              <button class="fullscreen no-disable no-mobile"
+                      type="button"
+                      title="Toggle Fullscreen (F11)"
+                      aria-label="Toggle Fullscreen"
+                      tabindex="-1"
+              >
+                <i class="fa fa-arrows-alt">
+                </i>
+              </button>
+              <i class="separator">
+                |
+              </i>
+              <button class="guide no-disable"
+                      type="button"
+                      title="Markdown Guide"
+                      aria-label="Markdown Guide"
+                      tabindex="-1"
+              >
+                <i class="fa fa-question-circle">
+                </i>
+              </button>
+            </div>
+            <div class="CodeMirror cm-s-easymde CodeMirror-wrap CodeMirror-empty"
+                 translate="no"
+                 style="clip-path: inset(0px);"
+            >
+              <div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 15px; left: 15px;">
+                <textarea autocorrect="off"
+                          autocapitalize="off"
+                          spellcheck="true"
+                          tabindex="0"
+                          style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; min-height: 1em; outline: none;"
+                >
+                </textarea>
+              </div>
+              <div class="CodeMirror-vscrollbar"
+                   tabindex="-1"
+                   cm-not-content="true"
+                   style="width: 18px; visibility: hidden;"
+              >
+                <div style="min-width: 1px; height: 0px;">
+                </div>
+              </div>
+              <div class="CodeMirror-hscrollbar"
+                   tabindex="-1"
+                   cm-not-content="true"
+                   style="height: 18px;"
+              >
+                <div style="height: 100%; min-height: 1px; width: 0px;">
+                </div>
+              </div>
+              <div class="CodeMirror-scrollbar-filler"
+                   cm-not-content="true"
+              >
+              </div>
+              <div class="CodeMirror-gutter-filler"
+                   cm-not-content="true"
+              >
+              </div>
+              <div class="CodeMirror-scroll"
+                   tabindex="-1"
+                   style="min-height: 300px;"
+              >
+                <div class="CodeMirror-sizer"
+                     style="margin-left: 0px; margin-bottom: 0px; border-right-width: 50px; min-height: 28px; padding-right: 0px; padding-bottom: 0px;"
+                >
+                  <div style="position: relative; top: 0px;">
+                    <div class="CodeMirror-lines"
+                         role="presentation"
+                    >
+                      <div role="presentation"
+                           style="position: relative; outline: none;"
+                      >
+                        <pre class="CodeMirror-placeholder CodeMirror-line-like"
+                             style="height: 0px; overflow: visible; direction: ltr;"
+                        >
+                          Supports markdown. Yay!
+                        </pre>
+                        <div class="CodeMirror-measure">
+                          <pre class="CodeMirror-line-like">
+                            <span>
+                              xxxxxxxxxx
+                            </span>
+                          </pre>
+                        </div>
+                        <div class="CodeMirror-measure">
+                        </div>
+                        <div style="position: relative; z-index: 1;">
+                        </div>
+                        <div class="CodeMirror-cursors">
+                          <div class="CodeMirror-cursor"
+                               style="left: 4px; top: 0px; height: 19.5px;"
+                          >
+                            &nbsp;
+                          </div>
+                        </div>
+                        <div class="CodeMirror-code"
+                             role="presentation"
+                        >
+                          <pre class=" CodeMirror-line "
+                               role="presentation"
+                          >
+                            <span role="presentation"
+                                  style="padding-right: 0.1px;"
+                            >
+                              <span cm-text>
+                                ​
+                              </span>
+                            </span>
+                          </pre>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div style="position: absolute; height: 50px; width: 1px; border-bottom: 0px solid transparent; top: 28px;">
+                </div>
+                <div class="CodeMirror-gutters"
+                     style="display: none; height: 78px;"
+                >
+                </div>
+              </div>
+            </div>
+            <div class="editor-preview-side editor-preview">
+            </div>
+            <div class="editor-statusbar">
+              <span class="autosave">
+              </span>
+              <span class="lines">
+                1
+              </span>
+              <span class="words">
+                0
+              </span>
+              <span class="cursor">
+                1:1
+              </span>
+            </div>
+          </div>
+        </div>
+        <span class="sc-ipMvLY fOtdNV">
+        </span>
+      </div>
+    </form>
+  </div>
+</div>
+`;
+
+exports[`Pages/Admin pages MyArticles smoke-test 1`] = `
+<div class="sc-jOHGOj jWBhew">
+  <header variant="desktop"
+          class="sc-bZCZoC fUgnBR TopNavbar"
+  >
+    <div class="TopNavbar__container">
+      <div class="TopNavbar__sub-container">
+        <img src="static/media/src/images/cat-logo.svg"
+             alt="cat logo"
+             height="40px"
+        >
+        <nav class="sc-iUeHef cEYyuW">
+          <a variant="classic"
+             class="sc-eLSjS kjOsEi"
+             href="/"
+          >
+            Recent Articles
+          </a>
+          <a variant="classic"
+             class="sc-eLSjS kjOsEi"
+             href="/about"
+          >
+            About
+          </a>
+        </nav>
+      </div>
+      <div class="TopNavbar__sub-container">
+        <a class="sc-ksJisA jEBuxO login-link"
+           href="/login"
+        >
+          <span>
+            Login
+          </span>
+          <svg stroke="currentColor"
+               fill="none"
+               stroke-width="0"
+               viewbox="0 0 24 24"
+               height="1em"
+               width="1em"
+               xmlns="http://www.w3.org/2000/svg"
+               style="transform: rotate(180deg);"
+          >
+            <path stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 19l-7-7m0 0l7-7m-7 7h18"
+            >
+            </path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+  <div class="sc-eflkNB iumgkV">
+    <div class="sc-AOXSc CEBXZ">
+      <div class="sc-hBpgZr blYtEN">
+        <h1>
+          My Articles
+        </h1>
+        <a colortheme="primary"
+           class="sc-dkjKgF sc-csmVar iJlhGR blIAmy"
+           href="/admin/create-article"
+        >
+          Create new article
+        </a>
+      </div>
+      <form class="sc-cOqaIB uZNnC">
+        <table class="sc-bCnriq fIQGIT">
+          <tr class="sc-jrkPcm jbOSku edit-article">
+            <th class="edit-article__checkbox">
+              <div class="sc-ftLKQv iibJaj">
+                <input type="checkbox"
+                       class="sc-iBAaJG ciwLrW"
+                >
+              </div>
+            </th>
+            <th class="edit-article__title">
+              <button class="sc-bcPKhP deoNYt">
+                <span>
+                  Article title
+                </span>
+                <svg stroke="currentColor"
+                     fill="currentColor"
+                     stroke-width="0"
+                     viewbox="0 0 320 512"
+                     height="1em"
+                     width="1em"
+                     xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z">
+                  </path>
+                </svg>
+              </button>
+            </th>
+            <th class="edit-article__perex">
+              <button class="sc-bcPKhP deoNYt">
+                <span>
+                  Perex
+                </span>
+                <svg stroke="currentColor"
+                     fill="currentColor"
+                     stroke-width="0"
+                     viewbox="0 0 320 512"
+                     height="1em"
+                     width="1em"
+                     xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z">
+                  </path>
+                </svg>
+              </button>
+            </th>
+            <th class="edit-article__author">
+              <button class="sc-bcPKhP deoNYt">
+                <span>
+                  Author
+                </span>
+                <svg stroke="currentColor"
+                     fill="currentColor"
+                     stroke-width="0"
+                     viewbox="0 0 320 512"
+                     height="1em"
+                     width="1em"
+                     xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z">
+                  </path>
+                </svg>
+              </button>
+            </th>
+            <th class="edit-article__nr-comments">
+              <button class="sc-bcPKhP deoNYt">
+                <span>
+                  # comments
+                </span>
+                <svg stroke="currentColor"
+                     fill="currentColor"
+                     stroke-width="0"
+                     viewbox="0 0 320 512"
+                     height="1em"
+                     width="1em"
+                     xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z">
+                  </path>
+                </svg>
+              </button>
+            </th>
+            <th class="edit-article__actions-container">
+              Actions
+            </th>
+          </tr>
+          <div class="sc-kMbQoj sc-dPOtYP hCGEju eyyPXl">
+            <div data-testid="three-dots-loading"
+                 aria-label="three-dots-loading"
+                 aria-busy="true"
+                 role="status"
+                 style="display: flex;"
+            >
+              <svg width="80"
+                   height="80"
+                   viewbox="0 0 120 30"
+                   xmlns="http://www.w3.org/2000/svg"
+                   fill="#007BFF"
+                   data-testid="three-dots-svg"
+              >
+                <circle cx="15"
+                        cy="15"
+                        r="15"
+                >
+                  <animate attributename="r"
+                           from="15"
+                           to="15"
+                           begin="0s"
+                           dur="0.8s"
+                           values="15;9;15"
+                           calcmode="linear"
+                           repeatcount="indefinite"
+                  >
+                  </animate>
+                  <animate attributename="fill-opacity"
+                           from="1"
+                           to="1"
+                           begin="0s"
+                           dur="0.8s"
+                           values="1;.5;1"
+                           calcmode="linear"
+                           repeatcount="indefinite"
+                  >
+                  </animate>
+                </circle>
+                <circle cx="60"
+                        cy="15"
+                        r="9"
+                        attributename="fill-opacity"
+                        from="1"
+                        to="0.3"
+                >
+                  <animate attributename="r"
+                           from="9"
+                           to="9"
+                           begin="0s"
+                           dur="0.8s"
+                           values="9;15;9"
+                           calcmode="linear"
+                           repeatcount="indefinite"
+                  >
+                  </animate>
+                  <animate attributename="fill-opacity"
+                           from="0.5"
+                           to="0.5"
+                           begin="0s"
+                           dur="0.8s"
+                           values=".5;1;.5"
+                           calcmode="linear"
+                           repeatcount="indefinite"
+                  >
+                  </animate>
+                </circle>
+                <circle cx="105"
+                        cy="15"
+                        r="15"
+                >
+                  <animate attributename="r"
+                           from="15"
+                           to="15"
+                           begin="0s"
+                           dur="0.8s"
+                           values="15;9;15"
+                           calcmode="linear"
+                           repeatcount="indefinite"
+                  >
+                  </animate>
+                  <animate attributename="fill-opacity"
+                           from="1"
+                           to="1"
+                           begin="0s"
+                           dur="0.8s"
+                           values="1;.5;1"
+                           calcmode="linear"
+                           repeatcount="indefinite"
+                  >
+                  </animate>
+                </circle>
+              </svg>
+            </div>
+          </div>
+        </table>
+      </form>
+    </div>
+  </div>
+</div>
+`;

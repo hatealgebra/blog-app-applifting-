@@ -1,0 +1,196 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Organisms/Discussion DiscussionExample smoke-test 1`] = `
+<div class="sc-hhWzdI discussion">
+  <form class="sc-kgvdhe jBqxex">
+    <img class="sc-kDnyCx dyuMnk avatar"
+         src="static/media/src/images/avatar-fallback.png"
+         alt="fallback user avatar"
+    >
+    <textarea placeholder="Join the discussion"
+              rows="1"
+              name="comment"
+              class="sc-eDnVMP fmxlqA"
+    >
+    </textarea>
+    <span class="sc-ipMvLY fOtdNV">
+    </span>
+  </form>
+  <div class="sc-jIJgYh gDxFJE">
+    <div class="sc-dmBjiZ iKcHha comment">
+      <img class="sc-kDnyCx dyuMnk avatar"
+           src="static/media/src/images/avatar-fallback.png"
+           alt="fallback user avatar"
+      >
+      <h5 class="comment__author">
+        Lily Hawkins
+      </h5>
+      <span class="comment__time-diff label">
+        1 year ago
+      </span>
+      <p class="comment__text">
+        You see, wire telegraph is a kind of a very, very long cat. You pull his tail in New York and his head is meowing in Los Angeles. Do you understand this? And radio operates exactly the same way: you send signals here, they receive them there. The only difference is that there is no cat.
+      </p>
+      <div class="sc-hHvkSs epNxvi comment__voting-counter">
+        <span data-testid="reactionCounter">
+          +4
+        </span>
+        <button aria-label="vote-up">
+          <svg stroke="currentColor"
+               fill="currentColor"
+               stroke-width="0"
+               viewbox="0 0 24 24"
+               height="100%"
+               width="100%"
+               xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <path fill="none"
+                    d="M0 0h24v24H0z"
+              >
+              </path>
+              <path d="M12 10.828l-4.95 4.95-1.414-1.414L12 8l6.364 6.364-1.414 1.414z">
+              </path>
+            </g>
+          </svg>
+        </button>
+        <button aria-label="vote-down">
+          <svg stroke="currentColor"
+               fill="currentColor"
+               stroke-width="0"
+               viewbox="0 0 24 24"
+               height="100%"
+               width="100%"
+               xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <path fill="none"
+                    d="M0 0h24v24H0z"
+              >
+              </path>
+              <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z">
+              </path>
+            </g>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="sc-dmBjiZ iKcHha comment">
+      <img class="sc-kDnyCx dyuMnk avatar"
+           src="static/media/src/images/avatar-fallback.png"
+           alt="fallback user avatar"
+      >
+      <h5 class="comment__author">
+        Priscilla Simmmons
+      </h5>
+      <span class="comment__time-diff label">
+        1 year ago
+      </span>
+      <p class="comment__text">
+        In its flawless grace and superior self-sufficiency I have seen a symbol of the perfect beauty and bland impersonality of the universe itself, objectively considered, and in its air of silent mystery there resides for me all the wonder and fascination of the unknown
+      </p>
+      <div class="sc-hHvkSs epNxvi comment__voting-counter">
+        <span data-testid="reactionCounter">
+          +6
+        </span>
+        <button aria-label="vote-up">
+          <svg stroke="currentColor"
+               fill="currentColor"
+               stroke-width="0"
+               viewbox="0 0 24 24"
+               height="100%"
+               width="100%"
+               xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <path fill="none"
+                    d="M0 0h24v24H0z"
+              >
+              </path>
+              <path d="M12 10.828l-4.95 4.95-1.414-1.414L12 8l6.364 6.364-1.414 1.414z">
+              </path>
+            </g>
+          </svg>
+        </button>
+        <button aria-label="vote-down">
+          <svg stroke="currentColor"
+               fill="currentColor"
+               stroke-width="0"
+               viewbox="0 0 24 24"
+               height="100%"
+               width="100%"
+               xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <path fill="none"
+                    d="M0 0h24v24H0z"
+              >
+              </path>
+              <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z">
+              </path>
+            </g>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="sc-dmBjiZ iKcHha comment">
+      <img class="sc-kDnyCx dyuMnk avatar"
+           src="static/media/src/images/avatar-fallback.png"
+           alt="fallback user avatar"
+      >
+      <h5 class="comment__author">
+        Pat Miles
+      </h5>
+      <span class="comment__time-diff label">
+        1 year ago
+      </span>
+      <p class="comment__text">
+        I regard cats as one of the great joys in the world. I see them as a gift of highest order
+      </p>
+      <div class="sc-hHvkSs epNxvi comment__voting-counter">
+        <span data-testid="reactionCounter">
+          +9
+        </span>
+        <button aria-label="vote-up">
+          <svg stroke="currentColor"
+               fill="currentColor"
+               stroke-width="0"
+               viewbox="0 0 24 24"
+               height="100%"
+               width="100%"
+               xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <path fill="none"
+                    d="M0 0h24v24H0z"
+              >
+              </path>
+              <path d="M12 10.828l-4.95 4.95-1.414-1.414L12 8l6.364 6.364-1.414 1.414z">
+              </path>
+            </g>
+          </svg>
+        </button>
+        <button aria-label="vote-down">
+          <svg stroke="currentColor"
+               fill="currentColor"
+               stroke-width="0"
+               viewbox="0 0 24 24"
+               height="100%"
+               width="100%"
+               xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <path fill="none"
+                    d="M0 0h24v24H0z"
+              >
+              </path>
+              <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z">
+              </path>
+            </g>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
