@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pages/Form Pages LoginFormPage smoke-test 1`] = `
-<div class="sc-jOHGOj jWBhew">
+<div class="sc-AOXSc ddQreF">
   <header variant="desktop"
-          class="sc-bZCZoC fUgnBR TopNavbar"
+          class="sc-cUfYYG eqofrP TopNavbar"
   >
     <div class="TopNavbar__container">
       <div class="TopNavbar__sub-container">
@@ -11,7 +11,7 @@ exports[`Pages/Form Pages LoginFormPage smoke-test 1`] = `
              alt="cat logo"
              height="40px"
         >
-        <nav class="sc-iUeHef cEYyuW">
+        <nav class="sc-jOHGOj jHhANX">
           <a variant="classic"
              class="sc-eLSjS kjOsEi"
              href="/"
@@ -53,8 +53,8 @@ exports[`Pages/Form Pages LoginFormPage smoke-test 1`] = `
       </div>
     </div>
   </header>
-  <div class="sc-eflkNB iumgkV">
-    <div class="sc-iAfmwU hRfAWb">
+  <div class="sc-bCnriq ktKMMI">
+    <div class="sc-dPOtYP imMdAU">
       <form class="sc-gKHVLF cGSTxV">
         <h3>
           Log In

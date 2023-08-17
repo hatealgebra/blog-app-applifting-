@@ -2,7 +2,7 @@
 
 exports[`Organisms/Top NavBar DesktopNavBar smoke-test 1`] = `
 <header variant="desktop"
-        class="sc-bZCZoC fUgnBR TopNavbar"
+        class="sc-cUfYYG eqofrP TopNavbar"
 >
   <div class="TopNavbar__container">
     <div class="TopNavbar__sub-container">
@@ -10,7 +10,7 @@ exports[`Organisms/Top NavBar DesktopNavBar smoke-test 1`] = `
            alt="cat logo"
            height="40px"
       >
-      <nav class="sc-iUeHef cEYyuW">
+      <nav class="sc-jOHGOj jHhANX">
         <a variant="classic"
            class="sc-eLSjS kjOsEi"
            href="/"
@@ -56,7 +56,7 @@ exports[`Organisms/Top NavBar DesktopNavBar smoke-test 1`] = `
 
 exports[`Organisms/Top NavBar MobileNavBar smoke-test 1`] = `
 <header variant="mobile"
-        class="sc-bZCZoC jGaWbt TopNavbar"
+        class="sc-cUfYYG camCHP TopNavbar"
 >
   <div class="TopNavbar__container">
     <img src="static/media/src/images/cat-logo.svg"
@@ -146,7 +146,7 @@ exports[`Organisms/Top NavBar MobileNavBar smoke-test 1`] = `
 
 exports[`Organisms/Top NavBar TabletNavBar smoke-test 1`] = `
 <header variant="tablet"
-        class="sc-bZCZoC fUgnBR TopNavbar"
+        class="sc-cUfYYG eqofrP TopNavbar"
 >
   <div class="TopNavbar__container">
     <img src="static/media/src/images/cat-logo.svg"
@@ -154,7 +154,7 @@ exports[`Organisms/Top NavBar TabletNavBar smoke-test 1`] = `
          height="40px"
     >
     <div class="TopNavbar__sub-container">
-      <nav class="sc-iUeHef cEYyuW">
+      <nav class="sc-jOHGOj jHhANX">
         <a variant="classic"
            class="sc-eLSjS kjOsEi"
            href="/"

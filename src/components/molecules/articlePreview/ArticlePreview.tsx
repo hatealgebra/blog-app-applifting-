@@ -33,9 +33,9 @@ const ArticlePreview = ({
   const [fallbackImage, setFallbackImage] = React.useState(false);
   const createdDate = getDate(createdAt);
   const file = 'data:image/png;base64,' + imageBase64;
-  const commentsArray = JSON.parse(comments);
 
   const useFallbackImage = ({ currentTarget }: Event) => {
+    if (!currentTarget) return;
     currentTarget.onerror = null;
     setFallbackImage(true);
   };
@@ -65,7 +65,7 @@ const ArticlePreview = ({
         <StyledLink to={createArticleLink(articleId)}>
           Read whole article
         </StyledLink>
-        <span>{`${commentsArray?.length || '0'} comments`}</span>
+        <span>{`${comments?.length || '0'} comments`}</span>
       </StyledArticleRow>
     </StyledArticlePreviewContainer>
   );

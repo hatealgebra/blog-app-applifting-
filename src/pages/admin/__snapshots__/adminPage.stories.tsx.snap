@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pages/Admin pages CreateNewArticle smoke-test 1`] = `
-<div class="sc-jOHGOj jWBhew">
+<div class="sc-AOXSc ddQreF">
   <header variant="desktop"
-          class="sc-bZCZoC fUgnBR TopNavbar"
+          class="sc-cUfYYG eqofrP TopNavbar"
   >
     <div class="TopNavbar__container">
       <div class="TopNavbar__sub-container">
@@ -11,7 +11,7 @@ exports[`Pages/Admin pages CreateNewArticle smoke-test 1`] = `
              alt="cat logo"
              height="40px"
         >
-        <nav class="sc-iUeHef cEYyuW">
+        <nav class="sc-jOHGOj jHhANX">
           <a variant="classic"
              class="sc-eLSjS kjOsEi"
              href="/"
@@ -53,8 +53,8 @@ exports[`Pages/Admin pages CreateNewArticle smoke-test 1`] = `
       </div>
     </div>
   </header>
-  <div class="sc-eflkNB iumgkV">
-    <form class="sc-gXCJSa kpUsKL">
+  <div class="sc-bCnriq ktKMMI">
+    <form class="sc-bZCZoC gPirry">
       <div class="sc-hBpgZr blYtEN">
         <h1>
           Create new article
@@ -363,9 +363,9 @@ exports[`Pages/Admin pages CreateNewArticle smoke-test 1`] = `
 `;
 
 exports[`Pages/Admin pages EditArticle smoke-test 1`] = `
-<div class="sc-jOHGOj jWBhew">
+<div class="sc-AOXSc ddQreF">
   <header variant="desktop"
-          class="sc-bZCZoC fUgnBR TopNavbar"
+          class="sc-cUfYYG eqofrP TopNavbar"
   >
     <div class="TopNavbar__container">
       <div class="TopNavbar__sub-container">
@@ -373,7 +373,7 @@ exports[`Pages/Admin pages EditArticle smoke-test 1`] = `
              alt="cat logo"
              height="40px"
         >
-        <nav class="sc-iUeHef cEYyuW">
+        <nav class="sc-jOHGOj jHhANX">
           <a variant="classic"
              class="sc-eLSjS kjOsEi"
              href="/"
@@ -415,8 +415,8 @@ exports[`Pages/Admin pages EditArticle smoke-test 1`] = `
       </div>
     </div>
   </header>
-  <div class="sc-eflkNB iumgkV">
-    <form class="sc-gXCJSa kpUsKL">
+  <div class="sc-bCnriq ktKMMI">
+    <form class="sc-bZCZoC gPirry">
       <div class="sc-hBpgZr blYtEN">
         <h1>
           Create new article
@@ -725,9 +725,9 @@ exports[`Pages/Admin pages EditArticle smoke-test 1`] = `
 `;
 
 exports[`Pages/Admin pages MyArticles smoke-test 1`] = `
-<div class="sc-jOHGOj jWBhew">
+<div class="sc-AOXSc ddQreF">
   <header variant="desktop"
-          class="sc-bZCZoC fUgnBR TopNavbar"
+          class="sc-cUfYYG eqofrP TopNavbar"
   >
     <div class="TopNavbar__container">
       <div class="TopNavbar__sub-container">
@@ -735,7 +735,7 @@ exports[`Pages/Admin pages MyArticles smoke-test 1`] = `
              alt="cat logo"
              height="40px"
         >
-        <nav class="sc-iUeHef cEYyuW">
+        <nav class="sc-jOHGOj jHhANX">
           <a variant="classic"
              class="sc-eLSjS kjOsEi"
              href="/"
@@ -777,8 +777,8 @@ exports[`Pages/Admin pages MyArticles smoke-test 1`] = `
       </div>
     </div>
   </header>
-  <div class="sc-eflkNB iumgkV">
-    <div class="sc-AOXSc CEBXZ">
+  <div class="sc-bCnriq ktKMMI">
+    <div class="sc-jdkVqZ jsYxwb">
       <div class="sc-hBpgZr blYtEN">
         <h1>
           My Articles
@@ -790,8 +790,8 @@ exports[`Pages/Admin pages MyArticles smoke-test 1`] = `
           Create new article
         </a>
       </div>
-      <form class="sc-cOqaIB uZNnC">
-        <table class="sc-bCnriq fIQGIT">
+      <form class="sc-ciJnBw dfwyrO">
+        <table class="sc-cCIIiH jupHLD">
           <tr class="sc-jrkPcm jbOSku edit-article">
             <th class="edit-article__checkbox">
               <div class="sc-ftLKQv iibJaj">
@@ -876,7 +876,7 @@ exports[`Pages/Admin pages MyArticles smoke-test 1`] = `
               Actions
             </th>
           </tr>
-          <div class="sc-kMbQoj sc-dPOtYP hCGEju eyyPXl">
+          <div class="sc-kMbQoj sc-gXCJSa hCGEju cuYcqn">
             <div data-testid="three-dots-loading"
                  aria-label="three-dots-loading"
                  aria-busy="true"

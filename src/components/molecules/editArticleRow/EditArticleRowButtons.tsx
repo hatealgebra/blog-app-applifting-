@@ -1,12 +1,18 @@
-import React, { Dispatch } from "react";
-import { components } from "../../../types/declarations";
-import Checkbox from "../../atoms/checkbox/Checkbox";
-import { StyledEditArticleRow } from "./editArticleRow.styled";
+import React, { Dispatch } from 'react';
+import { components } from '../../../types/declarations';
+import Checkbox from '../../atoms/checkbox/Checkbox';
+import { StyledEditArticleRow } from './editArticleRow.styled';
 
-import ButtonSort from "../../atoms/button/ButtonSort";
-import { sortMyArticles } from "../../../store/slices/admin.slices";
-import { AnyAction } from "@reduxjs/toolkit";
-import { deleteArticleThunk } from "../../../store/thunks/admin.thunks";
+import ButtonSort from '../../atoms/button/ButtonSort';
+import { sortMyArticles } from '../../../store/slices/admin.slices';
+import { AnyAction } from '@reduxjs/toolkit';
+import { deleteArticleThunk } from '../../../store/thunks/admin.thunks';
+
+interface EditArticleRowButtonsProp {
+  originalArray: components['schemas']['Article'];
+  switchAllBoxes: React.SetStateAction<any>;
+  dispatch: React.Dispatch<AnyAction>;
+}
 
 const EditArticleRowButtons = ({
   originalArray,
@@ -34,7 +40,7 @@ const EditArticleRowButtons = ({
   }, [isChecked]);
 
   React.useEffect(() => {
-    dispatch({ type: "admin/sortMyArticles", payload: isActive });
+    dispatch({ type: 'admin/sortMyArticles', payload: isActive });
   }, [originalArray]);
 
   return (
@@ -83,17 +89,11 @@ const EditArticleRowButtons = ({
 };
 
 export enum ESortByOptions {
-  ORIGINAL = "original",
-  BY_TITLE = "title",
-  BY_PEREX = "perex",
-  BY_AUTHOR = "author",
-  BY_NR_COMMENTS = "comments",
-}
-
-interface EditArticleRowButtonsProp {
-  originalArray: components["schemas"]["Article"];
-  switchAllBoxes: React.SetStateAction<any>;
-  dispatch: React.Dispatch<AnyAction>;
+  ORIGINAL = 'original',
+  BY_TITLE = 'title',
+  BY_PEREX = 'perex',
+  BY_AUTHOR = 'author',
+  BY_NR_COMMENTS = 'comments',
 }
 
 export default EditArticleRowButtons;

@@ -1,8 +1,100 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Molecules/Article Preview ArticlePreviewLongTitle smoke-test 1`] = `
+<article class="sc-fnOeiS htmKei article-preview">
+  <img class="sc-fEyylQ jGtFW article-preview__img"
+       src="data:image/png;base64,"
+       alt="Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum preview image"
+  >
+  <h3 class="article-preview__title">
+    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lo...
+  </h3>
+  <div class="sc-bjEwCx kqBqOR article-preview__row-one">
+    <span>
+      Random Author
+    </span>
+    <svg stroke="currentColor"
+         fill="currentColor"
+         stroke-width="0"
+         viewbox="0 0 8 16"
+         height="1em"
+         width="1em"
+         xmlns="http://www.w3.org/2000/svg"
+    >
+      <path fill-rule="evenodd"
+            d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"
+      >
+      </path>
+    </svg>
+    <span>
+      07/00/21
+    </span>
+  </div>
+  <p class="article-preview__text">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro beatae quod qui id dolorum nam, sapiente rem debitis ad illo doloribus ab! Dolorem aliquam facilis labore fugit rem, dolores quasi.
+  </p>
+  <div class="sc-bjEwCx kqBqOR article-preview__row-two">
+    <a class="sc-eLSjS cwmAMq"
+       href="/articles/undefined"
+    >
+      Read whole article
+    </a>
+    <span>
+      4 comments
+    </span>
+  </div>
+</article>
+`;
+
+exports[`Molecules/Article Preview ArticlePreviewMobile smoke-test 1`] = `
+<article class="sc-fnOeiS htmKei article-preview">
+  <img class="sc-fEyylQ jGtFW article-preview__img"
+       src="data:image/png;base64,"
+       alt="Article heading preview image"
+  >
+  <h3 class="article-preview__title">
+    Article heading
+  </h3>
+  <div class="sc-bjEwCx kqBqOR article-preview__row-one">
+    <span>
+      Random Author
+    </span>
+    <svg stroke="currentColor"
+         fill="currentColor"
+         stroke-width="0"
+         viewbox="0 0 8 16"
+         height="1em"
+         width="1em"
+         xmlns="http://www.w3.org/2000/svg"
+    >
+      <path fill-rule="evenodd"
+            d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"
+      >
+      </path>
+    </svg>
+    <span>
+      07/00/21
+    </span>
+  </div>
+  <p class="article-preview__text">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro beatae quod qui id dolorum nam, sapiente rem debitis ad illo doloribus ab! Dolorem aliquam facilis labore fugit rem, dolores quasi.
+  </p>
+  <div class="sc-bjEwCx kqBqOR article-preview__row-two">
+    <a class="sc-eLSjS cwmAMq"
+       href="/articles/undefined"
+    >
+      Read whole article
+    </a>
+    <span>
+      4 comments
+    </span>
+  </div>
+</article>
+`;
+
 exports[`Molecules/Article Preview ArticlePreviewSmallExample smoke-test 1`] = `
 <a class="sc-idyqAC iVyZKQ"
-   href="/articles/undefined"
+   href="/articles/"
 >
   <h5>
     Hello world

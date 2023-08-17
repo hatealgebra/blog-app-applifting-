@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Organisms/Read Article ReadArticleExample smoke-test 1`] = `
-<article class="sc-ciJnBw cJPEPT read-article">
+<article class="sc-iAfmwU eGLYzN read-article">
   <h1>
     Why do cats have Whiskers?
   </h1>
@@ -19,7 +19,7 @@ exports[`Organisms/Read Article ReadArticleExample smoke-test 1`] = `
   <img src="static/media/src/images/british-haircat.jpg"
        alt="Why do cats have Whiskers? image"
   >
-  <div class="sc-cCIIiH read-article__markdown">
+  <div class="sc-iUeHef read-article__markdown">
     <p>
       Men might grow a beard or maintain a mustache just for extra style points, but the facial hair of the cat has nothing to do with fashion. A cat's whiskers — or vibrissae — are a well-honed sensory tool that helps a catsee in the dark and steer clear of hungry predators.
     </p>

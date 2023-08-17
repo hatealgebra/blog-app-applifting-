@@ -14,10 +14,10 @@ exports[`Molecules/Edit article ArticleRowExample smoke-test 1`] = `
     </div>
   </td>
   <td class="edit-article__title">
-    Wet vs. Dry Cat Food: Which is Better?
+    British Cats: Charming Companions of the Isles
   </td>
   <td class="edit-article__perex">
-    A cat's whiskers — or vibrissae — are a well-honed sensory tool that helps a cat see in the dark and steer clear of hungry predators. Whiskers are highly ...
+    British cats, known for their distinctive charm and character, hold a special place in the hearts of cat enthusiasts around the wo...
   </td>
   <td class="edit-article__author">
     author
