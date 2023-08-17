@@ -1,7 +1,6 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
-import { Preview } from '@storybook/react';
-// import { withThemesProvider } from "storybook-addon-styled-component-theme";
+
 import { ThemeProvider } from 'styled-components';
 import { initialize, mswDecorator } from 'msw-storybook-addon';
 import { Provider } from 'react-redux';
@@ -10,6 +9,7 @@ import mockStore from '../src/__mocks__/store.mock';
 import themeDefault from '../src/components/particles/Theme';
 import GlobalStyle from '../src/components/particles/GlobalStyle';
 import AxiosInterceptor from '../src/components/particles/AxiosInterceptor';
+import { addDecorator } from '@storybook/react';
 
 // Gatsby's Link overrides:
 // Gatsby Link calls the `enqueue` & `hovering` methods on the global variable ___loader.
@@ -29,6 +29,7 @@ window.___navigate = (pathname) => {
   action('NavigateTo:')(pathname);
 };
 
+
 initialize();
 // decorators
 // FIXME: Does not work with themesProvider
@@ -43,8 +44,14 @@ const storybookWrapper = (Story) => (
   </Provider>
 );
 
-const preview: Preview = {
-  decorators: [mswDecorator, storybookWrapper],
+addDecorator(mswDecorator);
+addDecorator(storybookWrapper)
+
+if (typeof global.process === 'undefined') {
+  const { worker } = require('../src/__mocks__/browser');
+  worker.start();
+}
+const preview = {
   parameters: {
     actions: { argTypesRegex: '^on[A-Z].*' },
     controls: {
@@ -56,9 +63,5 @@ const preview: Preview = {
   },
 };
 
-if (typeof global.process === 'undefined') {
-  const { worker } = require('../src/__mocks__/browser');
-  worker.start();
-}
 
 export default preview;
