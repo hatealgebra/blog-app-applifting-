@@ -1,16 +1,16 @@
-import React from "react";
-import { components } from "../../../types/declarations";
-import Comment from "../../molecules/comment/Comment";
-import CreateComment from "../../molecules/createComment/CreateComment";
+import React from 'react';
+import { components } from '../../../customTypes/declarations';
+import Comment from '../../molecules/comment/Comment';
+import CreateComment from '../../molecules/createComment/CreateComment';
 import {
   StyledDiscussion,
   StyledDiscussionComments,
-} from "./discussion.styled";
+} from './discussion.styled';
 
 // TODO: Add state to inform the user that there are no comments yet
 const Discussion = ({ articleId, commentsArray }: DiscussionProps) => {
   const [comments, setComments] = React.useState<
-    Array<components["schemas"]["Comment"]>
+    Array<components['schemas']['Comment']>
   >(commentsArray ?? []);
 
   console.log(comments);
@@ -42,7 +42,7 @@ const Discussion = ({ articleId, commentsArray }: DiscussionProps) => {
 
 export interface DiscussionProps {
   articleId: string;
-  commentsArray: components["schemas"]["Comment"][] | [];
+  commentsArray: components['schemas']['Comment'][] | [];
 }
 
 export default Discussion;

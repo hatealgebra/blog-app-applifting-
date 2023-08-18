@@ -1,18 +1,8 @@
-import axios from 'axios';
-
-import {
-  API_KEY,
-  appLiftingAxiosProtected,
-  BASE_API_URL,
-} from './services.config';
+import { appLiftingAxiosProtected } from './services.config';
 
 export const listArticles = async () => {
-  try {
-    const response = await appLiftingAxiosProtected.get('/articles');
-    return response;
-  } catch (e) {
-    throw e;
-  }
+  const response = await appLiftingAxiosProtected.get('/articles');
+  return response;
 };
 
 export const createArticle = async (
@@ -39,7 +29,6 @@ export const createArticle = async (
     });
     return response;
   } catch (e) {
-    console.log(e);
     throw e;
   }
 };
@@ -48,7 +37,6 @@ export const getArticle = async (articleId: string) => {
   try {
     return await appLiftingAxiosProtected.get(`/articles/${articleId}`);
   } catch (e) {
-    console.log(e);
     throw e;
   }
 };
@@ -57,13 +45,9 @@ export const deleteArticle = async (
   articleId: string,
   access_token: string
 ) => {
-  try {
-    return await appLiftingAxiosProtected.delete(`/articles/${articleId}`, {
-      headers: { Authorization: access_token },
-    });
-  } catch (e) {
-    throw e;
-  }
+  return appLiftingAxiosProtected.delete(`/articles/${articleId}`, {
+    headers: { Authorization: access_token },
+  });
 };
 
 export const updateArticle = async (
@@ -71,16 +55,12 @@ export const updateArticle = async (
   access_token: string | undefined,
   data: any
 ) => {
-  try {
-    const response = await appLiftingAxiosProtected.patch(
-      `/articles/${articleId}`,
-      data,
-      {
-        headers: { Authorization: access_token },
-      }
-    );
-    return response;
-  } catch (e) {
-    throw e;
-  }
+  const response = await appLiftingAxiosProtected.patch(
+    `/articles/${articleId}`,
+    data,
+    {
+      headers: { Authorization: access_token },
+    }
+  );
+  return response;
 };

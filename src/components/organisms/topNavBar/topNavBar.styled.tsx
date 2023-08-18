@@ -1,6 +1,5 @@
-import React from "react";
-import styled from "styled-components";
-import { TopNavBarProps } from "./TopNavBar";
+import styled from 'styled-components';
+import { TopNavBarProps } from './topNavBar.types';
 
 const StyledTopNav = styled.header<TopNavBarProps>`
   position: fixed;
@@ -10,12 +9,7 @@ const StyledTopNav = styled.header<TopNavBarProps>`
   left: 0;
   right: 0;
   background-color: ${({ theme }) => theme.color.mono};
-  padding: ${({ variant }) =>
-    variant === "mobile"
-      ? "15px"
-      : variant === "tablet"
-      ? "15px 5%"
-      : "15px 5%"};
+  padding: ${({ variant }) => (variant === 'mobile' ? '15px' : '15px 5%')};
   height: 48px;
 
   .TopNavbar {

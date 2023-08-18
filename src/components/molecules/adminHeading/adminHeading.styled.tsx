@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const StyledMyArticlesHeading = styled.div`
+const StyledMyArticlesHeading = styled.div`
   display: flex;
   flex-direction: column;
 
@@ -18,3 +18,5 @@ export const StyledMyArticlesHeading = styled.div`
     }
   }
 `;
+
+export default StyledMyArticlesHeading;

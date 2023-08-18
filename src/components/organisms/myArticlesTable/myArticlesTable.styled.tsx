@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { CenterContainer } from "../articleFeed/articleFeed.styled";
+import styled from 'styled-components';
+import { CenterContainer } from '../articleFeed/articleFeed.styled';
 
 export const StyledFallbackContentContainer = styled(CenterContainer)`
   position: absolute;

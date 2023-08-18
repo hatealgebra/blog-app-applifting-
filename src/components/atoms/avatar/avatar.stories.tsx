@@ -1,8 +1,8 @@
 import React from 'react';
+import { ComponentMeta } from '@storybook/react';
 import Avatar from './Avatar';
 
 import userAvatarPhoto from '../../../images/avatar-mock.jpg';
-import { ComponentMeta } from '@storybook/react';
 
 export const DifferentImages = () => {
   return (

@@ -1,18 +1,18 @@
-import React from "react";
-import { ADMIN_LINKS, navLinks } from "../../../utils/contants";
-import Avatar from "../../atoms/avatar/Avatar";
-import StyledLink from "../../atoms/links/link.styled";
+import React from 'react';
+import { RiLogoutBoxFill } from '@react-icons/all-files/ri/RiLogoutBoxFill';
+import { RiAdminFill } from '@react-icons/all-files/ri/RiAdminFill';
+import { AdminLinks, NavLinks } from '../../../utils/contants';
+import Avatar from '../../atoms/avatar/Avatar';
+import StyledLink from '../../atoms/links/link.styled';
 import {
   AvatarButtonStyled,
   LoginStatuMenuStyled,
   LoginStatusContainerStyled,
-} from "./loginStatus.styled";
+} from './loginStatus.styled';
 
-import { RiLogoutBoxFill } from "@react-icons/all-files/ri/RiLogoutBoxFill";
-import { RiAdminFill } from "@react-icons/all-files/ri/RiAdminFill";
-import { useAppDispatch } from "../../../store/hooks";
-import { logoutAction } from "../../../store/slices/auth.slices";
-import useClickOutside from "../../../hooks/useClickOutside";
+import { useAppDispatch } from '../../../store/hooks';
+import { logoutAction } from '../../../store/slices/auth.slices';
+import useClickOutside from '../../../hooks/useClickOutside';
 
 const LoginStatus = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -37,11 +37,11 @@ const LoginStatus = () => {
         isOpen={isOpen}
         onClick={() => setIsOpen(false)}
       >
-        <StyledLink to={ADMIN_LINKS.MY_ARTICLES}>
+        <StyledLink to={AdminLinks.MY_ARTICLES}>
           <RiAdminFill />
           <span>My Articles</span>
         </StyledLink>
-        <StyledLink onClick={logOut} to={navLinks.INDEX}>
+        <StyledLink onClick={logOut} to={NavLinks.INDEX}>
           <RiLogoutBoxFill />
           <span>Log Out</span>
         </StyledLink>

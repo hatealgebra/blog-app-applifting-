@@ -1,9 +1,9 @@
-import React from "react";
-import SimpleMDE from "react-simplemde-editor";
-import "easymde/dist/easymde.min.css";
+import React from 'react';
+import SimpleMDE from 'react-simplemde-editor';
+import 'easymde/dist/easymde.min.css';
 
 const MarkdownEditor = ({ value, onChange }: MarkdownEditorProps) => {
-  if (typeof window !== "undefined") {
+  if (typeof window !== 'undefined') {
     return (
       <SimpleMDE
         value={value}
@@ -11,9 +11,8 @@ const MarkdownEditor = ({ value, onChange }: MarkdownEditorProps) => {
         placeholder="Supports markdown. Yay!"
       />
     );
-  } else {
-    return <></>;
   }
+  return <></>;
 };
 
 interface MarkdownEditorProps {

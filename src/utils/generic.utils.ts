@@ -1,12 +1,13 @@
-import { deleteArticle, listArticles } from "../services/articlesOperations";
+import { deleteImage } from '@services/imagesServices';
+import { IArticle } from '@customTypes/schema';
+import { deleteArticle, listArticles } from '../services/articlesOperations';
 
 // TODO: Make tooltip component
 export const cutTextWithElipsis = (text: string, limit: number) => {
   if (text.length <= limit) {
     return text;
-  } else {
-    return text.split("", limit).concat("...").join("");
   }
+  return text.split('', limit).concat('...').join('');
 };
 
 export const clearDataAPI = async (access_token: string) => {
@@ -14,12 +15,14 @@ export const clearDataAPI = async (access_token: string) => {
   const { items } = response.data;
   if (items && items.length !== 0) {
     try {
-      items.map((item) => {
+      items.map(async (item: IArticle) => {
         const { articleId, imageId } = item;
-        articleId && deleteArticle(articleId, access_token);
+        if (articleId) await deleteArticle(articleId, access_token);
+        if (imageId) await deleteImage(imageId, access_token);
+        return 'completed';
       });
     } catch (e) {
-      console.log(e);
+      return e;
     }
   }
 };

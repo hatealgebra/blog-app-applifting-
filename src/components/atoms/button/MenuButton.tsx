@@ -1,7 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import { CgMenu } from "@react-icons/all-files/cg/CgMenu";
-import { MenuButtonContainer } from "./button.styled";
+import { CgMenu } from '@react-icons/all-files/cg/CgMenu';
+import { MenuButtonProps } from './button.types';
+import { MenuButtonContainer } from './button.styled';
 
 const MenuButton = ({ onClick }: MenuButtonProps) => {
   return (
@@ -10,9 +11,5 @@ const MenuButton = ({ onClick }: MenuButtonProps) => {
     </MenuButtonContainer>
   );
 };
-
-export interface MenuButtonProps {
-  onClick: () => void;
-}
 
 export default MenuButton;

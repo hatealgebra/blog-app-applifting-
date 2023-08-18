@@ -8,6 +8,8 @@
   },
   "prettier.requireConfig": true,
   "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true,
     "source.fixAll": true
   },
   "eslint.validate": [
@@ -15,5 +17,6 @@
     "javascriptreact",
     "typescript",
     "typescriptreact"
-  ]
+  ],
+  "eslint.run": "onSave"
 }

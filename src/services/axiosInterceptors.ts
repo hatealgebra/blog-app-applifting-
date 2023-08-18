@@ -1,7 +1,7 @@
-import { Store } from "@reduxjs/toolkit";
-import { AxiosRequestConfig } from "axios";
-import { reAuthorizeThunk } from "../store/thunks/authentication.thunks";
-import { appLiftingAxiosProtected } from "./services.config";
+import { Store } from '@reduxjs/toolkit';
+import { AxiosRequestConfig } from 'axios';
+import { reAuthorizeThunk } from '../store/thunks/authentication.thunks';
+import { appLiftingAxiosProtected } from './services.config';
 
 const setUpInterceptor = (store: Store) => {
   const handleRequest = async (config: AxiosRequestConfig) => {
@@ -9,7 +9,7 @@ const setUpInterceptor = (store: Store) => {
     const { login, authorization } = getState().persistedReducer.data;
     const { email, pwd } = login;
     const { access_token } = authorization;
-    if (!config.headers!["Authorization"] && !access_token) {
+    if (!config.headers!.Authorization && !access_token) {
       const reauthenticationResponse = await dispatch(
         reAuthorizeThunk({ email, pwd })
       );
@@ -17,10 +17,10 @@ const setUpInterceptor = (store: Store) => {
       const refreshedToken = await reauthenticationResponse.payload.data
         .access_token;
       config.headers = config.headers ?? {};
-      config.headers["Authorization"] = refreshedToken;
+      config.headers.Authorization = refreshedToken;
     } else {
       config.headers = config.headers ?? {};
-      config.headers["Authorization"] = authorization.access_token;
+      config.headers.Authorization = authorization.access_token;
     }
     return config;
   };
@@ -31,7 +31,6 @@ const setUpInterceptor = (store: Store) => {
     },
 
     (error) => {
-      console.log(error);
       Promise.reject(error);
     }
   );
@@ -39,11 +38,10 @@ const setUpInterceptor = (store: Store) => {
   appLiftingAxiosProtected.interceptors.response.use(
     async (response) => response,
     async (error) => {
-      console.log(error);
-      const { config, response } = error;
+      const { response } = error;
       const { status } = response;
       const { dispatch, getState } = store;
-      const { login, authorization } = getState().persistedReducer.data;
+      const { login } = getState().persistedReducer.data;
       const { email, pwd } = login;
       if (status === 403) {
         try {

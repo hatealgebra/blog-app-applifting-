@@ -1,13 +1,12 @@
-import React from "react";
+import React from 'react';
 
-import Checkbox from "../../atoms/checkbox/Checkbox";
+import { FiEdit2 } from '@react-icons/all-files/fi/FiEdit2';
+import { RiDeleteBin7Line } from '@react-icons/all-files/ri/RiDeleteBin7Line';
+import Checkbox from '../../atoms/checkbox/Checkbox';
 import {
   StyledEditArticleRow,
   StyledIconButton,
-} from "./editArticleRow.styled";
-
-import { FiEdit2 } from "@react-icons/all-files/fi/FiEdit2";
-import { RiDeleteBin7Line } from "@react-icons/all-files/ri/RiDeleteBin7Line";
+} from './editArticleRow.styled';
 
 const EditArticleRow = ({
   iteration,
@@ -19,7 +18,7 @@ const EditArticleRow = ({
   editArticle,
   ...props
 }: EditArticleRowProps) => {
-  const [isChecked, setIsChecked] = React.useState(false);
+  const [isChecked, setIsChecked] = React.useState<boolean>(false);
 
   React.useEffect(() => {
     props.setCheckedBoxes((prevState) => {
@@ -28,7 +27,7 @@ const EditArticleRow = ({
       return newState;
     });
     return () => {};
-  }, [isChecked]);
+  }, [isChecked, iteration, props]);
 
   React.useEffect(() => {
     setIsChecked(props.isChecked);

@@ -1,21 +1,21 @@
-import React from "react";
+import React from 'react';
 
-import { StyledAvatar } from "./avatar.styled";
-import avatarGeneric from "../../../images/avatar-fallback.png";
+import { StyledAvatar } from './avatar.styled';
+import avatarGeneric from '../../../images/avatar-fallback.png';
 
-const Avatar = ({ size = "lg", src, alt }: AvatarProps) => {
+const Avatar = ({ size = 'lg', src, alt }: AvatarProps) => {
   return (
     <StyledAvatar
       className="avatar"
       size={size}
       src={src || avatarGeneric}
-      alt={alt || "fallback user avatar"}
+      alt={alt || 'fallback user avatar'}
     />
   );
 };
 
 export interface AvatarProps {
-  size?: "sm" | "md" | "lg";
+  size?: 'sm' | 'md' | 'lg';
   src?: string;
   alt?: string;
 }

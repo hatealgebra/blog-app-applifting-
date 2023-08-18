@@ -1,7 +1,7 @@
-import React from "react";
-import { components } from "../../../types/declarations";
-import ArticlePreviewSmall from "../../molecules/articlePreview/ArticlePreviewSmall";
-import { RelatedArticlesContainer } from "./relatedArticles.styled";
+import React from 'react';
+import { components } from '../../../customTypes/declarations';
+import ArticlePreviewSmall from '../../molecules/articlePreview/ArticlePreviewSmall';
+import RelatedArticlesContainer from './relatedArticles.styled';
 
 const RelatedArticles = ({ articles }: RelatedArticlesProps) => {
   return (
@@ -18,14 +18,14 @@ const RelatedArticles = ({ articles }: RelatedArticlesProps) => {
                 {article.perex!}
               </ArticlePreviewSmall>
             ))
-          : "No articles to show"}
+          : 'No articles to show'}
       </div>
     </RelatedArticlesContainer>
   );
 };
 
 interface RelatedArticlesProps {
-  articles: components["schemas"]["Article"][] | null;
+  articles: components['schemas']['Article'][] | null;
 }
 
 export default RelatedArticles;

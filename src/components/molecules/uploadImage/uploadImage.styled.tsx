@@ -1,9 +1,9 @@
-import styled from "styled-components";
-import Button, { ButtonProps } from "../../atoms/button/Button";
+import styled from 'styled-components';
+import Button, { ButtonProps } from '../../atoms/button/Button';
 
 export const StyledMinimalButton = styled(Button).attrs<ButtonProps>(() => ({
-  variant: "outline",
-  size: "sm",
+  variant: 'outline',
+  size: 'sm',
 }))<ButtonProps>``;
 
 export const StyledUploadImage = styled.div`

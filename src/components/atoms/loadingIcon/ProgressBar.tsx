@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import { ProgressBar as Progress } from "react-loader-spinner";
-import Theme from "../../particles/Theme";
+import { ProgressBar as Progress } from 'react-loader-spinner';
+import Theme from '../../particles/Theme';
 
 const ProgressBar = () => {
   return (

@@ -1,7 +1,6 @@
-import React from "react";
-import { StyledNoImageContainer } from "./noImageAvailable.styled";
-
-import { BsImage } from "@react-icons/all-files/bs/BsImage";
+import React from 'react';
+import { BsImage } from '@react-icons/all-files/bs/BsImage';
+import { StyledNoImageContainer } from './noImageAvailable.styled';
 
 const NoImageAvailable = () => {
   return (

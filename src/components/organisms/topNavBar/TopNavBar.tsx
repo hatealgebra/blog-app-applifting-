@@ -1,16 +1,18 @@
-import React from "react";
-import StyledTopNav, { StyledTopNavLinks } from "./topNavBar.styled";
-import catLogo from "../../../images/cat-logo.svg";
-import MenuButton from "../../atoms/button/MenuButton";
-import MobileMenu from "../../molecules/mobileMenu/MobileMenu";
-import StyledLink from "../../atoms/links/link.styled";
-import { navLinks } from "../../../utils/contants";
-import LoginLink from "../../atoms/links/LoginLink";
-import LoginStatus from "../../molecules/loginStatus/LoginStatus";
-import { selectAuthLogged } from "../../../store/slices/auth.slices";
-import { useAppSelector } from "../../../store/hooks";
+import React from 'react';
 
-const { INDEX, ABOUT } = navLinks;
+import catLogo from '../../../images/cat-logo.svg';
+import MenuButton from '../../atoms/button/MenuButton';
+import MobileMenu from '../../molecules/mobileMenu/MobileMenu';
+import StyledLink from '../../atoms/links/link.styled';
+import { NavLinks } from '../../../utils/contants';
+import LoginLink from '../../atoms/links/LoginLink';
+import LoginStatus from '../../molecules/loginStatus/LoginStatus';
+import { selectAuthLogged } from '../../../store/slices/auth.slices';
+import { useAppSelector } from '../../../store/hooks';
+import { TopNavBarProps } from './topNavBar.types';
+import StyledTopNav, { StyledTopNavLinks } from './topNavBar.styled';
+
+const { INDEX, ABOUT } = NavLinks;
 
 const TopNavBar = ({ variant }: TopNavBarProps) => {
   const [isMenuOpen, setMenuOpen] = React.useState(false);
@@ -19,7 +21,7 @@ const TopNavBar = ({ variant }: TopNavBarProps) => {
   return (
     <StyledTopNav variant={variant} className="TopNavbar">
       <div className="TopNavbar__container">
-        {variant === "mobile" ? (
+        {variant === 'mobile' ? (
           <>
             <CatLogo />
             <MenuButton onClick={() => setMenuOpen(true)} />
@@ -28,7 +30,7 @@ const TopNavBar = ({ variant }: TopNavBarProps) => {
               setClose={() => setMenuOpen(false)}
             />
           </>
-        ) : variant === "tablet" ? (
+        ) : variant === 'tablet' ? (
           <>
             <CatLogo />
             <div className="TopNavbar__sub-container">
@@ -66,9 +68,5 @@ const TopNavBarLinks = () => (
 const LoginLinkSwitch = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
   return isLoggedIn ? <LoginStatus /> : <LoginLink />;
 };
-
-export interface TopNavBarProps {
-  variant: "mobile" | "tablet" | "desktop";
-}
 
 export default TopNavBar;

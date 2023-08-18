@@ -1,7 +1,19 @@
 {
   "extends": [
     "airbnb-base",
-    "plugin:prettier/recommended",
-    "plugin:storybook/recommended"
-  ]
+    "airbnb-typescript",
+    "plugin:import/typescript",
+    "plugin:storybook/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "react/jsx-filename-extension": [0]
+  },
+
+  "ignorePatterns": ["public/*", "static/*", ".storybook/*"]
 }

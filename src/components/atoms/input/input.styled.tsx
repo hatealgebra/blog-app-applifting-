@@ -1,5 +1,5 @@
-import React, { Dispatch } from "react";
-import styled, { css } from "styled-components";
+import React, { Dispatch } from 'react';
+import styled, { css } from 'styled-components';
 
 const inputStyling = css`
   width: 100%;
@@ -15,7 +15,7 @@ const inputStyling = css`
 `;
 export const StyledTextInput = styled.input<{ size?: TSize }>`
   ${inputStyling};
-  line-height: ${({ size }) => (size === "big" ? "46px" : "36px")};
+  line-height: ${({ size }) => (size === 'big' ? '46px' : '36px')};
 `;
 export const StyledTextArea = styled.textarea`
   ${inputStyling};
@@ -23,4 +23,4 @@ export const StyledTextArea = styled.textarea`
   resize: none;
 `;
 
-export type TSize = "big" | "normal";
+export type TSize = 'big' | 'normal';

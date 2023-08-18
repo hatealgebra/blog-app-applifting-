@@ -1,10 +1,11 @@
-import React from "react";
-import Button from "../../atoms/button/Button";
-import { StyledMinimalButton, StyledUploadImage } from "./uploadImage.styled";
+import React from 'react';
+import Button from '../../atoms/button/Button';
+import { StyledMinimalButton, StyledUploadImage } from './uploadImage.styled';
 
 const UploadImage = ({ image, setImage }: UploadImageProps) => {
-  const [imagePreview, setImagePreview] =
-    React.useState<string | undefined>(image);
+  const [imagePreview, setImagePreview] = React.useState<string | undefined>(
+    image
+  );
   const hiddenFileInputRef = React.useRef<HTMLInputElement>(null);
 
   const handleInput = () => {
@@ -59,7 +60,7 @@ const UploadImage = ({ image, setImage }: UploadImageProps) => {
         data-testid="image-uploader"
         ref={hiddenFileInputRef}
         type="file"
-        style={{ display: "none" }}
+        style={{ display: 'none' }}
         accept="image/*"
         onChange={(e) => handleFileChange(e)}
       />

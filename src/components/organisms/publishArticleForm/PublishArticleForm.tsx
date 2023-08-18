@@ -1,19 +1,24 @@
-import React, { FormEvent } from "react";
-import AdminHeading from "../../molecules/adminHeading/AdminHeading";
-import MarkdownEditor from "../../atoms/markdownEditor/MarkdownEditor";
-import InputWithLabel from "../../molecules/inputWithLabel/InputWithLabel";
-import UploadImage from "../../molecules/uploadImage/UploadImage";
-import { StyledPublishArticleForm } from "./publishArticleForm.styled";
-import { ErrorText } from "../../atoms/errorText/error.styled";
-import { useAppDispatch, useAppSelector } from "../../../store/hooks";
+import React, { FormEvent } from 'react';
+import AdminHeading from '../../molecules/adminHeading/AdminHeading';
+import MarkdownEditor from '../../atoms/markdownEditor/MarkdownEditor';
+import InputWithLabel from '../../molecules/inputWithLabel/InputWithLabel';
+import UploadImage from '../../molecules/uploadImage/UploadImage';
+import StyledPublishArticleForm from './publishArticleForm.styled';
+import { ErrorText } from '../../atoms/errorText/error.styled';
+import { useAppDispatch, useAppSelector } from '../../../store/hooks';
 
-import { selectAuthToken } from "../../../store/slices/auth.slices";
+import { selectAuthToken } from '../../../store/slices/auth.slices';
 import {
   updateArticleHelper,
   validatePublishArticleForm,
-} from "../../../helpers/publishArticle.helper";
-import { cutTextWithElipsis } from "../../../utils/generic.utils";
-import { createArticleThunk } from "../../../store/thunks/admin.thunks";
+} from '../../../helpers/publishArticle.helper';
+
+import { cutTextWithElipsis } from '../../../utils/generic.utils';
+import { createArticleThunk } from '../../../store/thunks/admin.thunks';
+import {
+  EPublishArticleErrors,
+  PublishArticleProps,
+} from './publishArticleForm.types';
 
 // FIXME: maybe implement do BIG notation?
 // TODO: Testing
@@ -23,11 +28,10 @@ const PublishArticleForm = ({
   titleValue,
   markdownContentValue,
   imageFileValue,
-  ...props
 }: PublishArticleProps) => {
-  const [articleId, setArticleId] = React.useState(undefined);
-  const [title, setTitle] = React.useState("");
-  const [markdownContent, setMarkdownContent] = React.useState("");
+  const [articleId] = React.useState(undefined);
+  const [title, setTitle] = React.useState('');
+  const [markdownContent, setMarkdownContent] = React.useState('');
   const [imageFile, setImageFile] = React.useState<File | null>(null);
   const [isImageChanged, setIsImageChanged] = React.useState(false);
   const [formError, setFormError] = React.useState<EPublishArticleErrors>(
@@ -51,8 +55,8 @@ const PublishArticleForm = ({
     );
 
     if (formValidationPassed) {
-      let imageFormData = new FormData();
-      imageFormData.append("image", imageFile!);
+      const imageFormData = new FormData();
+      imageFormData.append('image', imageFile!);
       if (articleId) {
         return updateArticleHelper(
           e,
@@ -64,17 +68,16 @@ const PublishArticleForm = ({
           access_token,
           isImageChanged
         );
-      } else {
-        return dispatch(
-          createArticleThunk({
-            title: trimmedTitle,
-            perex,
-            content: trimmedMD,
-            imageFormData,
-            access_token,
-          })
-        );
       }
+      return dispatch(
+        createArticleThunk({
+          title: trimmedTitle,
+          perex,
+          content: trimmedMD,
+          imageFormData,
+          access_token,
+        })
+      );
     }
   };
 
@@ -121,27 +124,11 @@ const PublishArticleForm = ({
             ? EPublishArticleErrors.MARKDOWN_EMPY
             : formError === EPublishArticleErrors.MARKDOWN_TOO_SHORT
             ? EPublishArticleErrors.MARKDOWN_TOO_SHORT
-            : ""}
+            : ''}
         </ErrorText>
       </div>
     </StyledPublishArticleForm>
   );
 };
-
-export interface PublishArticleProps {
-  titleValue?: string;
-  markdownContentValue?: string;
-  imageFileValue?: File | null;
-}
-
-export enum EPublishArticleErrors {
-  TITLE_EMPTY = "* Title cannot be empty!",
-  TITLE_LENGTH = "* Title should be between 25 and 100 characters!",
-  IMAGE_EMPTY = "* Image is mandatory. Please, choose and upload the image.",
-  MARKDOWN_EMPY = "* Content cannot be empty!",
-  MARKDOWN_TOO_SHORT = "* Content is too short. Atleast 250 chars are needed",
-  UNEXPECTED_ERROR = "* Sorry, but there was unexpected error. Please contact our support team!",
-  PASSED = "",
-}
 
 export default PublishArticleForm;

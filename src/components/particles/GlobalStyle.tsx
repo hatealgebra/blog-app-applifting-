@@ -1,6 +1,6 @@
-import { createGlobalStyle } from "styled-components";
-import "@fontsource/montserrat/variable.css";
-import Theme from "./Theme";
+import { createGlobalStyle } from 'styled-components';
+import '@fontsource/montserrat/variable.css';
+import Theme from './Theme';
 
 const GlobalStyle = createGlobalStyle`
  * {

@@ -1,5 +1,5 @@
-import React, { Dispatch } from "react";
-import StyledCheckbox, { StyledCheckboxContainer } from "./checkbox.styled";
+import React, { Dispatch } from 'react';
+import StyledCheckbox, { StyledCheckboxContainer } from './checkbox.styled';
 
 const Checkbox = ({
   isChecked,

@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import ReadArticle from "./ReadArticle";
-import britishCat from "../../../images/british-haircat.jpg";
+import ReadArticle from './ReadArticle';
+import britishCat from '../../../images/british-haircat.jpg';
 
 export const ReadArticleExample = () => (
   <ReadArticle
@@ -14,7 +14,7 @@ export const ReadArticleExample = () => (
 );
 
 export default {
-  title: "Organisms/Read Article",
+  title: 'Organisms/Read Article',
   component: ReadArticle,
 };
 

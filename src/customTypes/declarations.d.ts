@@ -1,4 +1,4 @@
-export interface paths {
+export interface Paths {
   '/login': {
     post: {
       responses: {
@@ -177,7 +177,7 @@ export interface paths {
   };
 }
 
-export interface components {
+export interface Components {
   schemas: {
     Pagination: {
       /** @description Number of items skipped during pagination */
@@ -306,7 +306,7 @@ export interface components {
   };
 }
 
-export interface operations {
+export interface Operations {
   listArticles: {
     parameters: {
       query: {
@@ -399,4 +399,4 @@ export interface operations {
   };
 }
 
-export interface external {}
+export interface External {}

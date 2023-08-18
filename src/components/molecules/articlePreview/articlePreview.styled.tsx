@@ -1,8 +1,5 @@
-import React from "react";
-import { GatsbyImage } from "gatsby-plugin-image";
-
-import styled from "styled-components";
-import { Link } from "gatsby";
+import styled from 'styled-components';
+import { Link } from 'gatsby';
 
 const StyledArticlePreviewContainer = styled.article`
   display: flex;

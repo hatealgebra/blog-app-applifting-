@@ -1,8 +1,7 @@
-import React from "react";
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
 const PageTemplateBaseStyling = css`
-  height: 100%:
+  height: 100%;
   width: 100%;
   margin: 15px auto;
 `;
@@ -21,7 +20,7 @@ export const NonFormPageContainer = styled.div<{ isArticle?: boolean }>`
 
   ${({ theme }) => theme.breakpoint.laptop} {
     ${({ isArticle }) =>
-      isArticle ? "margin: 15px auto;" : "margin: 40px auto;"}
+      isArticle ? 'margin: 15px auto;' : 'margin: 40px auto;'}
   }
 `;
 
@@ -35,7 +34,7 @@ export const StyledArticlePageContainer = styled.div`
     grid-template-columns: 3fr 1fr;
     column-gap: 30px;
     grid-template-rows: auto auto auto;
-    grid-template-areas: "article related" "article ." "discussion discussion";
+    grid-template-areas: 'article related' 'article .' 'discussion discussion';
 
     .read-article {
       grid-area: article;

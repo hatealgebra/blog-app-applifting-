@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const AvatarButtonStyled = styled.button`
   background: none;
@@ -11,7 +11,7 @@ export const LoginStatuMenuStyled = styled.ul<{ isOpen: boolean }>`
   right: 0px;
   z-index: 5;
   width: 150px;
-  display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
+  display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
   flex-direction: column;
   padding: 5px 0px;
   margin: 0;

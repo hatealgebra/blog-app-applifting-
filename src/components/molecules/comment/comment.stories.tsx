@@ -1,5 +1,5 @@
-import React from "react";
-import Comment from "./Comment";
+import React from 'react';
+import Comment from './Comment';
 
 export const CommentExample = () => (
   <Comment
@@ -17,6 +17,6 @@ export const CommentExample = () => (
 );
 
 export default {
-  title: "Molecules/Comment",
+  title: 'Molecules/Comment',
   component: Comment,
 };

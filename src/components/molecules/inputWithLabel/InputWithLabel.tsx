@@ -1,7 +1,7 @@
-import React, { Dispatch, DispatchWithoutAction } from "react";
-import { StyledTextInput, TSize } from "../../atoms/input/input.styled";
+import React, { Dispatch, DispatchWithoutAction } from 'react';
+import { StyledTextInput, TSize } from '../../atoms/input/input.styled';
 
-import { StyledInputWithLabel } from "./inputWithLabel.styled";
+import { StyledInputWithLabel } from './inputWithLabel.styled';
 
 const InputWithLabel = ({
   label,
@@ -25,7 +25,7 @@ const InputWithLabel = ({
   );
 };
 
-type TTypeInput = "text" | "password" | "email";
+type TTypeInput = 'text' | 'password' | 'email';
 
 export interface InputWithLabelProps {
   type?: TTypeInput;

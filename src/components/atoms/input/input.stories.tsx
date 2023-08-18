@@ -1,11 +1,11 @@
-import { Story } from "@storybook/react";
-import React from "react";
-import { StyledTextArea, StyledTextInput } from "./input.styled";
+import React from 'react';
+import { Story } from '@storybook/react';
+import { StyledTextArea, StyledTextInput } from './input.styled';
 
 export const InputExample = () => <StyledTextInput />;
 
 export const InputAllSize = () => (
-  <div style={{ display: "flex", flexDirection: "column", gap: "30px" }}>
+  <div style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
     <StyledTextInput placeholder="This is normal input" />
     <StyledTextInput size="big" placeholder="This is big input" />
   </div>
@@ -21,13 +21,13 @@ export const InputTextVariants = () => (
 );
 
 export default {
-  title: "Atoms/Input",
+  title: 'Atoms/Input',
   component: StyledTextInput,
   subcomponents: { StyledTextArea },
   decorators: [
-    (Story: Story) => (
-      <div style={{ display: "flex", flexDirection: "column", gap: "30px" }}>
-        <Story />
+    (StoryComponent: Story) => (
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
+        <StoryComponent />
       </div>
     ),
   ],

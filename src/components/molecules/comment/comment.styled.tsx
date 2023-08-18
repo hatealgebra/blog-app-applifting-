@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
+';
+import styled from 'styled-components';
 
 export const StyledCommentCounter = styled.div.attrs(() => ({
-  className: "comment__voting-counter",
+  className: 'comment__voting-counter',
 }))`
   display: flex;
   align-items: center;
@@ -40,7 +40,7 @@ export const StyledCommentContainer = styled.div`
   justify-items: flex-start;
   align-items: center;
   max-width: 650px;
-  grid-template-areas: "avatar author timestamp" "text text text" ". . counter";
+  grid-template-areas: 'avatar author timestamp' 'text text text' '. . counter';
 
   img {
     grid-area: avatar;
@@ -68,9 +68,9 @@ export const StyledCommentContainer = styled.div`
   ${({ theme }) => theme.breakpoint.tablet} {
     row-gap: 0;
     grid-template-areas:
-      "avatar author timestamp"
-      ". text text"
-      ". counter counter";
+      'avatar author timestamp'
+      '. text text'
+      '. counter counter';
 
     .comment {
       &__text {

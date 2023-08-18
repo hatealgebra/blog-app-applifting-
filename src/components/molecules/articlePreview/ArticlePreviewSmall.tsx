@@ -1,10 +1,10 @@
-import { Link } from "gatsby";
-import React from "react";
+import { Link } from 'gatsby';
+import React from 'react';
 import {
   createArticleLink,
   cutTextWithElipsis,
-} from "../../../utils/generic.utils";
-import { StyledArticlePreviewSmall } from "./articlePreview.styled";
+} from '../../../utils/generic.utils';
+import { StyledArticlePreviewSmall } from './articlePreview.styled';
 
 const ArticlePreviewSmall = ({
   heading,

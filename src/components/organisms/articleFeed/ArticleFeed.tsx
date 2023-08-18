@@ -1,5 +1,6 @@
 import React from 'react';
-import { components } from '../../../types/declarations';
+import { TCompleteArticles } from 'customTypes/schema';
+import { components } from '../../../customTypes/declarations';
 import Loading from '../../atoms/loadingIcon/Loading';
 import ArticlePreview from '../../molecules/articlePreview/ArticlePreview';
 import {
@@ -8,7 +9,6 @@ import {
   StyledArticleFeed,
 } from './articleFeed.styled';
 import useAllArticles from '../../../hooks/useAllArticles';
-import { TCompleteArticles } from '@types/schema';
 
 interface ArticleFeedProps {
   items: TCompleteArticles;

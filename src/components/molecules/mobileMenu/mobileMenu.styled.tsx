@@ -1,5 +1,4 @@
-import React from "react";
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const MobileMenuContainer = styled.div<{ isOpen: boolean }>`
   overflow: hidden;
@@ -9,7 +8,7 @@ const MobileMenuContainer = styled.div<{ isOpen: boolean }>`
   left: 0;
   right: 0;
   bottom: 0;
-  height: ${({ isOpen }) => (isOpen ? "100%" : 0)};
+  height: ${({ isOpen }) => (isOpen ? '100%' : 0)};
   background-color: ${({ theme }) => theme.color.mono};
   transition: 0.2s ease-in;
 

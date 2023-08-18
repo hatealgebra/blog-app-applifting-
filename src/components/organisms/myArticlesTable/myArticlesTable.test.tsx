@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { setupTestWithStore } from '../../../utils/testing.utils';
-import MyArticlesTable from './MyArticlesTable';
 import userEvent from '@testing-library/user-event';
 import { screen, waitFor } from '@testing-library/react';
+import { setupTestWithStore } from '../../../utils/testing.utils';
+import MyArticlesTable from './MyArticlesTable';
 import { server } from '../../../__mocks__/server';
 
 // FIXME: fix Tests that will shows the fetched articles

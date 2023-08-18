@@ -1,7 +1,7 @@
 import React from 'react';
-import Button from './Button';
 import { action } from '@storybook/addon-actions';
 import { ComponentMeta } from '@storybook/react';
+import Button from './Button';
 import MenuButton from './MenuButton';
 import ButtonSort from './ButtonSort';
 

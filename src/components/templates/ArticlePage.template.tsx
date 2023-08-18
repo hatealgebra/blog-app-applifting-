@@ -1,12 +1,12 @@
 import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 import ReadArticle from '../organisms/readArticle/ReadArticle';
 import PageTemplate from './Page.template';
 
 import RelatedArticles from '../organisms/relatedArticles/RelatedArticles';
 import Discussion from '../organisms/discussion/Discussion';
 import { StyledArticlePageContainer } from './templates.styled';
-import { components } from '../../types/declarations';
-import { graphql, useStaticQuery } from 'gatsby';
+import { components } from '../../customTypes/declarations';
 
 const ArticlePage = ({
   pageContext,

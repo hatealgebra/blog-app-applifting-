@@ -1,6 +1,6 @@
-import styled, { css } from "styled-components";
-import { ButtonProps } from "./Button";
-import { MenuButtonProps } from "./MenuButton";
+import styled, { css } from 'styled-components';
+
+import { ButtonProps, MenuButtonProps } from './button.types';
 
 export const StyledButtonSort = styled.button<{
   isActive?: boolean;
@@ -34,39 +34,39 @@ const StyledButton = styled.button<ButtonProps>`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: ${({ isBlock }) => (isBlock ? "100%" : "fit-content")};
+  width: ${({ isBlock }) => (isBlock ? '100%' : 'fit-content')};
   font-weight: 300;
   color: ${({ variant, colortheme, theme }) =>
-    variant === "outline" ? colortheme && theme.color[colortheme] : "white"};
+    variant === 'outline' ? colortheme && theme.color[colortheme] : 'white'};
   border: 1px solid
     ${({ colortheme, theme }) => colortheme && theme.color[colortheme]};
   border-radius: 4px;
   text-transform: capitalize;
   cursor: pointer;
   background-color: ${({ colortheme, variant, theme }) =>
-    variant === "outline"
-      ? "transparent"
+    variant === 'outline'
+      ? 'transparent'
       : colortheme && theme.color[colortheme]};
   ${({ size, theme }) => {
-    if (size === "lg") {
+    if (size === 'lg') {
       return css`
         height: 46px;
         font-size: ${theme.typography.size.h5};
         padding: 8px 16px;
       `;
-    } else if (size === "sm") {
+    }
+    if (size === 'sm') {
       return css`
         height: 28px;
         font-size: ${theme.typography.size.label};
         padding: 4px 8px;
       `;
-    } else {
-      return css`
-        height: 36px;
-        font-size: ${theme.typography.size.body};
-        padding: 6px 12px;
-      `;
     }
+    return css`
+      height: 36px;
+      font-size: ${theme.typography.size.body};
+      padding: 6px 12px;
+    `;
   }}
 `;
 

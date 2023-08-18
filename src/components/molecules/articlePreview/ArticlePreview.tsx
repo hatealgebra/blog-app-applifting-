@@ -1,13 +1,13 @@
 import React from 'react';
 
+import { GoPrimitiveDot } from '@react-icons/all-files/go/GoPrimitiveDot';
 import StyledArticlePreviewContainer, {
   StyledArticlePreviewImage,
   StyledArticleRow,
 } from './articlePreview.styled';
 
-import { GoPrimitiveDot } from '@react-icons/all-files/go/GoPrimitiveDot';
 import StyledLink from '../../atoms/links/link.styled';
-import { components } from '../../../types/declarations';
+import { components } from '../../../customTypes/declarations';
 
 import { getDate } from '../../../utils/date.utils';
 
@@ -32,7 +32,7 @@ const ArticlePreview = ({
 }) => {
   const [fallbackImage, setFallbackImage] = React.useState(false);
   const createdDate = getDate(createdAt);
-  const file = 'data:image/png;base64,' + imageBase64;
+  const file = `data:image/png;base64,${imageBase64}`;
 
   const useFallbackImage = ({ currentTarget }: Event) => {
     if (!currentTarget) return;

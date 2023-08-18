@@ -1,11 +1,11 @@
 import React, { Dispatch } from 'react';
-import { components } from '../../../types/declarations';
+import { AnyAction } from '@reduxjs/toolkit';
+import { components } from '../../../customTypes/declarations';
 import Checkbox from '../../atoms/checkbox/Checkbox';
 import { StyledEditArticleRow } from './editArticleRow.styled';
 
 import ButtonSort from '../../atoms/button/ButtonSort';
 import { sortMyArticles } from '../../../store/slices/admin.slices';
-import { AnyAction } from '@reduxjs/toolkit';
 import { deleteArticleThunk } from '../../../store/thunks/admin.thunks';
 
 interface EditArticleRowButtonsProp {

@@ -1,8 +1,8 @@
-import { action } from "@storybook/addon-actions";
-import React from "react";
-import Checkbox from "./Checkbox";
+import { action } from '@storybook/addon-actions';
+import React from 'react';
+import Checkbox from './Checkbox';
 
-const setCheck = () => action("Clicked!");
+const setCheck = () => action('Clicked!');
 
 export const CheckboxExample = () => {
   return (
@@ -29,5 +29,5 @@ export const CheckboxWithLabel = () => {
 
 export default {
   component: Checkbox,
-  title: "Atoms/Checkbox",
+  title: 'Atoms/Checkbox',
 };

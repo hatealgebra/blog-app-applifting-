@@ -1,12 +1,12 @@
-import React from "react";
-import { timeDifference } from "../../../utils/date.utils";
-import Avatar from "../../atoms/avatar/Avatar";
-import { StyledCommentContainer, StyledCommentCounter } from "./comment.styled";
+import React from 'react';
+import { RiArrowUpSLine } from '@react-icons/all-files/ri/RiArrowUpSLine';
+import { RiArrowDownSLine } from '@react-icons/all-files/ri/RiArrowDownSLine';
+import { Components } from '@customTypes/declarations';
+import { timeDifference } from '../../../utils/date.utils';
+import Avatar from '../../atoms/avatar/Avatar';
+import { StyledCommentContainer, StyledCommentCounter } from './comment.styled';
 
-import { RiArrowUpSLine } from "@react-icons/all-files/ri/RiArrowUpSLine";
-import { RiArrowDownSLine } from "@react-icons/all-files/ri/RiArrowDownSLine";
-import { components } from "../../../types/declarations";
-import { voteDown, voteUp } from "../../../services/commentsServices";
+import { voteDown, voteUp } from '../../../services/commentsServices';
 
 const Comment = ({
   commentId,
@@ -14,8 +14,7 @@ const Comment = ({
   score,
   postedAt,
   content,
-  articleId,
-}: components["schemas"]["Comment"]) => {
+}: Components['schemas']['Comment']) => {
   const [counterValue, setCounterValue] = React.useState(score ?? 0);
   const timestampNow = Date.now();
 
@@ -23,17 +22,13 @@ const Comment = ({
     try {
       voteUp(commentId!);
       setCounterValue((prev) => prev + 1);
-    } catch (e) {
-      console.log(e);
-    }
+    } catch (e) {}
   };
   const decreaseScore = async () => {
     try {
       voteDown(commentId!);
       setCounterValue((prev) => prev - 1);
-    } catch (e) {
-      console.log(e);
-    }
+    } catch (e) {}
   };
 
   return (
@@ -46,7 +41,7 @@ const Comment = ({
       <p className="comment__text">{content}</p>
       <StyledCommentCounter>
         <span data-testid="reactionCounter">
-          {counterValue! > 0 ? "+" : ""}
+          {counterValue! > 0 ? '+' : ''}
           {counterValue}
         </span>
         <button aria-label="vote-up" onClick={increaseScore}>

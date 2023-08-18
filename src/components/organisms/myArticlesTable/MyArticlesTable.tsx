@@ -1,9 +1,10 @@
 import React from 'react';
 
+import { navigate } from 'gatsby';
 import { useAppDispatch, useAppSelector } from '../../../store/hooks';
 // import { selectMyArticlesItems } from "../../../store/admin/myArticles.slice";
 import { getArticlesFeedThunk } from '../../../store/thunks/articles.thunk';
-import { ADMIN_LINKS } from '../../../utils/contants';
+import { AdminLinks } from '../../../utils/contants';
 import AdminHeading from '../../molecules/adminHeading/AdminHeading';
 import EditArticleRow from '../../molecules/editArticleRow/EditArticleRow';
 import EditArticleRowButtons from '../../molecules/editArticleRow/EditArticleRowButtons';
@@ -19,13 +20,12 @@ import {
   selectMyArticlesStatus,
   setArticleToEdit,
 } from '../../../store/slices/admin.slices';
-import { components } from '../../../types/declarations';
+import { components } from '../../../customTypes/declarations';
 
 import { deleteArticleThunk } from '../../../store/thunks/admin.thunks';
 
 import noArticles from '../../../images/no-articles.png';
 import Loading from '../../atoms/loadingIcon/Loading';
-import { navigate } from 'gatsby';
 import { selectAuthToken } from '../../../store/slices/auth.slices';
 
 // TODO: Finish the my Articles
@@ -42,7 +42,7 @@ const MyArticlesTable = () => {
     dispatch(deleteArticleThunk({ articleId, originalArray, access_token }));
   const editArticle = (article: components['schemas']['Article']) => {
     dispatch(setArticleToEdit(article));
-    navigate(ADMIN_LINKS.EDIT_ARTICLE);
+    navigate(AdminLinks.EDIT_ARTICLE);
   };
 
   const switchAllBoxes = (isChecked: boolean) => {
@@ -62,7 +62,7 @@ const MyArticlesTable = () => {
       <AdminHeading
         heading="My Articles"
         buttonText="Create new article"
-        to={ADMIN_LINKS.CREATE_ARTICLE}
+        to={AdminLinks.CREATE_ARTICLE}
       />
       <MyArticlesForm onSubmit={(e) => e.preventDefault()}>
         <StyledArticlesTable>

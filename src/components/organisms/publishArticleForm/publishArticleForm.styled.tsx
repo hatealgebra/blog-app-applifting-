@@ -1,7 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const StyledPublishArticleForm = styled.form`
+const StyledPublishArticleForm = styled.form`
   display: flex;
   flex-direction: column;
   gap: 30px;
 `;
+
+export default StyledPublishArticleForm;

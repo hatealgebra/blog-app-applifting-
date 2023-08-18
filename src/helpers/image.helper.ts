@@ -1,1 +1,1 @@
-import { showImage } from "../services/imagesServices";
+import { showImage } from '../services/imagesServices';

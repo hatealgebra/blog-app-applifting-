@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+
 function useWindowSize() {
   const [windowSize, setWindowSize] = React.useState<{
     width: number;
@@ -14,9 +15,9 @@ function useWindowSize() {
         height: window.innerHeight,
       });
     }
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
     handleResize();
-    return () => window.removeEventListener("resize", handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
   return windowSize;
 }

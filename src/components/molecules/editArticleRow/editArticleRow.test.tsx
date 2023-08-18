@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react';
 
-import userEvent from "@testing-library/user-event";
-import { screen, waitFor } from "@testing-library/react";
+import userEvent from '@testing-library/user-event';
+import { screen, waitFor } from '@testing-library/react';
 
-import { setupTest } from "../../../utils/testing.utils";
+import { setupTest } from '../../../utils/testing.utils';
 
-import EditArticleRow from "./EditArticleRow";
+import EditArticleRow from './EditArticleRow';
 
 // TODO: JEST spyOn on functions inside the component
 
-describe("Article Row interactivity", () => {
+describe('Article Row interactivity', () => {
   const ediArticleFn = jest.fn();
   const deleteMockFn = jest.fn();
   const setCheckedBoxesMockFn = jest.fn();
@@ -27,23 +27,23 @@ describe("Article Row interactivity", () => {
       />
     )
   );
-  test("checkbox click", async () => {
+  test('checkbox click', async () => {
     const { getByRole } = screen;
-    userEvent.click(getByRole("checkbox"));
+    userEvent.click(getByRole('checkbox'));
     await waitFor(() => {
-      expect(getByRole("checkbox")).toBeChecked();
+      expect(getByRole('checkbox')).toBeChecked();
     });
   });
-  test("edit action", async () => {
+  test('edit action', async () => {
     const { getAllByRole } = screen;
-    userEvent.click(getAllByRole("button")[0]);
+    userEvent.click(getAllByRole('button')[0]);
     await waitFor(() => {
       expect(ediArticleFn).toHaveBeenCalled();
     });
   });
-  test("delete action", async () => {
+  test('delete action', async () => {
     const { getAllByRole } = screen;
-    userEvent.click(getAllByRole("button")[1]);
+    userEvent.click(getAllByRole('button')[1]);
     await waitFor(() => {
       expect(deleteMockFn).toHaveBeenCalled();
     });

@@ -1,17 +1,17 @@
-import { rest } from "msw";
+import { rest } from 'msw';
 import {
   API_KEY,
   BASE_API_URL,
   USER_CONFIG,
-} from "../services/services.config";
+} from '../services/services.config';
 
-import loginResponseJSON from "../__mocks__/asyncData/post/login.mock.json";
-import createArticleResponseJSON from "../__mocks__/asyncData/post/createArticleResponse.mock.json";
-import imageResponseJSON from "../__mocks__/asyncData/post/postImageResponse.mock.json";
-import articlesResponseJSON from "../__mocks__/asyncData/get/allArticlesResponse.mock.json";
-import articlesDetailResponseJSON from "../__mocks__/asyncData/get/articlesDetailsResponse.mock.json";
-import tenantMockJSON from "../__mocks__/asyncData/get/tenantResponse.mock.json";
-import imageBase64 from "./base64.mock";
+import loginResponseJSON from './asyncData/post/login.mock.json';
+import createArticleResponseJSON from './asyncData/post/createArticleResponse.mock.json';
+import imageResponseJSON from './asyncData/post/postImageResponse.mock.json';
+import articlesResponseJSON from './asyncData/get/allArticlesResponse.mock.json';
+import articlesDetailResponseJSON from './asyncData/get/articlesDetailsResponse.mock.json';
+import tenantMockJSON from './asyncData/get/tenantResponse.mock.json';
+import imageBase64 from './base64.mock';
 
 const getArticleDetail = (articleId: string | readonly string[]) => {
   const articleDetailData = articlesDetailResponseJSON.find(
@@ -25,11 +25,10 @@ export const handlers = [
   // Login
   rest.post(`${BASE_API_URL}/login`, async (req, res, ctx) => {
     const { username, password } = await req.json();
-    if (username === USER_CONFIG.NAME && password === "MockPwd12345") {
+    if (username === USER_CONFIG.NAME && password === 'MockPwd12345') {
       return res(ctx.status(200), ctx.json(loginResponseJSON));
-    } else {
-      return res(ctx.status(400), ctx.json({ error: "Invalid credentials" }));
     }
+    return res(ctx.status(400), ctx.json({ error: 'Invalid credentials' }));
   }),
   // Publish article
   rest.post(`${BASE_API_URL}/articles`, (req, res, ctx) => {
@@ -65,7 +64,7 @@ export const handlers = [
     }
   ),
 
-  /* GET handling*/
+  /* GET handling */
 
   // List Articles
   // FIXME: Fix the reauthorize, the dispatch is called multiple
@@ -80,7 +79,7 @@ export const handlers = [
     )[0];
     return res(
       ctx.set({
-        "X-API-KEY": API_KEY,
+        'X-API-KEY': API_KEY,
         Authorization: loginResponseJSON.access_token,
       }),
       ctx.status(200),
@@ -89,10 +88,10 @@ export const handlers = [
   }),
   // Images
   rest.get(`${BASE_API_URL}/images/:imageId`, async (req, res, ctx) => {
-    const imageBuffer = Buffer.from(imageBase64, "base64");
+    const imageBuffer = Buffer.from(imageBase64, 'base64');
     return res(
       ctx.status(200),
-      ctx.set("responseType", "arrayBuffer"),
+      ctx.set('responseType', 'arrayBuffer'),
       ctx.body(imageBuffer)
     );
   }),

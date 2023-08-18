@@ -1,5 +1,4 @@
-import React from "react";
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
 // TODO: Unite all forms in the same directory
 const formBaseStyling = css`
@@ -27,6 +26,8 @@ const formBaseStyling = css`
   }
 `;
 
-export const StyledLoginForm = styled.form`
+const StyledLoginForm = styled.form`
   ${formBaseStyling};
 `;
+
+export default StyledLoginForm;

@@ -1,8 +1,7 @@
-import { PageProps, graphql, useStaticQuery } from 'gatsby';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import useAllArticles from '@hooks/useAllArticles';
 import ArticleFeed from '../components/organisms/articleFeed/ArticleFeed';
 import PageTemplate from '../components/templates/Page.template';
-import useAllArticles from '@hooks/useAllArticles';
 
 // TODO: Solve pagination
 

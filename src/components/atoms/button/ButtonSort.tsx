@@ -1,8 +1,7 @@
-import React, { Dispatch } from "react";
+import React, { Dispatch } from 'react';
 
-import { StyledButtonSort } from "./button.styled";
-
-import { FaSort } from "@react-icons/all-files/fa/FaSort";
+import { FaSort } from '@react-icons/all-files/fa/FaSort';
+import { StyledButtonSort } from './button.styled';
 
 const ButtonSort = ({
   isActive,

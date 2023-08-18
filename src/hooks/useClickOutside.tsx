@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const useClickOutside = (
   ref: React.RefObject<Element>,
@@ -7,17 +7,18 @@ const useClickOutside = (
   React.useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       if (!ref.current || ref.current.contains(e.target)) {
+        console.log(e.target);
       } else {
         setIsMenuOpen(false);
       }
     };
 
-    document.addEventListener("mousedown", (e) => handleClickOutside(e));
+    document.addEventListener('mousedown', (e) => handleClickOutside(e));
 
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, [ref]);
+  }, [ref, setIsMenuOpen]);
 };
 
 export default useClickOutside;

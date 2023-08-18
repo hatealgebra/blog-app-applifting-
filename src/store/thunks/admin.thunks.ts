@@ -1,22 +1,27 @@
-import { createAsyncThunk } from "@reduxjs/toolkit";
-import { navigate } from "gatsby";
+import { createAsyncThunk } from '@reduxjs/toolkit';
+import { navigate } from 'gatsby';
 import {
   createArticle,
   deleteArticle,
-} from "../../services/articlesOperations";
-import { uploadImage } from "../../services/imagesServices";
-import { components } from "../../types/declarations";
-import { ADMIN_LINKS } from "../../utils/contants";
+} from '../../services/articlesOperations';
+import { uploadImage } from '../../services/imagesServices';
+import { Components } from '../../customTypes/declarations';
+import { AdminLinks } from '../../utils/contants';
 
+// todo finsih getMyArticleThunk
 export const getMyArticlesThunk = createAsyncThunk(
-  "admin/getMyArticlesThunk",
+  'admin/getMyArticlesThunk',
   async (_, thunkAPI) => {
     try {
-    } catch (e) {}
+      return 'hello';
+    } catch (e) {
+      return thunkAPI.rejectWithValue(e);
+    }
   }
 );
+
 export const createArticleThunk = createAsyncThunk(
-  "admin/createArticleThunk",
+  'admin/createArticleThunk',
   async (
     {
       title,
@@ -45,17 +50,16 @@ export const createArticleThunk = createAsyncThunk(
         content,
         access_token
       );
-      navigate(ADMIN_LINKS.MY_ARTICLES);
+      navigate(AdminLinks.MY_ARTICLES);
       return response.data;
     } catch (e) {
-      console.log(e);
       return thunkAPI.rejectWithValue(e);
     }
   }
 );
 
 export const deleteArticleThunk = createAsyncThunk(
-  "admin/deleteArticle",
+  'admin/deleteArticle',
   async (
     {
       articleId,
@@ -63,7 +67,7 @@ export const deleteArticleThunk = createAsyncThunk(
       access_token,
     }: {
       articleId: string;
-      originalArray: components["schemas"]["ArticleDetail"][];
+      originalArray: Components['schemas']['ArticleDetail'][];
       access_token: string | undefined;
     },
     thunkAPI

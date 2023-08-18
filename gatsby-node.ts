@@ -47,9 +47,7 @@ exports.sourceNodes = async ({
         },
       });
     });
-  } catch (e) {
-    console.log(e);
-  }
+  } catch (e) {}
 };
 
 exports.createPages = async ({ actions: { createPage }, graphql }) => {

@@ -1,19 +1,20 @@
-import React from "react";
-import { navigate } from "gatsby";
+import React from 'react';
+import { navigate } from 'gatsby';
 
-import { useAppDispatch, useAppSelector } from "../../../store/hooks";
-import { postLoginThunk } from "../../../store/thunks/authentication.thunks";
-import Button from "../../atoms/button/Button";
-import InputWithLabel from "../../molecules/inputWithLabel/InputWithLabel";
-import { StyledLoginForm } from "./forms.styled";
-import { ADMIN_LINKS, navLinks } from "../../../utils/contants";
+import { useAppDispatch, useAppSelector } from '../../../store/hooks';
+import { postLoginThunk } from '../../../store/thunks/authentication.thunks';
+import Button from '../../atoms/button/Button';
+import InputWithLabel from '../../molecules/inputWithLabel/InputWithLabel';
+import StyledLoginForm from './forms.styled';
+import { AdminLinks } from '../../../utils/contants';
 
-import { emailValidation, pwdValidation } from "../../../utils/regex.utils";
-import { selectAuthToken } from "../../../store/slices/auth.slices";
+import { emailValidation, pwdValidation } from '../../../utils/regex.utils';
+import { selectAuthToken } from '../../../store/slices/auth.slices';
+import ELoginFormValidation from './forms.types';
 
 const LoginForm = () => {
-  const [email, setEmail] = React.useState("");
-  const [pwd, setPwd] = React.useState("");
+  const [email, setEmail] = React.useState('');
+  const [pwd, setPwd] = React.useState('');
   const [formError, setFormError] = React.useState<ELoginFormValidation>(
     ELoginFormValidation.CORRECT_LOGIN
   );
@@ -23,32 +24,32 @@ const LoginForm = () => {
 
   const onSubmit = async (
     e: React.FormEvent,
-    email: string,
-    pwd: string,
-    setFormError: React.Dispatch<React.SetStateAction<ELoginFormValidation>>
+    mail: string,
+    password: string,
+    dispatchFormErr: React.Dispatch<React.SetStateAction<ELoginFormValidation>>
   ) => {
     e.preventDefault();
-    const emailTrim = email.trim();
-    const pwdTrim = pwd.trim();
+    const emailTrim = mail.trim();
+    const pwdTrim = password.trim();
     if (emailTrim.length === 0 || !emailValidation(emailTrim)) {
-      setFormError(ELoginFormValidation.INVALID_EMAIL);
+      dispatchFormErr(ELoginFormValidation.INVALID_EMAIL);
     } else if (pwdTrim.length === 0) {
-      setFormError(ELoginFormValidation.EMPTY_PASSWORD);
+      dispatchFormErr(ELoginFormValidation.EMPTY_PASSWORD);
     } else if (!pwdValidation(pwdTrim)) {
-      setFormError(ELoginFormValidation.INCORRECT_LOGIN);
+      dispatchFormErr(ELoginFormValidation.INCORRECT_LOGIN);
     } else if (emailValidation(emailTrim) && pwdValidation(pwdTrim)) {
       dispatch(
         postLoginThunk({ email: emailTrim, pwd: pwdTrim, setFormError })
       );
-      setEmail("");
-      setPwd("");
+      setEmail('');
+      setPwd('');
     } else {
-      setPwd("");
+      setPwd('');
     }
   };
 
   React.useEffect(() => {
-    auth && navigate(ADMIN_LINKS.MY_ARTICLES);
+    auth && navigate(AdminLinks.MY_ARTICLES);
   }, []);
 
   return (
@@ -73,14 +74,5 @@ const LoginForm = () => {
     </StyledLoginForm>
   );
 };
-
-export enum ELoginFormValidation {
-  INVALID_EMAIL = "Email should be in this format: email@example.com. Please check it.",
-  EMAIL_NOT_FOUND = "Login with this email does not exist.",
-  EMPTY_PASSWORD = "Password field is empty. Please check it",
-  INCORRECT_LOGIN = "Incorrect login.",
-  UNEXPECTED_ERROR = "Unexpected error.",
-  CORRECT_LOGIN = "",
-}
 
 export default LoginForm;

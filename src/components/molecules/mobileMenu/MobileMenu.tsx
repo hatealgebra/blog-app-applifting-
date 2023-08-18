@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
+import { GrClose } from '@react-icons/all-files/gr/GrClose';
 import MobileMenuContainer, {
   MobileMenuCloseButton,
   MobileMenuNav,
-} from "./mobileMenu.styled";
-import { GrClose } from "@react-icons/all-files/gr/GrClose";
+} from './mobileMenu.styled';
 
-import { navLinks } from "../../../utils/contants";
-import StyledLink, { MobileMenuLink } from "../../atoms/links/link.styled";
-import LoginLink from "../../atoms/links/LoginLink";
+import { AdminLinks } from '../../../utils/contants';
+import { MobileMenuLink } from '../../atoms/links/link.styled';
+import LoginLink from '../../atoms/links/LoginLink';
 
 const MobileMenu = ({ isOpen, setClose }: MobileMenuProps) => {
   return (
@@ -21,10 +21,10 @@ const MobileMenu = ({ isOpen, setClose }: MobileMenuProps) => {
           <GrClose size="20px" width={10} />
         </MobileMenuCloseButton>
         <MobileMenuNav>
-          <MobileMenuLink to={navLinks.MY_ARTICLES}>
+          <MobileMenuLink to={AdminLinks.MY_ARTICLES}>
             Recent articles
           </MobileMenuLink>
-          <MobileMenuLink to={navLinks.MY_ARTICLES}>About</MobileMenuLink>
+          <MobileMenuLink to={AdminLinks.MY_ARTICLES}>About</MobileMenuLink>
         </MobileMenuNav>
         <LoginLink />
       </div>

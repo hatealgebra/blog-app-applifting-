@@ -1,11 +1,11 @@
-import { navigate } from "gatsby";
-import React from "react";
-import useWindowSize from "../../hooks/useWindowSize";
-import { useAppSelector } from "../../store/hooks";
-import { selectAuthToken } from "../../store/slices/auth.slices";
-import { BREAKPOINTS } from "../../utils/contants";
-import TopNavBar from "../organisms/topNavBar/TopNavBar";
-import { NonFormPageContainer, StyledPageTemplate } from "./templates.styled";
+import { navigate } from 'gatsby';
+import React from 'react';
+import useWindowSize from '../../hooks/useWindowSize';
+import { useAppSelector } from '../../store/hooks';
+import { selectAuthToken } from '../../store/slices/auth.slices';
+import { BREAKPOINTS } from '../../utils/contants';
+import TopNavBar from '../organisms/topNavBar/TopNavBar';
+import { NonFormPageContainer, StyledPageTemplate } from './templates.styled';
 
 const PageTemplate = ({
   children,
@@ -18,7 +18,7 @@ const PageTemplate = ({
 
   React.useEffect(() => {
     if (isProtected && !auth) {
-      navigate("/");
+      navigate('/');
     }
   }, []);
 
@@ -26,7 +26,7 @@ const PageTemplate = ({
     <StyledPageTemplate>
       <TopNavBar
         variant={
-          width >= LAPTOP ? "desktop" : width >= MOBILE ? "tablet" : "mobile"
+          width >= LAPTOP ? 'desktop' : width >= MOBILE ? 'tablet' : 'mobile'
         }
       />
       <NonFormPageContainer isArticle={isArticle}>

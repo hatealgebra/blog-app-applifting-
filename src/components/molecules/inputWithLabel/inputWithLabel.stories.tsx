@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react';
 
-import InputWithLabel from "./InputWithLabel";
+import InputWithLabel from './InputWithLabel';
 
 export const InputWithLabelTypes = () => {
-  const [name, setName] = React.useState("hello");
-  const [email, setEmail] = React.useState("");
-  const [pwd, setPwd] = React.useState("");
+  const [name, setName] = React.useState('hello');
+  const [email, setEmail] = React.useState('');
+  const [pwd, setPwd] = React.useState('');
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
       <InputWithLabel
         label="Username"
         placeholder="Enter your name"
@@ -32,6 +32,6 @@ export const InputWithLabelTypes = () => {
 };
 
 export default {
-  title: "Molecules/Input with label",
+  title: 'Molecules/Input with label',
   component: InputWithLabel,
 };

@@ -1,18 +1,18 @@
-import React, { useCallback } from "react";
-import { publishComment } from "../../../helpers/commenting.helper";
-import { useAppSelector } from "../../../store/hooks";
-import { selectAuthName } from "../../../store/slices/auth.slices";
-import { components } from "../../../types/declarations";
-import Avatar from "../../atoms/avatar/Avatar";
-import Button from "../../atoms/button/Button";
-import { ErrorText } from "../../atoms/errorText/error.styled";
-import { StyledTextArea } from "../../atoms/input/input.styled";
-import { StyledCreateCommentForm } from "./createComment.styled";
+import React, { useCallback } from 'react';
+import { publishComment } from '../../../helpers/commenting.helper';
+import { useAppSelector } from '../../../store/hooks';
+import { selectAuthName } from '../../../store/slices/auth.slices';
+import { components } from '../../../customTypes/declarations';
+import Avatar from '../../atoms/avatar/Avatar';
+import Button from '../../atoms/button/Button';
+import { ErrorText } from '../../atoms/errorText/error.styled';
+import { StyledTextArea } from '../../atoms/input/input.styled';
+import { StyledCreateCommentForm } from './createComment.styled';
 
 // TODO: UseEffect for form handling
 const CreateComment = ({ articleId, setComments }: CreateCommentProps) => {
   const [isActive, setIsActive] = React.useState(false);
-  const [content, setContent] = React.useState("");
+  const [content, setContent] = React.useState('');
   const [formHandling, setFormHandling] = React.useState<FormValidation>(
     FormValidation.PASSED
   );
@@ -21,7 +21,7 @@ const CreateComment = ({ articleId, setComments }: CreateCommentProps) => {
   const onSubmit = (
     e: React.FormEvent,
     setComments: React.Dispatch<
-      React.SetStateAction<components["schemas"]["Comment"][]>
+      React.SetStateAction<components['schemas']['Comment'][]>
     >
   ) => {
     e.preventDefault();
@@ -33,7 +33,7 @@ const CreateComment = ({ articleId, setComments }: CreateCommentProps) => {
       publishComment(articleId, loggedUser, content, setComments);
       setIsActive(false);
       setFormHandling(FormValidation.PASSED);
-      setContent("");
+      setContent('');
     }
   };
 
@@ -42,7 +42,7 @@ const CreateComment = ({ articleId, setComments }: CreateCommentProps) => {
       onSubmit={(e) => onSubmit(e, setComments)}
       onClick={() => {
         if (!loggedUser && typeof window !== `undefined`) {
-          window.alert("You need to be signed in to comment this article!");
+          window.alert('You need to be signed in to comment this article!');
         }
       }}
       onBlur={(e: React.FocusEvent<HTMLFormElement>) =>
@@ -51,7 +51,7 @@ const CreateComment = ({ articleId, setComments }: CreateCommentProps) => {
     >
       <Avatar />
       <StyledTextArea
-        disabled={loggedUser ? false : true}
+        disabled={!loggedUser}
         onFocus={() => setIsActive(true)}
         placeholder="Join the discussion"
         rows={isActive ? 8 : 1}
@@ -68,15 +68,15 @@ const CreateComment = ({ articleId, setComments }: CreateCommentProps) => {
 };
 
 export enum FormValidation {
-  EMPTY = "* Comment is empty or too short. Min. length of the text should be 25 characters.",
-  TOO_LONG = "* Comment is too long. Maximum is 250 characters.",
-  PASSED = "",
+  EMPTY = '* Comment is empty or too short. Min. length of the text should be 25 characters.',
+  TOO_LONG = '* Comment is too long. Maximum is 250 characters.',
+  PASSED = '',
 }
 
 interface CreateCommentProps {
   articleId: string;
   setComments: React.Dispatch<
-    React.SetStateAction<components["schemas"]["Comment"][]>
+    React.SetStateAction<components['schemas']['Comment'][]>
   >;
 }
 

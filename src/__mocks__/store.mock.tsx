@@ -1,9 +1,9 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { configureStore } from '@reduxjs/toolkit';
 
-import { USER_CONFIG } from "../services/services.config";
-import { reducer, persistedReducer, persistConfig } from "../store";
+import { persistStore } from 'redux-persist';
+import { USER_CONFIG } from '../services/services.config';
+import { reducer, persistedReducer, persistConfig } from '../store';
 // REDUX-PERSIST
-import { persistStore } from "redux-persist";
 
 // import articleDetailReponseJSON from "../__mocks__/responses/articlesDetailsResponse.mock.json";
 
@@ -18,12 +18,12 @@ const mockStore = configureStore({
   preloadedState: {
     reducer: {
       articleFeed: {
-        status: "idle",
+        status: 'idle',
         data: { items: undefined },
         error: false,
       },
       admin: {
-        status: "idle",
+        status: 'idle',
         error: false,
         data: {
           articleToEdit: null,
@@ -33,7 +33,7 @@ const mockStore = configureStore({
       },
     },
     persistedReducer: {
-      status: "idle",
+      status: 'idle',
       data: {
         tenant: {
           tenantId: TENANT_ID,
@@ -41,7 +41,7 @@ const mockStore = configureStore({
           lastUsedAt: LAST_USED_AT,
           name: NAME,
         },
-        login: { email: NAME, pwd: "MockPwd12345" },
+        login: { email: NAME, pwd: 'MockPwd12345' },
         authorization: {},
       },
       error: false,

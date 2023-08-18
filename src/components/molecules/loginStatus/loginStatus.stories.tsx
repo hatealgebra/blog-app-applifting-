@@ -1,9 +1,9 @@
-import React from "react";
-import LoginStatus from "./LoginStatus";
+import React from 'react';
+import LoginStatus from './LoginStatus';
 
 export const LoginStatusExample = <LoginStatus />;
 
 export default {
-  title: "Molecules/Login Status",
+  title: 'Molecules/Login Status',
   component: LoginStatus,
 };

@@ -1,10 +1,10 @@
 import React from 'react';
 
+import { action } from '@storybook/addon-actions';
 import EditArticleRow from './EditArticleRow';
 import EditArticleRowButtons from './EditArticleRowButtons';
 
 import articlesDetailMockJSON from '../../../__mocks__/asyncData/get/articlesDetailsResponse.mock.json';
-import { action } from '@storybook/addon-actions';
 
 const { title, perex, comments } = articlesDetailMockJSON[0];
 
