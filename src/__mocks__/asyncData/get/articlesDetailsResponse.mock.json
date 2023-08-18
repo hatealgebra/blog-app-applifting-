@@ -1,136 +1,234 @@
-[
-  {
-    "articleId": "e52a7ac3-0b87-4399-9ae9-b913ea5daa35",
-    "title": "Why do cats have Whiskers?",
-    "perex": "Men might grow a beard or maintain a mustache just for extra style points...",
-    "content": "Men might grow a beard or maintain a mustache just for extra style points, but the facial hair of the cat has nothing to do with fashion. A cat's whiskers — or vibrissae — are a well-honed sensory tool that helps a catsee in the dark and steer clear of hungry predators. \n \n Whiskers are highly sensitive tactile hairs that grow in patterns on a cat's muzzle, above its eyes and elsewhere on its body, like the ears, jaw and forelegs. At the root of each of these long, stiff hairs is a follicle loaded with nerves. \n \n By brushing its whiskers against an object, a cat can detect the precise location, size and texture of the object, even in the dark. their surroundings, but can also provide humans with some insight into their pet's state of mind. \n \n For example, a set of taut whiskers, pulled back across the face, is a good indication that Kitty feels threatened, while relaxed whiskers, pointing away from the face, indicate a content cat. Of course, cats aren't the only mammals with whiskers. \n \n Most mammalian species, including primates, are equipped with these extrasensory receptors. Biologists think mammals developed whiskers because they needed help sensing their environments at night. The first small mammals shared the world with dinosaurs and had to adapt to hunting nocturnally, when their predators were less active. \n \n Whiskers helped these hungry animals find food and navigate dark terrain. \n \n \n This evolutionary adaptation also helps to explain why the whiskers of many nocturnal or aquatic carnivores — like rats, seals and walruses — are so prominent.",
-    "imageId": "ef01f6f6-5474-11ed-bdc3-0242ac120002",
-    "createdAt": "2022-10-25T16:13:16.838827",
-    "lastUpdatedAt": "2022-10-25T16:28:30.74606",
-    "comments": [
-      {
-        "articleId": "e52a7ac3-0b87-4399-9ae9-b913ea5daa35",
-        "commentId": "ab559726-5411-4615-8909-2d069b932679",
-        "author": "Lily Hawkins",
-        "content": "You see, wire telegraph is a kind of a very, very long cat. You pull his tail in New York and his head is meowing in Los Angeles. Do you understand this? And radio operates exactly the same way: you send signals here, they receive them there. The only difference is that there is no cat.",
-        "postedAt": "2022-10-25T16:15:50.42655",
-        "score": 4
-      },
-      {
-        "articleId": "e52a7ac3-0b87-4399-9ae9-b913ea5daa35",
-        "commentId": "3kkk3k3k",
-        "author": "Annette Bell",
-        "content": "A cat has absolute emotional honesty: human beings, for one reason or another, may hide their feelings, but a cat does not",
-        "postedAt": "2022-10-20T16:15:50.42655",
-        "score": 16
-      },
-      {
-        "articleId": "e52a7ac3-0b87-4399-9ae9-b913ea5daa35",
-        "commentId": "9k99k9j9j9",
-        "author": "Priscilla Simmmons",
-        "content": "In its flawless grace and superior self-sufficiency I have seen a symbol of the perfect beauty and bland impersonality of the universe itself, objectively considered, and in its air of silent mystery there resides for me all the wonder and fascination of the unknown",
-        "postedAt": "2022-09-25T16:15:50.42655",
-        "score": 6
-      },
-      {
-        "articleId": "e52a7ac3-0b87-4399-9ae9-b913ea5daa35",
-        "commentId": "323k24j2i4j",
-        "author": "Pat Miles",
-        "content": "I regard cats as one of the great joys in the world. I see them as a gift of highest order",
-        "postedAt": "2022-03-25T16:15:50.42655",
-        "score": 9
-      }
-    ]
+{
+  "pagination": {
+    "offset": 0,
+    "limit": 5,
+    "total": 5
   },
-  {
-    "articleId": "9d3e5b4f-5c18-44cc-bba7-c0bcd7e75d1b",
-    "title": "How Much Wet Food Should I Feed My Cat?",
-    "perex": "If you aren’t sure how much wet food you should feed your cat, Purina’s expert nutritionists can help. Plus, they offer guidance on food safety and provide ser...",
-    "imageId": "ef01f6f6-5474-11ed-bdc3-0242ac120002",
-    "createdAt": "2021-11-01T20:58:11.347104",
-    "lastUpdatedAt": "2022-11-01T20:58:11.347104",
-    "content": "# Clam arida ## Stabula nescius ambiguum Lorem markdownum [meos](http://vel-sed.io/necemsua), fuit deos cecidisse innumerosque quarum addere tenebris, nos. \n \n Caput miles causamque omnipotens *mihi herbae* hac flammae culta mihi, septemque matrem tum coiere longa at turba. Aureus mactassent aratro coepta Doridaque et iuvenaliter palus senili.\n \n   Vult **fuerat** miserae tertius [siqua](http://volucresad.org/) avertitur inmittitur parat socerumque *fluit primosque dixit* foret nostra invitaque verbis capillos. Senes remissurus subdita venasque conlectus palmis Lebinthos laniabat cognovit.",
-    "comments": [
-      {
-        "articleId": "9d3e5b4f-5c18-44cc-bba7-c0bcd7e75d1b",
-        "commentId": "ab559726-5411-4615-8909-2d069b932679",
-        "author": "Lily Hawkins",
-        "content": "You see, wire telegraph is a kind of a very, very long cat. You pull his tail in New York and his head is meowing in Los Angeles. Do you understand this? And radio operates exactly the same way: you send signals here, they receive them there. The only difference is that there is no cat.",
-        "postedAt": "2022-10-25T16:15:50.42655",
-        "score": 4
-      },
-      {
-        "articleId": "9d3e5b4f-5c18-44cc-bba7-c0bcd7e75d1b",
-        "commentId": "3kkk3k3k",
-        "author": "Annette Bell",
-        "content": "A cat has absolute emotional honesty: human beings, for one reason or another, may hide their feelings, but a cat does not",
-        "postedAt": "2022-10-20T16:15:50.42655",
-        "score": 16
-      }
-    ]
-  },
-  {
-    "articleId": "28c6141f-30a1-4d16-9274-2cf0b81e204a",
-    "title": "Do Cats Drink Water? Cat Hydration & Dehydration Prevention",
-    "perex": "Do cats drink water? Yes, like humans and many other animals, cats need water to survive. Many cats don’t drink as much as they should, though. Find out w...",
-    "imageId": "ef01f6f6-5474-11ed-bdc3-0242ac120002",
-    "createdAt": "2022-12-05T20:59:05.973534",
-    "lastUpdatedAt": "2022-12-05T20:59:05.973534",
-    "content": "# Sanctis fieri ## Erat duri agros vide verbis Lorem markdownum te, saxa tenere rerum agiturque mala capit loqui, coma armarat. \n \n  His fortibus, erat ipse duorum *levat verbaque* divinante novas oraque. Orbis quid servato, en terra latratibus, mora per quam recepta artus Mnemosynen, petebamus odoribus amanti.\n \n  E germana modo.  1. Alias quae victoria expellitur unda sim inducta 2. Illa quem Typhoea populi insuperabile dixit currere 3. Corpore suae Iove quae Acarnanum est erat 4. Ulterius si nunc iuris fine cognovit pulvis 5. Venit saxo valens virtutis ne omen loqui 6. In nunc cui solumque dextera dicat. ## Rectorque sonent statione olivi Peneiaque profectu qui Mentis ad membra semper; damnum mos celebrare solutis, rudentes, gestum nuper refelli [magni](http://www.tuta-est.io/). Ruat est; ignes atque, puellae auratis matris, regis annua illis caelatus. ## Videre tota erat super optatae illic tenebras Est tergoque *furens* moderata in desierant deos, sed est fera adituque carior. Aspice sub *est caput* sonuit paravi; Iovis habere duxit status, ad sub. Cuique utque: fuit: ala, ore non, simul.",
-    "comments": []
-  },
-  {
-    "articleId": "207283b6-c545-4702-b217-9b6b2e1aeb51",
-    "title": "What Is the Difference Between Natural and Organic Cat Food?",
-    "perex": "If you prefer your own diet to be natural or organic, you’re probably considering feeding your cat a natural or organic cat food, too. What’s the difference betw...",
-    "content": "## Lorem Ipsum **Lorem Ipsum** is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. \n \n It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-    "imageId": "ef01f6f6-5474-11ed-bdc3-0242ac120002",
-    "createdAt": "2022-11-05T20:59:41.424193",
-    "lastUpdatedAt": "2022-11-05T20:59:41.424193",
-    "comments": [
-      {
-        "articleId": "207283b6-c545-4702-b217-9b6b2e1aeb51",
-        "commentId": "ab559726-5411-4615-8909-2d069b932679",
-        "author": "Lily Hawkins",
-        "content": "You see, wire telegraph is a kind of a very, very long cat. You pull his tail in New York and his head is meowing in Los Angeles. Do you understand this? And radio operates exactly the same way: you send signals here, they receive them there. The only difference is that there is no cat.",
-        "postedAt": "2022-10-25T16:15:50.42655",
-        "score": 4
-      }
-    ]
-  },
-  {
-    "articleId": "641421a4-1044-4649-bd56-8320516edda0",
-    "title": "Wet vs. Dry Cat Food: Which is Better?",
-    "perex": "A cat's whiskers — or vibrissae — are a well-honed sensory tool that helps a cat see in the dark and steer clear of hungry predators. Whiskers are highly sensitive tactile hairs that grow in patterns on a cat's muzzle, above its eyes and elsewhere on its body, like the ears, jaw and forelegs",
-    "imageId": "ef01f6f6-5474-11ed-bdc3-0242ac120002",
-    "createdAt": "2020-06-30T21:01:17.83192",
-    "lastUpdatedAt": "2020-06-30T21:01:17.83192",
-    "content": "## Adiecit sui antiquam  ### Rerum volat utque solacia flavescunt Lorem markdownum hosti pariterque quoque. Amor non munus recenti, frequens dedit tota regni, ipso potuisse illi; viros navem primum est dubitati liquescunt? \n \n  Coruscis pugnae Ismenus lucente et pietasque egredior te ramis micat priora, si ille, multaque sacro ut non tauri. Est cepi tetenderat: fortis reformatus aequora numero dilatant operum commisisse sibila dedisses tempore. \n \n  Mea virum trahit memorant ipse. Posita ictu ferro adversi? Qui cum mihi diversa crimen, moderatius est leve, enim iam augurium causa verba sedes cornu. ## Iam isto subitis    Condi urbis suae externasque Pulydamanta fluctus cruoris haeserunt; vestigia abstulit omnia miserabile nantemque frugum!\n \n  Tecta interimo scelerato refert.Moto ad illa! Pro avsis mota vivit cognovi Amphitryon satis indueret poteramus nota naturae. *Solebas simul Calaureae* memorant freto; sedem participes nisimitissima torto potest; carae hunc Themis inmensos facere. > Sorores et ausus ut **proles** oneri somnus arctos reccidit detractavitque > tetigisse excutiuntque illis micat virumque: gravidae.\n \n  Pedibus pontum. Cum per > abdiderat ab solum cum videoque sequeretur genus natantia Iovi; venienti > altior et ferus mittuntque insiluit virtus si. Quid respicit nec. Puer aures > currum ubique, refert mordetur proavos malum pacis sum subit ista quaque nec > tanto ille.",
-    "comments": [
-      {
-        "articleId": "641421a4-1044-4649-bd56-8320516edda0",
-        "commentId": "ab559726-5411-4615-8909-2d069b932679",
-        "author": "Lily Hawkins",
-        "content": "You see, wire telegraph is a kind of a very, very long cat. You pull his tail in New York and his head is meowing in Los Angeles. Do you understand this? And radio operates exactly the same way: you send signals here, they receive them there. The only difference is that there is no cat.",
-        "postedAt": "2022-10-25T16:15:50.42655",
-        "score": 4
-      },
-      {
-        "articleId": "641421a4-1044-4649-bd56-8320516edda0",
-        "commentId": "9k99k9j9j9",
-        "author": "Priscilla Simmmons",
-        "content": "In its flawless grace and superior self-sufficiency I have seen a symbol of the perfect beauty and bland impersonality of the universe itself, objectively considered, and in its air of silent mystery there resides for me all the wonder and fascination of the unknown",
-        "postedAt": "2022-09-25T16:15:50.42655",
-        "score": 6
-      },
-      {
-        "articleId": "641421a4-1044-4649-bd56-8320516edda0",
-        "commentId": "323k24j2i4j",
-        "author": "Pat Miles",
-        "content": "I regard cats as one of the great joys in the world. I see them as a gift of highest order",
-        "postedAt": "2022-03-25T16:15:50.42655",
-        "score": 9
-      }
-    ]
-  }
-]
+  "items": [
+    {
+      "id": "3f254ba8-21f9-55bd-bc7d-484d11040fc6",
+      "articleId": "c7b1f38a-e70f-4795-bdd8-802c68eb32dc",
+      "createdAt": "2023-08-15T18:01:56.24026",
+      "lastUpdatedAt": "2023-08-15T18:01:56.24026",
+      "imageId": "0bf9b525-3b33-4ec1-9bce-9a81819e4aaf",
+      "imageBase64": "iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAIAAADTED8xAAADMElEQVR4nOzVwQnAIBQFQYXff81RUkQCOyDj1YOPnbXWPmeTRef+/3O/OyBjzh3CD95BfqICMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMO0TAAD//2Anhf4QtqobAAAAAElFTkSuQmCC",
+      "title": "British Cats: Charming Companions of the Isles",
+      "perex": "British cats, known for their distinctive charm and character, hold a special place in the hearts of cat enthusiasts around the wo...",
+      "content": "British cats, known for their distinctive charm and character, hold a special place in the hearts of cat enthusiasts around the world. These feline companions are celebrated for their unique traits, which stem from their long history intertwined with British culture. From their plush coats to their endearing personalities, British cats are a beloved breed that captivates both their owners and anyone fortunate enough to encounter them.\n\n## Historical Roots and Heritage\nOriginating in the United Kingdom, British cats have a rich history that dates back centuries. They were cherished by British households for their exceptional hunting skills, helping control rodent populations that posed a threat to stored grains. Over time, their roles evolved, and they transitioned from working cats to treasured pets. This historical background continues to influence their demeanor, as they exude an air of regal elegance and poise.\n\n## Distinctive Physical Features\nOne of the most recognizable features of British cats is their plush and dense coat. With a short and luxurious fur that comes in a variety of colors, these cats are not only visually appealing but also irresistibly soft to the touch. Their round faces, chubby cheeks, and large, expressive eyes add to their adorable appearance, making them almost impossible to resist. Their robust and compact bodies give them a sturdy and huggable quality, endearing them to cat lovers everywhere.\n\n## Gentle and Affectionate Nature\nBritish cats are renowned for their gentle and affectionate nature, making them wonderful companions for families and individuals alike. They are known to form strong bonds with their owners, often seeking out cuddles and lap time. Their calm and patient demeanor allows them to adapt well to indoor living, making them great companions for apartment dwellers or those with busy lifestyles. This affectionate behavior is one of the many reasons British cats have earned a reputation as wonderful household pets.\n\n## Social and Playful Behavior\nWhile they might have a dignified aura, British cats are far from aloof. They thrive on human interaction and enjoy being part of the family dynamic. Their playful antics and curiosity keep their owners entertained, and they often engage in interactive games that stimulate their minds and bodies. Their sociable nature extends to other pets as well, making them a harmonious addition to multi-pet households.\n\n## Caring for British Cats\nCaring for a British cat involves ensuring their physical and emotional well-being. Regular grooming is essential to maintain their lush coats and prevent matting. Their diet should be balanced to keep their weight in check, as their fondness for food can lead to obesity. Providing mental stimulation through interactive toys and play sessions is crucial to prevent boredom. Like all cats, regular veterinary check-ups are a must to monitor their health and catch any potential issues early.\n\n## Preserving a Cherished Breed\nAs with many traditional breeds, the popularity of British cats has led to efforts aimed at preserving their genetic diversity and overall health. Responsible breeding practices that prioritize the well-being of the cats are crucial to maintaining the unique characteristics that make British cats so beloved. By supporting ethical breeders and considering adoption from shelters, cat lovers can contribute to the preservation of this cherished breed for generations to come.\n\nIn conclusion, British cats embody a delightful blend of history, charm, and companionship. Their luxurious coats, affectionate personalities, and playful behaviors make them a joy to have as part of the family. With a nod to their historical roles as hunters and a focus on their current roles as cherished pets, British cats continue to capture the hearts of cat lovers worldwide.",
+      "comments": [
+        {
+          "articleId": "3f254ba8-21f9-55bd-bc7d-484d11040fc6",
+          "commentId": "ab559726-5411-4615-8909-2d069b932679",
+          "author": "Lily Hawkins",
+          "content": "You see, wire telegraph is a kind of a very, very long cat. You pull his tail in New York and his head is meowing in Los Angeles. Do you understand this? And radio operates exactly the same way: you send signals here, they receive them there. The only difference is that there is no cat.",
+          "postedAt": "2022-10-25T16:15:50.42655",
+          "score": 4
+        },
+        {
+          "articleId": "3f254ba8-21f9-55bd-bc7d-484d11040fc6",
+          "commentId": "3kkk3k3k",
+          "author": "Annette Bell",
+          "content": "A cat has absolute emotional honesty: human beings, for one reason or another, may hide their feelings, but a cat does not",
+          "postedAt": "2022-10-20T16:15:50.42655",
+          "score": 16
+        },
+        {
+          "articleId": "3f254ba8-21f9-55bd-bc7d-484d11040fc6",
+          "commentId": "9k99k9j9j9",
+          "author": "Priscilla Simmmons",
+          "content": "In its flawless grace and superior self-sufficiency I have seen a symbol of the perfect beauty and bland impersonality of the universe itself, objectively considered, and in its air of silent mystery there resides for me all the wonder and fascination of the unknown",
+          "postedAt": "2022-09-25T16:15:50.42655",
+          "score": 6
+        },
+        {
+          "articleId": "3f254ba8-21f9-55bd-bc7d-484d11040fc6",
+          "commentId": "323k24j2i4j",
+          "author": "Pat Miles",
+          "content": "I regard cats as one of the great joys in the world. I see them as a gift of highest order",
+          "postedAt": "2022-03-25T16:15:50.42655",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "id": "c64fba07-7b1e-5c31-9635-ba6a3b9a9296",
+      "articleId": "d1cfbb7d-e0d9-4341-a131-f1dd077a6fb0",
+      "createdAt": "2023-08-15T18:11:32.565426",
+      "lastUpdatedAt": "2023-08-15T18:11:32.565426",
+      "imageId": "84f64181-b050-4859-b8ab-763d0d52d8b8",
+      "imageBase64": "iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAIAAADTED8xAAADMElEQVR4nOzVwQnAIBQFQYXff81RUkQCOyDj1YOPnbXWPmeTRef+/3O/OyBjzh3CD95BfqICMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMO0TAAD//2Anhf4QtqobAAAAAElFTkSuQmCC",
+      "title": "Bean the Cat: A Tale of Adventure, Friendship, and Whiskers",
+      "perex": "In the heart of a quaint little village nestled between rolling hills, a remarkable feline named Bean resided. Bean wasn't your ty...",
+      "content": "In the heart of a quaint little village nestled between rolling hills, a remarkable feline named Bean resided. Bean wasn't your typical cat – he was a true adventurer at heart, with a spirit as boundless as the sky and a curiosity that knew no limits. This is the heartwarming tale of Bean, a cat who taught us that life's greatest treasures are often found in unexpected places.\n\n## The Unlikely Beginnings\n\nBean's story began on a sunny morning when he was discovered as a tiny, bedraggled kitten by a kind-hearted woman named Emily. Lost and alone, the little furball caught Emily's attention as he fearlessly explored the alleyways. His oversized ears and mismatched whiskers gave him a distinctive appearance that melted Emily's heart. Without hesitation, she scooped up the adventurous kitten and brought him home.\n\n## Paws and Whiskers of Discovery\n\nAs Bean grew, his insatiable curiosity blossomed. He roamed the village's cobblestone streets and grassy meadows with unbridled enthusiasm. From chasing after fluttering butterflies to investigating mysterious rustlings in the bushes, Bean was always on the lookout for his next grand adventure. His mismatched whiskers twitched with excitement, guiding him towards hidden treasures and unexpected encounters.\n\n## The Great Tree-Climbing Escapade\n\nOne unforgettable day, Bean spotted the tallest tree in the village square. Its branches stretched towards the sky like beckoning arms, and Bean couldn't resist the challenge. With determination burning in his eyes, he scaled the tree with an agility that left the villagers awestruck. As he perched on the highest branch, his triumphant meow echoed through the air, and his mismatched whiskers rustled with the breeze.\n\n## An Unlikely Friendship\n\nBean's escapades brought him more than just exhilarating experiences – they led him to an unexpected friendship. One afternoon, as he pounced through a field of wildflowers, Bean crossed paths with a timid rabbit named Pip. At first, Pip was apprehensive, but Bean's friendly demeanor and playful antics soon won him over. The two became inseparable companions, embarking on countless escapades together.\n\n## The Journey Beyond\n\nAs the seasons changed, so did Bean. His once-tiny paws now left larger imprints in the village's history. Through his adventures and friendships, Bean taught the villagers that life's most precious moments are often found in the company of those who love us for who we are. He became a symbol of courage, curiosity, and the joy of embracing the unknown.\n\n## The Legacy of Bean\n\nThough time marched on, Bean's spirit lived on in the hearts of those who knew him. The village erected a statue in his honor, capturing his joyful spirit and mismatched whiskers for generations to come. The tale of Bean, the adventurous cat with a heart full of curiosity and a soul full of love, continues to inspire children and adults alike to seek out their own adventures and friendships, reminding us all that the world is full of wonder waiting to be discovered – one pawprint at a time.",
+      "comments": [
+        {
+          "articleId": "c64fba07-7b1e-5c31-9635-ba6a3b9a9296",
+          "commentId": "ab559726-5411-4615-8909-2d069b932679",
+          "author": "Lily Hawkins",
+          "content": "You see, wire telegraph is a kind of a very, very long cat. You pull his tail in New York and his head is meowing in Los Angeles. Do you understand this? And radio operates exactly the same way: you send signals here, they receive them there. The only difference is that there is no cat.",
+          "postedAt": "2022-10-25T16:15:50.42655",
+          "score": 4
+        },
+        {
+          "articleId": "c64fba07-7b1e-5c31-9635-ba6a3b9a9296",
+          "commentId": "3kkk3k3k",
+          "author": "Annette Bell",
+          "content": "A cat has absolute emotional honesty: human beings, for one reason or another, may hide their feelings, but a cat does not",
+          "postedAt": "2022-10-20T16:15:50.42655",
+          "score": 16
+        },
+        {
+          "articleId": "c64fba07-7b1e-5c31-9635-ba6a3b9a9296",
+          "commentId": "9k99k9j9j9",
+          "author": "Priscilla Simmmons",
+          "content": "In its flawless grace and superior self-sufficiency I have seen a symbol of the perfect beauty and bland impersonality of the universe itself, objectively considered, and in its air of silent mystery there resides for me all the wonder and fascination of the unknown",
+          "postedAt": "2022-09-25T16:15:50.42655",
+          "score": 6
+        },
+        {
+          "articleId": "c64fba07-7b1e-5c31-9635-ba6a3b9a9296",
+          "commentId": "323k24j2i4j",
+          "author": "Pat Miles",
+          "content": "I regard cats as one of the great joys in the world. I see them as a gift of highest order",
+          "postedAt": "2022-03-25T16:15:50.42655",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "id": "14862a32-fd4b-5b9b-a209-d206bad02203",
+      "articleId": "abd4dcae-d68c-4aa2-9651-e971d4389425",
+      "createdAt": "2023-08-15T18:17:33.745436",
+      "lastUpdatedAt": "2023-08-15T18:17:33.745436",
+      "imageId": "3b034bf9-0cfe-4d91-a279-10839ef0994c",
+      "imageBase64": "iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAIAAADTED8xAAADMElEQVR4nOzVwQnAIBQFQYXff81RUkQCOyDj1YOPnbXWPmeTRef+/3O/OyBjzh3CD95BfqICMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMO0TAAD//2Anhf4QtqobAAAAAElFTkSuQmCC",
+      "title": "The Irresistible Charm of Orange Cats: Exploring Their Purr-sonalities and Memes",
+      "perex": "Orange cats, with their vibrant coats and captivating personalities, have captured the hearts of cat lovers around the world. Thes...",
+      "content": "Orange cats, with their vibrant coats and captivating personalities, have captured the hearts of cat lovers around the world. These feline wonders are not only known for their striking appearance but also for their endearing behaviors that often lead to the creation of hilarious and heartwarming internet memes. In this article, we'll delve into the world of orange cats, exploring their unique traits, the reasons behind their popularity, and the memes that have immortalized their antics in the digital realm.\n\n## The Appeal of Orange Cats:\n\nOrange cats, also known as ginger cats or marmalade cats, boast a wide range of coat shades, from pale apricot to deep reddish-orange. Their distinctive coloring is a result of a specific genetic combination that leads to the production of orange pigment. Beyond their appearance, these cats are cherished for their personalities. Many orange cats are known for being friendly, social, and confident. They often form strong bonds with their human companions and exhibit a playful and affectionate nature.\n\n## The Birth of Internet Cat Memes:\n\nThe rise of the internet has given birth to a phenomenon that has forever changed the way we interact with cat-related content. The combination of the adorable and quirky behaviors of cats, along with the creative captions and edits, has led to the creation of countless cat memes. Orange cats, with their expressive faces and amusing antics, have become a favorite subject for these memes.\n\n### The Memes that Keep Us Laughing:\n\n\"The Classic 'I Can Has Cheezburger' Meme: One of the earliest and most iconic cat memes features an orange tabby with a bewildered expression, accompanied by humorous captions in a playful font. This meme, known as the \"I Can Has Cheezburger\" meme, paved the way for the internet's love affair with feline humor.\n\"The Judgemental Orange Cat\": This meme features an orange cat with a particularly stern or disapproving expression, often used to convey humorous judgmental thoughts about everyday situations. It perfectly captures the way cats can appear to be unimpressed by the world around them.\n\"Keyboard Cat\": While not exclusively an orange cat, \"Keyboard Cat\" is a beloved meme that involves a cat dressed in a blue shirt \"playing\" a keyboard in a humorous and catchy manner. This meme showcases the creativity that arises when cats and pop culture collide.\n\"Longcat\": This meme features an impossibly long orange tabby cat that stretches out to an extraordinary length. The surreal image has sparked numerous variations and captions, becoming a symbol of internet absurdity.\nThe Enduring Influence of Orange Cat Memes:\n\nOrange cat memes have not only entertained people worldwide but have also helped foster a sense of community among internet users. Sharing and creating these memes allows people to connect over a shared appreciation for feline humor. Additionally, these memes have raised awareness about the importance of adopting and caring for cats, encouraging responsible pet ownership.\n\n\n> The charm of orange cats goes beyond their physical appearance. Their playful personalities and endearing behaviors have inspired a plethora of internet memes that continue to bring smiles to faces across the globe. Through these memes, orange cats have become digital icons, uniting cat lovers and showcasing the unique bond between humans and their furry companions. So, whether it's a classic \"I Can Has Cheezburger\" moment or a judgmental orange cat passing a comical verdict, the world of orange cat memes is a delightful reminder of the joy that our feline friends bring to our lives.",
+      "comments": [
+        {
+          "articleId": "14862a32-fd4b-5b9b-a209-d206bad02203",
+          "commentId": "ab559726-5411-4615-8909-2d069b932679",
+          "author": "Lily Hawkins",
+          "content": "You see, wire telegraph is a kind of a very, very long cat. You pull his tail in New York and his head is meowing in Los Angeles. Do you understand this? And radio operates exactly the same way: you send signals here, they receive them there. The only difference is that there is no cat.",
+          "postedAt": "2022-10-25T16:15:50.42655",
+          "score": 4
+        },
+        {
+          "articleId": "14862a32-fd4b-5b9b-a209-d206bad02203",
+          "commentId": "3kkk3k3k",
+          "author": "Annette Bell",
+          "content": "A cat has absolute emotional honesty: human beings, for one reason or another, may hide their feelings, but a cat does not",
+          "postedAt": "2022-10-20T16:15:50.42655",
+          "score": 16
+        },
+        {
+          "articleId": "14862a32-fd4b-5b9b-a209-d206bad02203",
+          "commentId": "9k99k9j9j9",
+          "author": "Priscilla Simmmons",
+          "content": "In its flawless grace and superior self-sufficiency I have seen a symbol of the perfect beauty and bland impersonality of the universe itself, objectively considered, and in its air of silent mystery there resides for me all the wonder and fascination of the unknown",
+          "postedAt": "2022-09-25T16:15:50.42655",
+          "score": 6
+        },
+        {
+          "articleId": "14862a32-fd4b-5b9b-a209-d206bad02203",
+          "commentId": "323k24j2i4j",
+          "author": "Pat Miles",
+          "content": "I regard cats as one of the great joys in the world. I see them as a gift of highest order",
+          "postedAt": "2022-03-25T16:15:50.42655",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "id": "584f2f43-1e49-585a-9f51-4e9dca4b99ae",
+      "articleId": "541d7c47-c7ec-4ec9-a2b0-b6a817278c40",
+      "createdAt": "2023-08-15T18:36:08.839841",
+      "lastUpdatedAt": "2023-08-15T18:36:08.839841",
+      "imageId": "28a31154-12cc-48ff-a002-caba1beb9a08",
+      "imageBase64": "iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAIAAADTED8xAAADMElEQVR4nOzVwQnAIBQFQYXff81RUkQCOyDj1YOPnbXWPmeTRef+/3O/OyBjzh3CD95BfqICMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMO0TAAD//2Anhf4QtqobAAAAAElFTkSuQmCC",
+      "title": "Unraveling the Mystery: The Enigmatic World of Grumpy Cats and Their Peculiar Demeanor",
+      "perex": "In the realm of feline companionship, there exist an intriguing subset of cats that have garnered attention not for their charming...",
+      "content": "In the realm of feline companionship, there exist an intriguing subset of cats that have garnered attention not for their charming purrs or playful antics, but rather for their perpetually grumpy expressions. These cats, often referred to as \"grumpy cats,\" have captured the curiosity of pet enthusiasts and internet users worldwide. This article delves into the world of grumpy cats, exploring the reasons behind their distinctive facial expressions and shedding light on the factors that contribute to their seemingly dour disposition.\n\n### The Grumpy Cat Phenomenon:\nThe term \"grumpy cat\" became a cultural phenomenon largely due to the viral success of a particular feline named Tardar Sauce, famously known as Grumpy Cat. The internet sensation garnered millions of followers across social media platforms, propelling the concept of the grumpy cat into popular culture. Grumpy Cat's distinctively downturned mouth and perpetually displeased expression became iconic, sparking interest in the reasons behind such an atypical appearance.\n\n### Understanding Feline Facial Expressions:\nTo comprehend why grumpy cats appear perpetually displeased, it's essential to understand feline facial anatomy and the role of facial muscles in conveying emotions. Cats possess a relatively limited range of facial expressions compared to humans, and their expressions often revolve around subtle changes in ear position, eye shape, and whisker orientation. Some cats naturally have downturned mouths or prominent frown lines due to genetics, contributing to the appearance of a grumpy expression even when they are not actually experiencing negative emotions.\n\n#### Potential Factors Behind Grumpiness:\n\n1. Genetics: Certain breeds are more predisposed to having grumpy-looking faces due to genetic traits that influence skull shape and muscle structure. Breeds like the British Shorthair and Scottish Fold are known for their distinctive facial features.\n2. Health Issues: Grumpy facial expressions could also be linked to underlying health problems or discomfort. Dental issues, chronic pain, or other physical discomforts might cause a cat to appear grumpy due to their attempts to cope with discomfort.\n3. Socialization and Personality: Just like humans, cats have diverse personalities. Some cats might naturally have a more serious or reserved demeanor, leading to expressions that appear grumpy to humans. Cats with past negative experiences might also be more wary and exhibit grumpier expressions as a defense mechanism.\n4. Environment and Stress: An unstable or stressful living environment can influence a cat's behavior and demeanor. Cats experiencing chronic stress might exhibit behavior that appears grumpy, such as hiding or avoiding interactions.\n5. Age: Older cats might develop certain age-related conditions that affect their appearance and behavior. Arthritis or other mobility issues might contribute to a cat appearing grumpy due to discomfort.\n\n\n#### Conclusion:\nWhile the term \"grumpy cat\" often evokes images of stern-faced felines, it's important to recognize that a cat's expression might not always reflect their true emotional state. Various genetic, health-related, and environmental factors contribute to the appearance of grumpiness in cats, and each individual cat is unique in terms of their personality and preferences. By understanding the complex interplay of genetics, health, and behavior, we can gain a more holistic perspective on the enigmatic world of grumpy cats and appreciate their individuality beyond their facial expressions.",
+      "comments": [
+        {
+          "articleId": "584f2f43-1e49-585a-9f51-4e9dca4b99ae",
+          "commentId": "ab559726-5411-4615-8909-2d069b932679",
+          "author": "Lily Hawkins",
+          "content": "You see, wire telegraph is a kind of a very, very long cat. You pull his tail in New York and his head is meowing in Los Angeles. Do you understand this? And radio operates exactly the same way: you send signals here, they receive them there. The only difference is that there is no cat.",
+          "postedAt": "2022-10-25T16:15:50.42655",
+          "score": 4
+        },
+        {
+          "articleId": "584f2f43-1e49-585a-9f51-4e9dca4b99ae",
+          "commentId": "3kkk3k3k",
+          "author": "Annette Bell",
+          "content": "A cat has absolute emotional honesty: human beings, for one reason or another, may hide their feelings, but a cat does not",
+          "postedAt": "2022-10-20T16:15:50.42655",
+          "score": 16
+        },
+        {
+          "articleId": "584f2f43-1e49-585a-9f51-4e9dca4b99ae",
+          "commentId": "9k99k9j9j9",
+          "author": "Priscilla Simmmons",
+          "content": "In its flawless grace and superior self-sufficiency I have seen a symbol of the perfect beauty and bland impersonality of the universe itself, objectively considered, and in its air of silent mystery there resides for me all the wonder and fascination of the unknown",
+          "postedAt": "2022-09-25T16:15:50.42655",
+          "score": 6
+        },
+        {
+          "articleId": "584f2f43-1e49-585a-9f51-4e9dca4b99ae",
+          "commentId": "323k24j2i4j",
+          "author": "Pat Miles",
+          "content": "I regard cats as one of the great joys in the world. I see them as a gift of highest order",
+          "postedAt": "2022-03-25T16:15:50.42655",
+          "score": 9
+        }
+      ]
+    },
+    {
+      "id": "c2e1e0c6-bb05-58d1-8b44-17c4e5d47b2d",
+      "articleId": "2491852b-6566-4fae-ace3-4510cd40e81a",
+      "createdAt": "2023-08-16T11:58:37.010086",
+      "lastUpdatedAt": "2023-08-16T11:58:37.010086",
+      "imageId": "b337b421-22d6-4ef4-b0c5-c0dcbdadaf38",
+      "imageBase64": "iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAIAAADTED8xAAADMElEQVR4nOzVwQnAIBQFQYXff81RUkQCOyDj1YOPnbXWPmeTRef+/3O/OyBjzh3CD95BfqICMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMO0TAAD//2Anhf4QtqobAAAAAElFTkSuQmCC",
+      "title": "The Fascinating World of Cat Sleeping Habits: Exploring Feline Slumber",
+      "perex": "Cats are renowned for their unique and often mysterious behaviors, and one of the most intriguing aspects of their lives is their ...",
+      "content": "Cats are renowned for their unique and often mysterious behaviors, and one of the most intriguing aspects of their lives is their sleeping habits. From finding the perfect cozy spot to adopting bizarre sleeping positions, our feline friends' slumber patterns have captured the curiosity of cat owners and researchers alike. In this article, we delve into the captivating world of cat sleeping habits, shedding light on why cats sleep so much, how they sleep, and what their behaviors reveal about their instincts.\n\n## The Sleepy Side of Cats: Why Do They Sleep So Much?\n\nIf you've ever wondered why your cat seems to spend the majority of its life in dreamland, you're not alone. On average, cats sleep for about 12 to 16 hours a day, with some even sleeping up to 20 hours. But why do they need so much sleep?\n\n### Predator Origins:\nCats are natural predators, and their wild ancestors spent a significant amount of time hunting. These hunting activities required bursts of intense energy followed by periods of rest. While our domesticated kitties might not be hunting prey in the same way, their instinctual behavior of alternating between play and rest still remains.\n\n### Energy Conservation:\nDespite their domestication, cats retain their wild instincts, including the need to conserve energy. Cats are crepuscular creatures, meaning they are most active during dawn and dusk. The rest of the time, they conserve energy through extended naps.\n\n### Rapid Eye Movement (REM) Sleep: \nJust like humans, cats go through different sleep stages, including REM sleep. This stage is crucial for memory consolidation and emotional processing. Cats experience REM sleep during their shorter periods of deep sleep, which contributes to their overall sleep duration.\n\n## The Art of Cat Nap: How Cats Sleep\n\nCats have a unique way of sleeping that varies from their human counterparts. While humans generally follow a monophasic sleep pattern (one long sleep period at night), cats are known for their polyphasic sleep pattern (multiple short sleep periods throughout the day). Here are some intriguing ways cats sleep:\n\n### Cat Loaf:\nOne of the most iconic cat sleeping positions is the \"loaf.\" Cats tuck their paws underneath them and curl their tails around their bodies, resembling a freshly baked loaf of bread.\n\n### Crazy Cat Nap:\nCats are skilled at finding the most unexpected places to nap, from perching on the top of bookshelves to curling up in laundry baskets. Their knack for adapting to various surfaces showcases their ability to sleep comfortably almost anywhere.\n\n### Hidden Napper: \nCats often prefer quiet, secluded spots to sleep. This behavior harkens back to their wild ancestors' need to find safe and hidden locations to rest, away from potential predators.\nSleeping Behavior as a Window into Feline Instincts\n\nObserving a cat's sleeping habits can provide insights into their overall well-being and natural instincts:\n\n### Relaxation and Trust: \nWhen a cat sleeps belly-up, exposing its vulnerable stomach, it's a sign that the cat feels safe and trusts its environment. This position allows them to cool down their body temperature more effectively.\n\n### Temperature Regulation:\nCats are highly sensitive to temperature changes. They may choose warm spots to sleep, like a sunny windowsill, to maintain their body heat. Conversely, they might seek out cooler places during warmer months.\n\n### Dreaming and REM Sleep:\nCats' twitching paws, whisker twitches, and occasional movements while sleeping could indicate they're dreaming. Just like humans, they likely experience dreams during their REM sleep cycles.\n\nIn conclusion, the world of cat sleeping habits is a captivating realm filled with intricate behaviors and instinctual adaptations. \nUnderstanding why cats sleep so much, how they sleep, and what their positions reveal can deepen our appreciation for these enigmatic creatures. Whether they're curled up in a sunlit corner or nestled in a hidden nook, our feline friends continue to amaze us with their unique approach to slumber.",
+      "comments": [
+        {
+          "articleId": "c2e1e0c6-bb05-58d1-8b44-17c4e5d47b2d",
+          "commentId": "ab559726-5411-4615-8909-2d069b932679",
+          "author": "Lily Hawkins",
+          "content": "You see, wire telegraph is a kind of a very, very long cat. You pull his tail in New York and his head is meowing in Los Angeles. Do you understand this? And radio operates exactly the same way: you send signals here, they receive them there. The only difference is that there is no cat.",
+          "postedAt": "2022-10-25T16:15:50.42655",
+          "score": 4
+        },
+        {
+          "articleId": "c2e1e0c6-bb05-58d1-8b44-17c4e5d47b2d",
+          "commentId": "3kkk3k3k",
+          "author": "Annette Bell",
+          "content": "A cat has absolute emotional honesty: human beings, for one reason or another, may hide their feelings, but a cat does not",
+          "postedAt": "2022-10-20T16:15:50.42655",
+          "score": 16
+        },
+        {
+          "articleId": "c2e1e0c6-bb05-58d1-8b44-17c4e5d47b2d",
+          "commentId": "9k99k9j9j9",
+          "author": "Priscilla Simmmons",
+          "content": "In its flawless grace and superior self-sufficiency I have seen a symbol of the perfect beauty and bland impersonality of the universe itself, objectively considered, and in its air of silent mystery there resides for me all the wonder and fascination of the unknown",
+          "postedAt": "2022-09-25T16:15:50.42655",
+          "score": 6
+        },
+        {
+          "articleId": "c2e1e0c6-bb05-58d1-8b44-17c4e5d47b2d",
+          "commentId": "323k24j2i4j",
+          "author": "Pat Miles",
+          "content": "I regard cats as one of the great joys in the world. I see them as a gift of highest order",
+          "postedAt": "2022-03-25T16:15:50.42655",
+          "score": 9
+        }
+      ]
+    }
+  ]
+}

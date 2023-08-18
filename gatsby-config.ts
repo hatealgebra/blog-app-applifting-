@@ -57,22 +57,20 @@ const config: GatsbyConfig = {
       },
     },
     {
+      resolve: `gatsby-plugin-tsconfig-paths`,
+      options: {
+        configFile: `${__dirname}/tsconfig.json`,
+        silent: true,
+      },
+    },
+    {
       resolve: 'gatsby-source-apiserver',
       options: {
         url: `${BASE_API_URL}/articles`,
         method: 'get',
         headers: { 'X-API-KEY': API_KEY },
-        name: 'articles',
-        schemaType: {
-          items: `items: [article]`,
-          article: `
-          articleId: String
-          perex: String
-          title: String
-          imageId: String
-          createdAt: String
-          lastUpdatedAt: String`,
-        },
+        name: 'paginationAPI',
+        entityLevel: 'pagination',
       },
     },
   ],
