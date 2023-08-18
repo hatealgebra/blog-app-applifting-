@@ -8,20 +8,18 @@ import {
   StyledArticleFeed,
 } from './articleFeed.styled';
 import useAllArticles from '../../../hooks/useAllArticles';
+import { TCompleteArticles } from '@types/schema';
 
-const ArticleFeed = () => {
-  const items = useAllArticles();
-  const isLoading = 'idle';
+interface ArticleFeedProps {
+  items: TCompleteArticles;
+}
 
+const ArticleFeed = ({ items }: ArticleFeedProps) => {
   return (
     <StyledArticleFeed className="article-feed">
       <h1 className="article-feed__heading">Recent articles</h1>
       <div className="article-feed__articles">
-        {isLoading === 'loading' ? (
-          <CenterContainer>
-            <Loading />
-          </CenterContainer>
-        ) : items === undefined ? (
+        {items === undefined || !items.length ? (
           <CenterContainer>
             <h3>No Articles to show</h3>
           </CenterContainer>

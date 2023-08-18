@@ -1,12 +1,12 @@
-import React from "react";
-import Discussion from "./Discussion";
+import React from 'react';
+import Discussion from './Discussion';
 
-import articleMockJSON from "../../../__mocks__/asyncData/get/articlesDetailsResponse.mock.json";
-import { Provider } from "react-redux";
-import mockStore from "../../../__mocks__/store.mock";
+import allArticlesMockJSON from '../../../__mocks__/asyncData/get/articlesDetailsResponse.mock.json';
+import { Provider } from 'react-redux';
+import mockStore from '../../../__mocks__/store.mock';
 
 export const DiscussionExample = () => {
-  const comments = articleMockJSON[4].comments;
+  const comments = allArticlesMockJSON.items[4].comments;
   return (
     <Provider store={mockStore}>
       <Discussion
@@ -18,6 +18,6 @@ export const DiscussionExample = () => {
 };
 
 export default {
-  title: "Organisms/Discussion",
+  title: 'Organisms/Discussion',
   component: Discussion,
 };

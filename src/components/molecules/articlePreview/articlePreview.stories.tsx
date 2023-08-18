@@ -4,7 +4,7 @@ import ArticlePreview from './ArticlePreview';
 import ArticlePreviewSmall from './ArticlePreviewSmall';
 import articlesDetailsResponseMockJSON from '../../../__mocks__/asyncData/get/articlesDetailsResponse.mock.json';
 
-const { comments } = articlesDetailsResponseMockJSON[0];
+const { comments } = articlesDetailsResponseMockJSON.items[0];
 
 export const ArticlePreviewMobile = () => {
   return (

@@ -7,4 +7,16 @@ export interface IArticle {
   lastUpdateAt: string;
 }
 
-export interface IArticleDetail {}
+export type TArticleDetail = components['schemas']['Article'] &
+  components['schemas']['ArticleDetail'] & {
+    imageBase64: 'string';
+  };
+
+export type TCompleteArticles = Array<TArticleDetail>;
+
+export interface ICompleteArticleList {
+  articleList: {
+    pagination?: components['schemas']['Pagination'];
+    items?: TCompleteArticleFeed;
+  };
+}
