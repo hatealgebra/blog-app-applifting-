@@ -6,7 +6,6 @@ import { screen, waitFor } from '@testing-library/dom';
 import { setupTest } from '../../../utils/testing.utils';
 
 import UploadImage from './UploadImage';
-import { UploadImageExample } from './uploadImage.stories';
 
 global.URL.createObjectURL = jest.fn();
 const originalFile = new File(['goodbye'], 'goodbye.png', {

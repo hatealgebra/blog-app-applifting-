@@ -1,7 +1,8 @@
 import React from 'react';
 
-import { StyledAvatar } from './avatar.styled';
+import StyledAvatar from './avatar.styled';
 import avatarGeneric from '../../../images/avatar-fallback.png';
+import { AvatarProps } from './avatar.typed';
 
 const Avatar = ({ size = 'lg', src, alt }: AvatarProps) => {
   return (
@@ -13,11 +14,5 @@ const Avatar = ({ size = 'lg', src, alt }: AvatarProps) => {
     />
   );
 };
-
-export interface AvatarProps {
-  size?: 'sm' | 'md' | 'lg';
-  src?: string;
-  alt?: string;
-}
 
 export default Avatar;

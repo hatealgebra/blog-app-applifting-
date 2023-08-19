@@ -7,12 +7,14 @@
     "plugin:react-hooks/recommended",
     "plugin:prettier/recommended"
   ],
-  "parser": "@typescript-eslint/parser",
   "parserOptions": {
+    "parser": "@typescript-eslint/parser",
     "project": "./tsconfig.json"
   },
+
   "rules": {
-    "react/jsx-filename-extension": [0]
+    "react/jsx-filename-extension": [0],
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
   },
 
   "ignorePatterns": ["public/*", "static/*", ".storybook/*"]

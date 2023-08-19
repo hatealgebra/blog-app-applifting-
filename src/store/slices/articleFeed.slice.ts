@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 import { createSlice } from '@reduxjs/toolkit';
 
 import { Components } from '../../customTypes/declarations';
@@ -26,7 +27,7 @@ export const articleFeedSlice = createSlice({
       state.status = 'idle';
       state.data = payload;
     });
-    builder.addCase(getArticlesFeedThunk.rejected, (state, { payload }) => {
+    builder.addCase(getArticlesFeedThunk.rejected, (state) => {
       state.error = true;
       state.status = 'idle';
       state.data = initialState.data;

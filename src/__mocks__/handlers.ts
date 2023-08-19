@@ -1,9 +1,5 @@
 import { rest } from 'msw';
-import {
-  API_KEY,
-  BASE_API_URL,
-  USER_CONFIG,
-} from '../services/services.config';
+import { API_KEY, BASE_API_URL, UserConfig } from '../services/services.config';
 
 import loginResponseJSON from './asyncData/post/login.mock.json';
 import createArticleResponseJSON from './asyncData/post/createArticleResponse.mock.json';
@@ -20,12 +16,12 @@ const getArticleDetail = (articleId: string | readonly string[]) => {
   return articleDetailData;
 };
 
-export const handlers = [
+const handlers = [
   /* POST handling */
   // Login
   rest.post(`${BASE_API_URL}/login`, async (req, res, ctx) => {
     const { username, password } = await req.json();
-    if (username === USER_CONFIG.NAME && password === 'MockPwd12345') {
+    if (username === UserConfig.NAME && password === 'MockPwd12345') {
       return res(ctx.status(200), ctx.json(loginResponseJSON));
     }
     return res(ctx.status(400), ctx.json({ error: 'Invalid credentials' }));
@@ -117,3 +113,5 @@ export const handlers = [
     return res(ctx.status(200), ctx.json(getArticleDetail(articleId)));
   }),
 ];
+
+export default handlers;

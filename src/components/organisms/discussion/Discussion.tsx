@@ -1,5 +1,5 @@
 import React from 'react';
-import { components } from '../../../customTypes/declarations';
+import { Components } from '../../../customTypes/declarations';
 import Comment from '../../molecules/comment/Comment';
 import CreateComment from '../../molecules/createComment/CreateComment';
 import {
@@ -10,19 +10,23 @@ import {
 // TODO: Add state to inform the user that there are no comments yet
 const Discussion = ({ articleId, commentsArray }: DiscussionProps) => {
   const [comments, setComments] = React.useState<
-    Array<components['schemas']['Comment']>
+    Array<Components['schemas']['Comment']>
   >(commentsArray ?? []);
-
-  console.log(comments);
 
   return (
     <StyledDiscussion className="discussion">
       <CreateComment articleId={articleId} setComments={setComments} />
       <StyledDiscussionComments>
         {comments &&
-          comments.map((comment, i) => {
-            const { commentId, author, postedAt, score, content, articleId } =
-              comment;
+          comments.map((comment) => {
+            const {
+              commentId,
+              author,
+              postedAt,
+              score,
+              content,
+              articleId: destructureArticleId,
+            } = comment;
             return (
               <Comment
                 key={`${commentId}`}
@@ -31,7 +35,7 @@ const Discussion = ({ articleId, commentsArray }: DiscussionProps) => {
                 postedAt={postedAt}
                 score={score}
                 content={content}
-                articleId={articleId}
+                articleId={destructureArticleId}
               />
             );
           })}
@@ -42,7 +46,7 @@ const Discussion = ({ articleId, commentsArray }: DiscussionProps) => {
 
 export interface DiscussionProps {
   articleId: string;
-  commentsArray: components['schemas']['Comment'][] | [];
+  commentsArray: Components['schemas']['Comment'][] | [];
 }
 
 export default Discussion;

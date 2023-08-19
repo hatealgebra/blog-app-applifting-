@@ -27,7 +27,7 @@ const useAllArticles = () => {
 
   useEffect(() => {
     setArticles(allArticles.allPosts.nodes);
-  }, []);
+  }, [allArticles]);
 
   return articles;
 };

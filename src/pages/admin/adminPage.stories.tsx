@@ -16,9 +16,9 @@ export default {
   title: 'Pages/Admin pages',
   subcomponent: { MyArticlesPage, CreateNewArticlePage },
   decorators: [
-    (Story: Story) => (
+    (StoryComponent: Story) => (
       <Provider store={mockStore}>
-        <Story />
+        <StoryComponent />
       </Provider>
     ),
   ],

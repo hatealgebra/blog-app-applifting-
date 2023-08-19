@@ -1,4 +1,3 @@
-import { clear } from 'console';
 import { action } from '@storybook/addon-actions';
 import React from 'react';
 import { Provider } from 'react-redux';

@@ -6,7 +6,7 @@ import EditArticleRowButtons from './EditArticleRowButtons';
 
 import articlesDetailMockJSON from '../../../__mocks__/asyncData/get/articlesDetailsResponse.mock.json';
 
-const { title, perex, comments } = articlesDetailMockJSON[0];
+const { title, perex } = articlesDetailMockJSON[0];
 
 // FIX: These two components
 

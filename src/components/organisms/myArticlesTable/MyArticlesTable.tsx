@@ -36,6 +36,7 @@ const MyArticlesTable = () => {
   const articles = useAppSelector(selectMyArticlesItems);
   const status = useAppSelector(selectMyArticlesStatus);
   const dispatch = useAppDispatch();
+  // eslint-disable-next-line @typescript-eslint/naming-convention
   const access_token = useAppSelector(selectAuthToken);
 
   const deleteArticle = (articleId: string) =>
@@ -46,15 +47,15 @@ const MyArticlesTable = () => {
   };
 
   const switchAllBoxes = (isChecked: boolean) => {
-    const allBoxesChecked = checkedBoxes.map((value) => true);
-    const allBoxesUncheck = checkedBoxes.map((value) => false);
+    const allBoxesChecked = checkedBoxes.map(() => true);
+    const allBoxesUncheck = checkedBoxes.map(() => false);
     if (isChecked) {
       return setCheckedBoxes(allBoxesChecked);
     }
     return setCheckedBoxes(allBoxesUncheck);
   };
   React.useEffect(() => {
-    !originalArray && dispatch(getArticlesFeedThunk());
+    if (!originalArray) dispatch(getArticlesFeedThunk());
   }, [articles, dispatch, originalArray]);
 
   return (
@@ -71,40 +72,43 @@ const MyArticlesTable = () => {
             switchAllBoxes={switchAllBoxes}
             dispatch={dispatch}
           />
-          {status === 'loading' ? (
+          // TODO: Detach logic of rendering
+          {(status === 'loading' && (
             <StyledFallbackContentContainer>
               <Loading />
             </StyledFallbackContentContainer>
-          ) : articles !== undefined && articles.length > 0 ? (
-            articles.map(
-              (article: Components['schemas']['ArticleDetail'], i) => {
-                const { articleId, title, perex, comments } = article;
-                return (
-                  <EditArticleRow
-                    key={articleId}
-                    iteration={i}
-                    articleId={articleId}
-                    title={title}
-                    perex={perex}
-                    comments={comments!.length}
-                    deleteArticle={deleteArticle}
-                    editArticle={() => editArticle(article)}
-                    isChecked={checkedBoxes[i]}
-                    setCheckedBoxes={setCheckedBoxes}
-                  />
-                );
-              }
-            )
-          ) : articles && articles.length === 0 ? (
-            <StyledFallbackContentContainer>
-              <img src={noArticles} alt="No articles, you should cooksome" />
-              <span>No articles written yet, you should cook some!</span>
-            </StyledFallbackContentContainer>
-          ) : (
-            <StyledFallbackContentContainer>
-              Error
-            </StyledFallbackContentContainer>
-          )}
+          )) ||
+            (articles !== undefined &&
+              articles.length > 0 &&
+              articles.map(
+                (article: Components['schemas']['ArticleDetail'], i) => {
+                  const { articleId, title, perex, comments } = article;
+                  return (
+                    <EditArticleRow
+                      key={articleId}
+                      iteration={i}
+                      articleId={articleId}
+                      title={title}
+                      perex={perex}
+                      comments={comments!.length}
+                      deleteArticle={deleteArticle}
+                      editArticle={() => editArticle(article)}
+                      isChecked={checkedBoxes[i]}
+                      setCheckedBoxes={setCheckedBoxes}
+                    />
+                  );
+                }
+              )) ||
+            (articles && articles.length === 0 && (
+              <StyledFallbackContentContainer>
+                <img src={noArticles} alt="No articles, you should cooksome" />
+                <span>No articles written yet, you should cook some!</span>
+              </StyledFallbackContentContainer>
+            )) || (
+              <StyledFallbackContentContainer>
+                Error
+              </StyledFallbackContentContainer>
+            )}
         </StyledArticlesTable>
       </MyArticlesForm>
     </MyArticlesTableContainer>

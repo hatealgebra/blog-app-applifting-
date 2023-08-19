@@ -21,14 +21,19 @@ const Comment = ({
   const increaseScore = async () => {
     try {
       voteUp(commentId!);
-      setCounterValue((prev) => prev + 1);
-    } catch (e) {}
+      return setCounterValue((prev) => prev + 1);
+    } catch (e) {
+      return e;
+    }
   };
+
   const decreaseScore = async () => {
     try {
       voteDown(commentId!);
-      setCounterValue((prev) => prev - 1);
-    } catch (e) {}
+      return setCounterValue((prev) => prev - 1);
+    } catch (e) {
+      return e;
+    }
   };
 
   return (

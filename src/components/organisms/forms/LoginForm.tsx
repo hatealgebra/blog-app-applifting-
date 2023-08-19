@@ -49,8 +49,8 @@ const LoginForm = () => {
   };
 
   React.useEffect(() => {
-    auth && navigate(AdminLinks.MY_ARTICLES);
-  }, []);
+    if (auth) navigate(AdminLinks.MY_ARTICLES);
+  }, [auth]);
 
   return (
     <StyledLoginForm onSubmit={(e) => onSubmit(e, email, pwd, setFormError)}>

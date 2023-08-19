@@ -4,7 +4,7 @@ import MarkdownEditor from '../../atoms/markdownEditor/MarkdownEditor';
 import InputWithLabel from '../../molecules/inputWithLabel/InputWithLabel';
 import UploadImage from '../../molecules/uploadImage/UploadImage';
 import StyledPublishArticleForm from './publishArticleForm.styled';
-import { ErrorText } from '../../atoms/errorText/error.styled';
+import ErrorText from '../../atoms/errorText/error.styled';
 import { useAppDispatch, useAppSelector } from '../../../store/hooks';
 
 import { selectAuthToken } from '../../../store/slices/auth.slices';
@@ -38,6 +38,7 @@ const PublishArticleForm = ({
     EPublishArticleErrors.PASSED
   );
 
+  // eslint-disable-next-line @typescript-eslint/naming-convention
   const access_token = useAppSelector(selectAuthToken);
   const dispatch = useAppDispatch();
 
@@ -79,6 +80,7 @@ const PublishArticleForm = ({
         })
       );
     }
+    return false;
   };
 
   React.useEffect(() => {
@@ -119,13 +121,7 @@ const PublishArticleForm = ({
       </div>
       <div>
         <MarkdownEditor value={markdownContent} onChange={setMarkdownContent} />
-        <ErrorText>
-          {formError === EPublishArticleErrors.MARKDOWN_EMPY
-            ? EPublishArticleErrors.MARKDOWN_EMPY
-            : formError === EPublishArticleErrors.MARKDOWN_TOO_SHORT
-            ? EPublishArticleErrors.MARKDOWN_TOO_SHORT
-            : ''}
-        </ErrorText>
+        <ErrorText>{formError}</ErrorText>
       </div>
     </StyledPublishArticleForm>
   );

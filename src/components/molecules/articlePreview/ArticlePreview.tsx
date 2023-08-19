@@ -32,9 +32,10 @@ const ArticlePreview = ({
   const createdDate = getDate(createdAt);
   const file = `data:image/png;base64,${imageBase64}`;
 
-  const useFallbackImage = ({ currentTarget }: Event) => {
+  const decideOnImage = (currentTarget: HTMLImageElement) => {
     if (!currentTarget) return;
-    currentTarget.onerror = null;
+    // eslint-disable-next-line no-param-reassign
+    currentTarget.onerror! = null;
     setFallbackImage(true);
   };
 
@@ -47,7 +48,7 @@ const ArticlePreview = ({
           className="article-preview__img"
           src={file}
           alt={`${title} preview image`}
-          onError={({ currentTarget }) => useFallbackImage(currentTarget)}
+          onError={({ currentTarget }) => decideOnImage(currentTarget)}
         />
       )}
       <h3 className="article-preview__title">

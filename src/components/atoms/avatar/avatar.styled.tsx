@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
-import { AvatarProps } from './Avatar';
+import { AvatarProps } from './avatar.typed';
 
-export const StyledAvatar = styled.img<AvatarProps>`
+const StyledAvatar = styled.img<AvatarProps>`
   object-fit: cover;
   border-radius: 50%;
   ${({ size }) => {
@@ -30,3 +30,5 @@ export const StyledAvatar = styled.img<AvatarProps>`
     }
   }}
 `;
+
+export default StyledAvatar;

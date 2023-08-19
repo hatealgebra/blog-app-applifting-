@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledNoImageContainer = styled.div`
+const StyledNoImageContainer = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
@@ -12,3 +12,5 @@ export const StyledNoImageContainer = styled.div`
     margin: auto;
   }
 `;
+
+export default StyledNoImageContainer;

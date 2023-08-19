@@ -55,7 +55,7 @@ export const adminSlice = createSlice({
       state.data.originalSort = payload;
       state.data.nowSort = payload;
     });
-    builder.addCase(getArticlesFeedThunk.rejected, (state, { payload }) => {
+    builder.addCase(getArticlesFeedThunk.rejected, (state) => {
       state.error = true;
       state.status = 'idle';
       state.data = initialState.data;

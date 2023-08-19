@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ErrorText = styled.span`
+const ErrorText = styled.span`
     ${({ theme }) => `
         color: ${theme.color.danger};
         font-size: ${theme.typography.size.label};
@@ -8,3 +8,5 @@ export const ErrorText = styled.span`
 position: relative;
 top: 5px;
 `;
+
+export default ErrorText;

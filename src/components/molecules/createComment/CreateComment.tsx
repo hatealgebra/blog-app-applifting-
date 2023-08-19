@@ -6,7 +6,7 @@ import { selectAuthName } from '../../../store/slices/auth.slices';
 
 import Avatar from '../../atoms/avatar/Avatar';
 import Button from '../../atoms/button/Button';
-import { ErrorText } from '../../atoms/errorText/error.styled';
+import ErrorText from '../../atoms/errorText/error.styled';
 import { StyledTextArea } from '../../atoms/input/input.styled';
 import { StyledCreateCommentForm } from './createComment.styled';
 

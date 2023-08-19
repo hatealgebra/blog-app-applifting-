@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 import { Store } from '@reduxjs/toolkit';
 import { AxiosRequestConfig } from 'axios';
 import { reAuthorizeThunk } from '../store/thunks/authentication.thunks';
@@ -8,6 +9,7 @@ const setUpInterceptor = (store: Store) => {
     const { dispatch, getState } = store;
     const { login, authorization } = getState().persistedReducer.data;
     const { email, pwd } = login;
+    // eslint-disable-next-line @typescript-eslint/naming-convention
     const { access_token } = authorization;
     if (!config.headers!.Authorization && !access_token) {
       const reauthenticationResponse = await dispatch(

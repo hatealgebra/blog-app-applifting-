@@ -1,13 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit';
 
 import { persistStore } from 'redux-persist';
-import { USER_CONFIG } from '../services/services.config';
+import { UserConfig } from '../services/services.config';
 import { reducer, persistedReducer, persistConfig } from '../store';
 // REDUX-PERSIST
 
 // import articleDetailReponseJSON from "../__mocks__/responses/articlesDetailsResponse.mock.json";
 
-const { TENANT_ID, CREATED_AT, LAST_USED_AT, NAME } = USER_CONFIG;
+const { TENANT_ID, CREATED_AT, LAST_USED_AT, NAME } = UserConfig;
 
 const mockStore = configureStore({
   reducer: { reducer, persistedReducer },

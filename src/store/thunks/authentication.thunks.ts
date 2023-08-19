@@ -4,8 +4,8 @@ import { navigate } from 'gatsby';
 // import ELoginFormValidation from '@organisms/forms/forms.types';
 
 import loginPOST from '../../services/authServices';
-import { USER_CONFIG } from '../../services/services.config';
-import { getTenant } from '../../services/tenantServices';
+import { UserConfig } from '../../services/services.config';
+import getTenant from '../../services/tenantServices';
 import { AdminLinks } from '../../utils/contants';
 
 enum ELoginFormValidation {
@@ -34,7 +34,7 @@ export const postLoginThunk = createAsyncThunk(
     try {
       setFormError(ELoginFormValidation.CORRECT_LOGIN);
       const authorizationResponse = await loginPOST(email, pwd);
-      const tenantResponse = await getTenant(USER_CONFIG.TENANT_ID);
+      const tenantResponse = await getTenant(UserConfig.TENANT_ID);
       navigate(AdminLinks.MY_ARTICLES);
       return {
         tenant: tenantResponse.data,

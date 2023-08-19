@@ -1,5 +1,5 @@
 import React from 'react';
-import { ErrorText } from './error.styled';
+import ErrorText from './error.styled';
 
 export const ErrorTextExample = () => (
   <ErrorText>This is error text sample</ErrorText>

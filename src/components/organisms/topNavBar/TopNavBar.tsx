@@ -14,45 +14,6 @@ import StyledTopNav, { StyledTopNavLinks } from './topNavBar.styled';
 
 const { INDEX, ABOUT } = NavLinks;
 
-const TopNavBar = ({ variant }: TopNavBarProps) => {
-  const [isMenuOpen, setMenuOpen] = React.useState(false);
-  const isLoggedIn = useAppSelector(selectAuthLogged);
-
-  return (
-    <StyledTopNav variant={variant} className="TopNavbar">
-      <div className="TopNavbar__container">
-        {variant === 'mobile' ? (
-          <>
-            <CatLogo />
-            <MenuButton onClick={() => setMenuOpen(true)} />
-            <MobileMenu
-              isOpen={isMenuOpen}
-              setClose={() => setMenuOpen(false)}
-            />
-          </>
-        ) : variant === 'tablet' ? (
-          <>
-            <CatLogo />
-            <div className="TopNavbar__sub-container">
-              <TopNavBarLinks />
-              <LoginLinkSwitch isLoggedIn={isLoggedIn} />
-            </div>
-          </>
-        ) : (
-          <>
-            <div className="TopNavbar__sub-container">
-              <CatLogo /> <TopNavBarLinks />
-            </div>
-            <div className="TopNavbar__sub-container">
-              <LoginLinkSwitch isLoggedIn={isLoggedIn} />
-            </div>
-          </>
-        )}
-      </div>
-    </StyledTopNav>
-  );
-};
-
 const CatLogo = () => <img src={catLogo} alt="cat logo" height="40px" />;
 const TopNavBarLinks = () => (
   <StyledTopNavLinks>
@@ -67,6 +28,47 @@ const TopNavBarLinks = () => (
 
 const LoginLinkSwitch = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
   return isLoggedIn ? <LoginStatus /> : <LoginLink />;
+};
+
+const TopNavBar = ({ variant }: TopNavBarProps) => {
+  const [isMenuOpen, setMenuOpen] = React.useState(false);
+  const isLoggedIn = useAppSelector(selectAuthLogged);
+
+  return (
+    <StyledTopNav variant={variant} className="TopNavbar">
+      <div className="TopNavbar__container">
+        {variant === 'mobile' && (
+          <>
+            <CatLogo />
+            <MenuButton onClick={() => setMenuOpen(true)} />
+            <MobileMenu
+              isOpen={isMenuOpen}
+              setClose={() => setMenuOpen(false)}
+            />
+          </>
+        )}
+        {variant === 'tablet' && (
+          <>
+            <CatLogo />
+            <div className="TopNavbar__sub-container">
+              <TopNavBarLinks />
+              <LoginLinkSwitch isLoggedIn={isLoggedIn} />
+            </div>
+          </>
+        )}
+        {variant === 'desktop' && (
+          <>
+            <div className="TopNavbar__sub-container">
+              <CatLogo /> <TopNavBarLinks />
+            </div>
+            <div className="TopNavbar__sub-container">
+              <LoginLinkSwitch isLoggedIn={isLoggedIn} />
+            </div>
+          </>
+        )}
+      </div>
+    </StyledTopNav>
+  );
 };
 
 export default TopNavBar;

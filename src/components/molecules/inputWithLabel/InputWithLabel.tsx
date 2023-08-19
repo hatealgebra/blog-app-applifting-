@@ -1,7 +1,7 @@
-import React, { Dispatch, DispatchWithoutAction } from 'react';
+import React, { Dispatch } from 'react';
 import { StyledTextInput, TSize } from '../../atoms/input/input.styled';
 
-import { StyledInputWithLabel } from './inputWithLabel.styled';
+import StyledInputWithLabel from './inputWithLabel.styled';
 
 const InputWithLabel = ({
   label,
@@ -9,7 +9,6 @@ const InputWithLabel = ({
   onChange,
   type,
   placeholder,
-  ...props
 }: InputWithLabelProps) => {
   return (
     <StyledInputWithLabel>

@@ -1,1 +1,11 @@
 !.storybook
+setup-test-env.js
+loadershim.js
+jest*.js
+jest*.ts
+cypress*.ts
+/cypress
+gatsby-node.ts
+gatsby-ssr.tsx
+gatsby-config.ts
+gatsby-browser.tsx

@@ -52,7 +52,7 @@ const ArticlePage = ({
     };
 
     showRelatedArticles();
-  }, []);
+  }, [articles, articleId]);
 
   return (
     <PageTemplate isArticle>

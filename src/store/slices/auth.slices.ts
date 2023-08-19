@@ -1,6 +1,7 @@
+/* eslint-disable no-param-reassign */
 import { createSlice } from '@reduxjs/toolkit';
 import { Components } from '../../customTypes/declarations';
-import { RootState } from '..';
+import type { RootState } from '..';
 
 import {
   postLoginThunk,
@@ -42,7 +43,7 @@ export const authSlice = createSlice({
       state.status = 'idle';
       state.data = payload;
     });
-    builder.addCase(postLoginThunk.rejected, (state, { payload }) => {
+    builder.addCase(postLoginThunk.rejected, (state) => {
       state.status = 'idle';
       state.error = true;
     });
@@ -54,7 +55,7 @@ export const authSlice = createSlice({
       state.status = 'idle';
       state.data.authorization = payload.data;
     });
-    builder.addCase(reAuthorizeThunk.rejected, (state, { payload }) => {
+    builder.addCase(reAuthorizeThunk.rejected, (state) => {
       state.status = 'idle';
       state.error = true;
     });

@@ -4,7 +4,9 @@ import MarkdownEditor from './MarkdownEditor';
 export const MarkDownEditorExample = () => {
   const [value, setValue] = React.useState('');
 
-  return <MarkdownEditor value={value} onChange={(value) => setValue(value)} />;
+  return (
+    <MarkdownEditor value={value} onChange={(newValue) => setValue(newValue)} />
+  );
 };
 
 export default {

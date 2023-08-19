@@ -65,7 +65,7 @@ export const validatePublishArticleForm: TFormHandling = (
 };
 
 export const updateArticleHelper = async (
-  e: FormEvent,
+  formEvent: FormEvent,
   articleId: string,
   title: string,
   perex: string,

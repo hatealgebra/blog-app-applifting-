@@ -24,6 +24,7 @@ export const clearDataAPI = async (access_token: string) => {
     } catch (e) {
       return e;
     }
+    return 'completed';
   }
 };
 

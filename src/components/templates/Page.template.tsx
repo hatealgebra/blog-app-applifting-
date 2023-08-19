@@ -20,13 +20,15 @@ const PageTemplate = ({
     if (isProtected && !auth) {
       navigate('/');
     }
-  }, []);
+  }, [auth, isProtected]);
 
   return (
     <StyledPageTemplate>
       <TopNavBar
         variant={
-          width >= LAPTOP ? 'desktop' : width >= MOBILE ? 'tablet' : 'mobile'
+          (width >= LAPTOP && 'desktop') ||
+          (width >= MOBILE && 'tablet') ||
+          'mobile'
         }
       />
       <NonFormPageContainer isArticle={isArticle}>

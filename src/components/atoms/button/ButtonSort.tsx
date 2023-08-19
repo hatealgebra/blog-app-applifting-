@@ -1,4 +1,4 @@
-import React, { Dispatch } from 'react';
+import React from 'react';
 
 import { FaSort } from '@react-icons/all-files/fa/FaSort';
 import { StyledButtonSort } from './button.styled';

@@ -1,4 +1,4 @@
-import React, { Dispatch } from 'react';
+import React from 'react';
 import StyledCheckbox, { StyledCheckboxContainer } from './checkbox.styled';
 
 const Checkbox = ({
