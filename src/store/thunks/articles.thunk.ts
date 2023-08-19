@@ -1,4 +1,5 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
+
 import { getArticle, listArticles } from '../../services/articlesOperations';
 import { Components } from '../../customTypes/declarations';
 
@@ -28,11 +29,11 @@ export const getArticlesFeedThunk = createAsyncThunk(
 export const getArticleDetailThunk = createAsyncThunk(
   'articleFeed/getArticleDetailThunk',
   async (
-    { articleId, access_token }: { articleId: string; access_token: string },
+    { articleId }: { articleId: string; access_token: string },
     thunkAPI
   ) => {
     try {
-      const response = await getArticle(articleId, access_token);
+      const response = await getArticle(articleId);
       return response;
     } catch (e) {
       return thunkAPI.rejectWithValue(e);
@@ -41,11 +42,12 @@ export const getArticleDetailThunk = createAsyncThunk(
 );
 
 export const getMyArticles = createAsyncThunk(
-  GET_ARTICLES,
+  'articleFeed/getArticlesFeedThunk',
   async (apiKey: string, thunkAPI) => {
     try {
-      const response = await getArticles(apiKey);
-      return response.data;
+      return 'hello';
+      // const response = await getArticles(apiKey);
+      // return response.data;
     } catch (e) {
       return thunkAPI.rejectWithValue(e);
     }

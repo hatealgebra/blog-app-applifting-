@@ -1,14 +1,13 @@
 import React from 'react';
 import { TCompleteArticles } from 'customTypes/schema';
-import { components } from '../../../customTypes/declarations';
-import Loading from '../../atoms/loadingIcon/Loading';
+
+import { Components } from '@customTypes/declarations';
 import ArticlePreview from '../../molecules/articlePreview/ArticlePreview';
 import {
   ArticlesContainer,
   CenterContainer,
   StyledArticleFeed,
 } from './articleFeed.styled';
-import useAllArticles from '../../../hooks/useAllArticles';
 
 interface ArticleFeedProps {
   items: TCompleteArticles;
@@ -34,8 +33,8 @@ const ArticleFeed = ({ items }: ArticleFeedProps) => {
                 imageId,
                 imageBase64,
                 comments,
-              }: components['schemas']['Article'] &
-                components['schemas']['ArticleDetail'] & {
+              }: Components['schemas']['Article'] &
+                Components['schemas']['ArticleDetail'] & {
                   imageBase64: 'string';
                 }) => (
                 <ArticlePreview

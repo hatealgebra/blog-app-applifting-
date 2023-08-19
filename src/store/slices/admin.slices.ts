@@ -1,11 +1,11 @@
+/* eslint-disable no-param-reassign */
 import { createSlice } from '@reduxjs/toolkit';
-import { ESortByOptions } from '../../components/molecules/editArticleRow/EditArticleRowButtons';
 
-import { components } from '../../customTypes/declarations';
+import { Components } from '../../customTypes/declarations';
 import type { RootState } from '..';
 import { getArticlesFeedThunk } from '../thunks/articles.thunk';
 import { createArticleThunk, deleteArticleThunk } from '../thunks/admin.thunks';
-// import { getMyArticles } from "../thunks/articles.thunk";
+import { ESortByOptions } from './slices.types.d';
 
 const initialState = {
   status: 'idle',
@@ -15,9 +15,9 @@ const initialState = {
   status: 'idle' | 'loading';
   error: boolean;
   data: {
-    originalSort: components['schemas']['ArticleList'];
-    nowSort: components['schemas']['ArticleList'];
-    articleToEdit: components['schemas']['ArticleDetail'];
+    originalSort: Components['schemas']['ArticleList'];
+    nowSort: Components['schemas']['ArticleList'];
+    articleToEdit: Components['schemas']['ArticleDetail'];
   };
 };
 
@@ -68,7 +68,7 @@ export const adminSlice = createSlice({
       state.data.originalSort?.items?.push(payload);
       state.status = 'idle';
     });
-    builder.addCase(createArticleThunk.rejected, (state, { payload }) => {
+    builder.addCase(createArticleThunk.rejected, (state) => {
       state.status = 'idle';
     });
 
@@ -79,7 +79,7 @@ export const adminSlice = createSlice({
       state.data.originalSort.items = payload;
       state.status = 'idle';
     });
-    builder.addCase(deleteArticleThunk.rejected, (state, { payload }) => {
+    builder.addCase(deleteArticleThunk.rejected, (state) => {
       state.status = 'idle';
     });
   },

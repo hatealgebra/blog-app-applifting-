@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-import { components } from '../../customTypes/declarations';
+import { Components } from '../../customTypes/declarations';
 import type { RootState } from '..';
 import { getArticlesFeedThunk } from '../thunks/articles.thunk';
 
@@ -11,7 +11,7 @@ const initialState = {
 } as {
   status: 'idle' | 'loading';
   error: boolean;
-  data: components['schemas']['ArticleList'];
+  data: Components['schemas']['ArticleList'];
 };
 
 export const articleFeedSlice = createSlice({
@@ -41,7 +41,7 @@ export const selectArticleFeedStatus = (state: RootState) =>
 export const selectArticleFeedError = (state: RootState) =>
   state.reducer.articleFeed.error;
 
-export enum articleFeedActions {
+export enum ArticleFeedActions {
   GET_ARTICLES = 'articleFeed/getArticlesFeedThunk',
 }
 

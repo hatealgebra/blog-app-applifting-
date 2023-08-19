@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { navigate } from 'gatsby';
+import { Components } from '@customTypes/declarations';
 import { useAppDispatch, useAppSelector } from '../../../store/hooks';
 // import { selectMyArticlesItems } from "../../../store/admin/myArticles.slice";
 import { getArticlesFeedThunk } from '../../../store/thunks/articles.thunk';
@@ -20,7 +21,6 @@ import {
   selectMyArticlesStatus,
   setArticleToEdit,
 } from '../../../store/slices/admin.slices';
-import { components } from '../../../customTypes/declarations';
 
 import { deleteArticleThunk } from '../../../store/thunks/admin.thunks';
 
@@ -40,7 +40,7 @@ const MyArticlesTable = () => {
 
   const deleteArticle = (articleId: string) =>
     dispatch(deleteArticleThunk({ articleId, originalArray, access_token }));
-  const editArticle = (article: components['schemas']['Article']) => {
+  const editArticle = (article: Components['schemas']['Article']) => {
     dispatch(setArticleToEdit(article));
     navigate(AdminLinks.EDIT_ARTICLE);
   };
@@ -55,7 +55,7 @@ const MyArticlesTable = () => {
   };
   React.useEffect(() => {
     !originalArray && dispatch(getArticlesFeedThunk());
-  }, [articles]);
+  }, [articles, dispatch, originalArray]);
 
   return (
     <MyArticlesTableContainer>
@@ -77,7 +77,7 @@ const MyArticlesTable = () => {
             </StyledFallbackContentContainer>
           ) : articles !== undefined && articles.length > 0 ? (
             articles.map(
-              (article: components['schemas']['ArticleDetail'], i) => {
+              (article: Components['schemas']['ArticleDetail'], i) => {
                 const { articleId, title, perex, comments } = article;
                 return (
                   <EditArticleRow

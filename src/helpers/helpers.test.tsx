@@ -1,4 +1,4 @@
-import { EPublishArticleErrors } from '../components/organisms/publishArticleForm/PublishArticleForm';
+import { EPublishArticleErrors } from '@organisms/publishArticleForm/publishArticleForm.types';
 import { validatePublishArticleForm } from './publishArticle.helper';
 
 describe('Check create article form inputs', () => {

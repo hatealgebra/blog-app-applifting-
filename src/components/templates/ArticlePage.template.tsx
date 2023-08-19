@@ -40,8 +40,6 @@ const ArticlePage = ({
   const commentsArray =
     typeof comments === 'string' ? JSON.parse(comments) : [];
 
-  const getArticles = () => {};
-
   React.useEffect(() => {
     const showRelatedArticles = () => {
       const { nodes } = articles.allPosts;

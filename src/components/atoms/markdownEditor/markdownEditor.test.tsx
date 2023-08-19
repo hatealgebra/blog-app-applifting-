@@ -1,6 +1,5 @@
 import React from 'react';
 import userEvent from '@testing-library/user-event';
-import { screen, waitFor } from '@testing-library/react';
 
 import { setupTest } from '../../../utils/testing.utils';
 import { MarkDownEditorExample } from './markdownEditor.stories';

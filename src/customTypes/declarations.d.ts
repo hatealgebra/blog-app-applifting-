@@ -5,7 +5,7 @@ export interface Paths {
         /** Access token detail */
         201: {
           content: {
-            'application/json': components['schemas']['AccessToken'];
+            'application/json': Components['schemas']['AccessToken'];
           };
         };
         /** Invalid login credentials */
@@ -14,7 +14,7 @@ export interface Paths {
             'application/json': unknown;
           };
         };
-        401: components['responses']['ApiKeyInvalidError'];
+        401: Components['responses']['ApiKeyInvalidError'];
       };
       requestBody: {
         content: {
@@ -28,13 +28,13 @@ export interface Paths {
     };
   };
   '/articles': {
-    get: operations['listArticles'];
-    post: operations['createArticle'];
+    get: Operations['listArticles'];
+    post: Operations['createArticle'];
   };
   '/articles/{articleId}': {
-    get: operations['getArticle'];
-    delete: operations['deleteArticle'];
-    patch: operations['updateArticle'];
+    get: Operations['getArticle'];
+    delete: Operations['deleteArticle'];
+    patch: Operations['updateArticle'];
   };
   '/comments': {
     post: {
@@ -42,14 +42,14 @@ export interface Paths {
         /** Detail of the created comment */
         201: {
           content: {
-            'application/json': components['schemas']['Comment'];
+            'application/json': Components['schemas']['Comment'];
           };
         };
-        401: components['responses']['ApiKeyInvalidError'];
+        401: Components['responses']['ApiKeyInvalidError'];
       };
       requestBody: {
         content: {
-          'application/json': components['schemas']['Comment'];
+          'application/json': Components['schemas']['Comment'];
         };
       };
     };
@@ -59,17 +59,17 @@ export interface Paths {
       parameters: {
         path: {
           /** Id of an comment */
-          commentId: components['parameters']['commentId'];
+          commentId: Components['parameters']['commentId'];
         };
       };
       responses: {
         /** Updated comment detail */
         201: {
           content: {
-            'application/json': components['schemas']['Comment'];
+            'application/json': Components['schemas']['Comment'];
           };
         };
-        401: components['responses']['ApiKeyInvalidError'];
+        401: Components['responses']['ApiKeyInvalidError'];
       };
     };
   };
@@ -78,17 +78,17 @@ export interface Paths {
       parameters: {
         path: {
           /** Id of an comment */
-          commentId: components['parameters']['commentId'];
+          commentId: Components['parameters']['commentId'];
         };
       };
       responses: {
         /** Updated comment detail */
         201: {
           content: {
-            'application/json': components['schemas']['Comment'];
+            'application/json': Components['schemas']['Comment'];
           };
         };
-        401: components['responses']['ApiKeyInvalidError'];
+        401: Components['responses']['ApiKeyInvalidError'];
       };
     };
   };
@@ -98,10 +98,10 @@ export interface Paths {
         /** Image uploaded successfully */
         201: {
           content: {
-            'application/json': components['schemas']['ImageInfo'][];
+            'application/json': Components['schemas']['ImageInfo'][];
           };
         };
-        401: components['responses']['ApiKeyInvalidError'];
+        401: Components['responses']['ApiKeyInvalidError'];
       };
       requestBody: {
         content: {
@@ -117,26 +117,26 @@ export interface Paths {
       parameters: {
         path: {
           /** Id of the image to retrieve */
-          imageId: components['parameters']['imageId'];
+          imageId: Components['parameters']['imageId'];
         };
       };
       responses: {
         /** Image file */
         200: unknown;
-        401: components['responses']['ApiKeyInvalidError'];
+        401: Components['responses']['ApiKeyInvalidError'];
       };
     };
     delete: {
       parameters: {
         path: {
           /** Id of the image to retrieve */
-          imageId: components['parameters']['imageId'];
+          imageId: Components['parameters']['imageId'];
         };
       };
       responses: {
         /** Image no longer exists */
         204: never;
-        401: components['responses']['ApiKeyInvalidError'];
+        401: Components['responses']['ApiKeyInvalidError'];
       };
     };
   };
@@ -146,13 +146,13 @@ export interface Paths {
         /** Detail of the created tenant */
         201: {
           content: {
-            'application/json': components['schemas']['Tenant'];
+            'application/json': Components['schemas']['Tenant'];
           };
         };
       };
       requestBody: {
         content: {
-          'application/json': components['schemas']['Tenant'];
+          'application/json': Components['schemas']['Tenant'];
         };
       };
     };
@@ -162,14 +162,14 @@ export interface Paths {
       parameters: {
         path: {
           /** Id of the tenant to retrieve */
-          tenantId: components['parameters']['tenantId'];
+          tenantId: Components['parameters']['tenantId'];
         };
       };
       responses: {
         /** Tenant detail */
         200: {
           content: {
-            'application/json': components['schemas']['Tenant'];
+            'application/json': Components['schemas']['Tenant'];
           };
         };
       };
@@ -188,8 +188,8 @@ export interface Components {
       total?: number;
     };
     ArticleList: {
-      pagination?: components['schemas']['Pagination'];
-      items?: components['schemas']['Article'][];
+      pagination?: Components['schemas']['Pagination'];
+      items?: Components['schemas']['Article'][];
     };
     Article: {
       /** Format: uuid */
@@ -205,14 +205,14 @@ export interface Components {
       /** Format: date-time */
       lastUpdatedAt?: string;
     };
-    ArticleDetail: components['schemas']['Article'] & {
+    ArticleDetail: Components['schemas']['Article'] & {
       /**
        * Format: markdown
        * @example # Lorem Ipsum
        * **Lorem Ipsum** is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
        */
       content?: string;
-      comments?: components['schemas']['Comment'][];
+      comments?: Components['schemas']['Comment'][];
     };
     Comment: {
       /** Format: uuid */
@@ -311,19 +311,19 @@ export interface Operations {
     parameters: {
       query: {
         /** Number of items to skip during pagination */
-        offset?: components['parameters']['offset'];
+        offset?: Components['parameters']['offset'];
         /** Number of items to return per page. All items are returned if `limit` is omitted. */
-        limit?: components['parameters']['limit'];
+        limit?: Components['parameters']['limit'];
       };
     };
     responses: {
       /** Article list */
       200: {
         content: {
-          'application/json': components['schemas']['Article'][];
+          'application/json': Components['schemas']['Article'][];
         };
       };
-      401: components['responses']['ApiKeyInvalidError'];
+      401: Components['responses']['ApiKeyInvalidError'];
     };
   };
   createArticle: {
@@ -331,15 +331,15 @@ export interface Operations {
       /** Detail of the created article */
       200: {
         content: {
-          'application/json': components['schemas']['ArticleDetail'];
+          'application/json': Components['schemas']['ArticleDetail'];
         };
       };
-      401: components['responses']['ApiKeyInvalidError'];
-      403: components['responses']['UnauthorizedError'];
+      401: Components['responses']['ApiKeyInvalidError'];
+      403: Components['responses']['UnauthorizedError'];
     };
     requestBody: {
       content: {
-        'application/json': components['schemas']['ArticleDetail'];
+        'application/json': Components['schemas']['ArticleDetail'];
       };
     };
   };
@@ -347,53 +347,53 @@ export interface Operations {
     parameters: {
       path: {
         /** Id of an article */
-        articleId: components['parameters']['articleId'];
+        articleId: Components['parameters']['articleId'];
       };
     };
     responses: {
       /** Article detail */
       200: {
         content: {
-          'application/json': components['schemas']['ArticleDetail'];
+          'application/json': Components['schemas']['ArticleDetail'];
         };
       };
-      401: components['responses']['ApiKeyInvalidError'];
+      401: Components['responses']['ApiKeyInvalidError'];
     };
   };
   deleteArticle: {
     parameters: {
       path: {
         /** Id of an article */
-        articleId: components['parameters']['articleId'];
+        articleId: Components['parameters']['articleId'];
       };
     };
     responses: {
       /** Article no longer exists */
       204: never;
-      401: components['responses']['ApiKeyInvalidError'];
-      403: components['responses']['UnauthorizedError'];
+      401: Components['responses']['ApiKeyInvalidError'];
+      403: Components['responses']['UnauthorizedError'];
     };
   };
   updateArticle: {
     parameters: {
       path: {
         /** Id of an article */
-        articleId: components['parameters']['articleId'];
+        articleId: Components['parameters']['articleId'];
       };
     };
     responses: {
       /** Updated article detail */
       200: {
         content: {
-          'application/json': components['schemas']['ArticleDetail'];
+          'application/json': Components['schemas']['ArticleDetail'];
         };
       };
-      401: components['responses']['ApiKeyInvalidError'];
-      403: components['responses']['UnauthorizedError'];
+      401: Components['responses']['ApiKeyInvalidError'];
+      403: Components['responses']['UnauthorizedError'];
     };
     requestBody: {
       content: {
-        'application/json': components['schemas']['ArticleDetail'];
+        'application/json': Components['schemas']['ArticleDetail'];
       };
     };
   };

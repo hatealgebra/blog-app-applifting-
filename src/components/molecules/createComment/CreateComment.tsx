@@ -1,13 +1,27 @@
-import React, { useCallback } from 'react';
-import { publishComment } from '../../../helpers/commenting.helper';
+import React from 'react';
+import { Components } from '@customTypes/declarations';
+import publishComment from '../../../helpers/commenting.helper';
 import { useAppSelector } from '../../../store/hooks';
 import { selectAuthName } from '../../../store/slices/auth.slices';
-import { components } from '../../../customTypes/declarations';
+
 import Avatar from '../../atoms/avatar/Avatar';
 import Button from '../../atoms/button/Button';
 import { ErrorText } from '../../atoms/errorText/error.styled';
 import { StyledTextArea } from '../../atoms/input/input.styled';
 import { StyledCreateCommentForm } from './createComment.styled';
+
+export enum FormValidation {
+  EMPTY = '* Comment is empty or too short. Min. length of the text should be 25 characters.',
+  TOO_LONG = '* Comment is too long. Maximum is 250 characters.',
+  PASSED = '',
+}
+
+interface CreateCommentProps {
+  articleId: string;
+  setComments: React.Dispatch<
+    React.SetStateAction<Components['schemas']['Comment'][]>
+  >;
+}
 
 // TODO: UseEffect for form handling
 const CreateComment = ({ articleId, setComments }: CreateCommentProps) => {
@@ -20,8 +34,8 @@ const CreateComment = ({ articleId, setComments }: CreateCommentProps) => {
 
   const onSubmit = (
     e: React.FormEvent,
-    setComments: React.Dispatch<
-      React.SetStateAction<components['schemas']['Comment'][]>
+    setCurrComments: React.Dispatch<
+      React.SetStateAction<Components['schemas']['Comment'][]>
     >
   ) => {
     e.preventDefault();
@@ -30,7 +44,7 @@ const CreateComment = ({ articleId, setComments }: CreateCommentProps) => {
     } else if (content.length > 250) {
       setFormHandling(FormValidation.TOO_LONG);
     } else if (loggedUser) {
-      publishComment(articleId, loggedUser, content, setComments);
+      publishComment(articleId, loggedUser, content, setCurrComments);
       setIsActive(false);
       setFormHandling(FormValidation.PASSED);
       setContent('');
@@ -66,18 +80,5 @@ const CreateComment = ({ articleId, setComments }: CreateCommentProps) => {
     </StyledCreateCommentForm>
   );
 };
-
-export enum FormValidation {
-  EMPTY = '* Comment is empty or too short. Min. length of the text should be 25 characters.',
-  TOO_LONG = '* Comment is too long. Maximum is 250 characters.',
-  PASSED = '',
-}
-
-interface CreateCommentProps {
-  articleId: string;
-  setComments: React.Dispatch<
-    React.SetStateAction<components['schemas']['Comment'][]>
-  >;
-}
 
 export default CreateComment;

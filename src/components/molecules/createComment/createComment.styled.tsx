@@ -1,7 +1,6 @@
-';
 import styled from 'styled-components';
 
-export const StyledCreateCommentForm = styled.form`
+const StyledCreateCommentForm = styled.form`
   display: grid;
   column-gap: 20px;
   row-gap: 10px;
@@ -43,3 +42,5 @@ export const StyledCreateCommentForm = styled.form`
   }
    } `}
 `;
+
+export default StyledCreateCommentForm;

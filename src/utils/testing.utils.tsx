@@ -33,6 +33,7 @@ export const setupTestWithStore = (component: React.ReactElement) => {
     </Provider>
   );
 };
+
 export const setupWithLoggedInUser = (component: React.ReactElement) => {
   return render(
     <Provider store={mockStore}>

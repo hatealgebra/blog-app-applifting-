@@ -1,6 +1,4 @@
-';
 import styled from 'styled-components';
-import { CheckboxProps } from './Checkbox';
 
 const StyledCheckbox = styled.input`
   width: 13px;

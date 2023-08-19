@@ -1,4 +1,3 @@
-';
 import styled from 'styled-components';
 
 export const StyledCommentCounter = styled.div.attrs(() => ({

@@ -1,5 +1,3 @@
-';
-
 import { Link as GatsbyLink } from 'gatsby';
 import styled from 'styled-components';
 import StyledButton from '../button/button.styled';

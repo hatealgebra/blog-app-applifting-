@@ -1,15 +1,13 @@
 import React from 'react';
 
 import { GoPrimitiveDot } from '@react-icons/all-files/go/GoPrimitiveDot';
+import { Components } from '@customTypes/declarations';
+import StyledLink from '@atoms/links/link.styled';
+import { getDate } from '@utils/date.utils';
 import StyledArticlePreviewContainer, {
   StyledArticlePreviewImage,
   StyledArticleRow,
 } from './articlePreview.styled';
-
-import StyledLink from '../../atoms/links/link.styled';
-import { components } from '../../../customTypes/declarations';
-
-import { getDate } from '../../../utils/date.utils';
 
 import {
   createArticleLink,
@@ -26,7 +24,7 @@ const ArticlePreview = ({
   comments,
   imageBase64,
   author,
-}: components['schemas']['ArticleDetail'] & {
+}: Components['schemas']['ArticleDetail'] & {
   author: string;
   imageBase64: String;
 }) => {

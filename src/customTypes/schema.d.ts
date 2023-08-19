@@ -1,3 +1,5 @@
+import { Components } from './declarations';
+
 export interface IArticle {
   articleId: string;
   title: string;
@@ -7,8 +9,8 @@ export interface IArticle {
   lastUpdateAt: string;
 }
 
-export type TArticleDetail = components['schemas']['Article'] &
-  components['schemas']['ArticleDetail'] & {
+export type TArticleDetail = Components['schemas']['Article'] &
+  Components['schemas']['ArticleDetail'] & {
     imageBase64: 'string';
   };
 
@@ -16,7 +18,7 @@ export type TCompleteArticles = Array<TArticleDetail>;
 
 export interface ICompleteArticleList {
   articleList: {
-    pagination?: components['schemas']['Pagination'];
-    items?: TCompleteArticleFeed;
+    pagination?: Components['schemas']['Pagination'];
+    items?: TCompleteArticles;
   };
 }

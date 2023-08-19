@@ -1,11 +1,10 @@
-import React, { FormEvent } from 'react';
+import React from 'react';
 import userEvent from '@testing-library/user-event';
 
 import { screen, waitFor } from '@testing-library/react';
 import { setupTestWithStore } from '../../../utils/testing.utils';
 
 import PublishArticleForm from './PublishArticleForm';
-import { server } from '../../../__mocks__/server';
 
 describe('Create new article suite', () => {
   global.URL.createObjectURL = jest.fn();
@@ -22,7 +21,8 @@ describe('Create new article suite', () => {
       setupTestWithStore(<PublishArticleForm />);
     titleInput = getByLabelText('Article title');
     imageFileInput = getByTestId('image-uploader');
-    mdInput = getAllByRole('textbox')[0];
+    const [firstElement] = getAllByRole('textbox');
+    mdInput = firstElement;
     submitBtn = getByRole('button', { name: 'Publish article' });
   });
   test('submit fuction was called', async () => {

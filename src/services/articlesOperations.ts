@@ -20,25 +20,17 @@ export const createArticle = async (
     access_token,
   };
 
-  try {
-    const response = await appLiftingAxiosProtected.post('/articles', data, {
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: access_token,
-      },
-    });
-    return response;
-  } catch (e) {
-    throw e;
-  }
+  const response = await appLiftingAxiosProtected.post('/articles', data, {
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: access_token,
+    },
+  });
+  return response;
 };
 
 export const getArticle = async (articleId: string) => {
-  try {
-    return await appLiftingAxiosProtected.get(`/articles/${articleId}`);
-  } catch (e) {
-    throw e;
-  }
+  return appLiftingAxiosProtected.get(`/articles/${articleId}`);
 };
 
 export const deleteArticle = async (

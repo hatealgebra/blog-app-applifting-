@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { screen, waitFor } from '@testing-library/react';
+import { waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { setupTest, setupWithLoggedInUser } from '../../../utils/testing.utils';
+import { setupWithLoggedInUser } from '../../../utils/testing.utils';
 import CreateComment, { FormValidation } from './CreateComment';
 
 const articleId = 'jdiwoj1oij418jf189h4891';

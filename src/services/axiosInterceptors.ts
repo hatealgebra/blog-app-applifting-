@@ -45,11 +45,12 @@ const setUpInterceptor = (store: Store) => {
       const { email, pwd } = login;
       if (status === 403) {
         try {
-          dispatch(reAuthorizeThunk({ email, pwd }));
+          return dispatch(reAuthorizeThunk({ email, pwd }));
         } catch (e) {
           return e;
         }
       }
+      return '_';
     }
   );
 };

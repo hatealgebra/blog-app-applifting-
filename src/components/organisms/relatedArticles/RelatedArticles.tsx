@@ -1,5 +1,6 @@
 import React from 'react';
-import { components } from '../../../customTypes/declarations';
+
+import { Components } from '@customTypes/declarations';
 import ArticlePreviewSmall from '../../molecules/articlePreview/ArticlePreviewSmall';
 import RelatedArticlesContainer from './relatedArticles.styled';
 
@@ -25,7 +26,7 @@ const RelatedArticles = ({ articles }: RelatedArticlesProps) => {
 };
 
 interface RelatedArticlesProps {
-  articles: components['schemas']['Article'][] | null;
+  articles: Components['schemas']['Article'][] | null;
 }
 
 export default RelatedArticles;

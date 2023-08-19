@@ -1,15 +1,17 @@
-import React, { Dispatch } from 'react';
+import React from 'react';
 import { AnyAction } from '@reduxjs/toolkit';
-import { components } from '../../../customTypes/declarations';
-import Checkbox from '../../atoms/checkbox/Checkbox';
+import { ESortByOptions } from '@store/slices/slices.types';
+
+import { Components } from '@customTypes/declarations';
+
+import Checkbox from '@atoms/checkbox/Checkbox';
 import { StyledEditArticleRow } from './editArticleRow.styled';
 
 import ButtonSort from '../../atoms/button/ButtonSort';
 import { sortMyArticles } from '../../../store/slices/admin.slices';
-import { deleteArticleThunk } from '../../../store/thunks/admin.thunks';
 
 interface EditArticleRowButtonsProp {
-  originalArray: components['schemas']['Article'];
+  originalArray: Components['schemas']['Article'];
   switchAllBoxes: React.SetStateAction<any>;
   dispatch: React.Dispatch<AnyAction>;
 }
@@ -37,11 +39,11 @@ const EditArticleRowButtons = ({
 
   React.useEffect(() => {
     switchAllBoxes(isChecked);
-  }, [isChecked]);
+  }, [isChecked, switchAllBoxes]);
 
   React.useEffect(() => {
     dispatch({ type: 'admin/sortMyArticles', payload: isActive });
-  }, [originalArray]);
+  }, [originalArray, dispatch, isActive]);
 
   return (
     <StyledEditArticleRow className="edit-article">
@@ -87,13 +89,5 @@ const EditArticleRowButtons = ({
     </StyledEditArticleRow>
   );
 };
-
-export enum ESortByOptions {
-  ORIGINAL = 'original',
-  BY_TITLE = 'title',
-  BY_PEREX = 'perex',
-  BY_AUTHOR = 'author',
-  BY_NR_COMMENTS = 'comments',
-}
 
 export default EditArticleRowButtons;
