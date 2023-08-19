@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Molecules/Upload image UploadImageExample smoke-test 1`] = `
-<div class="sc-ezGUZh fpAwaX">
+<div class="sc-gisvNi usWdg">
   <label class="upload-image__label">
     Featured Image
   </label>
   <button variant="standard"
           colortheme="primary"
           type="button"
-          class="sc-dkjKgF iJlhGR"
+          class="sc-hLclGa dhTwVn"
   >
     Upload an Image
   </button>
@@ -21,26 +21,26 @@ exports[`Molecules/Upload image UploadImageExample smoke-test 1`] = `
 `;
 
 exports[`Molecules/Upload image UploadImageWithFile smoke-test 1`] = `
-<div class="sc-ezGUZh fpAwaX">
+<div class="sc-gisvNi usWdg">
   <label class="upload-image__label">
     Featured Image
   </label>
   <img class="upload-image__preview"
-       src="blob:http://127.0.0.1:6006/c33c8ead-8d8d-4c58-b7b0-7f7b49075e4e"
+       src="blob:http://127.0.0.1:6006/2a34a0c9-f974-434a-85b5-4f7c659d4012"
        alt="hello.png"
   >
   <div class="upload-image__button-row">
     <button variant="outline"
             colortheme="primary"
             type="button"
-            class="sc-dkjKgF hhKsHh"
+            class="sc-hLclGa keduQX"
     >
       Upload New
     </button>
     <button variant="outline"
             colortheme="primary"
             type="button"
-            class="sc-dkjKgF hhKsHh"
+            class="sc-hLclGa keduQX"
     >
       Delete
     </button>

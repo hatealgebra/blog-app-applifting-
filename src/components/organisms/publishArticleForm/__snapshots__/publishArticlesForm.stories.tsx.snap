@@ -2,41 +2,41 @@
 
 exports[`Organisms/Forms CreateNewArticleFormExample smoke-test 1`] = `
 <form class="sc-bZCZoC gPirry">
-  <div class="sc-hBpgZr blYtEN">
+  <div class="sc-csmVar huQTvo">
     <h1>
       Create new article
     </h1>
     <button variant="standard"
             colortheme="primary"
             type="submit"
-            class="sc-dkjKgF iJlhGR"
+            class="sc-hLclGa dhTwVn"
     >
       Publish article
     </button>
   </div>
   <div>
-    <div class="sc-jSwlEQ eeEroX">
+    <div class="sc-dmBjiZ ieOkoL">
       <label for="Article title">
         Article title
       </label>
       <input placeholder="My new article"
              id="Article title"
-             class="sc-hLclGa iSKFPv"
+             class="sc-iBAaJG djhrVw"
              value="Article title"
       >
     </div>
-    <span class="sc-ipMvLY fOtdNV">
+    <span class="sc-gKHVLF gugXSe">
     </span>
   </div>
   <div>
-    <div class="sc-ezGUZh fpAwaX">
+    <div class="sc-gisvNi usWdg">
       <label class="upload-image__label">
         Featured Image
       </label>
       <button variant="standard"
               colortheme="primary"
               type="button"
-              class="sc-dkjKgF iJlhGR"
+              class="sc-hLclGa dhTwVn"
       >
         Upload an Image
       </button>
@@ -46,7 +46,7 @@ exports[`Organisms/Forms CreateNewArticleFormExample smoke-test 1`] = `
              style="display: none;"
       >
     </div>
-    <span class="sc-ipMvLY fOtdNV">
+    <span class="sc-gKHVLF gugXSe">
     </span>
   </div>
   <div>
@@ -294,7 +294,7 @@ exports[`Organisms/Forms CreateNewArticleFormExample smoke-test 1`] = `
         </div>
       </div>
     </div>
-    <span class="sc-ipMvLY fOtdNV">
+    <span class="sc-gKHVLF gugXSe">
     </span>
   </div>
 </form>

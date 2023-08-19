@@ -28,9 +28,9 @@
     "strict": false
   },
   "include": [
-    "src",
-    "src/customTypes/declarations.d.ts",
-    "src/__mocks__/images",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/__mocks__",
     "./gatsby-node.ts",
     "./gatsby-config.ts",
     "./plugins/**/*"

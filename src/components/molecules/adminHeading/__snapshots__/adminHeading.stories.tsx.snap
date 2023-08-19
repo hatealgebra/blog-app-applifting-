@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Molecules/Admin Heading AdminHeadingExample smoke-test 1`] = `
-<div class="sc-hBpgZr blYtEN">
+<div class="sc-csmVar huQTvo">
   <h1>
     Page Title
   </h1>
   <a colortheme="primary"
-     class="sc-dkjKgF sc-csmVar iJlhGR blIAmy"
+     class="sc-hLclGa sc-pqitP dhTwVn bNVlce"
      href="/iframe.html/#"
   >
     Create new article

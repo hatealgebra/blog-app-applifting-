@@ -2,18 +2,18 @@
 
 exports[`Atoms/Link AllVariants smoke-test 1`] = `
 <div style="display: flex; flex-direction: column; gap: 10px;">
-  <a class="sc-eLSjS cwmAMq"
+  <a class="sc-jrkPcm eEbEbs"
      href="/#"
   >
     Classic link
   </a>
   <a variant="text"
-     class="sc-eLSjS cwmAMq"
+     class="sc-jrkPcm eEbEbs"
      href="/#"
   >
     Text link
   </a>
-  <a class="sc-ksJisA jEBuxO login-link"
+  <a class="sc-ipMvLY hcUcbw login-link"
      href="/login"
   >
     <span>

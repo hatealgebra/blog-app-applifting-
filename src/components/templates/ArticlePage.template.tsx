@@ -6,14 +6,14 @@ import PageTemplate from './Page.template';
 import RelatedArticles from '../organisms/relatedArticles/RelatedArticles';
 import Discussion from '../organisms/discussion/Discussion';
 import { StyledArticlePageContainer } from './templates.styled';
-import { components } from '../../customTypes/declarations';
+import { Components } from '../../customTypes/declarations';
 
 const ArticlePage = ({
   pageContext,
 }: {
   pageContext: {
-    article: components['schemas']['Article'] &
-      components['schemas']['ArticleDetail'] & { imageBase64: string };
+    article: Components['schemas']['Article'] &
+      Components['schemas']['ArticleDetail'] & { imageBase64: string };
   };
 }) => {
   const [relatedArticles, setRelatedArticles] = React.useState(null);
@@ -44,7 +44,7 @@ const ArticlePage = ({
     const showRelatedArticles = () => {
       const { nodes } = articles.allPosts;
       const articlesFiltered = nodes.filter(
-        (article: components['schemas']['Article']) =>
+        (article: Components['schemas']['Article']) =>
           article.articleId !== articleId
       );
 

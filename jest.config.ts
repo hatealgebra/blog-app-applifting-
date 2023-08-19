@@ -86,23 +86,7 @@ export default {
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
 
-  moduleNameMapper: {
-    '^@fontsource/(.*)$': '<rootDir>/src/__mocks__/font-mock.js',
-    '^@atoms/(.*)$': '<rootDir>/src/components/atoms/$1',
-    '^@molecules/(.*)$': '<rootDir>/src/components/molecules/$1',
-    '^@organisms/(.*)$': '<rootDir>/src/components/organisms/forms.types.d.ts',
-    '^@particles/(.*)$': '<rootDir>/src/components/particles/$1',
-    '^@templates/(.*)$': '<rootDir>/src/components/templates/$1',
-    '^@helpers/(.*)$': '<rootDir>/src/helpers/$1',
-    '^@pages/(.*)$': '<rootDir>/src/pages/$1',
-    '^@static/(.*)$': '<rootDir>/src/static/$1',
-    '^@mocks/(.*)$': '<rootDir>/src/__mocks__/$1',
-    '^@services/(.*)$': '<rootDir>/src/services/$1',
-    '^@store/(.*)$': '<rootDir>/src/store/$1',
-    '^@customTypes/(.*)$': '<rootDir>/src/customTypes/$1',
-    '^@utils/(.*)$': '<rootDir>/src/utils/$1',
-    '^@hooks/(.*)$': '<rootDir>/src/hooks/$1',
-  },
+  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {}),
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
   // modulePathIgnorePatterns: [],

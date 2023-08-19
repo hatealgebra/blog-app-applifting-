@@ -1,45 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Atoms/Checkbox CheckboxExample smoke-test 1`] = `
-<div class="sc-ftLKQv iibJaj">
+<div class="sc-jSwlEQ hPvNpH">
   <input type="checkbox"
-         class="sc-iBAaJG ciwLrW"
+         class="sc-eDnVMP jVxqso"
   >
 </div>
-<div class="sc-ftLKQv iibJaj">
+<div class="sc-jSwlEQ hPvNpH">
   <input type="checkbox"
-         class="sc-iBAaJG ciwLrW"
+         class="sc-eDnVMP jVxqso"
          checked
   >
 </div>
-<div class="sc-ftLKQv jAoYjG">
+<div class="sc-jSwlEQ goTwgy">
   <input disabled
          type="checkbox"
-         class="sc-iBAaJG ciwLrW"
+         class="sc-eDnVMP jVxqso"
   >
 </div>
-<div class="sc-ftLKQv jAoYjG">
+<div class="sc-jSwlEQ goTwgy">
   <input disabled
          type="checkbox"
-         class="sc-iBAaJG ciwLrW"
+         class="sc-eDnVMP jVxqso"
          checked
   >
 </div>
 `;
 
 exports[`Atoms/Checkbox CheckboxWithLabel smoke-test 1`] = `
-<div class="sc-ftLKQv iibJaj">
+<div class="sc-jSwlEQ hPvNpH">
   <input type="checkbox"
-         class="sc-iBAaJG ciwLrW"
+         class="sc-eDnVMP jVxqso"
   >
   <span>
     Checkbox with label
   </span>
 </div>
-<div class="sc-ftLKQv jAoYjG">
+<div class="sc-jSwlEQ goTwgy">
   <input disabled
          type="checkbox"
-         class="sc-iBAaJG ciwLrW"
+         class="sc-eDnVMP jVxqso"
   >
   <span>
     Checkbox with label

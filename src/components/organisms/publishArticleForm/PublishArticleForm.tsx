@@ -18,7 +18,7 @@ import { createArticleThunk } from '../../../store/thunks/admin.thunks';
 import {
   EPublishArticleErrors,
   PublishArticleProps,
-} from './publishArticleForm.types';
+} from './publishArticleForm.types.d';
 
 // FIXME: maybe implement do BIG notation?
 // TODO: Testing

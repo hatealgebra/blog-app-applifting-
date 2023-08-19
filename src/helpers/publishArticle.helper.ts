@@ -1,7 +1,7 @@
 import { navigate } from 'gatsby';
 import React, { FormEvent } from 'react';
 
-import { EPublishArticleErrors } from '@organisms/publishArticleForm/publishArticleForm.types';
+import { EPublishArticleErrors } from '@organisms/publishArticleForm/publishArticleForm.types.d';
 
 import { updateArticle } from '@services/articlesOperations';
 import { uploadImage } from '../services/imagesServices';

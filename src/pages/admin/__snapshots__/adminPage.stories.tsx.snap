@@ -13,13 +13,13 @@ exports[`Pages/Admin pages CreateNewArticle smoke-test 1`] = `
         >
         <nav class="sc-jOHGOj jHhANX">
           <a variant="classic"
-             class="sc-eLSjS kjOsEi"
+             class="sc-jrkPcm eCMzXk"
              href="/"
           >
             Recent Articles
           </a>
           <a variant="classic"
-             class="sc-eLSjS kjOsEi"
+             class="sc-jrkPcm eCMzXk"
              href="/about"
           >
             About
@@ -27,7 +27,7 @@ exports[`Pages/Admin pages CreateNewArticle smoke-test 1`] = `
         </nav>
       </div>
       <div class="TopNavbar__sub-container">
-        <a class="sc-ksJisA jEBuxO login-link"
+        <a class="sc-ipMvLY hcUcbw login-link"
            href="/login"
         >
           <span>
@@ -53,43 +53,43 @@ exports[`Pages/Admin pages CreateNewArticle smoke-test 1`] = `
       </div>
     </div>
   </header>
-  <div class="sc-bCnriq ktKMMI">
+  <div class="sc-bCnriq feOXrx">
     <form class="sc-bZCZoC gPirry">
-      <div class="sc-hBpgZr blYtEN">
+      <div class="sc-csmVar huQTvo">
         <h1>
           Create new article
         </h1>
         <button variant="standard"
                 colortheme="primary"
                 type="submit"
-                class="sc-dkjKgF iJlhGR"
+                class="sc-hLclGa dhTwVn"
         >
           Publish article
         </button>
       </div>
       <div>
-        <div class="sc-jSwlEQ eeEroX">
+        <div class="sc-dmBjiZ ieOkoL">
           <label for="Article title">
             Article title
           </label>
           <input placeholder="My new article"
                  id="Article title"
-                 class="sc-hLclGa iSKFPv"
+                 class="sc-iBAaJG djhrVw"
                  value
           >
         </div>
-        <span class="sc-ipMvLY fOtdNV">
+        <span class="sc-gKHVLF gugXSe">
         </span>
       </div>
       <div>
-        <div class="sc-ezGUZh fpAwaX">
+        <div class="sc-gisvNi usWdg">
           <label class="upload-image__label">
             Featured Image
           </label>
           <button variant="standard"
                   colortheme="primary"
                   type="button"
-                  class="sc-dkjKgF iJlhGR"
+                  class="sc-hLclGa dhTwVn"
           >
             Upload an Image
           </button>
@@ -99,7 +99,7 @@ exports[`Pages/Admin pages CreateNewArticle smoke-test 1`] = `
                  style="display: none;"
           >
         </div>
-        <span class="sc-ipMvLY fOtdNV">
+        <span class="sc-gKHVLF gugXSe">
         </span>
       </div>
       <div>
@@ -354,7 +354,7 @@ exports[`Pages/Admin pages CreateNewArticle smoke-test 1`] = `
             </div>
           </div>
         </div>
-        <span class="sc-ipMvLY fOtdNV">
+        <span class="sc-gKHVLF gugXSe">
         </span>
       </div>
     </form>
@@ -375,13 +375,13 @@ exports[`Pages/Admin pages EditArticle smoke-test 1`] = `
         >
         <nav class="sc-jOHGOj jHhANX">
           <a variant="classic"
-             class="sc-eLSjS kjOsEi"
+             class="sc-jrkPcm eCMzXk"
              href="/"
           >
             Recent Articles
           </a>
           <a variant="classic"
-             class="sc-eLSjS kjOsEi"
+             class="sc-jrkPcm eCMzXk"
              href="/about"
           >
             About
@@ -389,7 +389,7 @@ exports[`Pages/Admin pages EditArticle smoke-test 1`] = `
         </nav>
       </div>
       <div class="TopNavbar__sub-container">
-        <a class="sc-ksJisA jEBuxO login-link"
+        <a class="sc-ipMvLY hcUcbw login-link"
            href="/login"
         >
           <span>
@@ -415,43 +415,43 @@ exports[`Pages/Admin pages EditArticle smoke-test 1`] = `
       </div>
     </div>
   </header>
-  <div class="sc-bCnriq ktKMMI">
+  <div class="sc-bCnriq feOXrx">
     <form class="sc-bZCZoC gPirry">
-      <div class="sc-hBpgZr blYtEN">
+      <div class="sc-csmVar huQTvo">
         <h1>
           Create new article
         </h1>
         <button variant="standard"
                 colortheme="primary"
                 type="submit"
-                class="sc-dkjKgF iJlhGR"
+                class="sc-hLclGa dhTwVn"
         >
           Publish article
         </button>
       </div>
       <div>
-        <div class="sc-jSwlEQ eeEroX">
+        <div class="sc-dmBjiZ ieOkoL">
           <label for="Article title">
             Article title
           </label>
           <input placeholder="My new article"
                  id="Article title"
-                 class="sc-hLclGa iSKFPv"
+                 class="sc-iBAaJG djhrVw"
                  value
           >
         </div>
-        <span class="sc-ipMvLY fOtdNV">
+        <span class="sc-gKHVLF gugXSe">
         </span>
       </div>
       <div>
-        <div class="sc-ezGUZh fpAwaX">
+        <div class="sc-gisvNi usWdg">
           <label class="upload-image__label">
             Featured Image
           </label>
           <button variant="standard"
                   colortheme="primary"
                   type="button"
-                  class="sc-dkjKgF iJlhGR"
+                  class="sc-hLclGa dhTwVn"
           >
             Upload an Image
           </button>
@@ -461,7 +461,7 @@ exports[`Pages/Admin pages EditArticle smoke-test 1`] = `
                  style="display: none;"
           >
         </div>
-        <span class="sc-ipMvLY fOtdNV">
+        <span class="sc-gKHVLF gugXSe">
         </span>
       </div>
       <div>
@@ -716,7 +716,7 @@ exports[`Pages/Admin pages EditArticle smoke-test 1`] = `
             </div>
           </div>
         </div>
-        <span class="sc-ipMvLY fOtdNV">
+        <span class="sc-gKHVLF gugXSe">
         </span>
       </div>
     </form>
@@ -737,13 +737,13 @@ exports[`Pages/Admin pages MyArticles smoke-test 1`] = `
         >
         <nav class="sc-jOHGOj jHhANX">
           <a variant="classic"
-             class="sc-eLSjS kjOsEi"
+             class="sc-jrkPcm eCMzXk"
              href="/"
           >
             Recent Articles
           </a>
           <a variant="classic"
-             class="sc-eLSjS kjOsEi"
+             class="sc-jrkPcm eCMzXk"
              href="/about"
           >
             About
@@ -751,7 +751,7 @@ exports[`Pages/Admin pages MyArticles smoke-test 1`] = `
         </nav>
       </div>
       <div class="TopNavbar__sub-container">
-        <a class="sc-ksJisA jEBuxO login-link"
+        <a class="sc-ipMvLY hcUcbw login-link"
            href="/login"
         >
           <span>
@@ -777,14 +777,14 @@ exports[`Pages/Admin pages MyArticles smoke-test 1`] = `
       </div>
     </div>
   </header>
-  <div class="sc-bCnriq ktKMMI">
+  <div class="sc-bCnriq feOXrx">
     <div class="sc-jdkVqZ jsYxwb">
-      <div class="sc-hBpgZr blYtEN">
+      <div class="sc-csmVar huQTvo">
         <h1>
           My Articles
         </h1>
         <a colortheme="primary"
-           class="sc-dkjKgF sc-csmVar iJlhGR blIAmy"
+           class="sc-hLclGa sc-pqitP dhTwVn bNVlce"
            href="/admin/create-article"
         >
           Create new article
@@ -792,16 +792,16 @@ exports[`Pages/Admin pages MyArticles smoke-test 1`] = `
       </div>
       <form class="sc-ciJnBw dfwyrO">
         <table class="sc-cCIIiH jupHLD">
-          <tr class="sc-jrkPcm jbOSku edit-article">
+          <tr class="sc-hHvkSs OHqgu edit-article">
             <th class="edit-article__checkbox">
-              <div class="sc-ftLKQv iibJaj">
+              <div class="sc-jSwlEQ hPvNpH">
                 <input type="checkbox"
-                       class="sc-iBAaJG ciwLrW"
+                       class="sc-eDnVMP jVxqso"
                 >
               </div>
             </th>
             <th class="edit-article__title">
-              <button class="sc-bcPKhP deoNYt">
+              <button class="sc-grXZZQ kImwcT">
                 <span>
                   Article title
                 </span>
@@ -819,7 +819,7 @@ exports[`Pages/Admin pages MyArticles smoke-test 1`] = `
               </button>
             </th>
             <th class="edit-article__perex">
-              <button class="sc-bcPKhP deoNYt">
+              <button class="sc-grXZZQ kImwcT">
                 <span>
                   Perex
                 </span>
@@ -837,7 +837,7 @@ exports[`Pages/Admin pages MyArticles smoke-test 1`] = `
               </button>
             </th>
             <th class="edit-article__author">
-              <button class="sc-bcPKhP deoNYt">
+              <button class="sc-grXZZQ kImwcT">
                 <span>
                   Author
                 </span>
@@ -855,7 +855,7 @@ exports[`Pages/Admin pages MyArticles smoke-test 1`] = `
               </button>
             </th>
             <th class="edit-article__nr-comments">
-              <button class="sc-bcPKhP deoNYt">
+              <button class="sc-grXZZQ kImwcT">
                 <span>
                   # comments
                 </span>
@@ -876,7 +876,8 @@ exports[`Pages/Admin pages MyArticles smoke-test 1`] = `
               Actions
             </th>
           </tr>
-          <div class="sc-kMbQoj sc-gXCJSa hCGEju cuYcqn">
+          // TODO: Detach logic of rendering
+          <div class="sc-bYUneI sc-gXCJSa dWksIS cuYcqn">
             <div data-testid="three-dots-loading"
                  aria-label="three-dots-loading"
                  aria-busy="true"

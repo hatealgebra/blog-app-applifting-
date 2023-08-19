@@ -2,7 +2,15 @@ import React from 'react';
 import { Story } from '@storybook/react';
 import { StyledTextArea, StyledTextInput } from './input.styled';
 
-export const InputExample = () => <StyledTextInput />;
+const Template = (args) => <StyledTextInput {...args} />;
+
+export const InputExample = () => Template.bind({});
+InputExample.args = {
+  placeholder: 'This is a placeholder',
+};
+// InputExample.play = async ({ canvasElement }) => {
+//   console.log(canvasElement);
+// };
 
 export const InputAllSize = () => (
   <div style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>

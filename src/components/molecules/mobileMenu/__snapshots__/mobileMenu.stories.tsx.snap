@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Molecules/Mobile Menu MobileMenuExample smoke-test 1`] = `
-<div class="sc-cwKisF cUdiOH mobile-menu"
+<div class="sc-ivDvhZ dyTKjj mobile-menu"
      data-testid="mobileMenu"
 >
   <div class="mobile-menu__help-div">
-    <button class="sc-iJfdHH fSmIGi">
+    <button class="sc-lltjXc fXhIvO">
       <svg stroke="currentColor"
            fill="currentColor"
            stroke-width="0"
@@ -22,15 +22,19 @@ exports[`Molecules/Mobile Menu MobileMenuExample smoke-test 1`] = `
         </path>
       </svg>
     </button>
-    <nav class="sc-lltjXc hQtBUA">
-      <a class="sc-eLSjS sc-bqOBKd cwmAMq bvjZlb">
+    <nav class="sc-cwKisF fpjKjq">
+      <a class="sc-jrkPcm sc-kDnyCx eEbEbs ePkBvR"
+         href="/admin/my-articles"
+      >
         Recent articles
       </a>
-      <a class="sc-eLSjS sc-bqOBKd cwmAMq bvjZlb">
+      <a class="sc-jrkPcm sc-kDnyCx eEbEbs ePkBvR"
+         href="/admin/my-articles"
+      >
         About
       </a>
     </nav>
-    <a class="sc-ksJisA jEBuxO login-link"
+    <a class="sc-ipMvLY hcUcbw login-link"
        href="/login"
     >
       <span>

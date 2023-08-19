@@ -1,6 +1,6 @@
 import React from 'react';
 import { AnyAction } from '@reduxjs/toolkit';
-import { ESortByOptions } from '@store/slices/slices.types';
+import { ESortByOptions } from '@store/slices/slices.types.d';
 
 import { Components } from '@customTypes/declarations';
 

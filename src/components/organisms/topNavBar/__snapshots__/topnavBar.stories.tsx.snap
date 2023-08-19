@@ -12,13 +12,13 @@ exports[`Organisms/Top NavBar DesktopNavBar smoke-test 1`] = `
       >
       <nav class="sc-jOHGOj jHhANX">
         <a variant="classic"
-           class="sc-eLSjS kjOsEi"
+           class="sc-jrkPcm eCMzXk"
            href="/"
         >
           Recent Articles
         </a>
         <a variant="classic"
-           class="sc-eLSjS kjOsEi"
+           class="sc-jrkPcm eCMzXk"
            href="/about"
         >
           About
@@ -26,7 +26,7 @@ exports[`Organisms/Top NavBar DesktopNavBar smoke-test 1`] = `
       </nav>
     </div>
     <div class="TopNavbar__sub-container">
-      <a class="sc-ksJisA jEBuxO login-link"
+      <a class="sc-ipMvLY hcUcbw login-link"
          href="/login"
       >
         <span>
@@ -63,7 +63,7 @@ exports[`Organisms/Top NavBar MobileNavBar smoke-test 1`] = `
          alt="cat logo"
          height="40px"
     >
-    <button class="sc-grXZZQ byWNeG">
+    <button class="sc-dkjKgF iiHxSZ">
       <svg stroke="currentColor"
            fill="none"
            stroke-width="0"
@@ -86,11 +86,11 @@ exports[`Organisms/Top NavBar MobileNavBar smoke-test 1`] = `
         </path>
       </svg>
     </button>
-    <div class="sc-cwKisF bBCeDb mobile-menu"
+    <div class="sc-ivDvhZ kzUHZn mobile-menu"
          data-testid="mobileMenu"
     >
       <div class="mobile-menu__help-div">
-        <button class="sc-iJfdHH fSmIGi">
+        <button class="sc-lltjXc fXhIvO">
           <svg stroke="currentColor"
                fill="currentColor"
                stroke-width="0"
@@ -107,15 +107,19 @@ exports[`Organisms/Top NavBar MobileNavBar smoke-test 1`] = `
             </path>
           </svg>
         </button>
-        <nav class="sc-lltjXc hQtBUA">
-          <a class="sc-eLSjS sc-bqOBKd cwmAMq bvjZlb">
+        <nav class="sc-cwKisF fpjKjq">
+          <a class="sc-jrkPcm sc-kDnyCx eEbEbs ePkBvR"
+             href="/admin/my-articles"
+          >
             Recent articles
           </a>
-          <a class="sc-eLSjS sc-bqOBKd cwmAMq bvjZlb">
+          <a class="sc-jrkPcm sc-kDnyCx eEbEbs ePkBvR"
+             href="/admin/my-articles"
+          >
             About
           </a>
         </nav>
-        <a class="sc-ksJisA jEBuxO login-link"
+        <a class="sc-ipMvLY hcUcbw login-link"
            href="/login"
         >
           <span>
@@ -156,19 +160,19 @@ exports[`Organisms/Top NavBar TabletNavBar smoke-test 1`] = `
     <div class="TopNavbar__sub-container">
       <nav class="sc-jOHGOj jHhANX">
         <a variant="classic"
-           class="sc-eLSjS kjOsEi"
+           class="sc-jrkPcm eCMzXk"
            href="/"
         >
           Recent Articles
         </a>
         <a variant="classic"
-           class="sc-eLSjS kjOsEi"
+           class="sc-jrkPcm eCMzXk"
            href="/about"
         >
           About
         </a>
       </nav>
-      <a class="sc-ksJisA jEBuxO login-link"
+      <a class="sc-ipMvLY hcUcbw login-link"
          href="/login"
       >
         <span>

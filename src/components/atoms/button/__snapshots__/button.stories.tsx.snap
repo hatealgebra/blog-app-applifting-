@@ -6,7 +6,7 @@ exports[`Atoms/Button BlockButton smoke-test 1`] = `
     <button variant="standard"
             colortheme="primary"
             type="button"
-            class="sc-dkjKgF bjQA-du"
+            class="sc-hLclGa erOOOs"
     >
       Block Button
     </button>
@@ -19,14 +19,14 @@ exports[`Atoms/Button LargeOutlineButtons smoke-test 1`] = `
   <button variant="outline"
           colortheme="primary"
           type="button"
-          class="sc-dkjKgF fdOYp"
+          class="sc-hLclGa eeiCuf"
   >
     Primary
   </button>
   <button variant="outline"
           colortheme="secondary"
           type="button"
-          class="sc-dkjKgF cGLKzd"
+          class="sc-hLclGa eHpWOv"
   >
     Secondary
   </button>
@@ -38,14 +38,14 @@ exports[`Atoms/Button LargeStandardButtons smoke-test 1`] = `
   <button variant="standard"
           colortheme="primary"
           type="button"
-          class="sc-dkjKgF fCqiVk"
+          class="sc-hLclGa fiXdBi"
   >
     Primary
   </button>
   <button variant="standard"
           colortheme="secondary"
           type="button"
-          class="sc-dkjKgF cSgpew"
+          class="sc-hLclGa jWKvye"
   >
     Secondary
   </button>
@@ -54,7 +54,7 @@ exports[`Atoms/Button LargeStandardButtons smoke-test 1`] = `
 
 exports[`Atoms/Button MenuButtonExample smoke-test 1`] = `
 <div style="margin: 1em; display: flex; gap: 20px;">
-  <button class="sc-grXZZQ byWNeG">
+  <button class="sc-dkjKgF iiHxSZ">
     <svg stroke="currentColor"
          fill="none"
          stroke-width="0"
@@ -85,14 +85,14 @@ exports[`Atoms/Button OutlineButtons smoke-test 1`] = `
   <button variant="outline"
           colortheme="primary"
           type="button"
-          class="sc-dkjKgF djDuOA"
+          class="sc-hLclGa kMBCXK"
   >
     Primary
   </button>
   <button variant="outline"
           colortheme="secondary"
           type="button"
-          class="sc-dkjKgF eIfjyQ"
+          class="sc-hLclGa cYUcwG"
   >
     Secondary
   </button>
@@ -104,14 +104,14 @@ exports[`Atoms/Button SmallOutlineButtons smoke-test 1`] = `
   <button variant="outline"
           colortheme="primary"
           type="button"
-          class="sc-dkjKgF hhKsHh"
+          class="sc-hLclGa keduQX"
   >
     Primary
   </button>
   <button variant="outline"
           colortheme="secondary"
           type="button"
-          class="sc-dkjKgF egpihp"
+          class="sc-hLclGa eNYRZn"
   >
     Secondary
   </button>
@@ -123,14 +123,14 @@ exports[`Atoms/Button SmallStandardButtons smoke-test 1`] = `
   <button variant="standard"
           colortheme="primary"
           type="button"
-          class="sc-dkjKgF ewSgOA"
+          class="sc-hLclGa dZkWcq"
   >
     Primary
   </button>
   <button variant="standard"
           colortheme="secondary"
           type="button"
-          class="sc-dkjKgF koaaYY"
+          class="sc-hLclGa bLrldS"
   >
     Secondary
   </button>
@@ -139,7 +139,7 @@ exports[`Atoms/Button SmallStandardButtons smoke-test 1`] = `
 
 exports[`Atoms/Button SortButtonAllVariants smoke-test 1`] = `
 <div style="margin: 1em; display: flex; gap: 20px;">
-  <button class="sc-bcPKhP deoNYt">
+  <button class="sc-grXZZQ kImwcT">
     <span>
       Article Title
     </span>
@@ -155,7 +155,7 @@ exports[`Atoms/Button SortButtonAllVariants smoke-test 1`] = `
       </path>
     </svg>
   </button>
-  <button class="sc-bcPKhP kuWAHD">
+  <button class="sc-grXZZQ gggWLR">
     <span>
       Article Title Active
     </span>
@@ -179,14 +179,14 @@ exports[`Atoms/Button StandardButtons smoke-test 1`] = `
   <button variant="standard"
           colortheme="primary"
           type="button"
-          class="sc-dkjKgF iJlhGR"
+          class="sc-hLclGa dhTwVn"
   >
     Primary
   </button>
   <button variant="standard"
           colortheme="secondary"
           type="button"
-          class="sc-dkjKgF dBxcYt"
+          class="sc-hLclGa foIDLL"
   >
     Secondary
   </button>

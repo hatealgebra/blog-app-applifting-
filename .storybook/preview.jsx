@@ -47,10 +47,10 @@ const storybookWrapper = (Story) => (
 addDecorator(mswDecorator);
 addDecorator(storybookWrapper)
 
-if (typeof global.process === 'undefined') {
-  const { worker } = require('../src/__mocks__/browser');
-  worker.start();
-}
+// if (typeof global.process === 'undefined') {
+//   const { worker } = require('../src/__mocks__/browser');
+//   worker.start();
+// }
 const preview = {
   parameters: {
     actions: { argTypesRegex: '^on[A-Z].*' },

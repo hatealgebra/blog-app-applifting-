@@ -10,7 +10,7 @@ import { AdminLinks } from '../../../utils/contants';
 
 import { emailValidation, pwdValidation } from '../../../utils/regex.utils';
 import { selectAuthToken } from '../../../store/slices/auth.slices';
-import ELoginFormValidation from './forms.types';
+import ELoginFormValidation from './forms.types.d';
 
 const LoginForm = () => {
   const [email, setEmail] = React.useState('');

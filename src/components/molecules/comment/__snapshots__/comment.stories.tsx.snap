@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Molecules/Comment CommentExample smoke-test 1`] = `
-<div class="sc-dmBjiZ iKcHha comment">
-  <img class="sc-kDnyCx dyuMnk avatar"
+<div class="sc-bjEwCx jyGvnB comment">
+  <img class="sc-bcPKhP jnhZlJ avatar"
        src="static/media/src/images/avatar-fallback.png"
        alt="fallback user avatar"
   >
@@ -15,7 +15,7 @@ exports[`Molecules/Comment CommentExample smoke-test 1`] = `
   <p class="comment__text">
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus quibusdam qui autem libero consequuntur tenetur eveniet recusandae aliquam obcaecati. Consequatur perferendis id, dolorem quae unde recusandae ad deleniti obcaecati similique?
   </p>
-  <div class="sc-hHvkSs epNxvi comment__voting-counter">
+  <div class="sc-fEyylQ gCWoPR comment__voting-counter">
     <span data-testid="reactionCounter">
       0
     </span>

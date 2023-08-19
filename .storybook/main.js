@@ -1,4 +1,7 @@
 const React = require("react");
+const path = require("path");
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin')
+
 
 
 module.exports = {
@@ -14,9 +17,13 @@ module.exports = {
   framework: '@storybook/react',
   core: {
     builder: 'webpack5',
+    options: {
+      fsCache: true,
+    },
   },
 staticDirs : ['../static'],
   webpackFinal: async (config) => {
+    console.log(config);
     // Transpile Gatsby module because Gatsby includes un-transpiled ES6 code.
     config.module.rules[0].exclude = [
       /node_modules\/(?!(gatsby|gatsby-script)\/)/,
@@ -40,6 +47,32 @@ staticDirs : ['../static'],
     );
 
     config.resolve.mainFields = ['browser', 'module', 'main'];
+
+
+    // Resolving tsconfig paths
+    config.resolve.modules = [
+      path.resolve(__dirname, "..", ),
+      "node_modules",
+    ]
+
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      "@atoms":  path.resolve(__dirname, "../src/components/atoms"),
+      "@molecules": path.resolve(__dirname, "../src/components/molecules"),
+      "@organisms": path.resolve(__dirname, "../src/components/organisms"),
+      "@particles": path.resolve(__dirname, "../src/components/particles"),
+      "@templates": path.resolve(__dirname, "../src/components/templates"),
+      "@helpers": path.resolve(__dirname, "../src/helpers"),
+      "@pages": path.resolve(__dirname, "../src/pages"),
+      "@static": path.resolve(__dirname, "../src/static"),
+      "@mocks": path.resolve(__dirname, "../src/__mocks__"),
+      "@services": path.resolve(__dirname, "../src/services"),
+      "@store":  path.resolve(__dirname, "../src/store"),
+      "@customTypes":  path.resolve(__dirname, "../src/customTypes"),
+      "@utils":  path.resolve(__dirname, "../src/utils"),
+      "@hooks":  path.resolve(__dirname, "../src/hooks")
+    };
+
     return config;
   },
 
