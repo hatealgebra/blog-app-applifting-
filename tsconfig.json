@@ -25,7 +25,8 @@
     },
     "resolveJsonModule": true,
     "forceConsistentCasingInFileNames": true,
-    "strict": false
+    "strict": false,
+    "types": ["testing-library__jest-dom"]
   },
   "include": [
     "**/*.ts",

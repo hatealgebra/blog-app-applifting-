@@ -9,9 +9,9 @@ module.exports = {
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
-    '@storybook/addon-interactions',
     '@storybook/addon-actions',
     '@storybook/addon-storyshots',
+    '@storybook/addon-interactions',
     'msw-storybook-addon'
   ],
   framework: '@storybook/react',
@@ -21,7 +21,10 @@ module.exports = {
       fsCache: true,
     },
   },
-staticDirs : ['../static'],
+  features: {
+    interactionsDebugger: true, // 👈 Enable playback controls
+  },
+  staticDirs : ['../static'],
   webpackFinal: async (config) => {
     console.log(config);
     // Transpile Gatsby module because Gatsby includes un-transpiled ES6 code.
@@ -46,6 +49,9 @@ staticDirs : ['../static'],
     ]
     );
 
+config.module.rules.push({
+      resolve: { fullySpecified: false },
+    })
     config.resolve.mainFields = ['browser', 'module', 'main'];
 
 
@@ -83,7 +89,7 @@ staticDirs : ['../static'],
     reactDocgenTypescriptOptions: {
       compilerOptions: {
         allowSyntheticDefaultImports: false,
-        esModuleInterop: false,
+        esModuleInterop: true,
       },
       shouldExtractLiteralValuesFromEnum: true,
       propFilter: (prop) =>

@@ -1,15 +1,17 @@
+import { toMatchImageSnapshot } from 'jest-image-snapshot';
 import {  getStoryContext, } from "@storybook/test-runner";
 
-const snapshotsDir = process.env.SNAPSHOTS_DIR || "__snapshots__";
-
+const snapshotsDir = process.env.SNAPSHOTS_DIR || 'src/__snapshots__';
+const customSnapshotsDir = `${process.cwd()}/${snapshotsDir}`;
 const skipSnapshots = process.env.SKIP_SNAPSHOTS === "true";
 
 let errors = [];
 
-
-
 // TODO: Add mocking for vidstack player
 const config = {
+  setup() {
+    expect.extend({ toMatchImageSnapshot });
+  },
   async postRender(page, context) {
 
     const {
@@ -24,14 +26,18 @@ const config = {
       return;
     }
 
-    const elementHandler =
-    (await page.$("#root")) || (await page.$("#storybook-root"));
-    const innerHTML = await elementHandler?.innerHTML();
-    expect(innerHTML).toMatchSnapshot();
     
     if(errors.length > 0){
       throw(errors.join("\n\n"));
     }
+
+    const image = await page.screenshot({ fullPage: false });
+    expect(image).toMatchImageSnapshot({
+      customSnapshotsDir,
+      customSnapshotIdentifier: context.id,
+      failureThreshold: 0.03,
+      failureThresholdType: 'percent',
+    });
   },
 };
 
