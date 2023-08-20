@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 
 const inputStyling = css`
   width: 100%;
+  min-height: 20px;
   border: ${({ theme }) => `1px solid ${theme.color.border}`};
   background: white;
   border-radius: 4px;

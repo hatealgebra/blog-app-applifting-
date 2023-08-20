@@ -1,16 +1,13 @@
 import React from 'react';
+
+import { userEvent, within } from '@storybook/testing-library';
+
+import { expect } from '@storybook/jest';
 import { Story } from '@storybook/react';
+
 import { StyledTextArea, StyledTextInput } from './input.styled';
 
 const Template = (args) => <StyledTextInput {...args} />;
-
-export const InputExample = () => Template.bind({});
-InputExample.args = {
-  placeholder: 'This is a placeholder',
-};
-// InputExample.play = async ({ canvasElement }) => {
-//   console.log(canvasElement);
-// };
 
 export const InputAllSize = () => (
   <div style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
@@ -27,6 +24,35 @@ export const InputTextVariants = () => (
     <StyledTextArea rows={1} placeholder="Join the discussion" />
   </>
 );
+
+export const FocusedExample = Template.bind({});
+FocusedExample.args = {
+  placeholder: 'This is a placeholder',
+  size: 'big',
+};
+
+FocusedExample.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement);
+  const input = canvas.getByRole('textbox');
+  input.focus();
+  await expect(input).toHaveFocus();
+};
+
+export const InputWValue = Template.bind({});
+InputWValue.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement);
+  const input = canvas.getByRole('textbox');
+  await userEvent.type(input, 'This is a new comment!');
+  await expect(input).toHaveValue('This is a new comment!');
+};
+
+export const TextAreaWInput = () => <StyledTextArea />;
+TextAreaWInput.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement);
+  const input = canvas.getByRole('textbox');
+  await userEvent.type(input, 'This is a new comment!');
+  await expect(input).toHaveValue('This is a new comment!');
+};
 
 export default {
   title: 'Atoms/Input',
