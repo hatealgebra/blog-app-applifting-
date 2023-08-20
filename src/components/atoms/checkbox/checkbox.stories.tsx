@@ -1,22 +1,27 @@
+import { expect } from '@storybook/jest';
 import { action } from '@storybook/addon-actions';
 import React from 'react';
+import { userEvent, within } from '@storybook/testing-library';
 import Checkbox from './Checkbox';
 
 const setCheck = () => action('Clicked!');
 
-export const CheckboxExample = () => {
+const CheckboxTemplate = (args) => <Checkbox {...args} />;
+
+export const CheckedCheckbox = CheckboxTemplate.bind({});
+CheckedCheckbox.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement);
+  const checkbox = canvas.getByRole('checkbox');
+  await userEvent.click(checkbox);
+  expect(checkbox).toBeChecked();
+};
+
+export const AllVariants = () => {
   return (
     <>
       <Checkbox isChecked={false} onChange={setCheck} />
-      <Checkbox isChecked={true} onChange={setCheck} />
-      <Checkbox isDisabled isChecked={false} onChange={setCheck} />
+
       <Checkbox isDisabled isChecked={true} onChange={setCheck} />
-    </>
-  );
-};
-export const CheckboxWithLabel = () => {
-  return (
-    <>
       <Checkbox isChecked={false} onChange={setCheck}>
         Checkbox with label
       </Checkbox>
