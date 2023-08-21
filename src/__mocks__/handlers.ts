@@ -34,22 +34,22 @@ const handlers = [
   rest.post(`${BASE_API_URL}/images`, (req, res, ctx) => {
     return res(ctx.status(200), ctx.json(imageResponseJSON));
   }),
-  // rest.post(`${BASE_API_URL}/comments`, async (req, res, ctx) => {
-  //   const request = await req.json();
-  //   const { articleId, author, content } = request.headers.data;
-
-  //   return res(
-  //     ctx.status(200),
-  //     ctx.json({
-  //       articleId,
-  //       author,
-  //       content,
-  //       postedAt: "2022-03-25T16:15:50.42655",
-  //       score: 0,
-  //     })
-  //   );
-  // }),
-  // TODO: Add vote up/down handling
+  rest.post(`${BASE_API_URL}/comments`, async (req, res, ctx) => {
+    const request = await req.json();
+    console.log(request);
+    const { articleId, author, content } = request;
+    return res(
+      ctx.status(200),
+      ctx.json({
+        articleId,
+        author,
+        content,
+        postedAt: '2022-03-25T16:15:50.42655',
+        score: 0,
+      })
+    );
+  }),
+  // TODO: Add vote up/down errors handling
   rest.post(`${BASE_API_URL}/comments/:commentId/vote/up`, (req, res, ctx) => {
     return res(ctx.status(200));
   }),
@@ -98,13 +98,13 @@ const handlers = [
 
   /* DELETE */
   // Delete article
-  rest.delete(`${BASE_API_URL}/articles/:articleId`, (req, res, ctx) => {
-    const { articleId } = req.params;
-    const getDeletedArticle = articlesResponseJSON.items.filter(
-      ({ articleId: id }: { articleId: string }) => id === articleId
-    )[0];
-    return res(ctx.status(200), ctx.body(getDeletedArticle));
-  }),
+  // rest.delete(`${BASE_API_URL}/articles/:articleId`, (req, res, ctx) => {
+  //   const { articleId } = req.params;
+  //   const getDeletedArticle = articlesResponseJSON.items.filter(
+  //     ({ articleId: id }: { articleId: string }) => id === articleId
+  //   )[0];
+  //   return res(ctx.status(200), ctx.body(getDeletedArticle));
+  // }),
 
   /* PATCH */
   // Update article

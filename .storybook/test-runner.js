@@ -8,6 +8,8 @@ const skipSnapshots = process.env.SKIP_SNAPSHOTS === "true";
 let errors = [];
 
 // TODO: Add mocking for vidstack player
+// TODO: Refactor tests with help of https://dev.to/scottnath/shared-tests-how-to-write-reusable-storybook-interaction-tests-489c
+// TODO: https://storybook.js.org/docs/6.5/react/writing-stories/play-function
 const config = {
   setup() {
     expect.extend({ toMatchImageSnapshot });

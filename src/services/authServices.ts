@@ -11,7 +11,6 @@ const loginPOST = async (username: string, password: string) => {
     },
     headers: { 'X-API-KEY': API_KEY },
   });
-  console.log(response);
   return response;
 };
 

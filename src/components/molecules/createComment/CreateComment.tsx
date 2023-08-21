@@ -8,7 +8,7 @@ import Avatar from '../../atoms/avatar/Avatar';
 import Button from '../../atoms/button/Button';
 import ErrorText from '../../atoms/errorText/error.styled';
 import { StyledTextArea } from '../../atoms/input/input.styled';
-import { StyledCreateCommentForm } from './createComment.styled';
+import StyledCreateCommentForm from './createComment.styled';
 
 export enum FormValidation {
   EMPTY = '* Comment is empty or too short. Min. length of the text should be 25 characters.',

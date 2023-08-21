@@ -63,7 +63,6 @@ const preview = {
 };
 
 if (typeof global.process === 'undefined') {
-  console.log(worker);
   worker.start();
 }
 

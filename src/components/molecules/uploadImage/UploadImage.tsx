@@ -4,7 +4,7 @@ import { StyledMinimalButton, StyledUploadImage } from './uploadImage.styled';
 
 const UploadImage = ({ image, setImage }: UploadImageProps) => {
   const [imagePreview, setImagePreview] = React.useState<string | undefined>(
-    image
+    null
   );
   const hiddenFileInputRef = React.useRef<HTMLInputElement>(null);
 

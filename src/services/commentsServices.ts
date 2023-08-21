@@ -15,7 +15,7 @@ export const createComment = async (
   );
 };
 
-export const voteUp = async (commentId: string) => {
+export const voteUp = (commentId: string) => {
   return appLiftingAxiosProtected.post(`/comments/${commentId}/vote/up`);
 };
 export const voteDown = async (commentId: string) => {

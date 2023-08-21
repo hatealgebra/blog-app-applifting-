@@ -25,7 +25,7 @@ describe('Interactivity of new upload', () => {
   });
   test('dispatch called', async () => {
     await waitFor(() => {
-      expect(mockSetImage).toHaveBeenCalled();
+      expect(mockSetImage).toHaveBeenCalled(URL.createObjectURL);
     });
   });
 });

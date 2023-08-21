@@ -20,7 +20,7 @@ const Comment = ({
 
   const increaseScore = async () => {
     try {
-      voteUp(commentId!);
+      await voteUp(commentId!);
       return setCounterValue((prev) => prev + 1);
     } catch (e) {
       return e;

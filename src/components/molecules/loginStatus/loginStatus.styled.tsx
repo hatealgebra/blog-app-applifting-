@@ -8,6 +8,7 @@ export const AvatarButtonStyled = styled.button`
 
 export const LoginStatuMenuStyled = styled.ul<{ isOpen: boolean }>`
   position: absolute;
+  left: 0;
   right: 0px;
   z-index: 5;
   width: 150px;
@@ -35,4 +36,5 @@ export const LoginStatuMenuStyled = styled.ul<{ isOpen: boolean }>`
 
 export const LoginStatusContainerStyled = styled.div`
   min-height: fit-content;
+  width: fit-content;
 `;
