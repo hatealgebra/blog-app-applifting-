@@ -1,10 +1,14 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
+import worker from "../src/__mocks__/browser";
+
+
 
 import { ThemeProvider } from 'styled-components';
 import { initialize, mswDecorator } from 'msw-storybook-addon';
 import { Provider } from 'react-redux';
 import mockStore from '../src/__mocks__/store.mock';
+
 
 import themeDefault from '../src/components/particles/Theme';
 import GlobalStyle from '../src/components/particles/GlobalStyle';
@@ -45,12 +49,7 @@ const storybookWrapper = (Story) => (
 );
 
 addDecorator(mswDecorator);
-addDecorator(storybookWrapper)
-
-// if (typeof global.process === 'undefined') {
-//   const { worker } = require('../src/__mocks__/browser');
-//   worker.start();
-// }
+addDecorator(storybookWrapper);
 const preview = {
   parameters: {
     actions: { argTypesRegex: '^on[A-Z].*' },
@@ -63,5 +62,9 @@ const preview = {
   },
 };
 
+if (typeof global.process === 'undefined') {
+  console.log(worker);
+  worker.start();
+}
 
 export default preview;

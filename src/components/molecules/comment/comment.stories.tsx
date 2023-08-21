@@ -1,6 +1,8 @@
 import React from 'react';
 import Comment from './Comment';
 
+const CommentTemplate = (args) => <Comment {...args} />;
+
 export const CommentExample = () => (
   <Comment
     articleId="hello world"

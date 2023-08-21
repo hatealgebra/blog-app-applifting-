@@ -94,7 +94,6 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
 
 // // constants for your GraphQL Post and Author types
 
-// if (process.env.NODE_ENV === "development") {
-//   const { server } = require("./src/__mocks__/server");
+// if (process.env.NODE_ENV === 'development') {
 //   server.listen();
 // }
