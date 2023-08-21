@@ -8,6 +8,7 @@ import Button from './Button';
 import MenuButton from './MenuButton';
 import ButtonSort from './ButtonSort';
 
+// TODO: Add test for StyledIconButton
 const ButtonTemplate = (args) => <Button {...args} />;
 const MenuButtonTemplate = (args) => <MenuButton {...args} />;
 const ButtonSortTemplate = (args) => <ButtonSort {...args} />;

@@ -39,16 +39,15 @@ const CreateComment = ({ articleId, setComments }: CreateCommentProps) => {
     >
   ) => {
     e.preventDefault();
-    if (content.length < 25) {
-      setFormHandling(FormValidation.EMPTY);
-    } else if (content.length > 250) {
-      setFormHandling(FormValidation.TOO_LONG);
-    } else if (loggedUser) {
-      publishComment(articleId, loggedUser, content, setCurrComments);
-      setIsActive(false);
-      setFormHandling(FormValidation.PASSED);
-      setContent('');
-    }
+
+    if (!loggedUser) return null;
+    if (content.length < 25) return setFormHandling(FormValidation.EMPTY);
+    if (content.length > 250) return setFormHandling(FormValidation.TOO_LONG);
+
+    publishComment(articleId, loggedUser, content, setCurrComments);
+    setIsActive(false);
+    setFormHandling(FormValidation.PASSED);
+    return setContent('');
   };
 
   return (
@@ -75,7 +74,7 @@ const CreateComment = ({ articleId, setComments }: CreateCommentProps) => {
           return setContent(e.target.value);
         }}
       />
-      {isActive && <Button type="submit">Send comment</Button>}
+      {isActive && <Button type="submit">Send Comment</Button>}
       <ErrorText>{formHandling}</ErrorText>
     </StyledCreateCommentForm>
   );

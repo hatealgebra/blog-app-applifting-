@@ -1,21 +1,28 @@
 import { expect, jest } from '@storybook/jest';
-import React from 'react';
-import { action } from '@storybook/addon-actions';
+import React, { useEffect, useState } from 'react';
 import { Provider } from 'react-redux';
 import { userEvent, within } from '@storybook/testing-library';
 import store from '../../../store';
 import CreateComment from './CreateComment';
 
-const CreateCommentTemplate = (args) => (
-  <Provider store={store}>
-    <CreateComment {...args} />
-  </Provider>
-);
+const CreateCommentTemplate = (args) => {
+  const [, setCurrComments] = useState([]);
+
+  useEffect(() => {
+    args.setComments();
+  }, [args]);
+
+  return (
+    <Provider store={store}>
+      <CreateComment articleId={args.articleId} setComments={setCurrComments} />
+    </Provider>
+  );
+};
 
 export const CreateCommentExample = CreateCommentTemplate.bind({});
 CreateCommentExample.args = {
   articleId: '1',
-  setComments: () => action('Comment was created!'),
+  setComments: jest.fn(() => []),
 };
 
 export const CannotCreateComment = CreateCommentTemplate.bind({});
@@ -42,11 +49,11 @@ CanCreateComment.play = async ({ canvasElement, args }) => {
   const textbox = canvas.getByRole('textbox');
   await userEvent.type(textbox, 'This is a longer and more awesome comment!');
   await userEvent.click(textbox);
-  const button = await canvas.findByRole('button');
-  setTimeout(async () => {
-    await userEvent.click(button);
-    expect(args.setComments).toHaveBeenCalled();
-  }, 500);
+  const sendCommentBtn = await canvas.findByRole('button', {
+    name: 'Send Comment',
+  });
+  await userEvent.click(sendCommentBtn);
+  expect(args.setComments).toHaveBeenCalled();
 };
 
 export const CommentTooLong = CreateCommentTemplate.bind({});

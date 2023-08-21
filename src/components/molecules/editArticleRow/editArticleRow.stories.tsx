@@ -1,44 +1,40 @@
 import React from 'react';
+import { jest } from '@storybook/jest';
 
-import { action } from '@storybook/addon-actions';
 import EditArticleRow from './EditArticleRow';
 import EditArticleRowButtons from './EditArticleRowButtons';
 
 import articlesDetailMockJSON from '../../../__mocks__/asyncData/get/articlesDetailsResponse.mock.json';
 
-const { title, perex } = articlesDetailMockJSON[0];
+const { title, perex } = articlesDetailMockJSON.items[0];
 
 // FIX: These two components
+const EditArticleRowTemplate = (args: any) => <EditArticleRow {...args} />;
 
-export const ArticleRowExample = () => {
-  const editArticleMock = () => action('Edit function called');
-  const callDeleteMock = () => action('Delete article right');
-  const setCheckedBoxes = () => action('All boxes were checked');
-
-  return (
-    <EditArticleRow
-      iteration={0}
-      title={title}
-      perex={perex}
-      editArticle={editArticleMock}
-      deleteArticle={callDeleteMock}
-      isChecked={true}
-      setCheckedBoxes={setCheckedBoxes}
-    />
-  );
+export const EditArticleRowExample = EditArticleRowTemplate.bind({});
+EditArticleRowExample.args = {
+  iteration: 0,
+  title,
+  perex,
+  editArticle: jest.fn(),
+  deleteArticle: jest.fn(),
+  isChecked: true,
+  setCheckedBoxes: jest.fn(),
 };
 
-export const ArticleRowButtonsExample = () => {
-  return (
-    <EditArticleRowButtons
-      originalArray={articlesDetailMockJSON}
-      dispatch={action('Dispatch  called!')}
-      switchAllBoxes={action('Switch all boxes called!')}
-    />
-  );
+const ArticleRowHeaderTemplate = (args: any) => (
+  <EditArticleRowButtons {...args} />
+);
+
+export const ArticleRowHeaderExample = ArticleRowHeaderTemplate.bind({});
+ArticleRowHeaderExample.args = {
+  originalArray: articlesDetailMockJSON.items,
+  dispatch: jest.fn(),
+  switchAllBoxes: jest.fn(),
 };
 
 export default {
-  title: 'Molecules/Edit article',
+  title: 'Molecules/Edit Article',
   component: EditArticleRow,
+  subcomponents: { EditArticleRowButtons },
 };

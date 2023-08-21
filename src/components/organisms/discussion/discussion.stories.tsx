@@ -1,9 +1,11 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import Discussion from './Discussion';
 
-import allArticlesMockJSON from '../../../__mocks__/asyncData/get/articlesDetailsResponse.mock.json';
-import mockStore from '../../../__mocks__/store.mock';
+import allArticlesMockJSON from '@mocks/asyncData/get/articlesDetailsResponse.mock.json';
+import mockStore from '@mocks/store.mock';
+import { userEvent, within } from '@storybook/testing-library';
+import { CanCreateComment } from '@molecules/createComment/createComment.stories';
+import Discussion from './Discussion';
 
 export const DiscussionExample = () => {
   const { comments } = allArticlesMockJSON.items[4];
@@ -15,6 +17,10 @@ export const DiscussionExample = () => {
       />
     </Provider>
   );
+};
+DiscussionExample.play = async (context) => {
+  const canvas = within(context.canvasElement);
+  await CanCreateComment.play(context);
 };
 
 export default {
