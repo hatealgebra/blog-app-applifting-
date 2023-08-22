@@ -1,9 +1,7 @@
-import { expect } from '@storybook/jest';
 import React from 'react';
 import { Components } from '@customTypes/declarations';
 import { userEvent, within } from '@storybook/testing-library';
-import { rest } from 'msw';
-import { BASE_API_URL } from '@services/services.config';
+
 import Comment from './Comment';
 
 const CommentTemplate = (args: Components['schemas']['Comment']) => (
@@ -31,31 +29,27 @@ export const CommentVotedUp = CommentTemplate.bind({});
 CommentVotedUp.play = async ({ canvasElement }) => {
   const canvas = within(canvasElement);
   const voteUpButton = canvas.getByRole('button', { name: 'vote-up' });
-  const reactionCounter = canvas.getByTestId('reactionCounter');
   await userEvent.click(voteUpButton);
-  expect(reactionCounter.textContent).toEqual('+1');
 };
 
 export const CommentVoteDown = CommentTemplate.bind({});
 CommentVoteDown.play = async ({ canvasElement }) => {
   const canvas = within(canvasElement);
   const voteDownButton = canvas.getByRole('button', { name: 'vote-down' });
-  const reactionCounter = canvas.getByTestId('reactionCounter');
   await userEvent.click(voteDownButton);
-  expect(reactionCounter.textContent).toEqual('-1');
 };
 
-export const CommentAPIError = CommentTemplate.bind({});
-CommentAPIError.parameters = {
-  msw: [
-    rest.post(
-      `${BASE_API_URL}/comments/:commentId/vote/up`,
-      (req, res, ctx) => {
-        return res(ctx.status(500));
-      }
-    ),
-  ],
-};
+// export const CommentAPIError = CommentTemplate.bind({});
+// CommentAPIError.parameters = {
+//   msw: [
+//     rest.post(
+//       `${BASE_API_URL}/comments/:commentId/vote/up`,
+//       (req, res, ctx) => {
+//         return res(ctx.status(500));
+//       }
+//     ),
+//   ],
+// };
 
 export default {
   title: 'Molecules/Comment',

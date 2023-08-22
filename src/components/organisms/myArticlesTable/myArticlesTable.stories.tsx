@@ -35,6 +35,14 @@ SortByPerex.play = async ({ canvasElement }) => {
   await userEvent.click(SortBtnPerex);
 };
 
+export const AllChecked = Template.bind({});
+AllChecked.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement);
+  const checkAll = canvas.getAllByRole('checkbox')[0];
+
+  await userEvent.click(checkAll);
+};
+
 export default {
   title: 'Organisms/My Articles Table',
   component: MyArticlesTable,

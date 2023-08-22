@@ -3,10 +3,13 @@ import React from 'react';
 
 import { userEvent, within } from '@storybook/testing-library';
 import allArticlesDetailMockJSON from '@mocks/asyncData/get/articlesDetailsResponse.mock.json';
-import { mockOriginalFile } from '@molecules/uploadImage/uploadImage.stories';
+
 import PublishArticleForm from './PublishArticleForm';
 import { EPublishArticleErrors } from './publishArticleForm.types.d';
 
+const mockOriginalFile = new File(['goodbye'], 'goodbye.png', {
+  type: 'image/png',
+});
 const { title, content } = allArticlesDetailMockJSON.items[0];
 
 const Template = (args) => <PublishArticleForm {...args} />;

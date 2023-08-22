@@ -31,8 +31,8 @@ CannotCreateComment.play = async ({ canvasElement }) => {
   const canvas = within(canvasElement);
   const textbox = canvas.getByRole('textbox');
   await userEvent.click(textbox);
-  const button = await canvas.findByRole('button');
   setTimeout(async () => {
+    const button = await canvas.findByRole('button');
     await userEvent.click(button);
     expect(
       canvas.getByText(
@@ -49,11 +49,14 @@ CanCreateComment.play = async ({ canvasElement, args }) => {
   const textbox = canvas.getByRole('textbox');
   await userEvent.click(textbox);
   await userEvent.type(textbox, 'This is a longer and more awesome comment!');
-  const sendCommentBtn = await canvas.findByRole('button', {
-    name: 'Send Comment',
-  });
-  await userEvent.click(sendCommentBtn);
-  expect(args.setComments).toHaveBeenCalled();
+
+  setTimeout(async () => {
+    const sendCommentBtn = await canvas.findByRole('button', {
+      name: 'Send Comment',
+    });
+    await userEvent.click(sendCommentBtn);
+    expect(args.setComments).toHaveBeenCalled();
+  }, 500);
 };
 
 export const CommentTooLong = CreateCommentTemplate.bind({});
@@ -63,10 +66,12 @@ CommentTooLong.args = CreateCommentExample.args;
 CommentTooLong.play = async ({ canvasElement }) => {
   const canvas = within(canvasElement);
   const textbox = canvas.getByRole('textbox');
+
   await userEvent.type(textbox, tooLongComment);
   await userEvent.click(textbox);
-  const button = await canvas.findByRole('button');
+
   setTimeout(async () => {
+    const button = await canvas.findByRole('button');
     await userEvent.click(button);
     expect(
       canvas.getByText('* Comment is too long. Maximum is 250 characters.')

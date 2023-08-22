@@ -1,4 +1,4 @@
-import { expect, jest } from '@storybook/jest';
+import { expect } from '@storybook/jest';
 import React from 'react';
 
 import { userEvent, within } from '@storybook/testing-library';
@@ -15,7 +15,7 @@ EmptyEmail.play = async ({ canvasElement }) => {
   const submitButton = canvas.getByRole('button');
   await userEvent.click(submitButton);
   expect(
-    await canvas.findByText(ELoginFormValidation.EMAIL_NOT_FOUND)
+    await canvas.findByText(ELoginFormValidation.INVALID_EMAIL)
   ).toBeInTheDocument();
 };
 
