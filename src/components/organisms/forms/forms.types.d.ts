@@ -4,7 +4,7 @@ enum ELoginFormValidation {
   EMPTY_PASSWORD = 'Password field is empty. Please check it',
   INCORRECT_LOGIN = 'Incorrect login.',
   UNEXPECTED_ERROR = 'Unexpected error.',
-  CORRECT_LOGIN = '',
+  CORRECT_LOGIN = 'Success!',
 }
 
 export default ELoginFormValidation;

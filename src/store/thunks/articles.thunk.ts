@@ -9,7 +9,6 @@ export const getArticlesFeedThunk = createAsyncThunk(
   async (_, thunkAPI) => {
     try {
       const articlesResponse = await listArticles();
-
       const { items } = articlesResponse.data;
       const newArticlesArray = await Promise.all(
         items.map(async (article: Components['schemas']['Article']) => {

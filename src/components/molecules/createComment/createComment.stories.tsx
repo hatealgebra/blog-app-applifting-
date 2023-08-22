@@ -47,8 +47,8 @@ CanCreateComment.args = CreateCommentExample.args;
 CanCreateComment.play = async ({ canvasElement, args }) => {
   const canvas = within(canvasElement);
   const textbox = canvas.getByRole('textbox');
-  await userEvent.type(textbox, 'This is a longer and more awesome comment!');
   await userEvent.click(textbox);
+  await userEvent.type(textbox, 'This is a longer and more awesome comment!');
   const sendCommentBtn = await canvas.findByRole('button', {
     name: 'Send Comment',
   });

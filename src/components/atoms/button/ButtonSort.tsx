@@ -14,8 +14,9 @@ const ButtonSort = ({
       className={className}
       isActive={isActive}
       onClick={onClick}
+      data-testid="button-sort-title"
     >
-      <span>{children}</span>
+      {children}
       <FaSort />
     </StyledButtonSort>
   );

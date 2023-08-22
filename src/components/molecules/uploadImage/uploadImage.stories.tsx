@@ -5,9 +5,10 @@ import UploadImage from './UploadImage';
 
 global.URL.createObjectURL = jest.fn();
 
-const mockOriginalFile = new File(['goodbye'], 'goodbye.png', {
+export const mockOriginalFile = new File(['goodbye'], 'goodbye.png', {
   type: 'image/png',
 });
+
 const mockSetImage = jest.fn(() => mockOriginalFile);
 
 const UploadImageTemplate = (args) => {

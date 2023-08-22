@@ -12,7 +12,7 @@ const MarkdownEditor = ({ value, onChange }: MarkdownEditorProps) => {
       />
     );
   }
-  return <></>;
+  return false;
 };
 
 interface MarkdownEditorProps {

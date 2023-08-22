@@ -36,7 +36,6 @@ const handlers = [
   }),
   rest.post(`${BASE_API_URL}/comments`, async (req, res, ctx) => {
     const request = await req.json();
-    console.log(request);
     const { articleId, author, content } = request;
     return res(
       ctx.status(200),
@@ -65,12 +64,12 @@ const handlers = [
   // List Articles
   // FIXME: Fix the reauthorize, the dispatch is called multiple
   rest.get(`${BASE_API_URL}/articles`, (req, res, ctx) => {
-    return res(ctx.status(200), ctx.json(articlesResponseJSON));
+    return res(ctx.status(200), ctx.json(articlesDetailResponseJSON));
   }),
   // Article detail
   rest.get(`${BASE_API_URL}/articles/:articleId`, (req, res, ctx) => {
     const { articleId } = req.params;
-    const getArticle = articlesDetailResponseJSON.filter(
+    const getArticle = articlesDetailResponseJSON.items.filter(
       ({ articleId: id }: { articleId: string }) => id === articleId
     )[0];
     return res(

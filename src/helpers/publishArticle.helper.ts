@@ -31,7 +31,7 @@ export const validatePublishArticleForm: TFormHandling = (
     TITLE_EMPTY,
     TITLE_LENGTH,
     IMAGE_EMPTY,
-    MARKDOWN_EMPY,
+    MARKDOWN_EMPTY,
     MARKDOWN_TOO_SHORT,
     UNEXPECTED_ERROR,
     PASSED,
@@ -45,7 +45,7 @@ export const validatePublishArticleForm: TFormHandling = (
     return false;
   }
   if (markdownContent === '') {
-    setFormError(MARKDOWN_EMPY);
+    setFormError(MARKDOWN_EMPTY);
     return false;
   }
   if (markdownContent.length < 250) {

@@ -6,7 +6,7 @@ import { MenuButtonContainer } from './button.styled';
 
 const MenuButton = ({ onClick }: MenuButtonProps) => {
   return (
-    <MenuButtonContainer onClick={onClick}>
+    <MenuButtonContainer onClick={onClick} data-testid="hamburger-menu">
       <CgMenu size="20px" />
     </MenuButtonContainer>
   );

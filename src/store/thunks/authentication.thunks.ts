@@ -3,19 +3,11 @@ import { navigate } from 'gatsby';
 
 // import ELoginFormValidation from '@organisms/forms/forms.types';
 
+import ELoginFormValidation from '@organisms/forms/forms.types.d';
 import loginPOST from '../../services/authServices';
 import { UserConfig } from '../../services/services.config';
 import getTenant from '../../services/tenantServices';
 import { AdminLinks } from '../../utils/contants';
-
-enum ELoginFormValidation {
-  INVALID_EMAIL = 'Email should be in this format: email@example.com. Please check it.',
-  EMAIL_NOT_FOUND = 'Login with this email does not exist.',
-  EMPTY_PASSWORD = 'Password field is empty. Please check it',
-  INCORRECT_LOGIN = 'Incorrect login.',
-  UNEXPECTED_ERROR = 'Unexpected error.',
-  CORRECT_LOGIN = '',
-}
 
 export const postLoginThunk = createAsyncThunk(
   'auth/login',
@@ -35,6 +27,7 @@ export const postLoginThunk = createAsyncThunk(
       setFormError(ELoginFormValidation.CORRECT_LOGIN);
       const authorizationResponse = await loginPOST(email, pwd);
       const tenantResponse = await getTenant(UserConfig.TENANT_ID);
+      setFormError(ELoginFormValidation.CORRECT_LOGIN);
       navigate(AdminLinks.MY_ARTICLES);
       return {
         tenant: tenantResponse.data,

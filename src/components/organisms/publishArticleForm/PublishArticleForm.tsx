@@ -1,4 +1,8 @@
 import React, { FormEvent } from 'react';
+import {
+  updateArticleHelper,
+  validatePublishArticleForm,
+} from '@helpers/publishArticle.helper';
 import AdminHeading from '../../molecules/adminHeading/AdminHeading';
 import MarkdownEditor from '../../atoms/markdownEditor/MarkdownEditor';
 import InputWithLabel from '../../molecules/inputWithLabel/InputWithLabel';
@@ -8,10 +12,6 @@ import ErrorText from '../../atoms/errorText/error.styled';
 import { useAppDispatch, useAppSelector } from '../../../store/hooks';
 
 import { selectAuthToken } from '../../../store/slices/auth.slices';
-import {
-  updateArticleHelper,
-  validatePublishArticleForm,
-} from '../../../helpers/publishArticle.helper';
 
 import { cutTextWithElipsis } from '../../../utils/generic.utils';
 import { createArticleThunk } from '../../../store/thunks/admin.thunks';
@@ -30,9 +30,13 @@ const PublishArticleForm = ({
   imageFileValue,
 }: PublishArticleProps) => {
   const [articleId] = React.useState(undefined);
-  const [title, setTitle] = React.useState('');
-  const [markdownContent, setMarkdownContent] = React.useState('');
-  const [imageFile, setImageFile] = React.useState<File | null>(null);
+  const [title, setTitle] = React.useState(titleValue || '');
+  const [markdownContent, setMarkdownContent] = React.useState(
+    markdownContentValue || ''
+  );
+  const [imageFile, setImageFile] = React.useState<File | null>(
+    imageFileValue || null
+  );
   const [isImageChanged, setIsImageChanged] = React.useState(false);
   const [formError, setFormError] = React.useState<EPublishArticleErrors>(
     EPublishArticleErrors.PASSED
@@ -86,12 +90,6 @@ const PublishArticleForm = ({
   React.useEffect(() => {
     setIsImageChanged(true);
   }, [setImageFile]);
-
-  React.useEffect(() => {
-    setTitle((prevState) => titleValue ?? prevState);
-    setMarkdownContent((prevState) => markdownContentValue ?? prevState);
-    setImageFile((prevState) => imageFileValue || prevState);
-  }, [titleValue, markdownContentValue, imageFileValue]);
 
   return (
     <StyledPublishArticleForm onSubmit={(e) => handleOnSubmit(e)}>

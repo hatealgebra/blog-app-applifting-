@@ -1,8 +1,5 @@
 import React from 'react';
-import {
-  createArticleLink,
-  cutTextWithElipsis,
-} from '../../../utils/generic.utils';
+import { createArticleLink, cutTextWithElipsis } from '@utils/generic.utils';
 import { StyledArticlePreviewSmall } from './articlePreview.styled';
 
 const ArticlePreviewSmall = ({
@@ -11,7 +8,10 @@ const ArticlePreviewSmall = ({
   articleId,
 }: ArticlePreviewSmallProps) => {
   return (
-    <StyledArticlePreviewSmall to={createArticleLink(articleId)}>
+    <StyledArticlePreviewSmall
+      to={createArticleLink(articleId)}
+      data-testid="article-preview-small"
+    >
       <h5>{heading}</h5>
       <p>{cutTextWithElipsis(children, 220)}</p>
     </StyledArticlePreviewSmall>

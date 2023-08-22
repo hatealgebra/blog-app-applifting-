@@ -17,7 +17,10 @@ const MobileMenu = ({ isOpen, setClose }: MobileMenuProps) => {
       data-testid="mobileMenu"
     >
       <div className="mobile-menu__help-div">
-        <MobileMenuCloseButton onClick={setClose}>
+        <MobileMenuCloseButton
+          onClick={setClose}
+          data-testid="close-mobile-menu"
+        >
           <GrClose size="20px" width={10} />
         </MobileMenuCloseButton>
         <MobileMenuNav>

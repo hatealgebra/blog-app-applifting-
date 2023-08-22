@@ -39,7 +39,8 @@ const EditArticleRowButtons = ({
 
   React.useEffect(() => {
     switchAllBoxes(isChecked);
-  }, [isChecked, switchAllBoxes]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isChecked]);
 
   React.useEffect(() => {
     dispatch({ type: 'admin/sortMyArticles', payload: isActive });

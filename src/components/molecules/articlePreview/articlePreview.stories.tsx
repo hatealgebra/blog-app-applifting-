@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { userEvent, within } from '@storybook/testing-library';
 import ArticlePreview from './ArticlePreview';
 import ArticlePreviewSmall from './ArticlePreviewSmall';
 import articlesDetailsResponseMockJSON from '../../../__mocks__/asyncData/get/articlesDetailsResponse.mock.json';
@@ -18,6 +19,7 @@ export const ArticlePreviewMobile = () => {
     />
   );
 };
+
 export const ArticlePreviewLongTitle = () => (
   <ArticlePreview
     imageBase64={''}
@@ -34,6 +36,12 @@ export const ArticlePreviewSmallExample = () => (
     Hello there
   </ArticlePreviewSmall>
 );
+ArticlePreviewSmallExample.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement);
+  const articlePreviewLink = canvas.getByRole('link');
+
+  await userEvent.hover(articlePreviewLink);
+};
 
 export default {
   title: 'Molecules/Article Preview',

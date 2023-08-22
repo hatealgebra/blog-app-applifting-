@@ -56,8 +56,9 @@ const MyArticlesTable = () => {
   };
   React.useEffect(() => {
     if (!originalArray) dispatch(getArticlesFeedThunk());
-  }, [articles, dispatch, originalArray]);
+  }, [originalArray, dispatch]);
 
+  // TODO: Detach logic of rendering
   return (
     <MyArticlesTableContainer>
       <AdminHeading
@@ -72,43 +73,47 @@ const MyArticlesTable = () => {
             switchAllBoxes={switchAllBoxes}
             dispatch={dispatch}
           />
-          // TODO: Detach logic of rendering
-          {(status === 'loading' && (
-            <StyledFallbackContentContainer>
-              <Loading />
-            </StyledFallbackContentContainer>
-          )) ||
-            (articles !== undefined &&
-              articles.length > 0 &&
-              articles.map(
-                (article: Components['schemas']['ArticleDetail'], i) => {
-                  const { articleId, title, perex, comments } = article;
-                  return (
-                    <EditArticleRow
-                      key={articleId}
-                      iteration={i}
-                      articleId={articleId}
-                      title={title}
-                      perex={perex}
-                      comments={comments!.length}
-                      deleteArticle={deleteArticle}
-                      editArticle={() => editArticle(article)}
-                      isChecked={checkedBoxes[i]}
-                      setCheckedBoxes={setCheckedBoxes}
-                    />
-                  );
-                }
-              )) ||
-            (articles && articles.length === 0 && (
+          <tbody>
+            {(status === 'loading' && (
               <StyledFallbackContentContainer>
-                <img src={noArticles} alt="No articles, you should cooksome" />
-                <span>No articles written yet, you should cook some!</span>
+                <Loading />
               </StyledFallbackContentContainer>
-            )) || (
-              <StyledFallbackContentContainer>
-                Error
-              </StyledFallbackContentContainer>
-            )}
+            )) ||
+              (articles !== undefined &&
+                articles.length > 0 &&
+                articles.map(
+                  (article: Components['schemas']['ArticleDetail'], i) => {
+                    const { articleId, title, perex, comments } = article;
+                    return (
+                      <EditArticleRow
+                        key={articleId}
+                        iteration={i}
+                        articleId={articleId}
+                        title={title}
+                        perex={perex}
+                        comments={comments!.length}
+                        deleteArticle={deleteArticle}
+                        editArticle={() => editArticle(article)}
+                        isChecked={checkedBoxes[i]}
+                        setCheckedBoxes={setCheckedBoxes}
+                      />
+                    );
+                  }
+                )) ||
+              (articles && articles.length === 0 && (
+                <StyledFallbackContentContainer>
+                  <img
+                    src={noArticles}
+                    alt="No articles, you should cooksome"
+                  />
+                  <span>No articles written yet, you should cook some!</span>
+                </StyledFallbackContentContainer>
+              )) || (
+                <StyledFallbackContentContainer>
+                  Error
+                </StyledFallbackContentContainer>
+              )}
+          </tbody>
         </StyledArticlesTable>
       </MyArticlesForm>
     </MyArticlesTableContainer>

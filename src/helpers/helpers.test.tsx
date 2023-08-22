@@ -46,7 +46,7 @@ describe('Check create article form inputs', () => {
   test('Markdown is empty error value', () => {
     validatePublishArticleForm(inputValue, '', null, mockDispatchError);
     expect(mockDispatchError).toBeCalledWith(
-      EPublishArticleErrors.MARKDOWN_EMPY
+      EPublishArticleErrors.MARKDOWN_EMPTY
     );
   });
 
