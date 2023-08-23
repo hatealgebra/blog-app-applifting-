@@ -1,14 +1,11 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
-import worker from "../src/__mocks__/browser";
-
-
+import worker from '../src/__mocks__/browser';
 
 import { ThemeProvider } from 'styled-components';
 import { initialize, mswDecorator } from 'msw-storybook-addon';
 import { Provider } from 'react-redux';
 import mockStore from '../src/__mocks__/store.mock';
-
 
 import themeDefault from '../src/components/particles/Theme';
 import GlobalStyle from '../src/components/particles/GlobalStyle';
@@ -32,7 +29,6 @@ global.__BASE_PATH__ = '/';
 window.___navigate = (pathname) => {
   action('NavigateTo:')(pathname);
 };
-
 
 initialize();
 // decorators

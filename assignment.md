@@ -91,7 +91,7 @@
 
 - check out the API [here](api.yml)
 - check out the WS API [here](ws.json)
-- implement the [wireframes](https://www.figma.com/file/VagZOrr3TjTAxGCpCUTSrO/Applifting-|-Full-Stack-Cvičení "[clickable](https://www.figma.com/proto/VagZOrr3TjTAxGCpCUTSrO/Applifting-%7C-Full-Stack-Cvi%C4%8Den%C3%AD?node-id=2%3A3&viewport=148%2C245%2C0.12103988230228424&scaling=min-zoom")
+- implement the [wireframes](https://www.figma.com/file/VagZOrr3TjTAxGCpCUTSrO/Applifting-|-Full-Stack-Cvičení '[clickable](https://www.figma.com/proto/VagZOrr3TjTAxGCpCUTSrO/Applifting-%7C-Full-Stack-Cvi%C4%8Den%C3%AD?node-id=2%3A3&viewport=148%2C245%2C0.12103988230228424&scaling=min-zoom')
 
 ### User Perspective
 
@@ -149,7 +149,7 @@
 
 The Applifting Blog Engine has **multitenancy API** - multiple users can use the same application and access their own blog data separately from everyone else. In other words, your content (articles, comments, images) will be available only to you.
 
-In order to access your own “space” in the app, you need to create a tenant first. 
+In order to access your own “space” in the app, you need to create a tenant first.
 
 **Creating a tenant**
 
@@ -161,8 +161,8 @@ The request should contain a JSON body with the following fields:
 
 ```json
 {
-	"name": "your-new-tenant-name",
-	"password": "your-new-tenant-password"
+  "name": "your-new-tenant-name",
+  "password": "your-new-tenant-password"
 }
 ```
 
@@ -180,8 +180,8 @@ With this body:
 
 ```json
 {
-	"username": "your-new-tenant-name",
-	"password": "your-new-tenant-password"
+  "username": "your-new-tenant-name",
+  "password": "your-new-tenant-password"
 }
 ```
 

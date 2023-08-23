@@ -1,4 +1,4 @@
-const path = require("path");
+const path = require('path');
 
 module.exports = {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
@@ -8,7 +8,7 @@ module.exports = {
     '@storybook/addon-actions',
     '@storybook/addon-storyshots',
     '@storybook/addon-interactions',
-    'msw-storybook-addon'
+    'msw-storybook-addon',
   ],
   framework: '@storybook/react',
   core: {
@@ -20,7 +20,7 @@ module.exports = {
   features: {
     interactionsDebugger: true, // 👈 Enable playback controls
   },
-  staticDirs : ['../static'],
+  staticDirs: ['../static'],
   webpackFinal: async (config) => {
     console.log(config);
     // Transpile Gatsby module because Gatsby includes un-transpiled ES6 code.
@@ -40,39 +40,34 @@ module.exports = {
       require.resolve('babel-plugin-remove-graphql-queries'),
       {
         stage: config.mode === `development` ? 'develop-html' : 'build-html',
-        staticQueryDir: './page-data/sq/d'
-      }
-    ]
-    );
+        staticQueryDir: './page-data/sq/d',
+      },
+    ]);
 
-config.module.rules.push({
+    config.module.rules.push({
       resolve: { fullySpecified: false },
-    })
+    });
     config.resolve.mainFields = ['browser', 'module', 'main'];
 
-
     // Resolving tsconfig paths
-    config.resolve.modules = [
-      path.resolve(__dirname, "..", ),
-      "node_modules",
-    ]
+    config.resolve.modules = [path.resolve(__dirname, '..'), 'node_modules'];
 
     config.resolve.alias = {
       ...config.resolve.alias,
-      "@atoms":  path.resolve(__dirname, "../src/components/atoms"),
-      "@molecules": path.resolve(__dirname, "../src/components/molecules"),
-      "@organisms": path.resolve(__dirname, "../src/components/organisms"),
-      "@particles": path.resolve(__dirname, "../src/components/particles"),
-      "@templates": path.resolve(__dirname, "../src/components/templates"),
-      "@helpers": path.resolve(__dirname, "../src/helpers"),
-      "@pages": path.resolve(__dirname, "../src/pages"),
-      "@static": path.resolve(__dirname, "../src/static"),
-      "@mocks": path.resolve(__dirname, "../src/__mocks__"),
-      "@services": path.resolve(__dirname, "../src/services"),
-      "@store":  path.resolve(__dirname, "../src/store"),
-      "@customTypes":  path.resolve(__dirname, "../src/customTypes"),
-      "@utils":  path.resolve(__dirname, "../src/utils"),
-      "@hooks":  path.resolve(__dirname, "../src/hooks")
+      '@atoms': path.resolve(__dirname, '../src/components/atoms'),
+      '@molecules': path.resolve(__dirname, '../src/components/molecules'),
+      '@organisms': path.resolve(__dirname, '../src/components/organisms'),
+      '@particles': path.resolve(__dirname, '../src/components/particles'),
+      '@templates': path.resolve(__dirname, '../src/components/templates'),
+      '@helpers': path.resolve(__dirname, '../src/helpers'),
+      '@pages': path.resolve(__dirname, '../src/pages'),
+      '@static': path.resolve(__dirname, '../src/static'),
+      '@mocks': path.resolve(__dirname, '../src/__mocks__'),
+      '@services': path.resolve(__dirname, '../src/services'),
+      '@store': path.resolve(__dirname, '../src/store'),
+      '@customTypes': path.resolve(__dirname, '../src/customTypes'),
+      '@utils': path.resolve(__dirname, '../src/utils'),
+      '@hooks': path.resolve(__dirname, '../src/hooks'),
     };
 
     return config;
@@ -97,5 +92,3 @@ config.module.rules.push({
     autodocs: 'tag',
   },
 };
-
-

@@ -11,13 +11,13 @@
 //
 //
 // -- This is a parent command --
-Cypress.Commands.add("login", () => {
-  cy.visit("/login");
-  cy.get("#Email").type("contact@pavel-vondra.com");
-  cy.get("#Password").type("MockPwd12345");
-  cy.get("button").click();
-  cy.url().should("include", "/admin/my-articles");
-  cy.get("a[href='/login']").should("not.exist");
+Cypress.Commands.add('login', () => {
+  cy.visit('/login');
+  cy.get('#Email').type('contact@pavel-vondra.com');
+  cy.get('#Password').type('MockPwd12345');
+  cy.get('button').click();
+  cy.url().should('include', '/admin/my-articles');
+  cy.get("a[href='/login']").should('not.exist');
 });
 
 // -- This is a child command --

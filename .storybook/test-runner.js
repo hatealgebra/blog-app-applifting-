@@ -1,9 +1,9 @@
 import { toMatchImageSnapshot } from 'jest-image-snapshot';
-import {  getStoryContext, } from "@storybook/test-runner";
+import { getStoryContext } from '@storybook/test-runner';
 
 const snapshotsDir = process.env.SNAPSHOTS_DIR || 'src/__snapshots__';
 const customSnapshotsDir = `${process.cwd()}/${snapshotsDir}`;
-const skipSnapshots = process.env.SKIP_SNAPSHOTS === "true";
+const skipSnapshots = process.env.SKIP_SNAPSHOTS === 'true';
 
 let errors = [];
 
@@ -15,9 +15,8 @@ const config = {
     expect.extend({ toMatchImageSnapshot });
   },
   async postRender(page, context) {
-
     const {
-        parameters: { tests },
+      parameters: { tests },
     } = await getStoryContext(page, context);
 
     if (tests?.disableSnapshots) {
@@ -28,9 +27,8 @@ const config = {
       return;
     }
 
-    
-    if(errors.length > 0){
-      throw(errors.join("\n\n"));
+    if (errors.length > 0) {
+      throw errors.join('\n\n');
     }
 
     const image = await page.screenshot({ fullPage: false });
