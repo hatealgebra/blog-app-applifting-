@@ -23,6 +23,8 @@
     "cy:e2e": "develop http://localhost:8000 cy:open",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -143,7 +145,13 @@
     ]
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx}": "yarn lint:fix",
-    "src/**/*.{js,jsx,ts,tsx,css,scss,md}": "yarn format:fix"
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "npm run lint:fix",
+      "npm run lint"
+    ],
+    "src/**/*.{js,jsx,ts,tsx,css,scss,md}": [
+      "npm run format",
+      "npm run format:check"
+    ]
   }
 }

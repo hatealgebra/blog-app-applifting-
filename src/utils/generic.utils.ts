@@ -24,8 +24,8 @@ export const clearDataAPI = async (access_token: string) => {
     } catch (e) {
       return e;
     }
-    return 'completed';
   }
+  return 'completed';
 };
 
 export const createArticleLink = (articleId: string) =>

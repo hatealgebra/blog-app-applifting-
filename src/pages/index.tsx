@@ -7,7 +7,6 @@ import PageTemplate from '../components/templates/Page.template';
 
 const RecentArticles = () => {
   const articles = useAllArticles();
-  console.log(articles);
   return (
     <PageTemplate>
       <ArticleFeed items={articles} />

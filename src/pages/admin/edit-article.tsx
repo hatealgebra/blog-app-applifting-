@@ -8,8 +8,6 @@ import { useAppSelector } from '@store/hooks';
 const EditArticlePage = () => {
   const article = useAppSelector(selectArticleToEdit);
 
-  console.log(article);
-
   return (
     <PageTemplate isProtected>
       <PublishArticleForm

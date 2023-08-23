@@ -4,7 +4,6 @@ import { API_KEY, BASE_API_URL, UserConfig } from '../services/services.config';
 import loginResponseJSON from './asyncData/post/login.mock.json';
 import createArticleResponseJSON from './asyncData/post/createArticleResponse.mock.json';
 import imageResponseJSON from './asyncData/post/postImageResponse.mock.json';
-import articlesResponseJSON from './asyncData/get/allArticlesResponse.mock.json';
 import articlesDetailResponseJSON from './asyncData/get/articlesDetailsResponse.mock.json';
 import tenantMockJSON from './asyncData/get/tenantResponse.mock.json';
 import imageBase64 from './base64.mock';

@@ -5,7 +5,6 @@ import { Provider } from 'react-redux';
 import allArticlesMockJSON from '@mocks/asyncData/get/articlesDetailsResponse.mock.json';
 import mockStore from '@mocks/store.mock';
 
-import { CanCreateComment } from '@molecules/createComment/createComment.stories';
 import { userEvent, within } from '@storybook/testing-library';
 import Discussion from './Discussion';
 

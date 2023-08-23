@@ -43,7 +43,6 @@ export const adminSlice = createSlice({
       }
     },
     setArticleToEdit: (state, { payload }) => {
-      console.log('payload', payload);
       state.data.articleToEdit = payload;
     },
   },

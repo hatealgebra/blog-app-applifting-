@@ -7,7 +7,7 @@ const useClickOutside = (
   React.useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       if (!ref.current || ref.current.contains(e.target)) {
-        console.log(e.target);
+        setIsMenuOpen(true);
       } else {
         setIsMenuOpen(false);
       }

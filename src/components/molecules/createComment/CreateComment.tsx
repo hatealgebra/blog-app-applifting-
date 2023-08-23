@@ -55,6 +55,7 @@ const CreateComment = ({ articleId, setComments }: CreateCommentProps) => {
       onSubmit={(e) => onSubmit(e, setComments)}
       onClick={() => {
         if (!loggedUser && typeof window !== `undefined`) {
+          // eslint-disable-next-line no-alert
           window.alert('You need to be signed in to comment this article!');
         }
       }}
