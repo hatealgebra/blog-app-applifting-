@@ -152,16 +152,13 @@
   },
   "lint-staged": {
     "src/**/*.styled.{js,jsx,ts,tsx}": [
-      "npm run lint:fix-css",
-      "npm run lint:css"
+      "npm run lint:fix-css"
     ],
     "src/**/*.{js,jsx,ts,tsx}": [
-      "npm run lint:fix",
-      "npm run lint"
+      "npm run lint:fix"
     ],
     "src/**/*.{js,jsx,ts,tsx,css,scss,md}": [
-      "npm run format",
-      "npm run format:check"
+      "npm run format"
     ]
   }
 }
