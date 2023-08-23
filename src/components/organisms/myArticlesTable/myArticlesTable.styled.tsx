@@ -11,6 +11,7 @@ export const StyledFallbackContentContainer = styled(CenterContainer)`
   img {
     width: 250px;
   }
+
   span {
     font-weight: 700;
   }
@@ -22,15 +23,11 @@ export const StyledFallbackContentContainer = styled(CenterContainer)`
 
 export const StyledArticlesTable = styled.table`
   table-layout: fixed;
-  border-spacing: 0px 10px;
+  border-spacing: 0 10px;
   border-collapse: collapse;
   padding: 0;
   margin: 0;
   overflow: auto;
-
-  ${({ theme }) => theme.breakpoint.tablet} {
-    border-spacing: 5px 10px;
-  }
 
   ${({ theme }) => theme.breakpoint.tablet} {
     border-spacing: 10px 5px;

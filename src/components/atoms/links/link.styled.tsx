@@ -15,6 +15,7 @@ const StyledLink = styled(GatsbyLink)<{ variant?: 'classic' | 'text' }>`
   color: ${({ variant }) => (variant === 'classic' ? 'black' : 'auto')};
   text-decoration: none;
   font-weight: 400;
+
   &:hover {
     text-decoration: underline;
   }
@@ -32,10 +33,11 @@ export const StyledLoginLink = styled(GatsbyLink)`
   gap: 3px;
   color: ${({ theme }) => theme.color.primary};
   text-decoration: none;
+
   svg {
     transition: 1s ease-out;
     position: relative;
-    left: 0px;
+    left: 0;
   }
 
   &:hover {

@@ -3,9 +3,6 @@ import styled from 'styled-components';
 export const StyledIconButton = styled.button`
   border: none;
   background-color: transparent;
-
-  svg {
-  }
 `;
 
 export const StyledEditArticleRow = styled.tr`
@@ -22,19 +19,24 @@ export const StyledEditArticleRow = styled.tr`
     text-align: left;
     padding: 0 5px;
   }
+
   button {
-    padding-left: 0px;
+    padding-left: 0;
   }
+
   .edit-article {
     &__checkbox {
       width: fit-content;
     }
+
     &__title {
       width: 65%;
     }
+
     &__actions-container {
       width: fit-content;
     }
+
     &__perex,
     &__author,
     &__nr-comments {
@@ -53,17 +55,21 @@ export const StyledEditArticleRow = styled.tr`
     th {
       padding: 10px;
     }
+
     .edit-article {
       &__checkbox {
         width: 5%;
       }
+
       &__title {
         width: 65%;
       }
+
       &__nr-comments {
         display: table-cell;
         width: 20%;
       }
+
       &__actions-container {
         width: 10%;
       }
@@ -75,6 +81,7 @@ export const StyledEditArticleRow = styled.tr`
       &__title {
         width: 30%;
       }
+
       &__perex {
         display: table-cell;
         width: 30%;

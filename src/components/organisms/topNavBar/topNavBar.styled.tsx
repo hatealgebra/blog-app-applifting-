@@ -12,7 +12,7 @@ const StyledTopNav = styled.header<TopNavBarProps>`
   padding: ${({ variant }) => (variant === 'mobile' ? '15px' : '15px 5%')};
   height: 48px;
 
-  .TopNavbar {
+  .top-navbar {
     &__container {
       display: flex;
       width: 100%;
@@ -21,9 +21,10 @@ const StyledTopNav = styled.header<TopNavBarProps>`
       align-items: center;
       max-width: 1000px;
     }
+
     &__sub-container {
       position: relative;
-      top: 0px;
+      top: 0;
       display: flex;
       gap: 20px;
       align-content: flex-start;

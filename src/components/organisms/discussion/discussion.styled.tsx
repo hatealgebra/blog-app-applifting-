@@ -6,4 +6,4 @@ export const StyledDiscussionComments = styled.div`
   gap: 25px;
 `;
 
-export const StyledDiscussion = styled.div``;
+export const StyledDiscussion = styled.div;

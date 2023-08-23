@@ -4,17 +4,13 @@ const MobileMenuContainer = styled.div<{ isOpen: boolean }>`
   overflow: hidden;
   position: fixed;
   z-index: 99;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   height: ${({ isOpen }) => (isOpen ? '100%' : 0)};
   background-color: ${({ theme }) => theme.color.mono};
   transition: 0.2s ease-in;
 
   .mobile-menu {
     &__help-div {
-      display: flex;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -25,8 +21,9 @@ const MobileMenuContainer = styled.div<{ isOpen: boolean }>`
       width: 100%;
     }
   }
+
   .login-link {
-    margin: 0 auto 10px auto;
+    margin: 0 auto 10px;
   }
 `;
 

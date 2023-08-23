@@ -35,8 +35,8 @@ const TopNavBar = ({ variant }: TopNavBarProps) => {
   const isLoggedIn = useAppSelector(selectAuthLogged);
 
   return (
-    <StyledTopNav variant={variant} className="TopNavbar">
-      <div className="TopNavbar__container">
+    <StyledTopNav variant={variant} className="top-navbar">
+      <div className="top-navbar">
         {variant === 'mobile' && (
           <>
             <CatLogo />
@@ -50,7 +50,7 @@ const TopNavBar = ({ variant }: TopNavBarProps) => {
         {variant === 'tablet' && (
           <>
             <CatLogo />
-            <div className="TopNavbar__sub-container">
+            <div className="top-navbar__sub-container">
               <TopNavBarLinks />
               <LoginLinkSwitch isLoggedIn={isLoggedIn} />
             </div>
@@ -58,10 +58,10 @@ const TopNavBar = ({ variant }: TopNavBarProps) => {
         )}
         {variant === 'desktop' && (
           <>
-            <div className="TopNavbar__sub-container">
+            <div className="top-navbar__sub-container">
               <CatLogo /> <TopNavBarLinks />
             </div>
-            <div className="TopNavbar__sub-container">
+            <div className="top-navbar__sub-container">
               <LoginLinkSwitch isLoggedIn={isLoggedIn} />
             </div>
           </>

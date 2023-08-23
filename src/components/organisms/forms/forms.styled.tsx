@@ -9,18 +9,22 @@ const formBaseStyling = css`
   width: 100%;
   max-width: 368px;
   box-shadow: ${({ theme }) => theme.shadow.form};
-  radius: 4px;
+  border-radius: 4px;
+
   h3 {
     margin: 0.2em 0;
   }
+
   h3,
   div {
     grid-column: 1/3;
   }
+
   button {
     justify-self: flex-end;
     grid-column: 2/3;
   }
+
   .error {
     grid-column: 1/2;
   }

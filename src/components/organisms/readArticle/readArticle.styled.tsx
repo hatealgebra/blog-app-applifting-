@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ReadArticleContent = styled.div``;
+export const ReadArticleContent = styled.div;
 
 export const ReadArticleContainer = styled.article`
   display: grid;
@@ -20,8 +20,10 @@ export const ReadArticleContainer = styled.article`
       gap: 10px;
       text-transform: capitalize;
     }
+
     &__markdown {
       padding: 10px 0;
+
       p {
         line-height: 1.6em;
         font-size: 100%;

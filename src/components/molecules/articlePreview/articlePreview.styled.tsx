@@ -10,6 +10,7 @@ const StyledArticlePreviewContainer = styled.article`
     &__heading {
       margin: 15px 0;
     }
+
     &__img {
       object-fit: cover;
     }
@@ -59,9 +60,11 @@ export const StyledArticlePreviewSmall = styled(Link)`
   max-width: 600px;
   text-decoration: none;
   color: ${({ theme }) => theme.color.black};
+
   h5 {
     margin: 0;
   }
+
   p {
     font-size: ${({ theme }) => theme.typography.size.label};
   }

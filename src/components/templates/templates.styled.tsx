@@ -31,18 +31,21 @@ export const StyledArticlePageContainer = styled.div`
   grid-template-columns: 1fr;
 
   ${({ theme }) => theme.breakpoint.laptop} {
-    grid-template-columns: 3fr 1fr;
     column-gap: 30px;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: 'article related' 'article .' 'discussion discussion';
+    grid:
+      'article related'
+      'article .'
+      'discussion discussion' / auto auto auto/ 3fr 1fr;
 
     .read-article {
       grid-area: article;
     }
+
     .related-articles {
       grid-area: related;
       margin-top: 50px;
     }
+
     .discussion {
       margin-top: 30px;
       grid-area: discussion;

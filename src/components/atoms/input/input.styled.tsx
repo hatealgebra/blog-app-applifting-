@@ -8,6 +8,7 @@ const inputStyling = css`
   border-radius: 4px;
   font-size: ${({ theme }) => theme.typography.size.h5};
   padding: 0 5px 0 10px;
+
   &::placeholder {
     color: ${({ theme }) => theme.color.text_muted};
     font-weight: 300;
