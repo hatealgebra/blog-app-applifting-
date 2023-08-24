@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
-export const ReadArticleContent = styled.div;
-
-export const ReadArticleContainer = styled.article`
+const ReadArticleContainer = styled.article`
   display: grid;
   border-bottom: 1px solid ${({ theme }) => theme.color.mono200};
 
@@ -35,3 +33,5 @@ export const ReadArticleContainer = styled.article`
     }
   }
 `;
+
+export default ReadArticleContainer;

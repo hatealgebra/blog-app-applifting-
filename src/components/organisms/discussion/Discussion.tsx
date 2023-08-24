@@ -2,10 +2,7 @@ import React from 'react';
 import { Components } from '../../../customTypes/declarations';
 import Comment from '../../molecules/comment/Comment';
 import CreateComment from '../../molecules/createComment/CreateComment';
-import {
-  StyledDiscussion,
-  StyledDiscussionComments,
-} from './discussion.styled';
+import StyledDiscussionComments from './discussion.styled';
 
 // TODO: Add state to inform the user that there are no comments yet
 const Discussion = ({ articleId, commentsArray }: DiscussionProps) => {
@@ -14,7 +11,7 @@ const Discussion = ({ articleId, commentsArray }: DiscussionProps) => {
   >(commentsArray ?? []);
 
   return (
-    <StyledDiscussion className="discussion">
+    <div className="discussion">
       <CreateComment articleId={articleId} setComments={setComments} />
       <StyledDiscussionComments>
         {comments &&
@@ -40,7 +37,7 @@ const Discussion = ({ articleId, commentsArray }: DiscussionProps) => {
             );
           })}
       </StyledDiscussionComments>
-    </StyledDiscussion>
+    </div>
   );
 };
 

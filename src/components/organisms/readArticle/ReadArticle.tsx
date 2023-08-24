@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import { components } from '../../../customTypes/declarations';
-import { ReadArticleContainer, ReadArticleContent } from './readArticle.styled';
+
+import { Components } from '@customTypes/declarations';
+import ReadArticleContainer from './readArticle.styled';
 
 // TODO: Render image from the fetched image
 
@@ -11,7 +12,7 @@ const ReadArticle = ({
   author,
   createdAt,
   content,
-}: components['schemas']['ArticleDetail'] & {
+}: Components['schemas']['ArticleDetail'] & {
   author: string;
   imageSrc: string;
 }) => {
@@ -29,9 +30,9 @@ const ReadArticle = ({
         <span className="read-article__date">{articlePublishedFormat}</span>
       </div>
       <img src={imageSrc} alt={`${title} image`} />
-      <ReadArticleContent className="read-article__markdown">
+      <div className="read-article__markdown">
         <ReactMarkdown children={content!} />
-      </ReadArticleContent>
+      </div>
     </ReadArticleContainer>
   );
 };

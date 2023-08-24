@@ -17,6 +17,7 @@ import useClickOutside from '../../../hooks/useClickOutside';
 const LoginStatus = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   const dispatch = useAppDispatch();
+
   const ref = React.useRef(null);
   useClickOutside(ref, setIsOpen);
 

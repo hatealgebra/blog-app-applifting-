@@ -1,11 +1,14 @@
 import styled from 'styled-components';
 import { ButtonProps } from '@atoms/button/button.types';
-import Button from '../../atoms/button/Button';
+import Button from '@atoms/button/Button';
 
 export const StyledMinimalButton = styled(Button).attrs<ButtonProps>(() => ({
   variant: 'outline',
   size: 'sm',
-}))<ButtonProps>;
+}))<ButtonProps>`
+  /* stylelint-disable */
+  /* stylelint-enable */
+`;
 
 export const StyledUploadImage = styled.div`
   display: flex;

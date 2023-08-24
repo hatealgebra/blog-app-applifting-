@@ -33,9 +33,10 @@ export const StyledArticlePageContainer = styled.div`
   ${({ theme }) => theme.breakpoint.laptop} {
     column-gap: 30px;
     grid:
-      'article related'
-      'article .'
-      'discussion discussion' / auto auto auto/ 3fr 1fr;
+      'article related' auto
+      'article .' auto
+      'discussion discussion' auto
+      / 3fr 1fr;
 
     .read-article {
       grid-area: article;

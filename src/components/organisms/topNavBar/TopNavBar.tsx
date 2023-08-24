@@ -36,7 +36,7 @@ const TopNavBar = ({ variant }: TopNavBarProps) => {
 
   return (
     <StyledTopNav variant={variant} className="top-navbar">
-      <div className="top-navbar">
+      <div className="top-navbar__container">
         {variant === 'mobile' && (
           <>
             <CatLogo />

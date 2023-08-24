@@ -6,11 +6,9 @@ const useClickOutside = (
 ) => {
   React.useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
-      if (!ref.current || ref.current.contains(e.target)) {
-        setIsMenuOpen(true);
-      } else {
-        setIsMenuOpen(false);
-      }
+      if (!ref.current || ref.current.contains(e.target)) return null;
+
+      return setIsMenuOpen(false);
     };
 
     document.addEventListener('mousedown', (e) => handleClickOutside(e));
