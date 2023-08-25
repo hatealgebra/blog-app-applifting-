@@ -17,7 +17,7 @@
     "typecheck": "tsc --noEmit",
     "storybook": "NODE_ENV=test start-storybook -p 6006",
     "test-storybook": "NODE_ENV=test test-storybook --watchAll",
-    "build-storybook": "build-storybook -s public",
+    "build-storybook": "build-storybook",
     "test": "TZ=UTC jest --watchAll --coverage --verbose=true",
     "test:staged": "CI=true TZ=UTC jest --coverage",
     "cy:open": "cypress open gatsby develop",
