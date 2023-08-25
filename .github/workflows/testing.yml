@@ -29,7 +29,5 @@ jobs:
                 cache: 'yarn'
             - name: Install dependencies
               run: yarn
-            - name: Run storybook on dev
-              run: yarn storybook
-            - name: Run storybook tests
-              run: yarn test-storybook           
+            - name: Storybook test runner
+              run: yarn test-storybook:ci
