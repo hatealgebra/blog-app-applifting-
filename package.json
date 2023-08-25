@@ -17,7 +17,7 @@
     "typecheck": "tsc --noEmit",
     "storybook": "NODE_ENV=test start-storybook -p 6006",
     "test-storybook": "NODE_ENV=test test-storybook --watchAll",
-    "test-storybook:ci": "concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"yarn build-storybook --quiet && yarn http-server storybook-static --port 6006 --silent\" \"wait-on tcp:6006 && yarn test-storybook\"",
+    "test-storybook:ci": "concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"yarn build-storybook --quiet &&  http-server storybook-static --port 6006 --silent\" \"wait-on tcp:6006 && yarn test-storybook\"",
     "build-storybook": "build-storybook",
     "test": "TZ=UTC jest --watchAll --coverage --verbose=true",
     "test:staged": "CI=true TZ=UTC jest --coverage",
