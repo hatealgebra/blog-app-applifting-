@@ -17,5 +17,5 @@
     "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
   },
 
-  "ignorePatterns": ["public/*", "static/*", ".storybook/*"]
+  "ignorePatterns": ["public/*", "static/*", ".storybook/*", "coverage/*"]
 }

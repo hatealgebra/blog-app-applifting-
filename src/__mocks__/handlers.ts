@@ -2,18 +2,12 @@ import { rest } from 'msw';
 import { API_KEY, BASE_API_URL, UserConfig } from '../services/services.config';
 
 import loginResponseJSON from './asyncData/post/login.mock.json';
-import createArticleResponseJSON from './asyncData/post/createArticleResponse.mock.json';
+
 import imageResponseJSON from './asyncData/post/postImageResponse.mock.json';
 import articlesDetailResponseJSON from './asyncData/get/articlesDetailsResponse.mock.json';
+import baseArticleDataResponseJSON from './asyncData/get/allArticlesResponse.mock.json';
 import tenantMockJSON from './asyncData/get/tenantResponse.mock.json';
 import imageBase64 from './base64.mock';
-
-const getArticleDetail = (articleId: string | readonly string[]) => {
-  const articleDetailData = articlesDetailResponseJSON.find(
-    (article) => article.articleId === articleId
-  );
-  return articleDetailData;
-};
 
 const handlers = [
   /* POST handling */
@@ -26,8 +20,18 @@ const handlers = [
     return res(ctx.status(400), ctx.json({ error: 'Invalid credentials' }));
   }),
   // Publish article
-  rest.post(`${BASE_API_URL}/articles`, (req, res, ctx) => {
-    return res(ctx.status(200), ctx.json(createArticleResponseJSON));
+  rest.post(`${BASE_API_URL}/articles`, async (req, res, ctx) => {
+    const reqJSON = await req.json();
+    delete reqJSON.access_token;
+
+    const responseToReturn = {
+      ...reqJSON,
+      createdAt: '2023-08-24T19:39:59.977638',
+      lastUpdatedAt: '2023-08-24T19:39:59.977638',
+      comments: [],
+    };
+
+    return res(ctx.status(200), ctx.json(responseToReturn));
   }),
   // Upload image
   rest.post(`${BASE_API_URL}/images`, (req, res, ctx) => {
@@ -62,15 +66,20 @@ const handlers = [
 
   // List Articles
   // FIXME: Fix the reauthorize, the dispatch is called multiple
-  rest.get(`${BASE_API_URL}/articles`, (req, res, ctx) => {
-    return res(ctx.status(200), ctx.json(articlesDetailResponseJSON));
+  rest.get(`${BASE_API_URL}/articles`, async (req, res, ctx) => {
+    return res(ctx.status(200), ctx.json(baseArticleDataResponseJSON));
   }),
   // Article detail
   rest.get(`${BASE_API_URL}/articles/:articleId`, (req, res, ctx) => {
     const { articleId } = req.params;
+
+    if (!articleId)
+      return res(ctx.status(400), ctx.json({ error: 'Invalid articleId' }));
+
     const getArticle = articlesDetailResponseJSON.items.filter(
-      ({ articleId: id }: { articleId: string }) => id === articleId
+      (articleDetail) => articleDetail.articleId === articleId
     )[0];
+
     return res(
       ctx.set({
         'X-API-KEY': API_KEY,
@@ -96,19 +105,23 @@ const handlers = [
 
   /* DELETE */
   // Delete article
-  // rest.delete(`${BASE_API_URL}/articles/:articleId`, (req, res, ctx) => {
-  //   const { articleId } = req.params;
-  //   const getDeletedArticle = articlesResponseJSON.items.filter(
-  //     ({ articleId: id }: { articleId: string }) => id === articleId
-  //   )[0];
-  //   return res(ctx.status(200), ctx.body(getDeletedArticle));
-  // }),
+  rest.delete(`${BASE_API_URL}/articles/:articleId`, (req, res, ctx) => {
+    return res(ctx.status(204), ctx.body('No Content'));
+  }),
 
   /* PATCH */
   // Update article
   rest.patch(`${BASE_API_URL}/articles/:articleId`, async (req, res, ctx) => {
-    const { articleId } = await req.json();
-    return res(ctx.status(200), ctx.json(getArticleDetail(articleId)));
+    const reqJSON = await req.json();
+    return res(
+      ctx.status(200),
+      ctx.json({
+        ...reqJSON,
+        createdAt: '2023-08-24T19:39:59.977638',
+        lastUpdatedAt: '2023-08-25T19:39:59.977638',
+        comments: [],
+      })
+    );
   }),
 ];
 

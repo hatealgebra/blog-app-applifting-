@@ -1,8 +1,7 @@
 import React, { FormEvent } from 'react';
-import {
-  updateArticleHelper,
-  validatePublishArticleForm,
-} from '@helpers/publishArticle.helper';
+
+import { EPublishArticleErrors } from '@utils/contants';
+import validatePublishArticleForm from '@helpers/publishArticle.helper';
 import AdminHeading from '../../molecules/adminHeading/AdminHeading';
 import MarkdownEditor from '../../atoms/markdownEditor/MarkdownEditor';
 import InputWithLabel from '../../molecules/inputWithLabel/InputWithLabel';
@@ -14,11 +13,11 @@ import { useAppDispatch, useAppSelector } from '../../../store/hooks';
 import { selectAuthToken } from '../../../store/slices/auth.slices';
 
 import { cutTextWithElipsis } from '../../../utils/generic.utils';
-import { createArticleThunk } from '../../../store/thunks/admin.thunks';
 import {
-  EPublishArticleErrors,
-  PublishArticleProps,
-} from './publishArticleForm.types.d';
+  createArticleThunk,
+  editArticleThunk,
+} from '../../../store/thunks/admin.thunks';
+import { PublishArticleProps } from './publishArticleForm.types.d';
 
 // FIXME: maybe implement do BIG notation?
 // TODO: Testing
@@ -63,15 +62,16 @@ const PublishArticleForm = ({
       const imageFormData = new FormData();
       imageFormData.append('image', imageFile!);
       if (articleId) {
-        return updateArticleHelper(
-          e,
-          articleId,
-          trimmedTitle,
-          perex,
-          trimmedMD,
-          imageFormData!,
-          access_token,
-          isImageChanged
+        return dispatch(
+          editArticleThunk({
+            articleId,
+            title: trimmedTitle,
+            perex,
+            content: trimmedMD,
+            imageFormData,
+            access_token,
+            isImageChanged,
+          })
         );
       }
       return dispatch(

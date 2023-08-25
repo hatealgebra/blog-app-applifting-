@@ -3,6 +3,7 @@ import { navigate } from 'gatsby';
 import {
   createArticle,
   deleteArticle,
+  updateArticle,
 } from '../../services/articlesOperations';
 import { uploadImage } from '../../services/imagesServices';
 import { Components } from '../../customTypes/declarations';
@@ -51,6 +52,56 @@ export const createArticleThunk = createAsyncThunk(
         access_token
       );
       navigate(AdminLinks.MY_ARTICLES);
+      return response.data;
+    } catch (e) {
+      return thunkAPI.rejectWithValue(e);
+    }
+  }
+);
+
+export const editArticleThunk = createAsyncThunk(
+  'admin/editArticleThunk',
+  async (
+    {
+      articleId,
+      title,
+      perex,
+      imageFormData,
+      content,
+      access_token,
+      isImageChanged,
+    }: {
+      articleId: string;
+      title: string;
+      perex: string;
+      imageFormData: FormData;
+      content: string;
+      access_token: string;
+      isImageChanged: boolean;
+    },
+    thunkAPI
+  ) => {
+    let response;
+    try {
+      if (isImageChanged) {
+        const uploadImageResponse = await uploadImage(
+          imageFormData,
+          access_token!
+        );
+        response = await updateArticle(articleId, access_token, {
+          title,
+          perex,
+          imageId: await uploadImageResponse!.data[0].imageId,
+          content,
+        });
+      } else {
+        response = await updateArticle(articleId, access_token, {
+          title,
+          perex,
+          content,
+        });
+      }
+      await navigate(AdminLinks.MY_ARTICLES);
       return response.data;
     } catch (e) {
       return thunkAPI.rejectWithValue(e);

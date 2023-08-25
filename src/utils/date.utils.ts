@@ -9,7 +9,7 @@ export const timeDifference = (
   const commentDate = new Date(dateCreated);
 
   if (nowDate < commentDate) {
-    return 'undefined';
+    return '-';
   }
 
   const yearDifference = nowDate.getFullYear() - commentDate.getFullYear();
@@ -51,11 +51,14 @@ export const getDate = (createdAt: string | undefined) => {
   };
 
   const date = new Date(createdAt);
-  const day = date.getDay();
-  const month = date.getMonth();
+  const day = date.getDate();
+  const month = date.getMonth() + 1;
   const year = date.getFullYear().toString().slice(2);
   const transformedDate = `${getDoubleDigitNumber(
     month
   )}/${getDoubleDigitNumber(day)}/${year}`;
+
+  if (/N(aN)?/gi.test(transformedDate)) return 'Unknown date';
+
   return transformedDate;
 };
