@@ -34,6 +34,6 @@ jobs:
           run: yarn build-storybook --quiet
         - name: Serve Storybook and run tests
           run: |
-            concurrently -k -s first -n "SB,TEST" -c "magenta,blue" \
-              "http-server storybook-static --port 6006 --silent" \
-              "wait-on tcp:6006 && yarn test-storybook"
+            yarn concurrently -k -s first -n "SB,TEST" -c "magenta,blue" \
+              "yarn http-server storybook-static --port 6006 --silent" \
+              "yarn wait-on tcp:6006 && yarn test-storybook"
