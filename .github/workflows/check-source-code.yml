@@ -1,0 +1,18 @@
+name: Check the source code
+on:
+    push: 
+        branches: [feature/github-actions]
+jobs:
+  test:
+    name: Check the source code
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install packages
+        run: yarn
+      - name: Prettier
+        run: yarn format
+      - name: EsLint
+        run: yarn lint:fix
+      - name: Stylelint
+        run: yarn lint:fix-css
