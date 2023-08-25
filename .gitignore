@@ -11,3 +11,4 @@ migration-storybook.log
 storybook-static/
 imagesForUpload
 coverage/
+coverage-final.json
