@@ -30,4 +30,6 @@ jobs:
             - name: Install dependencies
               run: yarn
             - name: Run storybook on dev
+              run: yarn storybook
+            - name: Run storybook tests
               run: yarn test-storybook           
