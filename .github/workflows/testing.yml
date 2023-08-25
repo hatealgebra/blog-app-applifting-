@@ -18,22 +18,16 @@ jobs:
               run: yarn
             - name: Run unit tests
               run: yarn test:staged 
-    interaction-and-accessibility:
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v2
-        - uses: actions/setup-node@v3
-          with:
-            node-version: '18.x'
-            cache: 'yarn'
-        - name: Install dependencies
-          run: yarn
-        - name: Install Playwright
-          run: npx playwright install --with-deps
-        - name: Build Storybook
-          run: yarn build-storybook --quiet
-        - name: Serve Storybook and run tests
-          run: |
-            yarn concurrently -k -s first -n "SB,TEST" -c "magenta,blue" \
-              "yarn http-server storybook-static --port 6006 --silent" \
-              "yarn wait-on tcp:6006 && yarn test-storybook"
+      sb-testing:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Set up Node.js
+              uses: actions/setup-node@v3   
+              with:
+                node-version: '18.x'
+                cache: 'yarn'
+            - name: Install dependencies
+              run: yarn
+            - name: Run storybook on dev
+              run: yarn test-storybook           
