@@ -2,9 +2,7 @@
  * For a detailed explanation regarding each configuration property and type check, visit:
  * https://jestjs.io/docs/configuration
  */
-import { join } from 'path';
 import { pathsToModuleNameMapper } from 'ts-jest';
-
 import { compilerOptions } from './tsconfig.json';
 
 export default {
@@ -21,7 +19,6 @@ export default {
   clearMocks: true,
 
   // Indicates whether the coverage information should be collected while executing the test
-  collectCoverage: true,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
   // collectCoverageFrom: undefined,
@@ -35,13 +32,21 @@ export default {
   // ],
 
   // Indicates which provider should be used to instrument code for coverage
-  coverageProvider: 'v8',
+  // coverageProvider: 'v8',
 
   // A list of reporter names that Jest uses when writing coverage reports
-  coverageReporters: ['json'],
+  // coverageReporters: ['json'],
 
   // An object that configures minimum threshold enforcement for coverage results
-  // coverageThreshold: undefined,
+  coverageThreshold: {
+    global: {
+      // Set thresholds for all files
+      statements: 90, // Minimum statement coverage
+      branches: 80, // Minimum branch coverage
+      functions: 90, // Minimum function coverage
+      lines: 80, // Minimum line coverage
+    },
+  },
 
   // A path to a custom dependency extractor
   // dependencyExtractor: undefined,
@@ -86,7 +91,9 @@ export default {
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
 
-  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {}),
+  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {
+    prefix: '<rootDir>/src',
+  }),
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
   // modulePathIgnorePatterns: [],
@@ -148,7 +155,7 @@ export default {
   // snapshotSerializers: [],
 
   // The test environment that will be used for testing
-  testEnvironment: 'node',
+  testEnvironment: 'jsdom',
   // Options that will be passed to the testEnvironment
   // testEnvironmentOptions: {},
 
@@ -195,4 +202,5 @@ export default {
 
   // Whether to use watchman for file crawling
   // watchman: true,
+  setupFilesAfterEnv: ['./jest.setup.ts'],
 };

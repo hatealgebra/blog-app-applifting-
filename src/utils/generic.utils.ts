@@ -11,21 +11,21 @@ export const cutTextWithElipsis = (text: string, limit: number) => {
 };
 
 export const clearDataAPI = async (access_token: string) => {
-  const response = await listArticles();
-  const { items } = response.data;
-  if (items && items.length !== 0) {
-    try {
+  try {
+    const response = await listArticles();
+    const { items } = response.data;
+    if (items && items.length !== 0) {
       items.map(async (item: IArticle) => {
         const { articleId, imageId } = item;
         if (articleId) await deleteArticle(articleId, access_token);
         if (imageId) await deleteImage(imageId, access_token);
-        return 'completed';
       });
-    } catch (e) {
-      return e;
+      return 'Success';
     }
+  } catch (e) {
+    return e;
   }
-  return 'completed';
+  return 'Array is empty';
 };
 
 export const createArticleLink = (articleId: string) =>

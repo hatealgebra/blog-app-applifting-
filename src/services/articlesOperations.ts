@@ -47,12 +47,7 @@ export const updateArticle = async (
   access_token: string | undefined,
   data: any
 ) => {
-  const response = await appLiftingAxiosProtected.patch(
-    `/articles/${articleId}`,
-    data,
-    {
-      headers: { Authorization: access_token },
-    }
-  );
-  return response;
+  return appLiftingAxiosProtected.patch(`/articles/${articleId}`, data, {
+    headers: { Authorization: access_token },
+  });
 };

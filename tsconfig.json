@@ -24,6 +24,7 @@
       "@hooks/*": ["./hooks/*"]
     },
     "resolveJsonModule": true,
+    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": false
   },
@@ -33,7 +34,8 @@
     "src/__mocks__",
     "./gatsby-node.ts",
     "./gatsby-config.ts",
-    "./plugins/**/*"
+    "./plugins/**/*",
+    "/jest-setup.js"
   ],
   "exclude": ["node_modules", "public", "static"],
   "skipLibCheck": true

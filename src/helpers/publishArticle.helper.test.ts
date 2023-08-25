@@ -1,17 +1,20 @@
-import { EPublishArticleErrors } from '@organisms/publishArticleForm/publishArticleForm.types.d';
-import { validatePublishArticleForm } from './publishArticle.helper';
+import { expect } from '@jest/globals';
 
-describe('Check create article form inputs', () => {
-  const titleTooShort = 'Title value';
-  const inputValue = 'Input value, yup this is it';
-  const markdownShortValue = 'Input value';
-  const markdownPassValue =
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ipsum id dolor ad, incidunt odio, a fugiat totam nemo officia nobis excepturi similique! Vel blanditiis explicabo unde placeat veniam non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ipsum id dolor ad, incidunt odio, a fugiat totam nemo officia nobis excepturi similique! Vel blanditiis explicabo unde placeat veniam non!';
-  const mockFile = new File(['goodbye'], 'goodbye.png', {
-    type: 'image/png',
-  });
-  const mockDispatchError = jest.fn();
+import { EPublishArticleErrors } from '@utils/contants';
+import validatePublishArticleForm from './publishArticle.helper';
 
+const titleTooShort = 'Title value';
+const inputValue = 'Input value, yup this is it';
+const markdownShortValue = 'Input value';
+const markdownPassValue =
+  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ipsum id dolor ad, incidunt odio, a fugiat totam nemo officia nobis excepturi similique! Vel blanditiis explicabo unde placeat veniam non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ipsum id dolor ad, incidunt odio, a fugiat totam nemo officia nobis excepturi similique! Vel blanditiis explicabo unde placeat veniam non!';
+const mockFile = new File(['goodbye'], 'goodbye.png', {
+  type: 'image/png',
+});
+
+const mockDispatchError = jest.fn();
+
+describe('Validate Publish article form test suite', () => {
   test('Everything is empty', () => {
     expect(validatePublishArticleForm('', '', null, mockDispatchError)).toBe(
       false
@@ -114,4 +117,25 @@ describe('Check create article form inputs', () => {
     );
     expect(mockDispatchError).toBeCalledWith(EPublishArticleErrors.PASSED);
   });
+
+  test('Unexpected error', () => {
+    validatePublishArticleForm(
+      undefined,
+      undefined,
+      undefined,
+      mockDispatchError
+    );
+    expect(mockDispatchError).toBeCalledWith(
+      EPublishArticleErrors.UNEXPECTED_ERROR
+    );
+  });
+});
+
+jest.mock('gatsby', () => {
+  const gatsby = jest.requireActual('gatsby');
+
+  return {
+    ...gatsby,
+    navigate: jest.fn(),
+  };
 });

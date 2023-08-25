@@ -1,0 +1,89 @@
+import allArticlesMockJSON from '@mocks/asyncData/get/allArticlesResponse.mock.json';
+import allArticlesDetailMockJSON from '@mocks/asyncData/get/articlesDetailsResponse.mock.json';
+import imageResponseMockJSON from '@mocks/asyncData/post/postImageResponse.mock.json';
+
+import { expect } from '@jest/globals';
+import {
+  createArticle,
+  deleteArticle,
+  getArticle,
+  listArticles,
+  updateArticle,
+} from './articlesOperations';
+import { uploadImage } from './imagesServices';
+
+const mockTitle = 'Random title';
+const mockPerex = 'Random perex';
+const mockImageId = 'Random imageId';
+const mockContent =
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies ultricies, nunc nisl ultricies nunc, quis a';
+
+const mockObject = {
+  title: mockTitle,
+  perex: mockPerex,
+  imageId: mockImageId,
+  content: mockContent,
+};
+
+// eslint-disable-next-line @typescript-eslint/naming-convention
+const access_token = 'access_token';
+
+describe('Article operations', () => {
+  test('listArticles', async () => {
+    const response = await listArticles();
+    const { data } = response;
+    expect(data).toStrictEqual(allArticlesMockJSON);
+  });
+
+  test('createArticle', async () => {
+    const response = await createArticle(
+      mockTitle,
+      mockPerex,
+      mockImageId,
+      mockContent,
+      access_token
+    );
+    const { data } = response;
+    expect(data).toStrictEqual({
+      ...mockObject,
+      createdAt: '2023-08-24T19:39:59.977638',
+      lastUpdatedAt: '2023-08-24T19:39:59.977638',
+      comments: [],
+    });
+  });
+
+  test('delete article', async () => {
+    const response = await deleteArticle('articleId', access_token);
+    expect(response.status).toBe(204);
+  });
+
+  test('update article', async () => {
+    const response = await updateArticle('articleId', access_token, mockObject);
+    const { data } = response;
+
+    expect(data).toStrictEqual({
+      ...mockObject,
+      createdAt: '2023-08-24T19:39:59.977638',
+      lastUpdatedAt: '2023-08-25T19:39:59.977638',
+      comments: [],
+    });
+  });
+
+  test('getArticle response', async () => {
+    const response = await getArticle(
+      allArticlesDetailMockJSON.items[0].articleId
+    );
+
+    expect(response.data).toStrictEqual(allArticlesDetailMockJSON.items[0]);
+  });
+});
+
+// TODO: Finish all tests
+describe('Image services', () => {
+  test('uploadImage', async () => {
+    const formData = new FormData();
+    const response = await uploadImage(formData, 'access_token');
+
+    expect(response.data).toStrictEqual(imageResponseMockJSON);
+  });
+});

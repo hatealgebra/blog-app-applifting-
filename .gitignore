@@ -10,3 +10,4 @@ readme.md
 migration-storybook.log
 storybook-static/
 imagesForUpload
+coverage/
