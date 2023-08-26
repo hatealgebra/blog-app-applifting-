@@ -26,7 +26,8 @@ export const deleteImage = async (
   imageId: string,
   access_token: string | undefined
 ) => {
-  return appLiftingAxiosProtected.delete(`/images/${imageId}`, {
+  const response = await appLiftingAxiosProtected.delete(`/images/${imageId}`, {
     headers: { Authorization: access_token },
   });
+  return response;
 };

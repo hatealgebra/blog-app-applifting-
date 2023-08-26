@@ -52,7 +52,7 @@ const UploadImage = ({ image, setImage }: UploadImageProps) => {
           </div>
         </>
       ) : (
-        <Button onClick={handleInput} colorTheme="secondary">
+        <Button onClick={handleInput} colortheme="secondary">
           Upload an Image
         </Button>
       )}
