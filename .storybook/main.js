@@ -16,6 +16,7 @@ module.exports = {
     options: {
       fsCache: true,
     },
+    disableTelemetry: true
   },
   features: {
     interactionsDebugger: true, // 👈 Enable playback controls
