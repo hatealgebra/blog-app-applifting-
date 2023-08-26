@@ -20,7 +20,7 @@
     "build-storybook": "build-storybook --disable-telemetry",
     "build-storybook:ci": "CI=true concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"yarn build-storybook &&  http-server storybook-static --port 6006\" \"wait-on http://127.0.0.1:6006 --verbose && NODE_ENV=test test-storybook\"",
     "test": "TZ=UTC jest --watchAll --coverage --verbose=true",
-    "test:staged": "TZ=UTC jest --coverage",
+    "test:staged": "TZ=UTC jest --coverage --passWithNoTests",
     "cy:open": "cypress open gatsby develop",
     "cy:e2e": "develop http://localhost:8000 cy:open",
     "lint": "eslint .",

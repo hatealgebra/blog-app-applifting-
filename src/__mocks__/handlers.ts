@@ -106,11 +106,11 @@ const handlers = [
   /* DELETE */
   // Delete article
   rest.delete(`${BASE_API_URL}/articles/:articleId`, (req, res, ctx) => {
-    return res(ctx.status(204), ctx.body('No Content'));
+    return res(ctx.status(204));
   }),
 
   rest.delete(`${BASE_API_URL}/images/:imagesId`, (req, res, ctx) => {
-    return res(ctx.status(204), ctx.body('No Content'));
+    return res(ctx.status(204));
   }),
 
   /* PATCH */
