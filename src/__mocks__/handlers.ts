@@ -109,6 +109,10 @@ const handlers = [
     return res(ctx.status(204), ctx.body('No Content'));
   }),
 
+  rest.delete(`${BASE_API_URL}/images/:imagesId`, (req, res, ctx) => {
+    return res(ctx.status(204), ctx.body('No Content'));
+  }),
+
   /* PATCH */
   // Update article
   rest.patch(`${BASE_API_URL}/articles/:articleId`, async (req, res, ctx) => {

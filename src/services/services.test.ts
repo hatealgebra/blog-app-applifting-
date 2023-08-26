@@ -10,7 +10,7 @@ import {
   listArticles,
   updateArticle,
 } from './articlesOperations';
-import { uploadImage } from './imagesServices';
+import { deleteImage, showImage, uploadImage } from './imagesServices';
 
 const mockTitle = 'Random title';
 const mockPerex = 'Random perex';
@@ -85,5 +85,14 @@ describe('Image services', () => {
     const response = await uploadImage(formData, 'access_token');
 
     expect(response.data).toStrictEqual(imageResponseMockJSON);
+  });
+  // TODO: Show image test
+  test('showImage', async () => {
+    const response = await showImage('1231312-31232141-1312');
+    expect(response.status).toBe(200);
+  });
+  test('deleteImage', async () => {
+    const response = await deleteImage('imageId', access_token);
+    expect(response.status).toBe(204);
   });
 });
