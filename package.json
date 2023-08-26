@@ -16,7 +16,7 @@
     "refresh": "curl -X POST http://localhost:8000/__refresh",
     "typecheck": "tsc --noEmit",
     "storybook": "NODE_ENV=test start-storybook -p 6006",
-    "test-storybook": "NODE_ENV=test test-storybook --watchAll",
+    "storybook:test": "NODE_ENV=test test-storybook --watchAll --coverage",
     "build-storybook": "build-storybook --disable-telemetry",
     "build-storybook:ci": "CI=true concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"yarn build-storybook &&  http-server storybook-static --port 6006\" \"wait-on http://127.0.0.1:6006 --verbose && NODE_ENV=test test-storybook\"",
     "test": "TZ=UTC jest --watchAll --coverage --verbose=true",

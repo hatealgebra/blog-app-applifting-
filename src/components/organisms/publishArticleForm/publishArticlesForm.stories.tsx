@@ -4,8 +4,8 @@ import React from 'react';
 import { userEvent, within } from '@storybook/testing-library';
 import allArticlesDetailMockJSON from '@mocks/asyncData/get/articlesDetailsResponse.mock.json';
 
+import { EPublishArticleErrors } from '@utils/contants';
 import PublishArticleForm from './PublishArticleForm';
-import { EPublishArticleErrors } from './publishArticleForm.types.d';
 
 const mockOriginalFile = new File(['goodbye'], 'goodbye.png', {
   type: 'image/png',
