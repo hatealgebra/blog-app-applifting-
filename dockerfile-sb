@@ -1,0 +1,17 @@
+FROM mcr.microsoft.com/playwright:v1.33.0-focal-arm64 
+
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+
+COPY package.json ./
+COPY yarn.lock ./
+
+COPY . .
+
+RUN yarn install
+
+
+
+EXPOSE 6006
+
+CMD ["yarn", "storybook"]

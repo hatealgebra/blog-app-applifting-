@@ -1,0 +1,11 @@
+services:
+  storybook:
+    build:
+      context: .
+      dockerfile: dockerfile-sb
+    container_name: blog-app-storybook
+    ports:
+      - '6006:6006'
+    volumes:
+      - './src:/usr/src/app/src'
+      - '.storybook:/usr/src/app/.storybook'

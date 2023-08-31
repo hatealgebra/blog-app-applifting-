@@ -1,6 +1,5 @@
 node_modules/
 .cache/
-public
 src/gatsby-types.d.ts
 .env
 .env.development
@@ -8,8 +7,6 @@ package-lock.json
 readme.md
 .DS_Store
 migration-storybook.log
-storybook-static/
 imagesForUpload
 coverage/
-.yarn
 coverage-final.json
