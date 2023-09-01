@@ -6,6 +6,8 @@ services:
     container_name: blog-app-storybook
     ports:
       - '6006:6006'
+    env_file:
+      - .env.development
     volumes:
       - './src:/usr/src/app/src'
       - '.storybook:/usr/src/app/.storybook'
