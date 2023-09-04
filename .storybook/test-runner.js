@@ -1,8 +1,9 @@
 import { toMatchImageSnapshot } from 'jest-image-snapshot';
 import { getStoryContext } from '@storybook/test-runner';
-import imageUpload from '../src/helpers/imageUpload';
+import  {imageUpload } from '../src/helpers/imageUpload';
 
 const { UPDATE_S3 } = process.env;
+
 
 const snapshotsDir =
   process.env.SNAPSHOTS_DIR || 'src/components/__snapshots__';
@@ -38,8 +39,9 @@ const config = {
     const image = await page.screenshot({ fullPage: false });
 
     if (UPDATE_S3) {
-      imageUpload(image, `snapshots/${context.id}.png`);
+      imageUpload(image, context.id);
     } else {
+      console.log('hey')
       expect(image).toMatchImageSnapshot({
         customSnapshotsDir,
         customSnapshotIdentifier: context.id,
