@@ -9,5 +9,5 @@ module.exports = {
   /** Add your own overrides below
    * @see https://jestjs.io/docs/configuration
    */
-  reporters: ["default", "<rootDir>/.storybook/image-reporter.js"],
+  reporters: ['default', '<rootDir>/.storybook/image-reporter.js'],
 };
