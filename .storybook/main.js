@@ -1,12 +1,12 @@
 const path = require('path');
 
+
 module.exports = {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-actions',
-    '@storybook/addon-storyshots',
     '@storybook/addon-interactions',
     'msw-storybook-addon',
   ],
@@ -69,6 +69,8 @@ module.exports = {
       '@utils': path.resolve(__dirname, '../src/utils'),
       '@hooks': path.resolve(__dirname, '../src/hooks'),
     };
+
+    config.resolve.fallback = { "os": require.resolve("os-browserify/browser"), "crypto": false, "path": require.resolve("path-browserify") };
 
     return config;
   },
