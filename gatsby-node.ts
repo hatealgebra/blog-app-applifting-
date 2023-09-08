@@ -1,9 +1,10 @@
 import path from 'path';
 import { getArticle, listArticles } from './src/services/articlesOperations';
 import { showImage } from './src/services/imagesServices';
+
 import 'dotenv/config';
 
-const POST_NODE_TYPE = `posts`;
+const POST_NODE_TYPE = 'posts';
 
 exports.sourceNodes = async ({
   actions: { createNode },
@@ -30,6 +31,7 @@ exports.sourceNodes = async ({
         };
       })
     );
+
     completeArticleData.forEach(async (article, index) => {
       const { articleId } = article;
       createNode({

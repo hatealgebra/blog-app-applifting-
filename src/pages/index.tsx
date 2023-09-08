@@ -4,7 +4,6 @@ import ArticleFeed from '../components/organisms/articleFeed/ArticleFeed';
 import PageTemplate from '../components/templates/Page.template';
 
 // TODO: Solve pagination
-
 const RecentArticles = () => {
   const articles = useAllArticles();
   return (
