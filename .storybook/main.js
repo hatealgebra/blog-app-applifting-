@@ -1,6 +1,5 @@
 const path = require('path');
 
-
 module.exports = {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: [
@@ -70,7 +69,11 @@ module.exports = {
       '@hooks': path.resolve(__dirname, '../src/hooks'),
     };
 
-    config.resolve.fallback = { "os": require.resolve("os-browserify/browser"), "crypto": false, "path": require.resolve("path-browserify") };
+    config.resolve.fallback = {
+      os: require.resolve('os-browserify/browser'),
+      crypto: false,
+      path: require.resolve('path-browserify'),
+    };
 
     return config;
   },
