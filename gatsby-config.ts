@@ -1,8 +1,7 @@
 import type { GatsbyConfig } from 'gatsby';
-import { API_KEY, BASE_API_URL } from './src/services/services.config';
 
 require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
+  path: `.env`,
 });
 
 const config: GatsbyConfig = {
@@ -66,11 +65,10 @@ const config: GatsbyConfig = {
     {
       resolve: 'gatsby-source-apiserver',
       options: {
-        url: `${BASE_API_URL}/articles`,
+        url: `${process.env.API_BASE_URL}/articles`,
         method: 'get',
-        headers: { 'X-API-KEY': API_KEY },
-        name: 'paginationAPI',
-        entityLevel: 'pagination',
+        headers: { 'X-API-KEY': process.env.X_API_KEY },
+        name: 'apiSource',
       },
     },
   ],

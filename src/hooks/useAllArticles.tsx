@@ -1,11 +1,8 @@
 import { useStaticQuery, graphql } from 'gatsby';
-import { useEffect, useState } from 'react';
 
 // ADD pagination
 
 const useAllArticles = () => {
-  const [articles, setArticles] = useState([]);
-
   const allArticles = useStaticQuery(graphql`
     query {
       allPosts {
@@ -25,11 +22,7 @@ const useAllArticles = () => {
     }
   `);
 
-  useEffect(() => {
-    setArticles(allArticles.allPosts.nodes);
-  }, [allArticles]);
-
-  return articles;
+  return allArticles.allPosts.nodes ?? [];
 };
 
 export default useAllArticles;

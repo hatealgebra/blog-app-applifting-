@@ -1,12 +1,9 @@
 import path from 'path';
 import { getArticle, listArticles } from './src/services/articlesOperations';
 import { showImage } from './src/services/imagesServices';
+import 'dotenv/config';
 
-require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
-});
-
-const POST_NODE_TYPE = `Posts`;
+const POST_NODE_TYPE = `posts`;
 
 exports.sourceNodes = async ({
   actions: { createNode },
@@ -15,6 +12,7 @@ exports.sourceNodes = async ({
 }) => {
   try {
     const result = await listArticles();
+    console.log('Hello world man', result);
     const { items: articles } = result.data;
 
     const completeArticleData = await Promise.all(
@@ -32,7 +30,6 @@ exports.sourceNodes = async ({
         };
       })
     );
-
     completeArticleData.forEach(async (article, index) => {
       const { articleId } = article;
       createNode({
@@ -47,7 +44,9 @@ exports.sourceNodes = async ({
         },
       });
     });
-  } catch (e) {}
+  } catch (e) {
+    console.error('Error while creating nodes', e);
+  }
 };
 
 exports.createPages = async ({ actions: { createPage }, graphql }) => {
@@ -82,6 +81,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
   //  Create page for each article
   articles.data.allPosts.nodes.forEach((article) => {
     const url = `/articles/${article.articleId}`;
+    console.log(url, 'article url');
     createPage({
       context: { url, article },
       path: url,
