@@ -5,6 +5,7 @@ enum ELoginFormValidation {
   INCORRECT_LOGIN = 'Incorrect login.',
   UNEXPECTED_ERROR = 'Unexpected error.',
   CORRECT_LOGIN = 'Success!',
+  EMPTY = '',
 }
 
 export default ELoginFormValidation;
