@@ -1,5 +1,5 @@
 import { rest } from 'msw';
-import { API_KEY, BASE_API_URL, UserConfig } from '../services/services.config';
+import 'dotenv/config';
 
 import loginResponseJSON from './asyncData/post/login.mock.json';
 
@@ -9,18 +9,20 @@ import baseArticleDataResponseJSON from './asyncData/get/allArticlesResponse.moc
 import tenantMockJSON from './asyncData/get/tenantResponse.mock.json';
 import imageBase64 from './base64.mock';
 
+const { API_BASE_URL, X_API_KEY, NAME } = process.env;
+
 const handlers = [
   /* POST handling */
   // Login
-  rest.post(`${BASE_API_URL}/login`, async (req, res, ctx) => {
+  rest.post(`${API_BASE_URL}/login`, async (req, res, ctx) => {
     const { username, password } = await req.json();
-    if (username === UserConfig.NAME && password === 'MockPwd12345') {
+    if (username === NAME && password === 'MockPwd12345') {
       return res(ctx.status(200), ctx.json(loginResponseJSON));
     }
     return res(ctx.status(400), ctx.json({ error: 'Invalid credentials' }));
   }),
   // Publish article
-  rest.post(`${BASE_API_URL}/articles`, async (req, res, ctx) => {
+  rest.post(`${API_BASE_URL}/articles`, async (req, res, ctx) => {
     const reqJSON = await req.json();
     delete reqJSON.access_token;
 
@@ -34,10 +36,10 @@ const handlers = [
     return res(ctx.status(200), ctx.json(responseToReturn));
   }),
   // Upload image
-  rest.post(`${BASE_API_URL}/images`, (req, res, ctx) => {
+  rest.post(`${API_BASE_URL}/images`, (req, res, ctx) => {
     return res(ctx.status(200), ctx.json(imageResponseJSON));
   }),
-  rest.post(`${BASE_API_URL}/comments`, async (req, res, ctx) => {
+  rest.post(`${API_BASE_URL}/comments`, async (req, res, ctx) => {
     const request = await req.json();
     const { articleId, author, content } = request;
     return res(
@@ -52,11 +54,11 @@ const handlers = [
     );
   }),
   // TODO: Add vote up/down errors handling
-  rest.post(`${BASE_API_URL}/comments/:commentId/vote/up`, (req, res, ctx) => {
+  rest.post(`${API_BASE_URL}/comments/:commentId/vote/up`, (req, res, ctx) => {
     return res(ctx.status(200));
   }),
   rest.post(
-    `${BASE_API_URL}/comments/:commentId/vote/down`,
+    `${API_BASE_URL}/comments/:commentId/vote/down`,
     (req, res, ctx) => {
       return res(ctx.status(200));
     }
@@ -66,11 +68,11 @@ const handlers = [
 
   // List Articles
   // FIXME: Fix the reauthorize, the dispatch is called multiple
-  rest.get(`${BASE_API_URL}/articles`, async (req, res, ctx) => {
+  rest.get(`${API_BASE_URL}/articles`, async (req, res, ctx) => {
     return res(ctx.status(200), ctx.json(baseArticleDataResponseJSON));
   }),
   // Article detail
-  rest.get(`${BASE_API_URL}/articles/:articleId`, (req, res, ctx) => {
+  rest.get(`${API_BASE_URL}/articles/:articleId`, (req, res, ctx) => {
     const { articleId } = req.params;
 
     if (!articleId)
@@ -82,7 +84,7 @@ const handlers = [
 
     return res(
       ctx.set({
-        'X-API-KEY': API_KEY,
+        'X-API-KEY': X_API_KEY,
         Authorization: loginResponseJSON.access_token,
       }),
       ctx.status(200),
@@ -90,7 +92,7 @@ const handlers = [
     );
   }),
   // Images
-  rest.get(`${BASE_API_URL}/images/:imageId`, async (req, res, ctx) => {
+  rest.get(`${API_BASE_URL}/images/:imageId`, async (req, res, ctx) => {
     const imageBuffer = Buffer.from(imageBase64, 'base64');
     return res(
       ctx.status(200),
@@ -99,23 +101,23 @@ const handlers = [
     );
   }),
   // Tenant
-  rest.get(`${BASE_API_URL}/tenants/:tenantId`, (req, res, ctx) => {
+  rest.get(`${API_BASE_URL}/tenants/:tenantId`, (req, res, ctx) => {
     return res(ctx.status(200), ctx.json(tenantMockJSON));
   }),
 
   /* DELETE */
   // Delete article
-  rest.delete(`${BASE_API_URL}/articles/:articleId`, (req, res, ctx) => {
+  rest.delete(`${API_BASE_URL}/articles/:articleId`, (req, res, ctx) => {
     return res(ctx.status(204));
   }),
 
-  rest.delete(`${BASE_API_URL}/images/:imagesId`, (req, res, ctx) => {
+  rest.delete(`${API_BASE_URL}/images/:imagesId`, (req, res, ctx) => {
     return res(ctx.status(204));
   }),
 
   /* PATCH */
   // Update article
-  rest.patch(`${BASE_API_URL}/articles/:articleId`, async (req, res, ctx) => {
+  rest.patch(`${API_BASE_URL}/articles/:articleId`, async (req, res, ctx) => {
     const reqJSON = await req.json();
     return res(
       ctx.status(200),

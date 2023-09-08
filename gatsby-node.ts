@@ -1,10 +1,32 @@
 import path from 'path';
 import { getArticle, listArticles } from './src/services/articlesOperations';
 import { showImage } from './src/services/imagesServices';
+import webpack from 'webpack';
 
 import 'dotenv/config';
 
 const POST_NODE_TYPE = 'posts';
+
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    plugins: [
+      new webpack.ProvidePlugin({
+        // Make a global `process` variable that points to the `process` package,
+        // because the `util` package expects there to be a global variable named `process`.
+        // Thanks to https://stackoverflow.com/a/65018686/14239942
+        process: 'process/browser',
+      }),
+    ],
+    resolve: {
+      fallback: {
+        os: 'os-browserify/browser',
+        path: 'path-browserify',
+        crypto: false,
+        stream: false,
+      },
+    },
+  });
+};
 
 exports.sourceNodes = async ({
   actions: { createNode },
