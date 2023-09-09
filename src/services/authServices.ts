@@ -1,16 +1,11 @@
-import axios from 'axios';
-import { API_KEY, BASE_API_URL } from './services.config';
+import { appLiftingAxiosProtected } from './services.config';
 
 const loginPOST = async (username: string, password: string) => {
-  const response = await axios({
-    method: 'post',
-    url: `${BASE_API_URL}/login`,
-    data: {
-      username,
-      password,
-    },
-    headers: { 'X-API-KEY': API_KEY },
-  });
+  const data = {
+    username,
+    password,
+  };
+  const response = await appLiftingAxiosProtected.post('/login', data);
   return response;
 };
 

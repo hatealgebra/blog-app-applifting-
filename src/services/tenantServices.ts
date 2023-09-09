@@ -1,12 +1,7 @@
-import axios from 'axios';
-import 'dotenv/config';
+import { appLiftingAxiosProtected } from './services.config';
 
 const getTenant = async (tenantId: string) => {
-  return axios({
-    method: 'get',
-    url: `${process.env.API_BASE_URL}/tenants/${tenantId}`,
-    headers: { 'x-api-key': process.env.X_API_KEY },
-  });
+  return appLiftingAxiosProtected.get(`/tenants/${tenantId}`);
 };
 
 export default getTenant;
