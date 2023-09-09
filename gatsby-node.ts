@@ -2,8 +2,11 @@ import path from 'path';
 import { getArticle, listArticles } from './src/services/articlesOperations';
 import { showImage } from './src/services/imagesServices';
 import webpack from 'webpack';
+import dotenv from 'dotenv';
 
-import 'dotenv/config';
+dotenv.config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 
 const POST_NODE_TYPE = 'posts';
 
@@ -35,7 +38,6 @@ exports.sourceNodes = async ({
 }) => {
   try {
     const result = await listArticles();
-    console.log('Hello world man', result);
     const { items: articles } = result.data;
 
     const completeArticleData = await Promise.all(
@@ -101,7 +103,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
     path: `/`,
     context: { articles },
   });
-
+  console.log('graphql resolution', articles);
   //  Create page for each article
   articles.data.allPosts.nodes.forEach((article) => {
     const url = `/articles/${article.articleId}`;
