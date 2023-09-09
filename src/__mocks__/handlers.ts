@@ -1,6 +1,7 @@
 import { rest } from 'msw';
 import 'dotenv/config';
 
+import { API_BASE_URL } from '@services/services.config';
 import loginResponseJSON from './asyncData/post/login.mock.json';
 
 import imageResponseJSON from './asyncData/post/postImageResponse.mock.json';
@@ -9,14 +10,12 @@ import baseArticleDataResponseJSON from './asyncData/get/allArticlesResponse.moc
 import tenantMockJSON from './asyncData/get/tenantResponse.mock.json';
 import imageBase64 from './base64.mock';
 
-const { API_BASE_URL, X_API_KEY, NAME } = process.env;
-
 const handlers = [
   /* POST handling */
   // Login
   rest.post(`${API_BASE_URL}/login`, async (req, res, ctx) => {
     const { username, password } = await req.json();
-    if (username === NAME && password === 'MockPwd12345') {
+    if (username === process.env.NAME && password === 'MockPwd12345') {
       return res(ctx.status(200), ctx.json(loginResponseJSON));
     }
     return res(ctx.status(400), ctx.json({ error: 'Invalid credentials' }));
@@ -84,7 +83,7 @@ const handlers = [
 
     return res(
       ctx.set({
-        'X-API-KEY': X_API_KEY,
+        'X-API-KEY': '12345',
         Authorization: loginResponseJSON.access_token,
       }),
       ctx.status(200),
