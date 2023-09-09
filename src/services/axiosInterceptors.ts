@@ -2,7 +2,7 @@
 import { Store } from '@reduxjs/toolkit';
 import { AxiosRequestConfig } from 'axios';
 import { reAuthorizeThunk } from '../store/thunks/authentication.thunks';
-import { appLiftingAxiosProtected } from './services.config';
+import { appLiftingAxios } from './services.config';
 
 const setUpInterceptor = (store: Store) => {
   const handleRequest = async (config: AxiosRequestConfig) => {
@@ -27,7 +27,7 @@ const setUpInterceptor = (store: Store) => {
     return config;
   };
 
-  appLiftingAxiosProtected.interceptors.request.use(
+  appLiftingAxios.interceptors.request.use(
     async (config) => {
       return handleRequest(config);
     },
@@ -37,7 +37,7 @@ const setUpInterceptor = (store: Store) => {
     }
   );
 
-  appLiftingAxiosProtected.interceptors.response.use(
+  appLiftingAxios.interceptors.response.use(
     async (response) => response,
     async (error) => {
       const { response } = error;

@@ -1,11 +1,11 @@
-import { appLiftingAxiosProtected } from './services.config';
+import { appLiftingAxios } from './services.config';
 
 const loginPOST = async (username: string, password: string) => {
   const data = {
     username,
     password,
   };
-  const response = await appLiftingAxiosProtected.post('/login', data);
+  const response = await appLiftingAxios.post('/login', data);
   return response;
 };
 
