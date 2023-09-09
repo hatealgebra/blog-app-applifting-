@@ -67,54 +67,47 @@ const MyArticlesTable = () => {
         to={AdminLinks.CREATE_ARTICLE}
       />
       <MyArticlesForm onSubmit={(e) => e.preventDefault()}>
-        <StyledArticlesTable>
-          <EditArticleRowButtons
-            originalArray={originalArray}
-            switchAllBoxes={switchAllBoxes}
-            dispatch={dispatch}
-          />
-          <tbody>
-            {(status === 'loading' && (
-              <StyledFallbackContentContainer>
-                <Loading />
-              </StyledFallbackContentContainer>
-            )) ||
-              (articles !== undefined &&
-                articles.length > 0 &&
-                articles.map(
-                  (article: Components['schemas']['ArticleDetail'], i) => {
-                    const { articleId, title, perex, comments } = article;
-                    return (
-                      <EditArticleRow
-                        key={articleId}
-                        iteration={i}
-                        articleId={articleId}
-                        title={title}
-                        perex={perex}
-                        comments={comments!.length}
-                        deleteArticle={deleteArticle}
-                        editArticle={() => editArticle(article)}
-                        isChecked={checkedBoxes[i]}
-                        setCheckedBoxes={setCheckedBoxes}
-                      />
-                    );
-                  }
-                )) ||
-              (articles && articles.length === 0 && (
-                <StyledFallbackContentContainer>
-                  <img
-                    src={noArticles}
-                    alt="No articles, you should cooksome"
-                  />
-                  <span>No articles written yet, you should cook some!</span>
-                </StyledFallbackContentContainer>
-              )) || (
-                <StyledFallbackContentContainer>
-                  Error
-                </StyledFallbackContentContainer>
+        {status === 'loading' && (
+          <StyledFallbackContentContainer>
+            <Loading />
+          </StyledFallbackContentContainer>
+        )}
+        {articles && articles.length === 0 && (
+          <StyledFallbackContentContainer>
+            <img src={noArticles} alt="No articles, you should cooksome" />
+            <span>No articles written yet, you should cook some!</span>
+          </StyledFallbackContentContainer>
+        )}
+        {articles.length > 0 && (
+          <StyledArticlesTable>
+            <tbody>
+              <EditArticleRowButtons
+                originalArray={originalArray}
+                switchAllBoxes={switchAllBoxes}
+                dispatch={dispatch}
+              />
+              {articles.map(
+                (article: Components['schemas']['ArticleDetail'], i) => {
+                  const { articleId, title, perex, comments } = article;
+                  return (
+                    <EditArticleRow
+                      key={articleId}
+                      iteration={i}
+                      articleId={articleId}
+                      title={title}
+                      perex={perex}
+                      comments={comments!.length}
+                      deleteArticle={deleteArticle}
+                      editArticle={() => editArticle(article)}
+                      isChecked={checkedBoxes[i]}
+                      setCheckedBoxes={setCheckedBoxes}
+                    />
+                  );
+                }
               )}
-          </tbody>
-        </StyledArticlesTable>
+            </tbody>
+          </StyledArticlesTable>
+        )}
       </MyArticlesForm>
     </MyArticlesTableContainer>
   );
