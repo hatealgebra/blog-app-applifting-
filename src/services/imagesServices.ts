@@ -1,4 +1,4 @@
-import { appLiftingAxios, appLiftingAxiosProtected } from './services.config';
+import { appLiftingAxios } from './services.config';
 
 // TODO: Add images for mobile, desktop and large desktop
 
@@ -6,7 +6,7 @@ export const uploadImage = async (
   imageFile: FormData,
   access_token: string
 ) => {
-  const response = await appLiftingAxiosProtected.post('/images', imageFile, {
+  const response = await appLiftingAxios.post('/images', imageFile, {
     headers: {
       'Content-Type': 'multipart/form-data',
       Authorization: access_token,
@@ -26,7 +26,7 @@ export const deleteImage = async (
   imageId: string,
   access_token: string | undefined
 ) => {
-  const response = await appLiftingAxiosProtected.delete(`/images/${imageId}`, {
+  const response = await appLiftingAxios.delete(`/images/${imageId}`, {
     headers: { Authorization: access_token },
   });
   return response;
