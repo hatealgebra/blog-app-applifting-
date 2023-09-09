@@ -14,3 +14,4 @@ coverage/
 src/components/__snapshots__/__diff_output__/
 .yarn
 coverage-final.json
+.vscode/
