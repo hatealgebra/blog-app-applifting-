@@ -16,7 +16,7 @@ const LoginForm = () => {
   const [email, setEmail] = React.useState('');
   const [pwd, setPwd] = React.useState('');
   const [formError, setFormError] = React.useState<ELoginFormValidation>(
-    ELoginFormValidation.CORRECT_LOGIN
+    ELoginFormValidation.EMPTY
   );
 
   const auth = useAppSelector(selectAuthToken);
