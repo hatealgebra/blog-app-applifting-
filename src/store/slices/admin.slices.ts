@@ -91,7 +91,7 @@ export const { sortMyArticles, setArticleToEdit } = adminSlice.actions;
 export const selectMyArticlesOriginalItems = (state: RootState) =>
   state.reducer?.admin.data.originalSort?.items;
 export const selectMyArticlesItems = (state: RootState) =>
-  state.reducer?.admin.data.nowSort?.items ?? [];
+  state.reducer?.admin.data.nowSort?.items;
 export const selectMyArticlesStatus = (state: RootState) =>
   state.reducer?.admin.status;
 export const selectMyArticlesError = (state: RootState) =>
