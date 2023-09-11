@@ -5,6 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import GlobalStyle from './src/components/particles/GlobalStyle';
 import Theme from './src/components/particles/Theme';
 import store from './src/store';
+// import worker from '@mocks/browser';
 
 export const wrapRootElement: GatsbyBrowser['wrapRootElement'] = ({
   element,
@@ -19,7 +20,6 @@ export const wrapRootElement: GatsbyBrowser['wrapRootElement'] = ({
   );
 };
 
-// if (process.env.NODE_ENV === "development") {
-//   const { worker } = require("./src/__mocks__/browser");
+// if (process.env.NODE_ENV === 'development') {
 //   worker.start();
 // }

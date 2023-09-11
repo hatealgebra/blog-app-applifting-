@@ -5,7 +5,6 @@ import { ThemeProvider } from 'styled-components';
 import GlobalStyle from './src/components/particles/GlobalStyle';
 import Theme from './src/components/particles/Theme';
 import store from './src/store';
-import server from '@mocks/server';
 
 export const wrapRootElement: GatsbySSR['wrapRootElement'] = ({ element }) => {
   return (
@@ -17,7 +16,3 @@ export const wrapRootElement: GatsbySSR['wrapRootElement'] = ({ element }) => {
     </Provider>
   );
 };
-
-// if (process.env.NODE_ENV === 'development') {
-//   server.listen();
-// }
