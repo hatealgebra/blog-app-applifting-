@@ -52,6 +52,10 @@ p{
 input, textarea {
     font-family: ${Theme.fonts.mainFont};
 }
+
+button{
+    cursor: pointer;
+}
 `;
 
 export default GlobalStyle;
