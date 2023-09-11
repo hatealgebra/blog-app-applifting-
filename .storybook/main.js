@@ -53,7 +53,7 @@ module.exports = {
 
     config.resolve.alias = {
       ...config.resolve.alias,
-      process: "process/browser",
+      process: 'process/browser',
       '@atoms': path.resolve(__dirname, '../src/components/atoms'),
       '@molecules': path.resolve(__dirname, '../src/components/molecules'),
       '@organisms': path.resolve(__dirname, '../src/components/organisms'),

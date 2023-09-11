@@ -12,6 +12,13 @@ import GlobalStyle from '../src/components/particles/GlobalStyle';
 import AxiosInterceptor from '../src/components/particles/AxiosInterceptor';
 import { addDecorator } from '@storybook/react';
 
+import dotenv from 'dotenv';
+import store from '../src/store';
+
+dotenv.config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 // Gatsby's Link overrides:
 // Gatsby Link calls the `enqueue` & `hovering` methods on the global variable ___loader.
 // This global object isn't set in storybook context, requiring you to override it to empty functions (no-op),
@@ -34,7 +41,7 @@ initialize();
 // decorators
 // FIXME: Does not work with themesProvider
 const storybookWrapper = (Story) => (
-  <Provider store={mockStore}>
+  <Provider store={store}>
     <ThemeProvider theme={themeDefault}>
       <AxiosInterceptor store={mockStore}>
         <GlobalStyle />
@@ -46,6 +53,7 @@ const storybookWrapper = (Story) => (
 
 addDecorator(mswDecorator);
 addDecorator(storybookWrapper);
+
 const preview = {
   parameters: {
     actions: { argTypesRegex: '^on[A-Z].*' },
