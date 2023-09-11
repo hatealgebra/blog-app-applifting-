@@ -15,7 +15,7 @@
     "clean": "gatsby clean",
     "refresh": "curl -X POST http://localhost:8000/__refresh",
     "typecheck": "tsc --noEmit",
-    "storybook": "NODE_ENV=test start-storybook -p 6006 browser=chromium",
+    "storybook": "start-storybook -p 6006 browser=chromium",
     "storybook:build": "build-storybook --disable-telemetry",
     "test-storybook:watch": "NODE_ENV=test && UPDATE_S3=false && test-storybook --watchAll --coverage -c .storybook",
     "test-storybook:upload": "UPDATE_S3=true && test-storybook",

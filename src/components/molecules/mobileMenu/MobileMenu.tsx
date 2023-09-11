@@ -9,6 +9,11 @@ import { AdminLinks } from '../../../utils/contants';
 import { MobileMenuLink } from '../../atoms/links/link.styled';
 import LoginLink from '../../atoms/links/LoginLink';
 
+export interface MobileMenuProps {
+  isOpen: boolean;
+  setClose: () => void;
+}
+
 const MobileMenu = ({ isOpen, setClose }: MobileMenuProps) => {
   return (
     <MobileMenuContainer
@@ -34,10 +39,4 @@ const MobileMenu = ({ isOpen, setClose }: MobileMenuProps) => {
     </MobileMenuContainer>
   );
 };
-
-export interface MobileMenuProps {
-  isOpen: boolean;
-  setClose: () => void;
-}
-
 export default MobileMenu;
