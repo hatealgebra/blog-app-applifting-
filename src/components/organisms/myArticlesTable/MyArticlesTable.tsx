@@ -72,13 +72,13 @@ const MyArticlesTable = () => {
             <Loading />
           </StyledFallbackContentContainer>
         )}
-        {articles && articles.length === 0 && (
+        {articles?.length === 0 && (
           <StyledFallbackContentContainer>
             <img src={noArticles} alt="No articles, you should cooksome" />
             <span>No articles written yet, you should cook some!</span>
           </StyledFallbackContentContainer>
         )}
-        {articles.length > 0 && (
+        {articles?.length > 0 && (
           <StyledArticlesTable>
             <tbody>
               <EditArticleRowButtons
