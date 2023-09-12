@@ -1,4 +1,5 @@
 import axios from 'axios';
+import 'dotenv/config';
 
 export const API_BASE_URL = 'https://fullstack.exercise.applifting.cz';
 
