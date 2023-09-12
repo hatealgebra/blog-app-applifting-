@@ -1,7 +1,7 @@
-import { appLiftingAxios } from './services.config';
+import { appliftingAxiosProtected } from './services.config';
 
 export const listArticles = async () => {
-  const response = await appLiftingAxios.get('/articles');
+  const response = await appliftingAxiosProtected.get('/articles');
   return response;
 };
 
@@ -20,7 +20,7 @@ export const createArticle = async (
     access_token,
   };
 
-  const response = await appLiftingAxios.post('/articles', data, {
+  const response = await appliftingAxiosProtected.post('/articles', data, {
     headers: {
       'Content-Type': 'application/json',
       Authorization: access_token,
@@ -30,14 +30,14 @@ export const createArticle = async (
 };
 
 export const getArticle = async (articleId: string) => {
-  return appLiftingAxios.get(`/articles/${articleId}`);
+  return appliftingAxiosProtected.get(`/articles/${articleId}`);
 };
 
 export const deleteArticle = async (
   articleId: string,
   access_token: string
 ) => {
-  return appLiftingAxios.delete(`/articles/${articleId}`, {
+  return appliftingAxiosProtected.delete(`/articles/${articleId}`, {
     headers: { Authorization: access_token },
   });
 };
@@ -47,7 +47,7 @@ export const updateArticle = async (
   access_token: string | undefined,
   data: any
 ) => {
-  return appLiftingAxios.patch(`/articles/${articleId}`, data, {
+  return appliftingAxiosProtected.patch(`/articles/${articleId}`, data, {
     headers: { Authorization: access_token },
   });
 };
