@@ -4,7 +4,11 @@ import { createSlice } from '@reduxjs/toolkit';
 import { Components } from '../../customTypes/declarations';
 import type { RootState } from '..';
 import { getArticlesFeedThunk } from '../thunks/articles.thunk';
-import { createArticleThunk, deleteArticleThunk } from '../thunks/admin.thunks';
+import {
+  createArticleThunk,
+  deleteArticleThunk,
+  setEditedArticleThunk,
+} from '../thunks/admin.thunks';
 import { ESortByOptions } from './slices.types.d';
 
 const initialState = {
@@ -17,7 +21,9 @@ const initialState = {
   data: {
     originalSort: Components['schemas']['ArticleList'];
     nowSort: Components['schemas']['ArticleList'];
-    articleToEdit: Components['schemas']['ArticleDetail'];
+    articleToEdit: Components['schemas']['ArticleDetail'] & {
+      imageBase64: ArrayBuffer | null;
+    };
   };
 };
 
@@ -41,9 +47,6 @@ export const adminSlice = createSlice({
           }
         );
       }
-    },
-    setArticleToEdit: (state, { payload }) => {
-      state.data.articleToEdit = payload;
     },
   },
   extraReducers: (builder) => {
@@ -72,6 +75,17 @@ export const adminSlice = createSlice({
       state.status = 'idle';
     });
 
+    builder.addCase(setEditedArticleThunk.pending, (state) => {
+      state.status = 'loading';
+    });
+    builder.addCase(setEditedArticleThunk.fulfilled, (state, { payload }) => {
+      state.data.articleToEdit = payload;
+      state.status = 'idle';
+    });
+    builder.addCase(setEditedArticleThunk.rejected, (state) => {
+      state.status = 'idle';
+    });
+
     builder.addCase(deleteArticleThunk.pending, (state) => {
       state.status = 'loading';
     });
@@ -86,7 +100,7 @@ export const adminSlice = createSlice({
 });
 
 // ACTIONS
-export const { sortMyArticles, setArticleToEdit } = adminSlice.actions;
+export const { sortMyArticles } = adminSlice.actions;
 // SELECTORS
 export const selectMyArticlesOriginalItems = (state: RootState) =>
   state.reducer?.admin.data.originalSort?.items;

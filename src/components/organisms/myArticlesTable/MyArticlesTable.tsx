@@ -19,10 +19,12 @@ import {
   selectMyArticlesItems,
   selectMyArticlesOriginalItems,
   selectMyArticlesStatus,
-  setArticleToEdit,
 } from '../../../store/slices/admin.slices';
 
-import { deleteArticleThunk } from '../../../store/thunks/admin.thunks';
+import {
+  deleteArticleThunk,
+  setEditedArticleThunk,
+} from '../../../store/thunks/admin.thunks';
 
 import noArticles from '../../../images/no-articles.png';
 import Loading from '../../atoms/loadingIcon/Loading';
@@ -41,8 +43,9 @@ const MyArticlesTable = () => {
 
   const deleteArticle = (articleId: string) =>
     dispatch(deleteArticleThunk({ articleId, originalArray, access_token }));
+
   const editArticle = (article: Components['schemas']['Article']) => {
-    dispatch(setArticleToEdit(article));
+    dispatch(setEditedArticleThunk({ article }));
     navigate(AdminLinks.EDIT_ARTICLE);
   };
 

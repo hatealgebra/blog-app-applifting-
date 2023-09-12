@@ -5,7 +5,7 @@ import {
   deleteArticle,
   updateArticle,
 } from '../../services/articlesOperations';
-import { uploadImage } from '../../services/imagesServices';
+import { showImage, uploadImage } from '../../services/imagesServices';
 import { Components } from '../../customTypes/declarations';
 import { AdminLinks } from '../../utils/contants';
 
@@ -53,6 +53,25 @@ export const createArticleThunk = createAsyncThunk(
       );
       navigate(AdminLinks.MY_ARTICLES);
       return response.data;
+    } catch (e) {
+      return thunkAPI.rejectWithValue(e);
+    }
+  }
+);
+
+export const setEditedArticleThunk = createAsyncThunk(
+  'admin/setEditedArticleThunk',
+  async (
+    {
+      article,
+    }: {
+      article: Components['schemas']['ArticleDetail'];
+    },
+    thunkAPI
+  ) => {
+    try {
+      const fetchImage = await showImage(article.imageId);
+      return { ...article, imageBase64: fetchImage.data };
     } catch (e) {
       return thunkAPI.rejectWithValue(e);
     }
