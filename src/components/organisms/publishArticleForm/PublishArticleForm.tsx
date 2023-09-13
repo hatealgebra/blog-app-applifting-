@@ -1,7 +1,8 @@
-import React, { FormEvent } from 'react';
+import React, { FormEvent, useEffect } from 'react';
 
 import { EPublishArticleErrors } from '@utils/contants';
 import validatePublishArticleForm from '@helpers/publishArticle.helper';
+
 import AdminHeading from '../../molecules/adminHeading/AdminHeading';
 import MarkdownEditor from '../../atoms/markdownEditor/MarkdownEditor';
 import InputWithLabel from '../../molecules/inputWithLabel/InputWithLabel';
@@ -24,17 +25,20 @@ import { PublishArticleProps } from './publishArticleForm.types.d';
 // FIXME: When editing the article, get the loading screen maybe?
 // TODO: useEffect for for error handling
 const PublishArticleForm = ({
+  articleId,
   titleValue,
   markdownContentValue,
-  imageFileValue,
+  imageBase64,
 }: PublishArticleProps) => {
-  const [articleId] = React.useState(undefined);
   const [title, setTitle] = React.useState(titleValue || '');
   const [markdownContent, setMarkdownContent] = React.useState(
     markdownContentValue || ''
   );
-  const [imageFile, setImageFile] = React.useState<File | null>(
-    imageFileValue || null
+  const [originalImageFile, setOriginalImageFile] = React.useState<File | null>(
+    null
+  );
+  const [currentImageFile, setCurrentImageFile] = React.useState<File | null>(
+    null
   );
   const [isImageChanged, setIsImageChanged] = React.useState(false);
   const [formError, setFormError] = React.useState<EPublishArticleErrors>(
@@ -45,7 +49,7 @@ const PublishArticleForm = ({
   const access_token = useAppSelector(selectAuthToken);
   const dispatch = useAppDispatch();
 
-  const handleOnSubmit = (e: FormEvent) => {
+  const handleOnSubmit = async (e: FormEvent) => {
     e.preventDefault();
     const trimmedTitle = title.trim();
     const trimmedMD = markdownContent.trim();
@@ -54,13 +58,24 @@ const PublishArticleForm = ({
     const formValidationPassed = validatePublishArticleForm(
       trimmedTitle,
       trimmedMD,
-      imageFile,
-      setFormError
+      currentImageFile
     );
 
-    if (formValidationPassed) {
+    setFormError(formValidationPassed);
+
+    if (formValidationPassed === EPublishArticleErrors.IMAGE_EMPTY) {
+      alert(
+        'Image was empty. Original image will be used instead, if the image is not changed.'
+      );
+
+      setCurrentImageFile(originalImageFile);
+      return setFormError(EPublishArticleErrors.PASSED);
+    }
+
+    if (formValidationPassed === EPublishArticleErrors.PASSED) {
       const imageFormData = new FormData();
-      imageFormData.append('image', imageFile!);
+      imageFormData.append('image', currentImageFile);
+
       if (articleId) {
         return dispatch(
           editArticleThunk({
@@ -87,9 +102,32 @@ const PublishArticleForm = ({
     return false;
   };
 
+  const arrayBufferToFile = (buffer, filename) => {
+    const blob = new Blob([buffer], { type: 'image/Png' });
+    return new File([blob], filename, { type: 'image/Png' });
+  };
+
+  const handleExistingImage = async (arrayBuffer: ArrayBuffer) => {
+    if (!arrayBuffer) return null;
+
+    const bufferToFile = arrayBufferToFile(
+      arrayBuffer,
+      `${articleId}-image.png`
+    );
+    setOriginalImageFile(bufferToFile);
+    return setCurrentImageFile(bufferToFile);
+  };
+
   React.useEffect(() => {
     setIsImageChanged(true);
-  }, [setImageFile]);
+  }, [setCurrentImageFile]);
+
+  useEffect(() => {
+    if (!imageBase64) return;
+
+    handleExistingImage(imageBase64);
+    // eslint-disable-next-line
+  }, [imageBase64]);
 
   return (
     <StyledPublishArticleForm onSubmit={(e) => handleOnSubmit(e)}>
@@ -111,7 +149,10 @@ const PublishArticleForm = ({
         </ErrorText>
       </div>
       <div>
-        <UploadImage image={imageFile} setImage={setImageFile} />
+        <UploadImage
+          imageFile={currentImageFile}
+          setImageFile={setCurrentImageFile}
+        />
         <ErrorText>
           {formError === EPublishArticleErrors.IMAGE_EMPTY &&
             EPublishArticleErrors.IMAGE_EMPTY}

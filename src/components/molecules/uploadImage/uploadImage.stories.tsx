@@ -18,7 +18,7 @@ const UploadImageTemplate = (args) => {
     setImage(args.setImage);
   };
 
-  return <UploadImage image={image} setImage={uploadImage} />;
+  return <UploadImage imageFile={image} setImageFile={uploadImage} />;
 };
 
 export const UploadImageExample = UploadImageTemplate.bind({});

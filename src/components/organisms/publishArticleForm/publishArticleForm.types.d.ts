@@ -1,5 +1,6 @@
 export interface PublishArticleProps {
+  articleId?: string;
   titleValue?: string;
   markdownContentValue?: string;
-  imageFileValue?: File | null;
+  imageBase64?: ArrayBuffer;
 }

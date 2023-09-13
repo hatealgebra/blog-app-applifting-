@@ -1,26 +1,15 @@
-import React from 'react';
-
 import { EPublishArticleErrors } from '../utils/contants';
 
 type TFormHandling = (
   title: string,
   markdownContent: string,
-  imageFile: string | Blob | null,
-  setFormError: React.Dispatch<React.SetStateAction<EPublishArticleErrors>>
-) =>
-  | {
-      trimmedTitle: string;
-      trimmedMarkdownContent: string;
-      imageFile: string | Blob | null;
-      perex: string;
-    }
-  | boolean;
+  imageFile: string | Blob | null
+) => EPublishArticleErrors;
 
 const validatePublishArticleForm: TFormHandling = (
   title,
   markdownContent,
-  imageFile,
-  setFormError
+  imageFile
 ) => {
   const {
     TITLE_EMPTY,
@@ -33,31 +22,24 @@ const validatePublishArticleForm: TFormHandling = (
   } = EPublishArticleErrors;
 
   if (title === '') {
-    setFormError(TITLE_EMPTY);
-    return false;
+    return TITLE_EMPTY;
   }
   if (title?.length < 25 || title?.length > 100) {
-    setFormError(TITLE_LENGTH);
-    return false;
+    return TITLE_LENGTH;
   }
   if (markdownContent === '') {
-    setFormError(MARKDOWN_EMPTY);
-    return false;
+    return MARKDOWN_EMPTY;
   }
   if (markdownContent?.length < 250) {
-    setFormError(MARKDOWN_TOO_SHORT);
-    return false;
+    return MARKDOWN_TOO_SHORT;
   }
   if (imageFile === null) {
-    setFormError(IMAGE_EMPTY);
-    return false;
+    return IMAGE_EMPTY;
   }
   if (title !== '' && imageFile !== null && markdownContent?.length >= 250) {
-    setFormError(PASSED);
-    return true;
+    return PASSED;
   }
-  setFormError(UNEXPECTED_ERROR);
-  return false;
+  return UNEXPECTED_ERROR;
 };
 
 export default validatePublishArticleForm;

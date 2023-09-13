@@ -57,9 +57,11 @@ const MyArticlesTable = () => {
     }
     return setCheckedBoxes(allBoxesUncheck);
   };
+
   React.useEffect(() => {
-    if (!originalArray) dispatch(getArticlesFeedThunk());
-  }, [originalArray, dispatch]);
+    dispatch(getArticlesFeedThunk());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // TODO: Detach logic of rendering
   return (

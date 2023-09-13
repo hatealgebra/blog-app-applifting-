@@ -7,12 +7,12 @@ import { useAppSelector } from '@store/hooks';
 
 const EditArticlePage = () => {
   const article = useAppSelector(selectArticleToEdit);
-
   return (
     <PageTemplate isProtected>
       <PublishArticleForm
+        articleId={article?.articleId}
         titleValue={article?.title}
-        imageFileValue={article?.imageData}
+        imageBase64={article?.imageBase64}
         markdownContentValue={article?.content}
       />
     </PageTemplate>

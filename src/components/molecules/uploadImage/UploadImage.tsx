@@ -2,7 +2,12 @@ import React from 'react';
 import Button from '../../atoms/button/Button';
 import { StyledMinimalButton, StyledUploadImage } from './uploadImage.styled';
 
-const UploadImage = ({ image, setImage }: UploadImageProps) => {
+export interface UploadImageProps {
+  imageFile: File | null;
+  setImageFile: React.Dispatch<React.SetStateAction<File | null>>;
+}
+
+const UploadImage = ({ imageFile, setImageFile }: UploadImageProps) => {
   const [imagePreview, setImagePreview] = React.useState<string | undefined>(
     null
   );
@@ -17,30 +22,30 @@ const UploadImage = ({ image, setImage }: UploadImageProps) => {
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.files !== null) {
       const fileUploaded = event.target.files[0];
-      setImage(fileUploaded);
+      setImageFile(fileUploaded);
     }
   };
 
-  const resetImage = () => setImage(null);
+  const resetImage = () => setImageFile(null);
 
   React.useEffect(() => {
-    if (image !== null) {
-      const objectURL = URL.createObjectURL(image);
+    if (imageFile !== null) {
+      const objectURL = URL.createObjectURL(imageFile);
       setImagePreview(objectURL);
     } else {
       setImagePreview(undefined);
     }
-  }, [image]);
+  }, [imageFile]);
 
   return (
     <StyledUploadImage>
       <label className="upload-image__label">Featured Image</label>
-      {image !== null ? (
+      {imageFile !== null ? (
         <>
           <img
             className="upload-image__preview"
             src={imagePreview}
-            alt={image.name}
+            alt={imageFile.name}
           />
           <div className="upload-image__button-row">
             <StyledMinimalButton onClick={handleInput}>
@@ -67,10 +72,5 @@ const UploadImage = ({ image, setImage }: UploadImageProps) => {
     </StyledUploadImage>
   );
 };
-
-export interface UploadImageProps {
-  image: File | null;
-  setImage: React.Dispatch<React.SetStateAction<File | null>>;
-}
 
 export default UploadImage;
