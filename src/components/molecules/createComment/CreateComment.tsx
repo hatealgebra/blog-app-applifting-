@@ -67,7 +67,11 @@ const CreateComment = ({ articleId, setComments }: CreateCommentProps) => {
       <StyledTextArea
         disabled={!loggedUser}
         onFocus={() => setIsActive(true)}
-        placeholder="Join the discussion"
+        placeholder={
+          loggedUser
+            ? 'Join the discussion'
+            : 'You need to be signed to comment this article!'
+        }
         rows={isActive ? 8 : 1}
         name="comment"
         value={content}
