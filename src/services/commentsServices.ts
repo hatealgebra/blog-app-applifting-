@@ -1,11 +1,11 @@
-import { appLiftingAxios } from './services.config';
+import { appliftingAxiosProtected } from './services.config';
 
 export const createComment = async (
   articleId: string,
   author: string,
   content: string
 ) => {
-  return appLiftingAxios.post(
+  return appliftingAxiosProtected.post(
     '/comments',
     JSON.stringify({
       articleId,
@@ -16,8 +16,8 @@ export const createComment = async (
 };
 
 export const voteUp = (commentId: string) => {
-  return appLiftingAxios.post(`/comments/${commentId}/vote/up`);
+  return appliftingAxiosProtected.post(`/comments/${commentId}/vote/up`);
 };
 export const voteDown = async (commentId: string) => {
-  return appLiftingAxios.post(`/comments/${commentId}/vote/down`);
+  return appliftingAxiosProtected.post(`/comments/${commentId}/vote/down`);
 };
