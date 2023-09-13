@@ -12,122 +12,74 @@ const mockFile = new File(['goodbye'], 'goodbye.png', {
   type: 'image/png',
 });
 
-const mockDispatchError = jest.fn();
+const {
+  TITLE_EMPTY,
+  TITLE_LENGTH,
+  MARKDOWN_EMPTY,
+  MARKDOWN_TOO_SHORT,
+  IMAGE_EMPTY,
+  UNEXPECTED_ERROR,
+} = EPublishArticleErrors;
 
 describe('Validate Publish article form test suite', () => {
   test('Everything is empty', () => {
-    expect(validatePublishArticleForm('', '', null, mockDispatchError)).toBe(
-      false
-    );
+    expect(validatePublishArticleForm('', '', null)).toBe(TITLE_EMPTY);
   });
 
   test('Everything is empty error value', () => {
-    validatePublishArticleForm('', '', null, mockDispatchError);
-    expect(mockDispatchError).toBeCalledWith(EPublishArticleErrors.TITLE_EMPTY);
+    const validation = validatePublishArticleForm('', '', null);
+    expect(validation).toBe(TITLE_EMPTY);
   });
 
   test('Title is too short', () => {
-    validatePublishArticleForm(titleTooShort, '', null, mockDispatchError);
-    expect(mockDispatchError).toBeCalledWith(
-      EPublishArticleErrors.TITLE_LENGTH
-    );
+    const validation = validatePublishArticleForm(titleTooShort, '', null);
+    expect(validation).toBe(TITLE_LENGTH);
   });
 
   test('Title is too long', () => {
-    validatePublishArticleForm(markdownPassValue, '', null, mockDispatchError);
-    expect(mockDispatchError).toBeCalledWith(
-      EPublishArticleErrors.TITLE_LENGTH
-    );
-  });
-
-  test('Markdown is empty', () => {
-    expect(
-      validatePublishArticleForm(inputValue, '', null, mockDispatchError)
-    ).toBe(false);
+    const validation = validatePublishArticleForm(markdownPassValue, '', null);
+    expect(validation).toBe(TITLE_LENGTH);
   });
 
   test('Markdown is empty error value', () => {
-    validatePublishArticleForm(inputValue, '', null, mockDispatchError);
-    expect(mockDispatchError).toBeCalledWith(
-      EPublishArticleErrors.MARKDOWN_EMPTY
-    );
+    const validation = validatePublishArticleForm(inputValue, '', null);
+    expect(validation).toBe(MARKDOWN_EMPTY);
   });
 
   test('Markdown is too short', () => {
     expect(
-      validatePublishArticleForm(
-        inputValue,
-        markdownShortValue,
-        null,
-        mockDispatchError
-      )
-    ).toBe(false);
-  });
-
-  test('Markdown is too short error value', () => {
-    validatePublishArticleForm(
-      inputValue,
-      markdownShortValue,
-      null,
-      mockDispatchError
-    );
-    expect(mockDispatchError).toBeCalledWith(
-      EPublishArticleErrors.MARKDOWN_TOO_SHORT
-    );
+      validatePublishArticleForm(inputValue, markdownShortValue, null)
+    ).toBe(MARKDOWN_TOO_SHORT);
   });
 
   test('Uploaded file is empty', () => {
     expect(
-      validatePublishArticleForm(
-        inputValue,
-        markdownPassValue,
-        null,
-        mockDispatchError
-      )
-    ).toBe(false);
-  });
-
-  test('Uploaded file is empty error value', () => {
-    validatePublishArticleForm(
-      inputValue,
-      markdownPassValue,
-      null,
-      mockDispatchError
-    );
-    expect(mockDispatchError).toBeCalledWith(EPublishArticleErrors.IMAGE_EMPTY);
+      validatePublishArticleForm(inputValue, markdownPassValue, null)
+    ).toBe(IMAGE_EMPTY);
   });
 
   test('Everything is filled correctly', () => {
     expect(
-      validatePublishArticleForm(
-        inputValue,
-        markdownPassValue,
-        mockFile,
-        mockDispatchError
-      )
-    ).toBe(true);
+      validatePublishArticleForm(inputValue, markdownPassValue, mockFile)
+    ).toBe('');
   });
 
   test('Everything is filled correctly error value', () => {
-    validatePublishArticleForm(
+    const validation = validatePublishArticleForm(
       inputValue,
       markdownPassValue,
-      mockFile,
-      mockDispatchError
+      mockFile
     );
-    expect(mockDispatchError).toBeCalledWith(EPublishArticleErrors.PASSED);
+    expect(validation).toBe('');
   });
 
   test('Unexpected error', () => {
-    validatePublishArticleForm(
+    const validation = validatePublishArticleForm(
       undefined,
       undefined,
-      undefined,
-      mockDispatchError
+      undefined
     );
-    expect(mockDispatchError).toBeCalledWith(
-      EPublishArticleErrors.UNEXPECTED_ERROR
-    );
+    expect(validation).toBe(UNEXPECTED_ERROR);
   });
 });
 

@@ -11,6 +11,11 @@ import {
   updateArticle,
 } from './articlesOperations';
 import { deleteImage, showImage, uploadImage } from './imagesServices';
+import {
+  API_BASE_URL,
+  appLiftingAxios,
+  appliftingAxiosProtected,
+} from './services.config';
 
 const mockTitle = 'Random title';
 const mockPerex = 'Random perex';
@@ -27,6 +32,17 @@ const mockObject = {
 
 // eslint-disable-next-line @typescript-eslint/naming-convention
 const access_token = 'access_token';
+
+describe('Axios instances', () => {
+  test('applifting axios instance', async () => {
+    const response = await appLiftingAxios.get('/articles');
+    expect(response.config.baseURL).toBe(API_BASE_URL);
+  });
+  test('applifting axios protected instance', async () => {
+    const response = await appliftingAxiosProtected.get('/articles');
+    expect(response.headers['x-api-key']).toBe(process.env.X_API_KEY);
+  });
+});
 
 describe('Article operations', () => {
   test('listArticles', async () => {

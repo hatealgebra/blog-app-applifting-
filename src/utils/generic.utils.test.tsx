@@ -1,7 +1,7 @@
 import { expect } from '@jest/globals';
 import server from '@mocks/server';
 import { rest } from 'msw';
-import { BASE_API_URL } from '@services/services.config';
+import { API_BASE_URL } from '@services/services.config';
 
 import {
   clearDataAPI,
@@ -123,7 +123,7 @@ describe('clear data api test suite', () => {
 
   test('when there are no articles', async () => {
     server.use(
-      rest.get(`${BASE_API_URL}/articles`, async (req, res, ctx) => {
+      rest.get(`${API_BASE_URL}/articles`, async (req, res, ctx) => {
         return res(ctx.status(200), ctx.json({ items: [] }));
       })
     );
@@ -133,7 +133,7 @@ describe('clear data api test suite', () => {
 
   test('delete Article error', async () => {
     server.use(
-      rest.delete(`${BASE_API_URL}/articles:articleId`, (req, res, ctx) => {
+      rest.delete(`${API_BASE_URL}/articles:articleId`, (req, res, ctx) => {
         res(ctx.status(404), ctx.json({ message: 'Article not found' }));
       })
     );
