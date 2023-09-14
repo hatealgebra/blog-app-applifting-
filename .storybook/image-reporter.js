@@ -1,6 +1,6 @@
 const fs = require('fs');
 const { S3 } = require('@aws-sdk/client-s3');
-const { uploadDiff } = require('../src/helpers/imageUpload');
+const { uploadDiff } = require('../src/helpers/aws.helper');
 
 const { S3_BUCKET_NAME, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY } =
   process.env;

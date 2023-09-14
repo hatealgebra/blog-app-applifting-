@@ -44,13 +44,7 @@ const CreateComment = ({ articleId, setComments }: CreateCommentProps) => {
     if (content.length < 25) return setFormHandling(FormValidation.EMPTY);
     if (content.length > 250) return setFormHandling(FormValidation.TOO_LONG);
 
-    const publish = publishComment(
-      articleId,
-      loggedUser,
-      content,
-      setCurrComments
-    );
-    console.log(publish);
+    publishComment(articleId, loggedUser, content, setCurrComments);
     setIsActive(false);
     setFormHandling(FormValidation.PASSED);
     return setContent('');

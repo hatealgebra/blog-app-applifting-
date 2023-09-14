@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const { S3 } = require('@aws-sdk/client-s3');
 const { Upload } = require('@aws-sdk/lib-storage');
 const fs = require('fs');
@@ -41,4 +42,33 @@ export const uploadDiff = async (diffPath: string, key) => {
   });
 
   mediaUpload.done();
+};
+
+export const cleanDiffs = async () => {
+  const listParams = {
+    Bucket: S3_BUCKET_NAME,
+    Prefix: 'diffs/',
+  };
+
+  s3.listObjectsV2(listParams, (err, data) => {
+    if (err) {
+      console.error('Error listing objects:', err);
+    } else {
+      console.log(data);
+      // Step 2: Iterate through and delete objects
+      data.Contents.forEach((object) => {
+        const deleteParams = {
+          Bucket: S3_BUCKET_NAME,
+          Key: object.Key,
+        };
+        // Step 3: Delete each object
+        s3.deleteObject(deleteParams, (error) => {
+          if (error) {
+            console.error('Error deleting object:', err);
+          }
+        });
+      });
+      console.log('Cleaning of diffs done');
+    }
+  });
 };
